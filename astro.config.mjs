@@ -49,6 +49,7 @@ export default defineConfig({
 					items: [
 						'what-a-design-system-is',
 						'token-architecture',
+						'accessible-color-palettes',
 						'design-to-code-contract',
 						'multi-platform-component-specs',
 						'platform-divergence',

@@ -46,6 +46,7 @@ draws on them:
 - **W3C**: WCAG, ARIA patterns, and the design tokens spec
 - **Cathy Dutton**: what really deserves to be a shared pattern
 - **Marianne Ashton-Booth**: stakeholder mapping and three-horizon planning
+- **Radix Colors** and **Canonical** (Maximilian Blazek): accessible color scales
 - **Workday Canvas**, **Radix Primitives**, **fourzerothree.in**, **story.to.design**:
   subcomponents in code and in Figma
 

@@ -19,6 +19,24 @@ and describes tools or examples that have since changed. Older sources used only
 - Alla Kholmatova, *Design Systems: A Practical Guide to Creating Design Languages for Digital Products* (O'Reilly, 2017)
 - [Jina Anne, "Design Systems are for People"](https://www.aiga.org/inspiration/talks/jina-anne-design-systems-are-for-people), AIGA, n.d.
 
+## Accessible color palettes
+
+- [Nathan Curtis, "Color in Design Systems"](https://nathanacurtis.substack.com/p/color-in-design-systems-a1c80f65fa3), 2016 `Dated` — written against WCAG 2.0 and HSL-lightness naming, before perceptual color spaces like OKLCH were usable in CSS; cited for the principles (tested pairs, reversed pairings, few options)
+- [Nathan Curtis, "Light & Dark Color Modes in Design Systems"](https://nathanacurtis.substack.com/p/light-dark-9f8ea42c9081), 2017: the Contrast Grid
+- Murphy Trueman, `design-system-ops` — [`skills/theme-audit/SKILL.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/theme-audit/SKILL.md), living doc: the WCAG 2.2 AA baseline, contrast on resolved values, wide-gamut and alpha handling, dark-mode elevation, and the brand-versus-feedback check
+- Murphy Trueman, `design-system-ops` — [`skills/token-audit/SKILL.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/token-audit/SKILL.md), living doc: color tokens a shipped theme doesn't redefine
+- [Romina Kavcic, "50 design token files, one problem: your agents can't read the meaning"](https://learn.thedesignsystem.guide/p/50-design-token-files-one-problem), 2026: color token counts, the brand-crimson test, and Primer's LLM extension
+- [Radix Colors, "Understanding the scale"](https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale), living doc: the 12 steps and the APCA guarantee
+- [Radix Colors, issue #41, "Inaccessible color combinations in light theme"](https://github.com/radix-ui/colors/issues/41), 2024: 283 pairs failing WCAG AA, and Vlad Moroz's reply on APCA and WCAG-safe hues
+- [Radix Colors, issue #25, "Is there a preferred disabled color on the scale?"](https://github.com/radix-ui/colors/issues/25), 2022: no disabled step for solid fills
+- [Radix Colors, issue #51, "Missing contrast, surface, indicator and track color values"](https://github.com/radix-ui/colors/issues/51), 2025: Radix Themes values outside the 12 steps
+- [Carbon Design System, "Color: Overview"](https://carbondesignsystem.com/elements/color/overview/), living doc: tokens, roles, and values, and the layering model
+- [Atlassian Design System, "Color"](https://atlassian.design/foundations/color), living doc: choosing a token instead of a shade, and WCAG AA contrast targets
+- [Radix Colors, "Create a custom palette"](https://www.radix-ui.com/colors/custom), living doc: introduced with Radix Themes 3.0 in 2024
+- [Maximilian Blazek, "Generating accessible color palettes for design systems … inspired by APCA!"](https://ubuntu.com/blog/generating-color-palettes-for-design-systems-inspired-by-apca), Canonical, 2025: WCAG's false positives and negatives, perceptual color spaces, spacing steps by contrast, and Canonical choosing WCAG
+- [Vanilla framework, "Color settings"](https://vanillaframework.io/docs/settings/color-settings), living doc: Canonical's WCAG 2.2 AA target
+- [W3C, "Web Content Accessibility Guidelines (WCAG) 2.2"](https://www.w3.org/TR/WCAG22/), 2023: color not the only signal
+
 ## Component accessibility
 
 - Murphy Trueman, `design-system-ops` — [`skills/accessibility-per-component/SKILL.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/accessibility-per-component/SKILL.md), living doc: the five audit dimensions, the evidence rule, and the extended protocol for complex components

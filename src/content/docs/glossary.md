@@ -458,3 +458,20 @@ a migration guide and leaving them to it. See
 components are already an API contract, read by AI as much as by humans, and should be
 named and structured by function (`OnboardingStep`) rather than appearance (`BlueCard`).
 See [Documentation for agents](/ds101/documentation-for-agents/).
+
+**Color scale** — a set of steps of one hue, from lightest to darkest, where each step has
+a job (background, border, text) and the gap between steps is set by contrast. See
+[Accessible color palettes](/ds101/accessible-color-palettes/).
+
+**APCA** (Accessible Perceptual Contrast Algorithm) — a contrast formula that scores
+readability as a lightness contrast value (Lc) and accounts for font size and polarity.
+Not part of any published WCAG standard. See
+[Accessible color palettes](/ds101/accessible-color-palettes/).
+
+**Perceptually uniform color space** — a color space such as OKLCH where equal steps in
+a value look like equal steps to a person, unlike RGB or HSL. See
+[Accessible color palettes](/ds101/accessible-color-palettes/).
+
+**Contrast grid** — a table of every text color against every background, with the
+contrast of each pair, published next to the palette. See
+[Accessible color palettes](/ds101/accessible-color-palettes/).
