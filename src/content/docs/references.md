@@ -285,6 +285,13 @@ and describes tools or examples that have since changed. Older sources used only
 - [Atlassian, "Atlassian Design System: building the context engine for the AI era"](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era), 2026
 - [Microsoft Learn, "Human-centered design for agents"](https://learn.microsoft.com/en-us/agents/design-guidelines/human-centered-design), living doc — flagged on the source page as AI-generated content on an official Microsoft doc, not an individually authored piece
 
+## Figma access for agents
+
+- [Nathan Curtis, "Figma Component Specs on Command"](https://nathanacurtis.substack.com/p/figma-component-specs-on-command), 2026: MCP vs. mechanical extraction, the button and action list compression figures, AI downstream of specs
+- [Directed Edges, `specs`](https://github.com/DirectedEdges/specs), living doc: `specs-cli` setup, personal access token, and licensing
+- [Sil Bormüller, `figma-cli` README](https://github.com/silships/figma-cli/blob/main/README.md), living doc: connection modes, the self-measured token comparison with API-based MCP, and the `snapshot`/`check` commands
+- [Sil Bormüller, `figma-cli` SECURITY.md](https://github.com/silships/figma-cli/blob/main/SECURITY.md), living doc: what each connection mode touches
+
 ## Tooling
 
 Vendor docs and pricing pages, used only for plan, seat, and license details.

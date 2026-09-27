@@ -108,6 +108,7 @@ export default defineConfig({
 						'documentation-for-agents',
 						'governance-for-ai',
 						'scaling-ai-effort-to-risk',
+						'figma-access-for-agents',
 						'agentic-workflow-design',
 						'generative-loops',
 						'ci-for-agentic-workflows',

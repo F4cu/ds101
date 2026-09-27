@@ -67,6 +67,13 @@ references and subcomponents are Pro.\
 ([docs](https://www.specsplugin.com/))\
 Used in: [Multi-platform component specs](/ds101/multi-platform-component-specs/)
 
+**specs-cli**: the command-line version of Specs. It reads a whole Figma library through
+the REST API and writes one YAML spec per component into the repo, with no AI involved.
+It needs a Figma personal access token, and subscribers add a Specs license key.\
+`Open source` `Figma API` `Repo`
+([repo](https://github.com/DirectedEdges/specs))\
+Used in: [Figma access for agents](/ds101/figma-access-for-agents/)
+
 **Figma Code Connect**: maps a Figma component to its import in code, so agents see the
 real `import` line instead of guessing it.\
 `Paid` `Figma Org/Enterprise` `Full or Dev seat`
@@ -199,6 +206,14 @@ paid feature.\
 [write access](https://developers.figma.com/docs/figma-mcp-server/write-to-canvas/),
 [pricing note](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/))\
 Used in: [Scaling AI effort to risk](/ds101/scaling-ai-effort-to-risk/)
+
+**figma-cli**: Sil Bormüller's CLI that lets Claude Code or Cursor build in Figma
+Desktop directly, with no API token and no Figma rate limit. It also exports JSX,
+Storybook stories, and DTCG tokens, and checks a file against saved contracts in CI.
+The default connection mode patches the desktop app. Browser and Safe modes don't.\
+`Open source` `Figma Desktop` `Claude Code or Cursor`
+([repo](https://github.com/silships/figma-cli))\
+Used in: [Figma access for agents](/ds101/figma-access-for-agents/)
 
 **Other MCP connections**: Kavcic's starter set is GitHub, GitLab, Mintlify, PostHog,
 and Slack. Each one follows that tool's own plan and permissions.\

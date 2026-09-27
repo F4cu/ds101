@@ -81,6 +81,8 @@ flowchart TD
 
 </div>
 
+The design layer doesn't have to be a live connection. For mechanical work like extracting specs for a whole library, a command-line tool can do it once and leave files in the repo. See [Figma access for agents](/ds101/figma-access-for-agents/).
+
 The same scoping shows up in product UI. AWS Cloudscape's [user-authorized actions](https://cloudscape.design/gen-ai/patterns/user-authorized-actions/) pattern scopes an agent's permission per decision ("Allow this time," "Allow for this chat," or "Always allow") instead of one blanket grant. See [Agentic UI patterns](/ds101/agentic-ui-patterns/).
 
 ### Add one connection at a time

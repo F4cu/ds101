@@ -361,6 +361,11 @@ design tool, the system's own metadata, the code-mapping bridge), kept apart so 
 single connection becomes a bottleneck or a single point of failure. See
 [Scaling AI effort](/ds101/scaling-ai-effort-to-risk/).
 
+**CLI (command-line interface)** — a program run by typing short commands. For design
+systems, a CLI can extract specs from Figma or check a Figma file with a script and no
+model, so an agent reads the compact result instead of raw Figma data over MCP. See
+[Figma access for agents](/ds101/figma-access-for-agents/).
+
 **Context engineering** — building a structured, machine-readable layer of scoped
 metadata that gives an AI agent what prose documentation alone can't,
 treated as its own artifact rather than assumed to fall out of good docs; arrived at
