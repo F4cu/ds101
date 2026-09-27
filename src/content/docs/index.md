@@ -27,7 +27,8 @@ draws on them:
 
 - **Murphy Trueman**, *Design System Ops*: the backbone of the foundations and most
   governance pages, used as evidence for principles, not settings to copy
-- **Nathan Curtis**, EightShapes: team models, contribution, component APIs, cadence
+- **Nathan Curtis**, EightShapes: team models, contribution, component APIs, token
+  naming, cadence
 - **zeroheight's Design Systems Report** and **Figma's Design Executive Council**:
   survey data and company case studies
 - **Ness Grixti**: contribution, onboarding, and Wise's multi-brand system

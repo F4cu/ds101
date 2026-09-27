@@ -103,7 +103,7 @@ The same notes: "A semantic token that describes visual appearance has failed it
   "{color.purple.500}"
 ```
 
-Both tokens now hold the same purple. Only one name still tells the truth. Name semantic tokens by role and intent (`category.role.variant.state`), never by colour names, vague size terms, or generic qualifiers.
+Both tokens now hold the same purple. Only one name still tells the truth. [Token naming](/ds101/token-naming/) covers how to structure the rest of the name.
 
 ### Store tokens in the shared DTCG format
 
@@ -138,3 +138,5 @@ Per the design-system-ops notes, platform differences (web pixels vs. iOS points
 
 - **Running a primitives-only system.** Without a semantic layer, theming is impossible. Every value change means hunting down every primitive reference instead of repointing one alias.
 - **Letting token count grow faster than the product.** That growth usually means one-off tokens are being created instead of existing intent being reused.
+- **Creating component tokens for every component up front.** [Curtis](https://nathanacurtis.substack.com/p/naming-tokens-in-design-systems-9e86c7444676) adds tokens gradually, naming them inside a component and promoting them to shared tokens only when other components need the same decision.
+- **Keeping tokens nothing uses.** Murphy's [token-audit skill](https://github.com/murphytrueman/design-system-ops/blob/main/skills/token-audit/SKILL.md) flags tokens that no other token or component references. They clutter autocomplete and confuse the people choosing between them.

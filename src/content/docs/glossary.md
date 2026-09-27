@@ -30,6 +30,17 @@ letting different tools read and write the same token files. See
 **Resolver file** — a DTCG file that composes token sets into modes, such as light/dark
 or brand variants, for theming. See [Token architecture](/ds101/token-architecture/).
 
+**Token taxonomy** — the set of levels a token name can draw on (namespace, object,
+base, modifier) and the order they appear in. See [Token naming](/ds101/token-naming/).
+
+**Namespace** (token) — a prefix, such as a short system name, theme, or business
+domain, that keeps one system's tokens from colliding with another's. See
+[Token naming](/ds101/token-naming/).
+
+**Polyhierarchy** — a decision that fits two places in a token taxonomy, handled by
+aliasing one name to the other so the value lives once. See
+[Token naming](/ds101/token-naming/).
+
 **Primitive** (component) — a generic, context-free building-block component (often
 literally named `Box` or `Stack`) with direct access to design tokens but no domain
 meaning of its own; the same idea Brad Frost calls an atom. Not to be confused with a

@@ -19,6 +19,16 @@ and describes tools or examples that have since changed. Older sources used only
 - Alla Kholmatova, *Design Systems: A Practical Guide to Creating Design Languages for Digital Products* (O'Reilly, 2017)
 - [Jina Anne, "Design Systems are for People"](https://www.aiga.org/inspiration/talks/jina-anne-design-systems-are-for-people), AIGA, n.d.
 
+## Token naming
+
+- [Nathan Curtis, "Naming Tokens in Design Systems"](https://nathanacurtis.substack.com/p/naming-tokens-in-design-systems-9e86c7444676), 2020 `Dated` — predates Figma variables and DTCG resolver files, and treats mode as a naming level; cited for the taxonomy levels, completeness, local-to-global promotion, and polyhierarchy
+- [Nathan Curtis, "Reimagining a Token Taxonomy"](https://nathanacurtis.substack.com/p/reimagining-a-token-taxonomy-462d35b2b033), 2022: the Badge and Alert mismatch, the overbroad interactive token, and FigJam dot voting
+- [Murphy Trueman, "Why design system naming feels impossible"](https://blog.murphytrueman.com/p/why-design-system-naming-feels-impossible), 2025: trust and friction, abbreviations, and the decision log
+- Murphy Trueman, `design-system-ops` — [`knowledge-notes/token-architecture.md`](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/token-architecture.md), living doc: the `category.role.variant.state` path
+- Murphy Trueman, `design-system-ops` — [`skills/token-audit/SKILL.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/token-audit/SKILL.md), living doc: convention consistency, ambiguity flags, platform suffixes, and orphan tokens
+- [Romina Kavcic, "50 design token files, one problem: your agents can't read the meaning"](https://learn.thedesignsystem.guide/p/50-design-token-files-one-problem), 2026: eight names for one role, agents blending conventions, the brand-crimson test, and semantic token counts
+- [Romina Kavcic, "Name and get your tokens in 5 seconds"](https://learn.thedesignsystem.guide/p/name-and-get-your-tokens-in-5-seconds), 2025: the generator's default segment order
+
 ## Accessible color palettes
 
 - [Nathan Curtis, "Color in Design Systems"](https://nathanacurtis.substack.com/p/color-in-design-systems-a1c80f65fa3), 2016 `Dated` — written against WCAG 2.0 and HSL-lightness naming, before perceptual color spaces like OKLCH were usable in CSS; cited for the principles (tested pairs, reversed pairings, few options)
