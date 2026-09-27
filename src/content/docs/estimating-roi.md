@@ -7,11 +7,9 @@ reviewIn: 24
 An ROI estimate for a design system is only as credible as its weakest input. Label where every figure came from, cost the work and value the savings at the same hourly rate, and count payback from running totals. Almost nobody does this: zeroheight's *Design Systems Report 2026* (147 practitioners) found only 5% of teams measure ROI at all, so an honest rough estimate already puts you ahead of most of the field.
 
 :::tip[Key takeaways]
-- Label every figure as measured, estimated, or assumed
-- Cost the work and value the savings at one hourly rate
-- Count payback from running totals, not one year's figures
-- Build from your own numbers, not industry benchmarks
-- If the honest numbers don't pay back, shrink the ask
+- **Label where every figure came from.** One invented number, found by finance, discredits the correct ones next to it.
+- **Count payback from running totals.** Costs come early and benefits grow slowly, so one year's figures mislead.
+- **Shrink the ask if it doesn't pay back.** Tweaking inputs until the case works is how invented numbers get in.
 :::
 
 ## The problem

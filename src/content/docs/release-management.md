@@ -7,11 +7,9 @@ reviewIn: 12
 A version number, a changelog entry, and a migration guide are three views of the same event: they tell consuming teams what upgrading will cost them. When all three tell the truth, teams keep upgrading. When they don't, teams stop.
 
 :::tip[Key takeaways]
-- Use SemVer so impact is readable before anyone opens the diff
-- Version token changes as their own releases
-- Deprecate, then migrate, then remove, never remove by surprise
-- Put every breaking change for a release on one migration page
-- Keep the changelog public, and push each release to the teams it affects
+- **Use SemVer to signal impact.** Without it, teams can't tell a safe upgrade from a breaking one until they read the diff.
+- **Deprecate before you remove.** A removal with no warning turns an upgrade into an incident.
+- **Put breaking changes on one migration page.** Otherwise every consuming team works out the same fix on its own.
 :::
 
 ## The problem

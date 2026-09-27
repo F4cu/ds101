@@ -12,10 +12,9 @@ library or checking a file, without a model. The agent only gets the compact res
 Use MCP when you're exploring, and a CLI when the answer is already in the data.
 
 :::tip[Key takeaways]
-- Pick the access route by the job: exploring, extracting specs, or building on the canvas
-- Extract specs once with a script and commit them, so agents read files instead of Figma
-- Keep AI downstream of extraction, where judgment is actually needed
-- Check an agent's Figma edits with scripted checks before trusting them
+- **Extract specs once, then let agents read files.** A live connection re-reads huge, noisy payloads every time and uses up a daily call limit.
+- **Check an agent's canvas edits with scripts.** Otherwise nobody can see exactly what the agent changed in the file.
+- **Clear the connection method with IT first.** The CLIs store access tokens or patch the desktop app, and whoever approves tools should know.
 :::
 
 ## The problem

@@ -7,10 +7,9 @@ reviewIn: 6
 A design system's context, meaning the structured facts an AI agent needs to use it correctly, doesn't appear for free once you've written good docs. It has to be built as its own artifact: scoped, structured, and tested against how agents actually use it. Murphy Trueman and Diana Wolosin, working independently, arrived at the same shape: context split into scoped units an agent loads per task. Wolosin calls it a **context engine**.
 
 :::tip[Key takeaways]
-- Treat context as its own artifact, separate from human docs
-- Test context formats against real agent behavior before trusting them
-- Design the agent's environment, not just its instructions
-- Load only the context each task needs
+- **Build context as its own artifact.** Docs written for people rely on skimming and asking a colleague, which an agent can't do.
+- **Test context formats with real agents.** The format that looks right isn't always the one agents resolve correctly.
+- **Load only the context each task needs.** Loading everything wastes tokens and can make agents perform worse.
 :::
 
 ## The problem

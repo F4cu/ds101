@@ -7,11 +7,9 @@ reviewIn: 24
 An open contribution door doesn't produce contributors on its own. [Contribution models](/ds101/contribution-models/) answer how outside teams propose and ship changes. This page answers what makes people actually show up. Amy Hupe's five lessons on enabling contribution and Inayaili de León's talk on fostering participation start from the same observation: contribution is a behavior you build on purpose, not a feature you ship once.
 
 :::tip[Key takeaways]
-- Actively recruit the quiet ones instead of waiting for volunteers
-- Keep standards high, and give contributors hands-on help to meet them
-- Model the behavior you want in the open, and triage every contribution
-- Make contribution part of people's goals, not just goodwill
-- Pitch contribution as better context, not more speed
+- **Recruit the quiet ones.** An open door alone filters out the people whose context the system needs most.
+- **Keep standards high, and help people meet them.** A pattern published before it's ready erodes trust faster than a slow review.
+- **Triage every contribution.** A repo that never answers pull requests teaches people not to bother.
 :::
 
 ## The problem

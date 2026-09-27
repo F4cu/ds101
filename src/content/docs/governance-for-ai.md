@@ -7,10 +7,9 @@ reviewIn: 6
 An agent treats every documentation gap as a rule to follow literally. [AI readiness](/ds101/ai-readiness/) asks whether a system's metadata is explicit enough for an agent to use. This page goes further: an agent treats every gap, stale doc, and "everyone just knows" convention as literal, because it has no instinct to fall back on when the written rule and the real one disagree. A human contributor papers over that gap without noticing. An agent executes exactly what's written, or exactly what it can infer from the code.
 
 :::tip[Key takeaways]
-- Write down the rules everyone "just knows" before an agent tests them
-- Fix deferred gaps now: agents make them visible and expensive
-- Give every decision record an owner who re-checks it against reality
-- Name someone to referee when Figma, docs, and production disagree
+- **Write down the rules everyone "just knows."** An agent has no instinct to fall back on, so it follows only what's written.
+- **Give every decision record an owner.** A record fixes memory, not staleness, so without an owner it drifts out of date.
+- **Name a referee for competing sources of truth.** When Figma, docs, and code disagree, an agent can't tell which one is right.
 :::
 
 ## The problem

@@ -7,11 +7,9 @@ reviewIn: 12
 A system inventory is the record of what the design system itself contains: every token, every component, what state each one is in, and what depends on what. Keep it generated from the repo rather than typed by hand, and link each part to the parts it touches. Then any change to a token or component starts with a lookup instead of a guess.
 
 :::tip[Key takeaways]
-- Generate the inventory from the repo, don't maintain it by hand
-- Link every token to the components that use it
-- Record what each component uses and what uses it
-- Give every item a lifecycle status and a version
-- Track a large build with a doneness matrix
+- **Generate the inventory from the repo.** A hand-kept inventory starts drifting from the code the day after it's written.
+- **Link every token to its components.** Token coupling never shows up in an import, so a change reaches further than it looks.
+- **Record what each component uses.** Otherwise a component can look unused while another component renders it.
 :::
 
 ## The problem

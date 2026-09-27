@@ -7,11 +7,9 @@ reviewIn: 12
 A component gets its flexibility from smaller components nested inside it, not from piling more variants and booleans onto one flat layer. This page covers how to build that structure in Figma. [Component composition in code](/ds101/component-composition-in-code/) defines the layers (primitives, subcomponents, slots) and how the same structure is built in code.
 
 :::tip[Key takeaways]
-- Build flexibility with nested instances, not more variants
-- Treat every Figma component property like a code prop
-- Nest in layers, base components first
-- Expose only the properties each level needs
-- Use variants for closed sets of states, nesting for reusable pieces
+- **Build flexibility with nested instances.** A flat variant set eventually misses a request, and designers detach instead.
+- **Treat every component property like a code prop.** Each one is a surface someone has to maintain for good.
+- **Nest only after a second real reuse.** Nesting too early makes components so deep designers can't find the layer to edit.
 :::
 
 ## The problem

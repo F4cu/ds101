@@ -7,10 +7,9 @@ reviewIn: 24
 Audit what already exists before you design what should replace it. Two separate exercises come before the first token or component: an **interface inventory**, which catalogs every distinct UI treatment already shipping, and a **heuristic evaluation**, an expert usability review against a fixed set of principles. The inventory answers "what do we have, and where is it inconsistent?" The evaluation answers "where does it break known usability principles?"
 
 :::tip[Key takeaways]
-- Inventory every distinct UI treatment before designing anything new
-- Catalog first, judge later, in separate steps
-- Run the heuristic evaluation as its own pass, with 3–5 evaluators
-- Treat heuristic findings as hypotheses to check with real users
+- **Inventory every treatment before designing anything.** Skip it, and discovery moves into implementation, where gaps come back as blockers.
+- **Catalog first, and judge in a separate pass.** Mixing the two turns the evidence into one person's redesign preferences.
+- **Check heuristic findings with real users.** An expert review is a judgment, not evidence from users.
 :::
 
 ## The problem

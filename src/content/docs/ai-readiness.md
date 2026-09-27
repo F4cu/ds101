@@ -7,10 +7,9 @@ reviewIn: 6
 An AI-ready design system is one AI agents and tools can use, reason about, and generate from without needing knowledge nobody wrote down. Most systems assume a human who can infer intent from visual context or ask a colleague. An agent can't infer or ask. It only works with what's explicit. But the gap isn't new: the same unwritten knowledge has always confused new team members and outside contributors. The design-system-ops notes ([`knowledge-notes/ai-readiness.md`](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/ai-readiness.md)) sum it up: AI readiness is design-system quality, applied with more precision.
 
 :::tip[Key takeaways]
-- Invest in context quality at the source, because errors compound downstream
-- Publish a machine-readable index of every component
-- Describe tokens and components by purpose, not appearance
-- Document anti-patterns and edge cases, not just the happy path
+- **Fix context at the source.** Weak metadata in Figma or code turns into invented props, broken code, and failed tests downstream.
+- **Describe tokens and components by purpose.** An agent can't ask what something is for, so it guesses from the name.
+- **Publish a machine-readable component manifest.** Without one, an agent has to work out which component fits from prose docs.
 :::
 
 ## The problem

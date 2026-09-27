@@ -7,10 +7,9 @@ reviewIn: 6
 A **generative loop** is any orchestration shape where an agent's output feeds back into another round of generation. This page is about the kind that includes review: a **generator/reviewer loop**, where one agent produces work and a reviewer agent evaluates it and sends it back for revision. Pairing a generator with a reviewer only improves quality if the loop has a defined stopping point and a real way to measure whether an iteration improved. Without both, it either runs forever or settles on something nobody checked.
 
 :::tip[Key takeaways]
-- Cap the loop, and define "converged" before it runs
-- Use a review loop only when the task actually needs review
-- Measure whether a format works instead of assuming it
-- Ship the loop as a UI pattern users can touch, not just a backend step
+- **Cap the loop and define "converged."** Without both, a loop runs forever or settles on something nobody checked.
+- **Use a review loop only when needed.** It's the one pattern that can run indefinitely, so it's the costliest to get wrong.
+- **Send capped runs to human review.** Hitting the iteration limit isn't the same as converging.
 :::
 
 ## The problem

@@ -7,11 +7,9 @@ reviewIn: 12
 Some differences between iOS, Android, and web are legitimate, not drift. Every such difference is either a **value** (a different typeface for the same role) or a **structure** (a different control for the same intent), and each is fixed at a different layer. Value differences are resolved in tokens, and structural ones in component contracts.
 
 :::tip[Key takeaways]
-- Push value differences down into tokens, structural ones up into contracts
-- Let platform live in the build pipeline, not in token names
-- Make contracts checkable, not just descriptive
-- Respect a platform's own conventions on purpose, not by accident
-- Record every divergence decision where it's made
+- **Push values into tokens, structure into contracts.** Mixing them up forces one control onto every platform, or hides a contract problem in tokens.
+- **Record every divergence decision.** A difference made silently looks exactly like a bug.
+- **Respect platform conventions on purpose.** Forcing one convention onto every platform fights the OS instead of fitting it.
 :::
 
 ## The problem

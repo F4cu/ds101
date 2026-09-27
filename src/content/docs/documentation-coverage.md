@@ -7,11 +7,9 @@ reviewIn: 24
 Documentation is measured against the code, never the other way around. The code is the true answer to "what components exist." When code and docs disagree, that's drift, in one of two directions. A component in code with no docs is a coverage gap: the docs fell behind. A doc page for a component that no longer exists is an orphan: the docs missed a removal.
 
 :::tip[Key takeaways]
-- Audit docs against the code, not against the docs platform's own list
-- Report coverage as a spread across three rungs, not one percentage
-- Build onboarding people can use without asking anyone
-- Flag stale docs as a question to confirm, not an error
-- Put guidance inside the tools people already use
+- **Audit docs against the code.** The docs platform's own list lags, so it can report full coverage while gaps go unseen.
+- **Report the spread across rungs.** One percentage can look healthy while almost nothing has usage guidance.
+- **Flag unsure findings as questions.** One confident false alarm makes a team discount the whole audit.
 :::
 
 ## The problem

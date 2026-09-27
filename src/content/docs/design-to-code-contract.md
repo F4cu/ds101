@@ -7,11 +7,9 @@ reviewIn: 12
 "Done" isn't one thing. A component can be done in the sense of "design approved," "built," "documented," or "released," and each is a different bar. A design-to-code contract spells out each one, so a component isn't finished until every stage has met its own standard.
 
 :::tip[Key takeaways]
-- Define "done" separately for design, build, docs, and release
-- Close each stage's contract before the next stage starts
-- Publish the contract where every team can see it
-- Keep the contract cheap to keep current
-- Change the contract only through recorded decisions
+- **Define "done" for each stage.** Otherwise accessibility and docs quietly don't happen, because nobody's "done" included them.
+- **Close each contract before the next stage.** Gaps found later, like accessibility issues caught in QA, cost more to fix.
+- **Keep the contract cheap to update.** A stale contract is worse than none, because people trust it.
 :::
 
 ## The problem

@@ -7,11 +7,9 @@ reviewIn: 12
 An accessible component library doesn't make an accessible product, but it's still the cheapest place to fix most accessibility problems, because every fix in a component reaches every product that uses it. Accessible components still need an accessible layout around them, which [Layout accessibility](/ds101/layout-accessibility/) covers. This page covers what to check on each component, how to prove it works, and what the system can't do for the teams using it. When those checks happen is owned by [The design-to-code contract](/ds101/design-to-code-contract/), and who owns them by [Decision governance](/ds101/decision-governance/).
 
 :::tip[Key takeaways]
-- Automate the scan in CI, then test with real assistive technology
-- Document how components combine accessibly, not only one at a time
-- Publish known issues where adopting teams will see them
-- Give complex components a deeper audit
-- Keep design-stage and build-stage findings apart
+- **Automate the scan, then test by hand.** A clean automated scan still leaves most issues unchecked.
+- **Document how components combine accessibly.** Accessible parts can still add up to an inaccessible screen.
+- **Keep design-stage and build-stage findings apart.** A spec check reported as tested lets teams ship behavior nobody tried.
 :::
 
 ## The problem

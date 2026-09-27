@@ -7,10 +7,9 @@ reviewIn: 12
 A component is rarely one indivisible thing. It's built from smaller pieces, and it may itself be a piece inside something bigger. Practitioners name these layers differently (primitive, atom, subcomponent, part, compound component, slot), and the words aren't synonyms for "small component." Each answers a different question: how generic is this piece, and where is it allowed to be used? This page covers how those layers are built in code. [Component composition in Figma](/ds101/component-composition-in-figma/) covers the same structure in the design file.
 
 :::tip[Key takeaways]
-- Tell primitives (reusable anywhere) apart from subcomponents (scoped to one parent)
-- Keep subcomponents scoped to their parent in code
-- Split out a subcomponent only when a second real use shows up
-- Match part names across Figma and code
+- **Tell primitives apart from subcomponents.** Without the distinction, nobody can tell which pieces are safe to reuse elsewhere.
+- **Keep subcomponents scoped to their parent.** Exported on their own, they get combined in ways nobody designed or tested.
+- **Match part names across Figma and code.** Otherwise nested parts in design stop mapping one-to-one to subcomponents in code.
 :::
 
 ## The problem

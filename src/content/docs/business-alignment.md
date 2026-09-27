@@ -7,11 +7,9 @@ reviewIn: 24
 A design system's roadmap should stay legible against what the company cares about *right now*, not run as a self-contained backlog the rest of the org has to take on faith. The work may barely change from one year to the next, but the reason you give for funding it should follow what the company is optimizing for. [Communicating value](/ds101/communicating-value/) is about making the case to each funder. Business alignment is about keeping that case current and carrying it through to a decision.
 
 :::tip[Key takeaways]
-- Lead with growth, risk, or cost, whichever the company is focused on this cycle
-- Map the roadmap to the company's top-line goals every planning cycle
-- Ask for the first phase, not the whole vision
-- If a previous attempt failed, say what's different this time
-- When the answer is no, ask why
+- **Lead with what the company cares about now.** A pitch framed for last year's priorities sounds out of touch, however good the work.
+- **Ask for the first phase only.** A multi-year ask feels unmovable and gets approved as something other than what you meant.
+- **Say what's different from last time.** If an earlier system didn't stick, readers remember it even when you don't mention it.
 :::
 
 ## The problem

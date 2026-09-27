@@ -7,10 +7,9 @@ reviewIn: 24
 A design system implements brand identity. It doesn't own it. The design system covers product UI, built and maintained by designers and engineers. Brand guidelines cover something wider: visual identity across digital and physical surfaces, for marketers, agencies, and vendors who will never open a component library. The system should stay visually aligned with the brand without trying to be the thing that owns it.
 
 :::tip[Key takeaways]
-- Keep product UI in the design system and campaign work in brand guidelines
-- Let a brand refresh flow through the token layer, not around it
-- Keep brand values at the primitive token tier
-- Align brand and product teams on a recurring cadence
+- **Separate product UI from campaign work.** Otherwise marketing routes around the system, or the system grows features it was never built for.
+- **Let a brand refresh flow through tokens.** A refresh handled as a local fork splits that product from the system.
+- **Keep brand values at the primitive tier.** Brand values hardcoded further down turn the next rebrand into a search.
 :::
 
 ## The problem

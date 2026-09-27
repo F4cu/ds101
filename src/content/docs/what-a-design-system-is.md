@@ -7,10 +7,9 @@ reviewIn: 12
 A design system isn't a component library. It's three separate jobs that share one name: tokens, components, and governance. Most designers only ever touch the middle one, and each of the three fails in its own way when it's neglected.
 
 :::tip[Key takeaways]
-- Look after all three layers, not just the components
-- Expect most of the work to be scaffolding, not new components
-- Treat governance as what makes the system trustworthy
-- Judge the system by what it frees people to do
+- **Look after all three layers.** Treat the system as just components, and you won't see stale tokens or dead governance coming.
+- **Treat governance as what makes it trustworthy.** Without it, the system collects components by inertia instead of intent.
+- **Expect most of the work to be scaffolding.** Plan only for new components, and the audits, docs, and upkeep that keep it running get left out.
 :::
 
 ## The problem

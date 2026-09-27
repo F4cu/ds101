@@ -11,11 +11,9 @@ reviewIn: 24
 Mall treats a design system's first components the way a TV network treats a pilot episode: a small, real production run before anyone commits to a full season. The pilot tells you whether a component survives contact with a real product before it gets locked in as v1. Source: [Big Medium, "Design Systems: Pilots & Scorecards"](https://bigmedium.com/ideas/links/design-systems-pilots-scorecards.html).
 
 :::tip[Key takeaways]
-- Pick the pilot project with a shared scorecard, at the right moment
-- Build the first components from what real screens already share
-- Borrow existing building blocks before custom-building
-- Run several small pilots, then fund the next phase with measured savings
-- Aim for about 80% standard components, not 100%
+- **Build the first components from real screens.** Components built on a guess get announced and then ignored.
+- **Time the pilot window deliberately.** Join too late, and folding in system parts means a refactor no team volunteers for twice.
+- **Aim for about 80% standard components.** A system that demands 100% fights legitimate custom work, and teams leave it.
 :::
 
 ## The problem

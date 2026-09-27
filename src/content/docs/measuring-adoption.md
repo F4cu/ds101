@@ -7,11 +7,9 @@ reviewIn: 24
 Coverage and adoption answer different questions. Coverage asks whether the system *provides* what teams need. Adoption asks whether teams *actually use* it. The fixes are opposites: low coverage is a supply problem (build more), and low adoption with high coverage is a demand problem (find out why teams don't use what already exists).
 
 :::tip[Key takeaways]
-- Track component imports and token compliance, and look at the long tail
-- Break every number down by team, never just system-wide
-- Match your help to each team's adoption stage
-- Measure trust and adoption separately: people can trust a system and still not use it
-- Watch for silence: disengaged teams stop complaining before they leave
+- **Separate coverage from adoption.** Otherwise you keep building components when the real problem is that nobody uses the existing ones.
+- **Break every number down by team.** A healthy system-wide number can hide teams that are far behind.
+- **Watch for silence.** Disengaged teams stop complaining before they leave.
 :::
 
 ## The problem

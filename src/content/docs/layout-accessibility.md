@@ -7,10 +7,9 @@ reviewIn: 12
 A screen can be built entirely from components that pass their audits and still be hard to use with a screen reader. The problems come from how the components are put together: the order the page is read in, its heading structure, and the landmarks that let someone jump between regions. These all exist only once components are combined into a layout, so a design system has to handle them in its page templates and layout guidance, not in single components. An accessible layout still needs accessible components inside it, which [Component accessibility](/ds101/component-accessibility/) covers.
 
 :::tip[Key takeaways]
-- Build landmarks and a skip link into the page shell
-- Let the page set a heading's level, not the component
-- Put the most important content first in the code, not just on screen
-- Annotate a layout's keyboard order once, then only the differences
+- **Build landmarks into the page shell.** Without them, screen reader users have no quick way to jump between regions.
+- **Let the page set a heading's level.** A level fixed inside the component leaves the page with no real outline.
+- **Put important content first in the code.** Reordering with CSS changes what sighted users see first, not what a screen reader reads first.
 :::
 
 ## The problem

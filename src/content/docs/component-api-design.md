@@ -7,10 +7,9 @@ reviewIn: 12
 Every prop you ship is a promise you keep forever, or a breaking change you'll have to schedule later. Whether a component stays durable under product pressure, or slowly turns into a pile of conditional flags, comes down to a few recurring decisions. The biggest one is when to configure with a prop and when to compose with smaller pieces.
 
 :::tip[Key takeaways]
-- Make the common configurable, and the uncommon composable
-- Extend an existing component before adding a lookalike
-- Prefer composition over style overrides
-- Share decisions across platforms, not implementations
+- **Make the common configurable, the uncommon composable.** Otherwise props pile up one request at a time until the component collapses.
+- **Support only the combinations you document.** Any combination the system allows ends up in the product somewhere.
+- **Prefer composition over style overrides.** An override is a hidden dependency that can break on the next release.
 :::
 
 ## The problem

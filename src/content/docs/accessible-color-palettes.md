@@ -7,11 +7,9 @@ reviewIn: 12
 A palette is accessible when anyone using it can tell which colors are safe together without testing every pair by hand. That takes three things: each color has a job held in a token, steps are spaced by contrast, and the system publishes the pairs it has checked in every theme. [Token architecture](/ds101/token-architecture/) covers how color tokens are layered. This page covers the colors themselves.
 
 :::tip[Key takeaways]
-- Give each color one job, and put that job in a token
-- Space steps by contrast, so safe pairs are predictable
-- Check contrast on each theme's final values, not token names
-- Keep error and warning colors clearly apart from the brand
-- Write down what each color token is for
+- **Give each color one job in a token.** Components bound straight to palette steps won't change with the theme.
+- **Check contrast on every theme's final values.** A pair that passes in light mode can fail in dark mode.
+- **Keep feedback colors apart from the brand.** A red brand color can make error states invisible.
 :::
 
 ## The problem

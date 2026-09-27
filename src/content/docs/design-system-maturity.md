@@ -7,10 +7,9 @@ reviewIn: 24
 Maturity isn't one score. The Nielsen Norman Group's newer framework rates a system on six separate dimensions, and a system can be a 5 on infrastructure and a 2 on governance at the same time. Collapsing that into one number hides exactly the gap a team most needs to see. Source: [Huei-Hsin Wang, "Design-System Maturity: A 6-Dimension Framework,"](https://www.nngroup.com/articles/design-system-maturity/) NN/g, 2026.
 
 :::tip[Key takeaways]
-- Score six dimensions separately, never as one blended number
-- Run the assessment as a cross-functional conversation, not a form
-- Prefer a small balanced shape over a big uneven one
-- Judge team effectiveness by its fit to your org's size
+- **Score the six dimensions separately.** A blended score hides the weak dimension while the total keeps saying "fine."
+- **Run the assessment as a conversation.** Scores filled in alone come without the alignment that made the exercise worth running.
+- **Read each score against your org's size.** A low score can be right for a small team that doesn't need that dimension yet.
 :::
 
 ## The problem

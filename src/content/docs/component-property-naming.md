@@ -7,11 +7,9 @@ reviewIn: 12
 A property name is the word designers pick in Figma's properties panel and developers type in code. If both say the same thing, a spec moves from one tool to the other without translation. If they don't, every handoff turns into a lookup. Settle names, options, and defaults once, before anyone builds, and keep them identical in both tools.
 
 :::tip[Key takeaways]
-- Agree on anatomy and props before anyone builds
-- Use the same names, options, and defaults in Figma and code
-- Name booleans for states that default to false
-- Switch from a boolean to an enum past two values
-- Name layers identically in every variant
+- **Agree on the API before anyone builds.** A designer and a developer working alone rarely end up with the same names or structure.
+- **Use the same names in Figma and code.** Otherwise nobody can read a Figma instance and know which props to write.
+- **Name layers identically in every variant.** A renamed layer quietly drops an instance's edits when someone switches variants.
 :::
 
 ## The problem

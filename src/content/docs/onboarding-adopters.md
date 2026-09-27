@@ -7,11 +7,9 @@ reviewIn: 24
 A new designer or engineer decides in their first week whether to build with the system or around it. Onboarding that's specific to this system, honest about its gaps, and clear about what to do when a part is missing keeps them building with it. [Measuring adoption](/ds101/measuring-adoption/) places onboarding at the first stage of adoption, before a team is using the system day to day.
 
 :::tip[Key takeaways]
-- Write onboarding for this system, with its real names and commands
-- Give designers and engineers separate paths
-- Say what to do when the system doesn't have something
-- End the first two weeks with one real piece of work
-- Mark team policies as decisions to confirm, not good practice
+- **Write onboarding for this system specifically.** Generic docs teach nothing, so newcomers start building around the system in week one.
+- **Say what to do when a part is missing.** The first gap decides whether a newcomer waits for the system or builds their own.
+- **Keep onboarding self-serve and easy to update.** Onboarding that needs a person, or a reshoot, for every change goes stale.
 :::
 
 ## The problem

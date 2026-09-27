@@ -7,11 +7,9 @@ reviewIn: 6
 Not every component deserves the same documentation depth, audit rigor, or level of AI access. Effort should scale with implementation risk, and agent access with proven value: scoped on purpose, not maximized by default. Knowing where to spend depth is itself a design-system skill.
 
 :::tip[Key takeaways]
-- Rate components by how dangerous they are to get wrong, not how complex they look
-- Spend documentation and audit depth where the rating is highest
-- Split agent access into separate, scoped layers
-- Add one tool connection at a time, and expand only once it proves useful
-- When a connection fails, say so and carry on without it
+- **Rate components by implementation danger.** One bar for everything starves the riskiest components of attention.
+- **Add one tool connection at a time.** An agent wired to everything at once can't be debugged.
+- **Fail honestly when a connection breaks.** A workflow that retries forever, or carries on as if nothing failed, hides missing data.
 :::
 
 ## The problem

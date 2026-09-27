@@ -7,10 +7,9 @@ reviewIn: 6
 The rest of this section treats AI as a consumer of the design system: an agent reading tokens, components, and docs. This page covers the other direction. Your product now ships chat interfaces, generated content, and agents that act on a user's behalf, and the design system needs real patterns for that surface: components, not just guidelines. A handful of mature systems have already published theirs.
 
 :::tip[Key takeaways]
-- Ship AI transparency as a component, not a policy page
-- Scope authorization to risk and reversibility
-- Treat conversations and automations as different interactions
-- Phrase actions so the user stays the initiator
+- **Ship AI transparency as a component.** A guidelines page gets skipped, so each screen discloses AI differently or not at all.
+- **Scope authorization to risk.** One prompt for every action either under-protects irreversible ones or interrupts trivial ones.
+- **Separate conversations from automations.** An automated flow treated like a chat can run high-risk actions with no review step.
 :::
 
 ## The problem

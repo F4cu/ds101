@@ -7,10 +7,9 @@ reviewIn: 24
 Almost every real governance failure, and every real success, only makes sense in context: what worked for one team's size, stage, and structure would have failed for another. These four cases are worked examples, not templates. Each ends with what made the outcome depend on its context.
 
 :::tip[Key takeaways]
-- Register a change centrally even when it looks local (Wise)
-- Don't build governance a system hasn't earned yet (zeroheight data)
-- A small, named group of champions beats an open door (Grammarly)
-- Publish what you want built before waiting for proposals (GOV.UK)
+- **Register changes centrally, even local ones.** At Wise, a local theme fork missed nested components still bound to the old tokens.
+- **Don't build governance a system hasn't earned.** A review board can't rescue a library that's missing what teams need.
+- **Publish what you want built.** GOV.UK found that waiting for proposals brought in ones the community didn't need.
 :::
 
 ## The problem

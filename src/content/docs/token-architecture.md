@@ -7,11 +7,9 @@ reviewIn: 12
 Tokens work in three layers: raw values, the intent those values serve, and optionally the components that use them. References only ever point one layer down. That's what makes a rebrand or a dark theme a one-line change instead of a search through the whole codebase.
 
 :::tip[Key takeaways]
-- Reference strictly downward: component → semantic → primitive
-- Name semantic tokens for intent, never appearance
-- Store tokens in the shared DTCG format
-- Keep platforms out of token names; let tooling translate
-- Treat every token name as a contract with its consumers
+- **Reference strictly one tier down.** A token that skips the semantic tier silently misses the next rebrand.
+- **Name semantic tokens for their purpose.** A name that describes a color stops being true once the brand changes.
+- **Treat token names as contracts.** Renaming one breaks every consumer that uses it, people and agents alike.
 :::
 
 ## The problem

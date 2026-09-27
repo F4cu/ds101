@@ -7,11 +7,9 @@ reviewIn: 24
 A team model decides who builds and owns the design system: one dedicated team, a federation of product teams, or a core and a federation feeding each other. Nathan Curtis's taxonomy is still the reference point, and his own article on it is called ["Team Models for Scaling a Design System."](https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0) No model fits every org. The right one changes with size and maturity.
 
 :::tip[Key takeaways]
-- Start centralized on the core, and add federation on top on purpose
-- Don't federate to fix a staffing shortage: it spreads the shortage out
-- Staff the core team across disciplines, not just design and engineering
-- Give the core team service levels, like any infrastructure
-- Revisit the model as the org grows
+- **Start centralized, then add federation on purpose.** The wrong model gives you a bottleneck everyone routes around, or components nobody maintains.
+- **Don't federate to fix a staffing shortage.** Federation spreads the shortage out and makes it harder to see.
+- **Revisit the model as the org grows.** A small org pays for coordination it doesn't need, and a large one ends up understaffed.
 :::
 
 ## The problem

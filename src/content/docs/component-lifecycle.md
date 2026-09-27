@@ -7,10 +7,9 @@ reviewIn: 24
 Every component enters the system through a decision and should leave through one too. This page owns those decisions: how to sort a request, what a new component has to clear to get in, and when an existing one should go. [Release management](/ds101/release-management/) covers the mechanics of shipping and retiring it. [Decision governance](/ds101/decision-governance/) covers how the decision gets owned and recorded.
 
 :::tip[Key takeaways]
-- Sort each request into a lane before debating it
-- Add a component only when 3+ teams need it now, for the same user goal
-- Hold new components to the quality bar before they ship, not after
-- Remove components on clear triggers, always with a migration path
+- **Sort each request into a lane first.** Otherwise a new component gets reviewed like a quick bug fix, or the reverse.
+- **Add a component only when 3+ teams need it.** Without a bar, the system grows by inertia instead of intent.
+- **Remove components on clear triggers.** A system with no way to remove things only grows until it collapses.
 :::
 
 ## The problem

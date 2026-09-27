@@ -7,11 +7,9 @@ reviewIn: 6
 A page of prose with a sidebar is a good shape for a person skimming for one fact. It's a poor shape for a model that has to parse the whole thing to find it. Documentation for agents needs structured metadata as a first-class artifact, not an appendix to the human docs.
 
 :::tip[Key takeaways]
-- Put exact contracts in JSON, and judgment calls in prose
-- Expect the same structuring work to help human readers too
-- Treat tokens as an API: describe your most-used ones first
-- Name components by their role, not their look
-- Build a rule into the component, so docs can't drift from what ships
+- **Put contracts in JSON, judgment in prose.** One format for both leaves exact values ambiguous or strips nuance from guidance.
+- **Treat tokens as an API.** Without descriptions, an agent sees a wall of values with no reason to pick one.
+- **Build the rule into the component.** A rule on a separate docs page drifts from what ships.
 :::
 
 ## The problem

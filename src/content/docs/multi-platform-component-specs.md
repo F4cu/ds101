@@ -7,10 +7,9 @@ reviewIn: 12
 Once a design system ships to several platforms, a component's source of truth has to be platform-neutral data, not one tool's file. That's the only way independent platform teams build the same thing without drifting apart.
 
 :::tip[Key takeaways]
-- Write specs precise enough for teams who never talk to each other
-- Define components as structured data, and generate Figma and code from it
-- Use the shared DTCG format as the token floor
-- Keep one neutral definition, not one hand-written spec per platform
+- **Write specs for teams who never meet.** Each platform team fills the gaps differently, and the drift stays hidden until users notice.
+- **Keep one neutral definition for every platform.** Specs hand-written per platform drift apart, just like parallel code does.
+- **Check tool support before adopting DTCG.** A stable spec doesn't mean every tool in your pipeline supports it yet.
 :::
 
 ## The problem

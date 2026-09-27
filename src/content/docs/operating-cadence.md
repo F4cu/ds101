@@ -7,11 +7,9 @@ reviewIn: 24
 [Governance](/ds101/decision-governance/) decides what's in the system and why. Operating cadence makes sure people outside the core team actually *know* that. It takes several channels working together: a release rhythm, a standing place to ask questions, a named guide for bigger work, advocates, and a route for feedback to get back in. A system can be perfectly governed and still fail if nobody hears about a change, knows who to ask, or has anywhere to complain.
 
 :::tip[Key takeaways]
-- Organize channels by audience, not by topic
-- Release on a regular rhythm, and run big changes like a campaign
-- Hold recurring office hours with a stated purpose
-- Assign a steward to every larger contribution
-- Start with the smallest cadence your team can actually sustain
+- **Start with the smallest cadence you can sustain.** Promises a small team drops within a month hurt trust more than never making them.
+- **Hold recurring office hours.** Without a standing place to ask, questions go to whoever happens to be around.
+- **Assign a steward to larger contributions.** Without a guide, big contributions stall when the contributor doesn't know how to finish.
 :::
 
 ## The problem

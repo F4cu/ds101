@@ -7,11 +7,9 @@ reviewIn: 24
 A component's quality depends on where it's used. A component that passes isolated testing (accessibility checks, visual QA, token compliance) can still fail where it actually lives. [Measuring adoption](/ds101/measuring-adoption/) asks "does the system provide this?" and "do teams use it?" This page adds a third question: *does it perform in the specific context and journey it's placed in?*
 
 :::tip[Key takeaways]
-- Tag analytics events with both the component and its journey context
-- Rate a component's risk per placement, not once per component
-- Slice detachment spikes by page to tell a flaw from a context mismatch
-- Trace funnel drop-offs back to the component at that step
-- Demand more evidence for context-level findings, not less
+- **Tag analytics with component and journey.** System-wide totals can stay green while a component hurts one high-stakes flow.
+- **Rate risk per placement.** The same component can be harmless on a dashboard and costly in checkout.
+- **Check other contexts before rebuilding.** A component that fails in one flow may work fine everywhere else.
 :::
 
 ## The problem

@@ -7,11 +7,9 @@ reviewIn: 12
 A token's name is how people and agents find the decision behind it. Design systems don't share a naming grammar, so the job isn't to find the right one. Pick a structure, use only the levels each token needs, and back every semantic name with a description that says what it's for.
 
 :::tip[Key takeaways]
-- Pick one naming structure and write it down
-- Order name segments from broad to specific
-- Use only the levels a token needs
-- Describe every semantic token, not just name it
-- Check new names against the convention automatically
+- **Use one naming structure everywhere.** With mixed conventions, nobody can tell when two tokens mean the same thing.
+- **Describe every semantic token.** Without a description, an agent guesses from the name and can pick the wrong color.
+- **Check new names in CI.** A convention that's only written down drifts as more people add tokens.
 :::
 
 ## The problem

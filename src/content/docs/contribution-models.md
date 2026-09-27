@@ -7,11 +7,9 @@ reviewIn: 24
 A contribution model decides how people outside the core team propose, build, and ship changes to the system. It sits between two neighbors. [Team models](/ds101/team-models/) decide who owns the system. [Component lifecycle](/ds101/component-lifecycle/) decides what a contribution has to clear to get in. [Fostering contribution](/ds101/fostering-contribution/) covers the culture that makes people show up at all.
 
 :::tip[Key takeaways]
-- Fit the process to your org's real problem: visibility at scale, skills when small
-- Count contributions, not participation
-- Match the workflow to the size of the contribution, with a steward for big ones
-- Publish what you want built instead of waiting for proposals
-- Expect a small group of contributors, however open the door is
+- **Fit the process to your org's problem.** A process built for the wrong problem ends up as a pipeline nobody uses.
+- **Match the workflow to the contribution's size.** One process for everything slows small fixes down and lets big ones stall halfway.
+- **Plan for a small group of contributors.** Opening the door to everyone rarely brings in more than a handful of people.
 :::
 
 ## The problem

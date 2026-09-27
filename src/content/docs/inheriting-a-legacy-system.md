@@ -7,11 +7,9 @@ reviewIn: 24
 Most design-system writing assumes you're building from zero. Most real systems aren't met that way: someone else built this one, left, and now you're running it. In Murphy Trueman's framing, that has already happened two or three times at most organizations with a system old enough to matter. Walking in cold takes a different discipline than building fresh: **design system archaeology**, reading what's there to understand what was meant, before you touch anything.
 
 :::tip[Key takeaways]
-- Read the system to understand what was meant before judging what's broken
-- Treat any decision you can't explain as important until proven otherwise
-- Ship one small, precise fix in your first 90 days, not a rebuild
-- Renovate one dial at a time
-- Roll out a new generation incrementally, alongside the old one
+- **Read the system before judging it.** A confident rebuild brings back edge cases the last team already solved.
+- **Ship one small fix in your first 90 days.** A rebuild or rename that early throws away knowledge built into the old parts.
+- **Trace usage before deprecating anything.** The riskiest users are often internal tools nobody thinks to check.
 :::
 
 ## The problem

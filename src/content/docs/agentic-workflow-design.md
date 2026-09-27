@@ -7,11 +7,9 @@ reviewIn: 6
 Agentic workflows are a coordination problem, not a capability problem. When you chain AI agents together (small automated workers, each doing one job), the hard part isn't making any one agent smarter. It's defining how they hand work to each other, and exactly where a human steps in. Skip either and you get output nobody can trust or explain.
 
 :::tip[Key takeaways]
-- Use a plain workflow, not an agent, when the steps are the same every time
-- Pick the simplest orchestration pattern that does the job
-- Set autonomy per action, not per agent
-- Never silently skip a failed step
-- Scope every claim to what the agent actually inspected
+- **Use a workflow when the steps never change.** An agent on a fixed task adds cost and complexity with no payoff.
+- **Set autonomy for each action.** Otherwise a trivial fix and a breaking change get the same level of review.
+- **Never silently skip a failed step.** People assume a check that didn't run has passed.
 :::
 
 ## The problem

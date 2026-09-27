@@ -7,11 +7,9 @@ reviewIn: 24
 Governance is how a design system decides things on purpose, and how it remembers what it decided. A governed system can tell you *why* it looks the way it does. An ungoverned one just accumulates. This page covers who decides and how decisions get recorded. [Component lifecycle](/ds101/component-lifecycle/) covers the criteria for what enters and leaves the system. Governance matures in stages, and most teams aren't at the end state. That's fine, as long as they know which stage they're at.
 
 :::tip[Key takeaways]
-- Record every decision, including the proposals you declined
-- Write down who owns each decision, so someone can close it
-- Make accessibility everyone's standard, with a specialist as escalation
-- Let knowledge flow upstream from product teams, not only down
-- Know which governance maturity stage you're at
+- **Record decisions, including declined ones.** Without records, teams argue the same questions forever.
+- **Write down who owns each decision.** When roles are implied, every question gets re-decided informally, and differently each time.
+- **Make accessibility everyone's standard.** Routing it all to one specialist makes them a bottleneck and pushes issues to late reviews.
 :::
 
 ## The problem

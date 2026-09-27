@@ -7,11 +7,9 @@ reviewIn: 6
 [Agentic workflow design](/ds101/agentic-workflow-design/) sets an autonomy level per action: how much review it needs before it takes effect. CI (continuous integration, the automated pipeline that tests and ships code changes) is where most of those levels actually get enforced for anything touching code, tokens, or docs. An agent that can write files but can't merge them is only really constrained if something sits between "the agent produced this" and "this is live." That something is almost always a CI job.
 
 :::tip[Key takeaways]
-- Keep the agent read-only, and let a separate job do the writing
-- Assign trust tiers per change, not per agent
-- Run drift detection on a schedule, and give its PRs an owner
-- Feed the pipeline structured metadata, not prose
-- Make metadata completeness a merge gate, like a failing test
+- **Keep the agent read-only.** An agent with write access is one prompt injection away from an unauthorized change.
+- **Set trust tiers for each change.** Otherwise a lint fix and a breaking token change get the same treatment.
+- **Make metadata completeness a merge gate.** A manual checklist item gets skipped under deadline pressure.
 :::
 
 ## The problem

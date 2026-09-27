@@ -7,10 +7,9 @@ reviewIn: 24
 A design system has to justify itself in the funder's terms. "It's more consistent" and "it's more efficient" are true, but they read as nice-to-haves to anyone who doesn't use the system day to day. The bar is low industry-wide: zeroheight's *Design Systems Report 2026* (147 practitioners) found only **5%** of teams measure ROI at all. A team with any credible value story is already ahead of most of the field.
 
 :::tip[Key takeaways]
-- Translate value into what each funder cares about: cost, velocity, or speed to market
-- Argue beyond productivity: retention, new markets, and craft
-- Put a dollar figure on it, even a rough one
-- Keep internal health metrics as supporting detail, not the headline
+- **Translate value into each funder's terms.** "Consistent" and "efficient" read as nice-to-haves to anyone outside the team.
+- **Put a dollar figure on it.** A rough number is harder to dismiss than "it saves time," and funders can repeat it.
+- **Argue beyond productivity.** A case built only on saved hours misses retention, new markets, and craft.
 :::
 
 ## The problem

@@ -7,11 +7,9 @@ reviewIn: 24
 [Measuring adoption](/ds101/measuring-adoption/) tells you whether teams use the system at all. Dependency observability looks one layer down, at the teams that *are* using it. Which version are they on? Which props do they reach for? Which tokens do they quietly skip in favor of raw values? And who built their own version because the system's didn't fit? A system can have excellent adoption numbers and still be nearly blind on all four.
 
 :::tip[Key takeaways]
-- Know which team is on which version before shipping a breaking change
-- Treat a constantly overridden prop as a wrong default
-- Scan for raw values that bypass tokens
-- Look for lookalike components outside the system's own repos
-- Borrow inventory tools from supply-chain security
+- **Track who is on which version.** Without it, a breaking change's reach only shows up as a flood of broken builds.
+- **Scan for token bypass.** Hardcoded values undermine theming and never show up in import counts.
+- **Look for parallel implementations.** A team that built its own version is invisible to every import count.
 :::
 
 ## The problem

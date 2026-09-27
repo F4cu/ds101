@@ -11,11 +11,9 @@ reviewIn: 24
 At scale, a design system is a small organization inside a bigger one, and it has to stay legible to, and connected with, everything around it. Staying aligned takes a toolkit, not one framework: a way to map who your stakeholders are, and others to match altitude, timing, and pitch to each group. This whole page draws on Ashton-Booth's talk.
 
 :::tip[Key takeaways]
-- Map stakeholders by how often they use the system and how much they influence it
-- Answer each group's question at the altitude they ask it from
-- Plan on three horizons at once: now, next, and future
-- Measure perception, usability, and adoption on different clocks
-- Revisit the mapping every planning cycle, not just at launch
+- **Answer at each group's altitude.** A list of shipped components doesn't land with someone asking about impact.
+- **Run all three horizons at once.** Only short-term work means constant firefighting, and only long-term work means a mission statement with no delivery.
+- **Revisit the mapping every planning cycle.** A map made at launch goes stale as the organization changes.
 :::
 
 ## The problem

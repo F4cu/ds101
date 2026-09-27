@@ -7,11 +7,9 @@ reviewIn: 24
 Most design-system advice assumes a normal software lifecycle: a few years, one deploy pipeline, one company that owns it end to end. Industrial products don't work that way. Factory automation software or a medical equipment interface can stay in the field for decades, be maintained by a team that has changed twice, and end up owned by a different company after an acquisition. At that scale, the system's job is holding one design language together across products that were never built at the same time, on the same stack, or by the same team.
 
 :::tip[Key takeaways]
-- Consolidate parallel systems into one instead of maintaining both
-- Support several tech stacks from one design source
-- Plan legacy support from the start, not as a retrofit
-- Open-source the design assets, so any team can adopt them
-- Build the system to absorb acquisitions
+- **Consolidate parallel systems into one.** A system per product line duplicates work and makes the portfolio feel inconsistent.
+- **Support several tech stacks from one source.** Enforcing one framework forces every product team into a migration.
+- **Plan legacy support from the start.** Products stay in the field for decades and get stranded outside whatever system comes next.
 :::
 
 ## The problem

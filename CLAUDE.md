@@ -77,8 +77,15 @@ table of contents lists every practice as a short label. See `release-management
 2. **Lead** (no heading): 1–3 plain sentences stating the page's main takeaway. Starting
    with the takeaway always makes sense. Putting it in a heading doesn't, because long
    sentence headings clutter the TOC. No eyebrow labels anywhere.
-3. **`:::tip[Key takeaways]`** aside: 3–5 bullets (never more), one per key practice, each
-   written as advice. On pages with more practices, pick the ones a reader most needs.
+3. **`:::tip[Key takeaways]`** aside: exactly 3 bullets, placed right after the lead. Each
+   bullet is a bold imperative sentence (the advice, ≤ ~7 words) followed by one short plain
+   sentence saying what goes wrong without it, so the bullet makes sense to someone who
+   hasn't read the page: `- **Describe every semantic token.** Without a description, an
+   agent guesses from the name and can pick the wrong color.` Pick by risk: the three
+   practices that prevent the most common or most costly failures (those in `## The
+   problem`, `## Common mistakes`, or the sources' warnings), not the ones easiest to
+   summarize. Keep
+   the reason general. Named examples stay in the body. See `token-naming.md`.
 4. **`## The problem`**: the concrete failure mode that happens without this practice area.
 5. **The core section(s)**, chosen by page type:
    - **Practice** (default, the page is a set of things to do): `## Practices`.
