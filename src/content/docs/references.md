@@ -317,7 +317,9 @@ and describes tools or examples that have since changed. Older sources used only
 
 - [Nathan Curtis, "Figma Component Specs on Command"](https://nathanacurtis.substack.com/p/figma-component-specs-on-command), 2026: MCP vs. mechanical extraction, the button and action list compression figures, AI downstream of specs
 - [Directed Edges, `specs`](https://github.com/DirectedEdges/specs), living doc: `specs-cli` setup, personal access token, and licensing
-- [Sil Bormüller, `figma-cli` README](https://github.com/silships/figma-cli/blob/main/README.md), living doc: connection modes, the self-measured token comparison with API-based MCP, and the `snapshot`/`check` commands
+- [Sil Bormüller, `figma-cli` README](https://github.com/silships/figma-cli/blob/main/README.md), living doc: connection modes, the self-measured token comparison with API-based MCP, the `snapshot`/`check` commands, and reuse handles with `instantiate`
+- [Sil Bormüller, `figma-cli` `roundtrip.js`](https://github.com/silships/figma-cli/blob/main/src/lib/roundtrip.js), living doc: the "renders white" failure and the token-layer comparison behind `check --roundtrip`
+- [Nathan Curtis, "What Component Specs Leave Behind"](https://nathanacurtis.substack.com/p/what-component-specs-leave-behind), 2026: rendering specs back into Figma, the hex-for-token loss, and what specs can't carry yet
 - [Sil Bormüller, `figma-cli` SECURITY.md](https://github.com/silships/figma-cli/blob/main/SECURITY.md), living doc: what each connection mode touches
 
 ## Tooling

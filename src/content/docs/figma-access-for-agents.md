@@ -140,6 +140,30 @@ run on every change). He
 verified it against GitHub's Primer, where a one-character typo in a single variant name
 was caught in under a second.
 
+### Prove the round trip before trusting an import
+
+Moving a token system between files, or from code into Figma, means writing it out as
+text and reading it back. If that step drops anything, nothing errors. Bormüller's
+[roundtrip code](https://github.com/silships/figma-cli/blob/main/src/lib/roundtrip.js)
+describes what happens instead: "tokens re-import with no value and every affected
+surface renders white, which only a human notices, days later, by looking." A **round
+trip** is the test: export, import, and compare what came back with what went in.
+`figma-cli check --roundtrip` does this and names every collection, mode, or value that
+changed.
+
+His fixes show where the losses hide. An export that samples colors from fills, not the
+variables, loses the real token names, so rebuilt designs can't bind to them. Aliases
+that point into a published library came out as raw IDs rather than names, breaking the
+semantic-to-primitive chain a [rebrand](/ds101/token-architecture/) depends on.
+
+[Curtis](https://nathanacurtis.substack.com/p/what-component-specs-leave-behind) runs
+the same test on components, rendering specs back into Figma: "The best way to find out
+what a contract holds is to make it give the component back." First on his list of
+losses is "emitting a hex code when a color token is bound," a component that looks
+right today and misses the next rebrand. Don't expect a zero diff. He found intent specs
+can't carry yet, like the order of props in Figma's panel. His advice is to loop until
+you know "what you are missing, and how much you value it."
+
 ### Clear the connection method with IT first
 
 Both CLIs reach further than a browser tab does, and whoever approves tools should know
@@ -163,6 +187,11 @@ company."
 - **Treating a failed check as a mistake.** In Bormüller's words, "Red means *changed*,
   not *wrong*." If the change was intended, take a new snapshot and review the diff, as
   you would with a snapshot test in code.
+- **Letting an agent copy a component instead of placing an instance.** A copy looks
+  identical but isn't linked to the library, so it misses every later update, including
+  a rebrand. Bormüller's `figma-cli` export gives each component a reuse handle (its
+  library key and node ID), and `instantiate` uses it to place a real instance, so "your
+  file stays consistent with the source system."
 - **Dropping MCP entirely.** Curtis's case is against using a live connection for
   mechanical extraction, not against MCP. Open-ended questions about one component
   still suit a live connection.

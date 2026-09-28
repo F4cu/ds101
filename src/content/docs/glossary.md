@@ -377,6 +377,10 @@ systems, a CLI can extract specs from Figma or check a Figma file with a script 
 model, so an agent reads the compact result instead of raw Figma data over MCP. See
 [Figma access for agents](/ds101/figma-access-for-agents/).
 
+**Round trip** — exporting a design system (tokens or component specs) and importing it
+back, then comparing the result with the original to find what the format lost. See
+[Figma access for agents](/ds101/figma-access-for-agents/).
+
 **Context engineering** — building a structured, machine-readable layer of scoped
 metadata that gives an AI agent what prose documentation alone can't,
 treated as its own artifact rather than assumed to fall out of good docs; arrived at
