@@ -4,10 +4,10 @@ reviewed: 2026-09-18
 reviewIn: 12
 ---
 
-A component gets its flexibility from smaller components nested inside it, not from piling more variants and booleans onto one flat layer. This page covers how to build that structure in Figma. [Component composition in code](/ds101/component-composition-in-code/) defines the layers (primitives, subcomponents, slots) and how the same structure is built in code.
+A component gets its flexibility from smaller components nested inside it and from slots that accept them, not from piling more variants and booleans onto one flat layer. This page covers how to build that structure in Figma. [Component composition in code](/ds101/component-composition-in-code/) defines the layers (primitives, subcomponents, slots) and how the same structure is built in code.
 
 :::tip[Key takeaways]
-- **Build flexibility with nested instances.** A flat variant set eventually misses a request, and designers detach instead.
+- **Build flexibility with nested instances and slots.** A flat variant set eventually misses a request, and designers detach instead.
 - **Treat every component property like a code prop.** Each one is a surface someone has to maintain for good.
 - **Nest only after a second real reuse.** Nesting too early makes components so deep designers can't find the layer to edit.
 :::
@@ -20,9 +20,11 @@ A component built as one flat layer tree, with a variant for every case, eventua
 
 ## Practices
 
-### Build flexibility with nested instances
+### Build flexibility with nested instances and slots
 
-A subcomponent placed inside a parent, like an icon inside a Button or a `CardMedia` inside a Card, is a nested instance. Figma lets the parent expose the nested instance's own properties (its instance swap, its visibility boolean, its text) in the parent's properties panel. A designer working on the Button never has to drill into the icon's layer to change it. [fourzerothree.in](https://www.fourzerothree.in/p/crafting-components-with-subcomponents) describes this as the mechanical form of a slot: the nested instance is the subcomponent, and the exposed property makes it swappable from the parent. [story.to.design](https://story.to.design/blog/subcomponents-more-flexible-design-systems) describes the payoff: instead of detaching a component because the variant they need doesn't exist, a designer composes existing subcomponents into a slot. Their example is an icon nested inside a button.
+A subcomponent placed inside a parent, like an icon inside a Button or a `CardMedia` inside a Card, is a nested instance. Figma lets the parent expose the nested instance's own properties (its instance swap, its visibility boolean, its text) in the parent's properties panel. A designer working on the Button never has to drill into the icon's layer to change it. [story.to.design](https://story.to.design/blog/subcomponents-more-flexible-design-systems) describes the payoff: instead of detaching a component because the variant they need doesn't exist, a designer composes existing subcomponents into it. Their example is an icon nested inside a button.
+
+A nested instance holds one piece in one fixed place. Before Figma had native slots, [fourzerothree.in](https://www.fourzerothree.in/p/crafting-components-with-subcomponents) treated a nested instance with an exposed swap property as the mechanical form of a slot. Figma now has [slots](https://help.figma.com/hc/en-us/articles/38231200344599-Use-slots-to-build-flexible-components-in-Figma) as a component property: "flexible areas placed inside main components that let you freely add, resize, and arrange content within an instance without having to detach it." [Murphy Trueman](https://murphytrueman.substack.com/p/slots-and-the-control-paradox) describes the change: the earlier workarounds "had limitations and took time for less experienced designers to learn. Slots make this pattern native." [Choosing variants, instance swap, or slots](#choosing-variants-instance-swap-or-slots) covers which one a piece needs.
 
 ### Treat every component property like a code prop
 
@@ -49,13 +51,17 @@ Icons follow the same pattern one level down. One master icon component, with si
 
 In the same example, each level exposes only the properties that matter at that level. Letting every nested property bubble all the way to the top-level component defeats the point of layered nesting. A designer should see what's relevant to the level they're editing, and nothing else.
 
+### Limit each slot to preferred instances
+
+Without a list, a slot accepts any instance in the library. Figma lets a slot carry a curated list of [preferred instances](https://help.figma.com/hc/en-us/articles/38231200344599-Use-slots-to-build-flexible-components-in-Figma), plus an "Only allow preferred instances" setting that tells designers to stick to that list. [Curtis](https://nathanacurtis.substack.com/p/slots-in-design-systems) includes "preferred or permitted children by both type and quantity" among the properties of a well-architected slot, "such as only Checkbox Items in a Checkbox Group's slot but any quantity you need." [Trueman](https://murphytrueman.substack.com/p/slots-and-the-control-paradox) calls it "maintaining guardrails while enabling creativity." In code, the same idea is a [typed container](/ds101/component-composition-in-code/#slots).
+
 ### Nest only after a second real reuse
 
 fourzerothree.in warns that nesting for flexibility nobody needs yet makes a component so deep that other designers can't find the layer they're supposed to edit. Wait for a second real reuse before splitting a piece into its own nested instance. It's the same discipline as the [criteria for adding a component](/ds101/component-lifecycle/#criteria-for-adding-a-component).
 
-## Choosing variants or nesting
+## Choosing variants, instance swap, or slots
 
-Nested instances don't replace variants. They solve different problems, and reaching for a variant when the real need is a swappable piece is how a variant set grows past the point anyone can read it at a glance.
+The three don't replace each other. [Figma's guidance](https://help.figma.com/hc/articles/38741465279895) separates them by how much the consumer may change: variants for states, instance swap for a fixed piece with a few swappable options, slots for freeform content inside fixed boundaries. Reaching for a variant when the real need is a swappable piece or open content is how a variant set grows past the point anyone can read it at a glance.
 
 ### Variants
 
@@ -75,9 +81,13 @@ button:
 
 Read it as: whenever `disabled` is true, the button's root element gets 0.36 opacity, whatever the other props are. Figma can't express a rule like that, so the file repeats it 96 times. [Multi-platform component specs](/ds101/multi-platform-component-specs/#define-components-as-data-and-generate-figma-from-it) covers moving a component's definition into data.
 
-### Nested instances
+### Instance swap
 
-Use them when a piece needs its own independent properties, or gets reused inside more than one parent.
+Use a nested instance with a swap property when a piece needs its own independent properties, or gets reused inside more than one parent, but its place in the layout stays fixed. Figma's example is a browser tab whose icon "must stay fixed to the right of the tab text" and can be swapped for another icon, with "at most, *one* instance at a time." It's the more rigid choice, which is the point: it suits components that need "guardrails around how much an asset can be configured."
+
+### Slots
+
+Use a slot when consumers need to add, remove, or rearrange several pieces, while the component's own styling (Figma names "padding, border radius, and drop shadows") stays consistent. The trade-off is in what the instance can't touch. A slot's position, auto layout flow, and constraints can only be changed in the main component, and [component properties](https://help.figma.com/hc/en-us/articles/38231200344599-Use-slots-to-build-flexible-components-in-Figma) can't be applied to layers inside a slot.
 
 ## Common mistakes
 

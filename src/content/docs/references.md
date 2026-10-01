@@ -82,6 +82,10 @@ and describes tools or examples that have since changed. Older sources used only
 - [Radix Primitives, "Dialog"](https://www.radix-ui.com/primitives/docs/components/dialog), living doc: the Dialog anatomy example
 - [Workday Canvas Design System, "Compound Components"](https://github.com/Workday/canvas-kit/blob/master/modules/docs/mdx/COMPOUND_COMPONENTS.mdx), living doc: the compound Tabs example
 - [MUI, "Button API"](https://mui.com/material-ui/api/button/), living doc: the `startIcon` slot prop
+- [Radix Primitives, `create-context.tsx`](https://github.com/radix-ui/primitives/blob/main/packages/react/context/src/create-context.tsx), living doc: the error a part throws outside its parent
+- [Kent C. Dodds, "How to use React Context effectively"](https://kentcdodds.com/blog/how-to-use-react-context-effectively), 2021: throwing when a context hook is used outside its provider
+- [Braid Design System, "Layout"](https://seek-oss.github.io/braid-design-system/foundations/layout), living doc: layout components own all spacing between elements
+- [React Spectrum, "Dialog"](https://react-spectrum.adobe.com/Dialog), living doc: Spectrum 2 Dialog slots, and `CustomDialog` for custom layouts
 
 ## Component composition in Figma
 
@@ -90,6 +94,10 @@ and describes tools or examples that have since changed. Older sources used only
 - [story.to.design, "Subcomponents: How to make your design system more flexible"](https://story.to.design/blog/subcomponents-more-flexible-design-systems), 2022
 - [fourzerothree.in, "Crafting Components with Subcomponents and Nested Instances"](https://www.fourzerothree.in/p/crafting-components-with-subcomponents), 2025
 - [Nathan Curtis, "Component Contracts and Schemas"](https://nathanacurtis.substack.com/p/component-contracts-and-schemas), 2026: the 96-variant disabled example
+- [Figma Learn, "Use slots to build flexible components in Figma"](https://help.figma.com/hc/en-us/articles/38231200344599-Use-slots-to-build-flexible-components-in-Figma), living doc: native slots, preferred instances, and what an instance can't change
+- [Figma Learn, "The difference between slots, instance swaps, and variants"](https://help.figma.com/hc/articles/38741465279895), living doc: when to use each
+- [Nathan Curtis, "Slots in Design Systems"](https://nathanacurtis.substack.com/p/slots-in-design-systems), 2025: preferred or permitted children
+- [Murphy Trueman, "Slots and the control paradox"](https://murphytrueman.substack.com/p/slots-and-the-control-paradox), 2025: slots replacing the instance-swap workaround
 
 ## Multi-platform component specs
 
@@ -175,7 +183,8 @@ and describes tools or examples that have since changed. Older sources used only
 - [Supernova, "Building Durable Component APIs for Design Systems"](https://www.supernova.io/blog/building-durable-component-apis-for-design-systems), 2023: consistent names and the `src`/`image` exception
 - [MUI, "API design approach"](https://mui.com/material-ui/guides/api/), living doc: boolean naming and defaults, boolean vs. enum
 - [Figma, "Taking cues from code"](https://www.figma.com/blog/taking-cues-from-code/), 2022
-- [Figma Learn, "Apply changes to instances"](https://help.figma.com/hc/en-us/articles/360039150733-Apply-changes-to-instances), living doc: which overrides carry across variants
+- [Figma Learn, "Apply changes to instances"](https://help.figma.com/hc/en-us/articles/360039150733-Apply-changes-to-instances), living doc: which overrides carry across variants and instance swaps
+- [Figma Learn, "Swap components and instances"](https://help.figma.com/hc/en-us/articles/360039150413-Swap-components-and-instances), living doc: swapping from the Assets panel keeps only text overrides
 - [Figma Learn, "Use slots to build flexible components in Figma"](https://help.figma.com/hc/en-us/articles/38231200344599-Use-slots-to-build-flexible-components-in-Figma), living doc: one slot property across variants
 - [Murphy Trueman, "What your components look like as data"](https://blog.murphytrueman.com/what-your-components-look-like-as-data/), 2026: descriptive layer names and enum properties
 

@@ -50,6 +50,8 @@ draws on them:
 - **Radix Colors** and **Canonical** (Maximilian Blazek): accessible color scales
 - **Workday Canvas**, **Radix Primitives**, **fourzerothree.in**, **story.to.design**:
   subcomponents in code and in Figma
+- **Braid** (SEEK), **React Spectrum** (Adobe), and **Kent C. Dodds**: spacing between
+  parts and guarding parts used outside their parent
 
 The [references](/ds101/references/) page collects every citation in one place.
 

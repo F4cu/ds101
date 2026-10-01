@@ -64,7 +64,11 @@ parent's semantic elements, e.g. `Tabs.List`, `Tabs.Item`, `Tabs.Panel`. See
 **Slot** — the insertion point a parent component exposes so a subcomponent or other
 content can be placed into it, rather than the piece placed there. Leaning on slots
 trades a large configuration-prop surface for a small number of well-defined insertion
-points. See [Component composition in code](/ds101/component-composition-in-code/).
+points. In Figma, a slot is a native component property. See [Component composition in code](/ds101/component-composition-in-code/).
+
+**Typed container** — a slot that accepts only specific children, such as a Card zone
+that takes `CardMedia` but not arbitrary content. Nathan Curtis's term; the opposite of an
+open slot. See [Component composition in code](/ds101/component-composition-in-code/#slots).
 
 **Component property** (Figma) — a variant, boolean, text, or instance-swap property
 attached directly to a Figma component; the design-tool equivalent of a prop in code. See
@@ -73,6 +77,10 @@ attached directly to a Figma component; the design-tool equivalent of a prop in 
 **Nested instance** — a subcomponent instance placed inside a parent component in Figma,
 with its own properties optionally exposed up through the parent's properties panel. See
 [Component composition in Figma](/ds101/component-composition-in-figma/).
+
+**Preferred instances** (Figma) — the curated list of components a slot offers to designers,
+optionally enforced with "Only allow preferred instances"; Figma's version of a typed
+container. See [Component composition in Figma](/ds101/component-composition-in-figma/).
 
 **Design-to-code contract** — an explicit agreement about what "done" means at each
 stage (design, build, documentation, release) of building a component. See

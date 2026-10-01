@@ -105,6 +105,8 @@ In React, a slot is either `children` or a prop that accepts an element. [MUI's 
 
 The Button renders whatever element it receives in that position. It doesn't need to know which icons exist, whether one is shown, or what they're called.
 
+A slot can be open, accepting any content, or it can be typed. [Curtis](https://medium.com/eightshapes-llc/subcomponents-753ce9f6600a) describes **typed containers**, which "act as zones that expect specific children." A Card's zones might target `CardMedia`, `CardContent`, and `CardActions`. How narrow each zone is matters too: a `CardMedia` zone can take several kinds of media, while a `CardImage` zone takes only an image.
+
 ## Practices
 
 ### Keep subcomponents scoped to their parent
@@ -127,6 +129,27 @@ export const Card = Object.assign(
 ```
 
 `Object.assign` hangs `Media` and `Actions` off `Card`, so the only way to reach them is `Card.Media` and `Card.Actions`. A consumer who types `import { CardMedia }` gets an error instead of a part with no Card around it.
+
+That stops a part from being imported on its own, but not from being rendered outside its parent: `<Card.Media />` can still be placed anywhere. The runtime guard is a shared context that the parent provides and each part reads. In [Radix's `createContext` helper](https://github.com/radix-ui/primitives/blob/main/packages/react/context/src/create-context.tsx), which every Radix part uses, a part that finds no context throws ``"`${consumerName}` must be used within `${rootComponentName}`"``. [Kent C. Dodds](https://kentcdodds.com/blog/how-to-use-react-context-effectively) recommends the same pattern, because using the hook outside its provider "is most certainly a mistake, so providing the error message is valuable." The misuse fails right away in development, with a message naming the parent, instead of showing up later as a broken layout.
+
+### Let the parent own the space between parts
+
+[Curtis](https://medium.com/eightshapes-llc/subcomponents-753ce9f6600a) raises the question without settling it. Should a Card get a `CardContent` subcomponent that insets its content, or should `CardText` just carry a margin? The margin is "more efficacious," he notes, "but adding space in margins violates principles." [Braid](https://seek-oss.github.io/braid-design-system/foundations/layout), SEEK's design system, settles it: "components should not provide surrounding white space. Instead, spacing between elements is owned entirely by layout components," which keeps "white space completely predictable." A part with its own margin brings that space into every composition it's placed in, and every consumer then has to cancel or work around it.
+
+Following Braid's model, the parent sets the gap, and the parts have none:
+
+```tsx title="card/root.tsx"
+const CardRoot = ({ children }) => (
+  <Stack gap="md">{children}</Stack>
+);
+
+// card/media.tsx: no margin
+const CardMedia = (props) => (
+  <Image {...props} />
+);
+```
+
+Reorder, add, or drop a part, and the spacing stays right, because no part ever set it. [React Spectrum](https://react-spectrum.adobe.com/Dialog) applies the same idea to slots. Its Dialog "supports Image, Heading, Header, Content, Footer, and ButtonGroup slots" and arranges them itself. A team that needs a different arrangement switches to `CustomDialog` "to create a custom layout."
 
 ### Split out a subcomponent only on a second real use
 
