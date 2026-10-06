@@ -16,9 +16,7 @@ A system inventory is the record of what the design system itself contains: ever
 
 Without an inventory, the team can't answer the first question any change raises: what else does this touch? Tokens make that question harder than it looks, because the coupling they create doesn't show up in any import statement.
 
-> Two components that both bind to `color.action.primary` are implicitly coupled. A token value change affects both.
->
-> — [Murphy Trueman, `design-system-ops`, `knowledge-notes/component-governance.md`](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/component-governance.md)
+> Two components that both bind to `color.action.primary` are implicitly coupled. A token value change affects both. — [Murphy T.](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/component-governance.md)
 
 This page covers a different inventory from the other two in this wiki. The [interface inventory](/ds101/ui-audit/) catalogs what's already shipping in products, before a system exists. [Dependency observability](/ds101/dependency-observability/) looks outward at how consuming teams use the system. The system inventory looks inward, at the system's own parts and how they depend on each other.
 

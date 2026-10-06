@@ -16,9 +16,7 @@ An agent treats every documentation gap as a rule to follow literally. [AI readi
 
 Shane P Williams, founding editor of the Design Systems Collective, spent a 2026 run of essays on this shift: governance and documentation problems that were tolerable when only people read them stop being tolerable once agents do.
 
-> "When an agent is handed your documentation and still reaches for freshly generated code instead of your component library, the system failed a legibility test, not a tool test."
->
-> — Shane P Williams, ["Legibility Is the New Governance"](https://designsystemscollective.substack.com/p/legibility-is-the-new-governance)
+> "When an agent is handed your documentation and still reaches for freshly generated code instead of your component library, the system failed a legibility test, not a tool test." — [Shane W.](https://designsystemscollective.substack.com/p/legibility-is-the-new-governance)
 
 The instinct is to blame the tool or the model. The real cause is almost always upstream: an ambiguous name, an undocumented exception, a rule that only lived in one engineer's head. "If your design system cannot be understood without a human translator, it was never really infrastructure. It was craft, maintained by goodwill."
 

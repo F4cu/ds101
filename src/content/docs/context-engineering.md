@@ -16,9 +16,7 @@ A design system's context, meaning the structured facts an AI agent needs to use
 
 [Diana Wolosin](https://www.designsystemscollective.com/design-systems-for-ai-introducing-the-context-engine-777726da6a01) is blunt about why this needs its own discipline:
 
-> "Your tokens, guidelines, accessibility rules, and UX patterns don't matter if the LLM consuming them can't read them as structured, meaningful context."
->
-> — Diana Wolosin, "Design Systems for AI: Introducing the Context Engine"
+> "Your tokens, guidelines, accessibility rules, and UX patterns don't matter if the LLM consuming them can't read them as structured, meaningful context." — [Diana W.](https://www.designsystemscollective.com/design-systems-for-ai-introducing-the-context-engine-777726da6a01)
 
 Prose written for people relies on things a model doesn't have: skimming for relevance, tolerance for ambiguity, and a colleague to ask. A context engine fills that gap. It isn't a rewrite of the docs, but a structured layer alongside them. In Wolosin's words: "A context engine is the machine-readable brain of your design system. It captures the why, what, and how of your product, then structures it into metadata that AI can reliably use." She calls it required, not optional: "The context engine is not the future of design systems. It's the missing infrastructure that design systems need today to thrive in the AI era."
 

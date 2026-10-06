@@ -14,9 +14,7 @@ A screen can be built entirely from components that pass their audits and still 
 
 ## The problem
 
-> "In HTML, heading tags assign semantic meaning to an element's role within a page's hierarchy. However, a component's tags don't or can't align with each every page's HTML on which it's used, especially across pages or a whole app."
->
-> — [Nathan Curtis, "Typography in Design Systems"](https://nathanacurtis.substack.com/p/typography-in-design-systems-6ed771432f1e)
+> "In HTML, heading tags assign semantic meaning to an element's role within a page's hierarchy. However, a component's tags don't or can't align with each every page's HTML on which it's used, especially across pages or a whole app." — [Nathan C.](https://nathanacurtis.substack.com/p/typography-in-design-systems-6ed771432f1e)
 
 Dashboards show the problem most clearly, because many widgets compete for attention on one screen. Picture a dashboard built from system cards. Each card has its title fixed as a third-level heading, so the page has no real outline. The grid is arranged with CSS, so the order on screen doesn't match the order in the code. No part of the page is marked as the main content. A sighted user sees the most important numbers in the top row. A screen reader user hears the cards in whatever order the code happens to have them, under a flat list of identical headings, with no quick way to skip the navigation.
 

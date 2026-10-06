@@ -113,9 +113,12 @@ table of contents lists every practice as a short label. See `release-management
      `### Criteria for …` heading with a numbered list of questions in the order a reviewer
      asks them. Each decision rule has one owning page. Other pages link to it.
    - **Citations inline.** Name the practitioner in the sentence and put the link on the
-     name ("[Curtis](…) defines…"). No trailing "— author, title" lines. Block quotes keep
-     their attribution line (`> — [Author, "Title"](url)`), separated from the quote by
-     a blank `>` line so it renders as its own muted paragraph (styled in `custom.css`).
+     name ("[Curtis](…) defines…"). No trailing "— author, title" lines. Block quotes end
+     with an inline attribution on the quote's last line: first name plus last initial,
+     linked to the source (`> "…quote." — [Nathan C.](url)`). Organizations use a short
+     name (`[GOV.UK](url)`). A quote taken from someone else's work links the
+     secondary source (`— Nathan C., via [Brad F.](url)`). The full title lives in
+     `references.md`.
    - **Block quotes only in the lead or `## The problem`**, for a standalone author quote
      that anchors the page's argument (at most one per section). Quotes anywhere else stay
      inline in the sentence, so block quotes don't pile up and flatten the hierarchy.

@@ -14,9 +14,7 @@ A palette is accessible when anyone using it can tell which colors are safe toge
 
 ## The problem
 
-> "Any system designer responsible for color must be familiar with WCAG 2.0 rules, have a tool to test color pairs."
->
-> — [Nathan Curtis, "Color in Design Systems"](https://nathanacurtis.substack.com/p/color-in-design-systems-a1c80f65fa3)
+> "Any system designer responsible for color must be familiar with WCAG 2.0 rules, have a tool to test color pairs." — [Nathan C.](https://nathanacurtis.substack.com/p/color-in-design-systems-a1c80f65fa3)
 
 Curtis's 2016 advice still holds, but it assumes one person checks pairs one at a time. A typical palette starts with a brand color, a few grays, and red, amber, and green for feedback, with shades picked by eye. Nobody knows which blue is safe on which gray, so teams pick what looks right on their monitor. Then dark mode arrives: every pair needs checking again, some tokens never got a dark value, and raised cards look sunken. Then a second brand arrives with a red primary, and error messages stop standing out.
 
