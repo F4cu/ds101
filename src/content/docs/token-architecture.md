@@ -124,6 +124,25 @@ In a DTCG file, the dotted name becomes nested groups, and each token is an obje
 
 The path through the groups (`color` → `action` → `primary`) is the token's name, and the alias syntax is the same as in the simplified version above. [Platform divergence](/ds101/platform-divergence/#value-differences-resolved-in-tokens) shows a composite typography token whose sub-values are all aliases.
 
+### Keep translucent colors linked to their base
+
+A hover background or a scrim is usually an existing color at partial opacity. If that token stores its own semi-transparent value, it holds a raw value instead of an alias. A rebrand then misses it, just like a token that skips a tier. Until recently, the tools forced that copy. Tokens Studio's [modified colors](https://docs.tokens.studio/manage-tokens/token-types/color/modified) (a Pro feature) can add alpha to a base color or mix two colors, but the plugin resolves them to hex on export because "Figma Variables does not support Modified Colors." Figma's [September 2026 release](https://www.figma.com/release-notes/?title=control-opacity-at-scale) closed that gap on the Figma side: opacity can now be "applied on top of any color without detaching," and a number variable can supply the opacity.
+
+The DTCG format has no single way to write this yet. A color value carries an optional `alpha` from 0 to 1, as [Robson](https://www.alwaystwisted.com/articles/a-design-tokens-workflow-part-17) walks through. But a curly-brace alias "can ONLY target complete tokens," per the [2025.10 format spec](https://w3c.github.io/cg-reports/design-tokens/CG-FINAL-format-20251028/), so `{color.gray.100}` can't also say "at 8%." Until tools agree, the build step has to keep the link. [GitButler](https://github.com/gitbutlerapp/design-core/pull/47) found that its token build tool, Terrazzo, rejected Figma's exports of these colors, so its build writes them out as CSS `color-mix()`:
+
+```css title="tokens.css"
+--bg-hover: color-mix(
+  in srgb,
+  var(--fill-gray-bg)
+    var(--opacity-bg-hover),
+  transparent
+);
+```
+
+Both inputs stay variables, so changing either the base color or the opacity token updates the hover color.
+
+Apply the opacity to an opaque base. In Figma, opacity on a color that is already translucent is ignored: "the source alpha wins," according to a [report on Figma's plugin-typings repo](https://github.com/figma/plugin-typings/issues/381). The Variables panel disables the field in that case, but the plugin API still stores the number. That hidden value takes effect later if someone removes the opacity upstream.
+
 ### Keep platforms out of token names
 
 Per the design-system-ops notes, platform differences (web pixels vs. iOS points, different typefaces) are handled by transformation tooling, never encoded in the name. Transformation tooling is software like Style Dictionary that converts one token file into each platform's native format. So it's `spacing.4`, not `spacing.web.4`. [Platform divergence](/ds101/platform-divergence/) walks through that transformation step end to end. [Component specs](/ds101/component-specs/) applies the same platform-neutral idea to whole components.
@@ -138,4 +157,5 @@ Per the design-system-ops notes, platform differences (web pixels vs. iOS points
 - **Running a primitives-only system.** Without a semantic tier, theming is impossible. Every value change means hunting down every primitive reference instead of repointing one alias.
 - **Letting token count grow faster than the product.** That growth usually means one-off tokens are being created instead of existing intent being reused.
 - **Creating component tokens for every component up front.** [Curtis](https://nathanacurtis.substack.com/p/naming-tokens-in-design-systems-9e86c7444676) adds tokens gradually, naming them inside a component and promoting them to shared tokens only when other components need the same decision.
+- **Assuming a translucent alias survives export.** Each tool stores "base color plus opacity" its own way. A step that doesn't understand it either flattens it to a fixed color, as Tokens Studio does when it exports to Figma, or fails the build, as Terrazzo did for [GitButler](https://github.com/gitbutlerapp/design-core/pull/47). Check the generated output, not just the source file.
 - **Keeping tokens nothing uses.** Trueman's [token-audit skill](https://github.com/murphytrueman/design-system-ops/blob/main/skills/token-audit/SKILL.md) flags tokens that no other token or component references. They clutter autocomplete and confuse the people choosing between them.
