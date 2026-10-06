@@ -34,7 +34,7 @@ Most hard-to-use components aren't broken in one big way. They fail in several s
 />
 ```
 
-Notice that each line is a different problem. `showImage` and `showFooter` are boolean props (show/hide toggles) for parts the consumer could just leave out. `type="outlined"` uses different words from Button's `variant="outline"`. `isPromo` exists for one product team. `titleColor` is a raw value that a dark theme won't change. `style` cancels a margin the Card brought with it. None of these shows up in a review of the default state with the mockup's copy. They show up when an engineer passes in real data, or a designer tries a combination nobody tested.
+Notice that each line is a different problem. `showImage` and `showFooter` are boolean props (show/hide toggles) for parts the consumer could just leave out. `type="outlined"` uses different words from Button's `variant="outline"`. `isPromo` exists for one product team. `titleColor` is a raw value that dark mode won't change. `style` cancels a margin the Card brought with it. None of these shows up in a review of the default state with the mockup's copy. They show up when an engineer passes in real data, or a designer tries a combination nobody tested.
 
 The Figma version fails the same way. It's a variant set like `Image × Footer × Promo × Style`, 16 variants with layers named "Frame 47" in some and "Text" in others. A designer who switches variants loses their edits, and the first request that doesn't fit gets detached.
 
@@ -42,9 +42,9 @@ The Figma version fails the same way. It's a variant set like `Image × Footer �
 
 ### Design every state against real data
 
-Trueman's fix for components that break in production is to design each one under five conditions, not one: **loading** (waiting for a response), **empty** (no results), **error** (the request failed), **partial** (some fields missing), and **overflow** (more data than the layout expected). He suggests a documentation template that "requires designers to address each of these five states before a component can be considered 'complete.'"
+Trueman's fix for components that break in production is to design each one under five conditions, not one: **loading** (waiting for a response), **empty** (no results), **error** (the request failed), **partial** (some fields missing), and **overflow** (more data than the layout expected). She suggests a documentation template that "requires designers to address each of these five states before a component can be considered 'complete.'"
 
-His second tool is a **data contract** for each component, which lists the fields it needs and what happens when they're missing: required fields ("component won't render without these"), optional fields ("component gracefully adapts if these are missing"), the expected format of each, and the fallback when data is missing or malformed. It doesn't need tooling to start: "Even a basic spreadsheet that lists required vs. optional fields can dramatically improve implementation consistency." When a state does fail, he recommends containing the error "to the specific component or data section that failed, rather than displaying full-page error states." The [design-to-code contract](/ds101/design-to-code-contract/#design-contract) checks that these states exist before build starts.
+Her second tool is a **data contract** for each component, which lists the fields it needs and what happens when they're missing: required fields ("component won't render without these"), optional fields ("component gracefully adapts if these are missing"), the expected format of each, and the fallback when data is missing or malformed. It doesn't need tooling to start: "Even a basic spreadsheet that lists required vs. optional fields can dramatically improve implementation consistency." When a state does fail, she recommends containing the error "to the specific component or data section that failed, rather than displaying full-page error states." The [design-to-code contract](/ds101/design-to-code-contract/#design-contract) checks that these states exist before build starts.
 
 ### Decide how long content behaves
 
@@ -54,7 +54,7 @@ The same decision has to be made in Figma. [Alice Packard](https://www.alicepack
 
 ### Type every option a prop accepts
 
-[Trueman](https://blog.murphytrueman.com/every-component-in-your-design-system-is-a-promise/) describes a Button whose docs say to use the `destructive` variant only when an action deletes data, but whose `variant` prop "accepts a free-form string." A developer who reads the docs gets it right. Anyone working only from the code sees a string "with no validation," and copies whatever the existing examples do. Shortened from his example:
+[Trueman](https://blog.murphytrueman.com/every-component-in-your-design-system-is-a-promise/) describes a Button whose docs say to use the `destructive` variant only when an action deletes data, but whose `variant` prop "accepts a free-form string." A developer who reads the docs gets it right. Anyone working only from the code sees a string "with no validation," and copies whatever the existing examples do. Shortened from her example:
 
 ```tsx title="Untyped"
 interface ButtonProps {

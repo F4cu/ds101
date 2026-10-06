@@ -68,7 +68,7 @@ A new visual expression of something that already exists, like a new button colo
 
 Supernova's warning: "if your system permits a certain usage, it will likely be used that way somewhere in the product." Undocumented combinations don't stay theoretical for long, so decide which ones you support and block the rest.
 
-[Murphy Trueman's design-system-ops toolkit](https://github.com/murphytrueman/design-system-ops/blob/main/skills/metadata-schema-generator/SKILL.md) writes the blocked ones down in each component's metadata file as **prohibited combinations**: prop pairs that are "technically valid but semantically wrong." From his illustrative Button:
+[Murphy Trueman's design-system-ops toolkit](https://github.com/murphytrueman/design-system-ops/blob/main/skills/metadata-schema-generator/SKILL.md) writes the blocked ones down in each component's metadata file as **prohibited combinations**: prop pairs that are "technically valid but semantically wrong." From her illustrative Button:
 
 ```json title="Button.metadata.json (excerpt)"
 "prohibited_combinations": [

@@ -4,7 +4,7 @@ reviewed: 2026-07-02
 reviewIn: 12
 ---
 
-Tokens work in three layers: raw values, the intent those values serve, and optionally the components that use them. References only ever point one layer down. That's what makes a rebrand or a dark theme a one-line change instead of a search through the whole codebase.
+Tokens work in three tiers: raw values, the intent those values serve, and optionally the components that use them. References only ever point one tier down. That's what makes a rebrand or dark mode a one-line change instead of a search through the whole codebase.
 
 :::tip[Key takeaways]
 - **Reference strictly one tier down.** A token that skips the semantic tier silently misses the next rebrand.
@@ -14,7 +14,7 @@ Tokens work in three layers: raw values, the intent those values serve, and opti
 
 ## The problem
 
-If a button's background is hardcoded, or points straight at `color.blue.500`, then a rebrand or a dark theme means hunting down every place that value was used. If it points at `color.action.primary` instead, you change one semantic mapping and everything downstream follows. [Brand alignment](/ds101/brand-alignment/) shows how this structure is where a real brand refresh meets the product system.
+If a button's background is hardcoded, or points straight at `color.blue.500`, then a rebrand or dark mode means hunting down every place that value was used. If it points at `color.action.primary` instead, you change one semantic mapping and everything downstream follows. [Brand alignment](/ds101/brand-alignment/) shows how this structure is where a real brand refresh meets the product system.
 
 ## The model
 
@@ -54,7 +54,7 @@ Raw values, named for what they are: `color.blue.500`. Nothing in a product shou
 
 ### Semantic tokens
 
-Intent: what a value is *for*, like `color.action.primary` or `color.feedback.error`. A semantic token gets its value by pointing at a primitive. This is the layer a theme or rebrand changes.
+Intent: what a value is *for*, like `color.action.primary` or `color.feedback.error`. A semantic token gets its value by pointing at a primitive. This is the tier a theme or rebrand changes.
 
 ### Component tokens
 
@@ -76,7 +76,7 @@ The curly braces mark an **alias**: a value that points at another token by name
 
 ### Reference strictly downward
 
-References flow component → semantic → primitive, never sideways and never skipping a tier. The design-system-ops notes call a skipped tier "the most architecturally damaging token violation." `button.background.default: {color.blue.500}` *appears* to work, because the right colour shows up. But "a rebrand or theme change that correctly updates the semantic tier will not reach this component." It breaks silently, and you only find out mid-rebrand.
+References flow component → semantic → primitive, never sideways and never skipping a tier. The design-system-ops notes call a skipped tier "the most architecturally damaging token violation." `button.background.default: {color.blue.500}` *appears* to work, because the right color shows up. But "a rebrand or theme change that correctly updates the semantic tier will not reach this component." It breaks silently, and you only find out mid-rebrand.
 
 ```json title="Skips a tier"
 "button.background.default":
@@ -134,7 +134,7 @@ Per the design-system-ops notes, platform differences (web pixels vs. iOS points
 
 ## Common mistakes
 
-- **Running a primitives-only system.** Without a semantic layer, theming is impossible. Every value change means hunting down every primitive reference instead of repointing one alias.
+- **Running a primitives-only system.** Without a semantic tier, theming is impossible. Every value change means hunting down every primitive reference instead of repointing one alias.
 - **Letting token count grow faster than the product.** That growth usually means one-off tokens are being created instead of existing intent being reused.
 - **Creating component tokens for every component up front.** [Curtis](https://nathanacurtis.substack.com/p/naming-tokens-in-design-systems-9e86c7444676) adds tokens gradually, naming them inside a component and promoting them to shared tokens only when other components need the same decision.
-- **Keeping tokens nothing uses.** Murphy's [token-audit skill](https://github.com/murphytrueman/design-system-ops/blob/main/skills/token-audit/SKILL.md) flags tokens that no other token or component references. They clutter autocomplete and confuse the people choosing between them.
+- **Keeping tokens nothing uses.** Trueman's [token-audit skill](https://github.com/murphytrueman/design-system-ops/blob/main/skills/token-audit/SKILL.md) flags tokens that no other token or component references. They clutter autocomplete and confuse the people choosing between them.

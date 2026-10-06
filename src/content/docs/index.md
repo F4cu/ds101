@@ -3,7 +3,7 @@ title: Start here
 ---
 
 This wiki covers the layer above day-to-day design system work: the operational and
-architectural calls nobody hands you a manual for. Why split tokens into layers? What
+architectural calls nobody hands you a manual for. Why split tokens into tiers? What
 makes a component governed rather than just in a library? When does AI help, and when
 does it add a new kind of mess?
 
@@ -25,7 +25,7 @@ Every claim names the person or report it came from, with a link. Where sources 
 the page says so. Where they disagree, both views stay. Ordered by how much of the wiki
 draws on them:
 
-- **Murphy Trueman**, *Design System Ops*: the backbone of the foundations and most
+- **Murphy Trueman**, `design-system-ops` toolkit: the backbone of the foundations and most
   governance pages, used as evidence for principles, not settings to copy
 - **Nathan Curtis**, EightShapes: team models, contribution, component APIs, token
   naming, cadence
@@ -66,7 +66,7 @@ a structure to understand first. Every page ends with **Common mistakes**.
 ## How the wiki is organized
 
 1. **Getting started**: auditing, piloting, inheriting a system, assessing maturity.
-2. **Foundations**: what a design system is, token layers, the design-to-code contract,
+2. **Foundations**: what a design system is, token tiers, the design-to-code contract,
    and multiple platforms.
 3. **Components**: composition, API design, and accessibility.
 4. **Governance**: ownership, decisions, contribution, lifecycle, inventory, releases, cadence.

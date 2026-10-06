@@ -14,7 +14,7 @@ An open contribution door doesn't produce contributors on its own. [Contribution
 
 ## The problem
 
-An open process that waits for pull requests selects for people who already have the confidence, spare time, and standing to show up unprompted. That's a narrow slice of the people who use the system every day. [Contribution models](/ds101/contribution-models/) shows how narrow: zeroheight's 2026 data found 82% of teams get contributions from ten or fewer designers, whatever the company's size. Leaving the door open isn't neutral. As [Amy Hupe](https://amyhupe.co.uk/articles/5-lessons-on-enabling-design-system-contribution/) argues, it quietly filters out exactly the people whose context the system most needs.
+An open process that waits for pull requests (PRs) selects for people who already have the confidence, spare time, and standing to show up unprompted. That's a narrow slice of the people who use the system every day. [Contribution models](/ds101/contribution-models/) shows how narrow: zeroheight's 2026 data found 82% of teams get contributions from ten or fewer designers, whatever the company's size. Leaving the door open isn't neutral. As [Amy Hupe](https://amyhupe.co.uk/articles/5-lessons-on-enabling-design-system-contribution/) argues, it quietly filters out exactly the people whose context the system most needs.
 
 ## Practices
 
@@ -34,7 +34,7 @@ Relaxing quality standards so more people can clear them backfires. A pattern pu
 
 De León pairs three habits that reinforce each other:
 
-- **Do it visibly yourself.** The core team should write docs the way it wants docs written and report bugs the way it wants bugs reported, so newcomers have a real example to copy.
+- **Do it visibly yourself.** The system team should write docs the way it wants docs written and report bugs the way it wants bugs reported, so newcomers have a real example to copy.
 - **Mean it when you say help is welcome.** A proposed component or fix needs somewhere real to land, reviewed in good faith. If every outside PR sits unreviewed for months, people learn not to bother.
 - **Share work in progress.** Publishing only finished work means teams build in isolation until something lands, which is exactly when duplicated effort and conflicting assumptions surface, too late to fix cheaply. Early drafts and open questions let other teams say "we hit this already" while the direction is still easy to change.
 
@@ -46,11 +46,11 @@ Language matters as much as presence. Grixti's own example: naming systems after
 
 ### Make contribution part of people's goals
 
-Nobody gets a bonus for filing a design-system PR, and it isn't in most contributors' job descriptions. [Hupe](https://amyhupe.co.uk/articles/5-lessons-on-enabling-design-system-contribution/) says the core team should expect to do most of the initial legwork: hunt for patterns that need standardizing instead of waiting for submissions, and keep offering hands-on support. [Grixti](https://nessgrixti.com/articles/rethinking-contribution-lessons-from-the-messy-middle-of-design-systems/) names the mechanism. If a product team is judged purely on shipped product work, system contribution isn't just unrewarded, it's dropped the moment a deadline gets tight. The fix has to be structural: contribution named explicitly in goals and roadmaps, not just encouragement from the system team.
+Nobody gets a bonus for filing a design-system PR, and it isn't in most contributors' job descriptions. [Hupe](https://amyhupe.co.uk/articles/5-lessons-on-enabling-design-system-contribution/) says the system team should expect to do most of the initial legwork: hunt for patterns that need standardizing instead of waiting for submissions, and keep offering hands-on support. [Grixti](https://nessgrixti.com/articles/rethinking-contribution-lessons-from-the-messy-middle-of-design-systems/) names the mechanism. If a product team is judged purely on shipped product work, system contribution isn't just unrewarded, it's dropped the moment a deadline gets tight. The fix has to be structural: contribution named explicitly in goals and roadmaps, not just encouragement from the system team.
 
 ### Pitch contribution as context, not speed
 
-It's tempting to pitch contribution as a way to grow the system faster. [Hupe](https://amyhupe.co.uk/articles/5-lessons-on-enabling-design-system-contribution/) is blunt that this usually isn't true: reviewing and integrating someone else's work is often slower than the core team building it. The real payoff is that a contributor brings context the core team doesn't have, so the result works for teams and users the core team never sees. [Contribution models](/ds101/contribution-models/) makes the same point with data. Don't sell contribution to leadership as extra capacity, because the pitch collapses the first time someone checks the numbers.
+It's tempting to pitch contribution as a way to grow the system faster. [Hupe](https://amyhupe.co.uk/articles/5-lessons-on-enabling-design-system-contribution/) is blunt that this usually isn't true: reviewing and integrating someone else's work is often slower than the system team building it. The real payoff is that a contributor brings context the system team doesn't have, so the result works for teams and users the system team never sees. [Contribution models](/ds101/contribution-models/) makes the same point with data. Don't sell contribution to leadership as extra capacity, because the pitch collapses the first time someone checks the numbers.
 
 ## Common mistakes
 
