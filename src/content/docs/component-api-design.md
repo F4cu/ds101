@@ -4,7 +4,7 @@ reviewed: 2026-09-16
 reviewIn: 12
 ---
 
-Every prop you ship is a promise you keep forever, or a breaking change you'll have to schedule later. Whether a component stays durable under product pressure, or slowly turns into a pile of conditional flags, comes down to a few recurring decisions. The biggest one is when to configure with a prop and when to compose with smaller pieces.
+Every prop you ship is a promise you keep forever, or a breaking change you'll have to schedule later. Whether a component stays durable under product pressure, or slowly turns into a pile of boolean props (show/hide toggles), comes down to a few recurring decisions. The biggest one is when to configure with a prop and when to compose with smaller pieces.
 
 :::tip[Key takeaways]
 - **Make the common configurable, the uncommon composable.** Otherwise props pile up one request at a time until the component collapses.
@@ -14,7 +14,7 @@ Every prop you ship is a promise you keep forever, or a breaking change you'll h
 
 ## The problem
 
-Left unchecked, components pile up props one product request at a time, and each addition feels reasonable on its own. [Nathan Curtis](https://nathanacurtis.substack.com/p/configuration-collapse) calls the end state "configuration collapse": a component full of layout props, visibility toggles, and deeply nested subcomponent trees that exist only to control what's shown and where. The fix isn't a rule against adding props. It's a standing discipline about *which* props earn a permanent place in the API. A clean API is only part of the job, though. A component can still break on real data or be slow to edit in Figma, which [Component usability](/ds101/component-usability/) covers.
+Left unchecked, components pile up props one product request at a time, and each addition feels reasonable on its own. [Nathan Curtis](https://nathanacurtis.substack.com/p/configuration-collapse) calls the end state "configuration collapse": a component full of layout props, boolean props, and deeply nested subcomponent trees that exist only to control what's shown and where. The fix isn't a rule against adding props. It's a standing discipline about *which* props earn a permanent place in the API. A clean API is only part of the job, though. A component can still break on real data or be slow to edit in Figma, which [Component usability](/ds101/component-usability/) covers.
 
 ## Choosing configuration or composition
 
@@ -52,7 +52,7 @@ For behavior and foundational state, like `state`, `appearance`, and `size`. The
 
 For structural and content variation. Curtis documents real before-and-after cases:
 
-- A Pill component dropped its visibility props and type variants in favor of children slotted into a container.
+- A Pill component dropped its boolean props and type variants in favor of children slotted into a container.
 - An Alert's three-level subcomponent hierarchy for title, description, and actions became one slotted body with ready-made layout examples.
 - A Card was hollowed out into a plain container, so specialized teams build purpose-driven extensions instead of the core system adding more configuration.
 

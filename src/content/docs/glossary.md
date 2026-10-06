@@ -185,9 +185,13 @@ contribution, and who may finish the work themselves if the contributor stalls. 
 and combining smaller pieces, instead of adding a configuration prop for every
 variation. See [Component API design](/ds101/component-api-design/).
 
+**Boolean prop** (show/hide toggle) — a prop that is either on or off, such as
+`showFooter` or `disabled`. Figma's equivalent is a boolean property. See
+[Component API design](/ds101/component-api-design/).
+
 **Configuration collapse** — the end state of a component that has accumulated so many
-layout props, visibility toggles, and nested subcomponents that its API becomes harder
-to use than the problem it was meant to solve. See
+layout props, boolean props, and nested subcomponents that its API becomes harder to
+use than the problem it was meant to solve. See
 [Component API design](/ds101/component-api-design/).
 
 **Prop bloat** — the gradual, request-by-request accumulation of component properties

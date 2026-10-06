@@ -34,7 +34,7 @@ Most hard-to-use components aren't broken in one big way. They fail in several s
 />
 ```
 
-Notice that each line is a different problem. `showImage` and `showFooter` are flags for parts the consumer could just leave out. `type="outlined"` uses different words from Button's `variant="outline"`. `isPromo` exists for one product team. `titleColor` is a raw value that a dark theme won't change. `style` cancels a margin the Card brought with it. None of these shows up in a review of the default state with the mockup's copy. They show up when an engineer passes in real data, or a designer tries a combination nobody tested.
+Notice that each line is a different problem. `showImage` and `showFooter` are boolean props (show/hide toggles) for parts the consumer could just leave out. `type="outlined"` uses different words from Button's `variant="outline"`. `isPromo` exists for one product team. `titleColor` is a raw value that a dark theme won't change. `style` cancels a margin the Card brought with it. None of these shows up in a review of the default state with the mockup's copy. They show up when an engineer passes in real data, or a designer tries a combination nobody tested.
 
 The Figma version fails the same way. It's a variant set like `Image × Footer × Promo × Style`, 16 variants with layers named "Frame 47" in some and "Text" in others. A designer who switches variants loses their edits, and the first request that doesn't fit gets detached.
 
@@ -97,7 +97,7 @@ In code, the same idea is letting the parent own the spacing. A Card with its ow
 
 ### Ship examples, not just props
 
-A composable component has a usability cost of its own. [Curtis](https://nathanacurtis.substack.com/p/component-examples-as-data) describes the empty Card: "Drop it on a canvas and it stares back: unopinionated, empty, waiting for instruction." Composition removes the flags from the hard-to-use Card, but it leaves the consumer to work out what a good arrangement looks like. His answer is ready-made examples of common compositions, because "props aren't enough." Examples aren't variants. They show a component with real content and real arrangements, so "designers see range and start fast, system engineers get pre-validated, on-foundation starting points."
+A composable component has a usability cost of its own. [Curtis](https://nathanacurtis.substack.com/p/component-examples-as-data) describes the empty Card: "Drop it on a canvas and it stares back: unopinionated, empty, waiting for instruction." Composition removes the boolean props from the hard-to-use Card, but it leaves the consumer to work out what a good arrangement looks like. His answer is ready-made examples of common compositions, because "props aren't enough." Examples aren't variants. They show a component with real content and real arrangements, so "designers see range and start fast, system engineers get pre-validated, on-foundation starting points."
 
 ### Criteria for a usable component
 
@@ -131,7 +131,7 @@ Run the Card from [The problem](#the-problem) through the list and it comes out 
 </Card>
 ```
 
-The flags are gone, because leaving a part out means not writing it. `variant` matches Button. The color comes from the variant's tokens, the parent's `Stack` sets the spacing, and the promo treatment becomes a composition example instead of a prop.
+The boolean props are gone, because leaving a part out means not writing it. `variant` matches Button. The color comes from the variant's tokens, the parent's `Stack` sets the spacing, and the promo treatment becomes a composition example instead of a prop.
 
 ## Common mistakes
 
