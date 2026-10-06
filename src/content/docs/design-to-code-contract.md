@@ -26,7 +26,7 @@ Met when the spec can be built without clarifying questions:
 
 - Every state is designed: default, hover, active, focus, disabled, loading, error.
 - Responsive behaviour is specified.
-- Edge cases like long strings and empty states are covered.
+- Edge cases like long strings and empty states are covered. [Component usability](/ds101/component-usability/#design-every-state-against-real-data) lists the states to design.
 - Token usage is explicit in the file.
 - The component API (props, types, defaults) is agreed before build.
 - Accessibility is handled now, not deferred: focus indicators, contrast, touch targets, and the ARIA contract (the component's role, keyboard pattern, and how it gets its label). [Component accessibility](/ds101/component-accessibility/) covers what to check.

@@ -52,6 +52,7 @@ draws on them:
   subcomponents in code and in Figma
 - **Braid** (SEEK), **React Spectrum** (Adobe), and **Kent C. Dodds**: spacing between
   parts and guarding parts used outside their parent
+- **Alice Packard**: what makes a Figma component easy for designers to use
 
 The [references](/ds101/references/) page collects every citation in one place.
 

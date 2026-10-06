@@ -216,6 +216,14 @@ or `ariaLabel`, so it has no natural place in Figma's properties panel. See
 changed text or a swapped icon, that Figma carries into another variant only if the
 layer names match. See [Component property naming](/ds101/component-property-naming/).
 
+**Data contract** (component) — a list of the fields a component needs, which are
+optional, what format each takes, and what it shows when one is missing or malformed.
+See [Component usability](/ds101/component-usability/).
+
+**Controlled component** — a component whose state, such as its value or whether it's
+open, is set by its parent through props (`value` and `onChange`), rather than kept in
+its own local state (uncontrolled). See [Component usability](/ds101/component-usability/).
+
 **Components as data** — authoring a component's anatomy, props, styles, and variants
 directly as structured data (YAML/JSON) rather than a Figma file, so Figma and
 generated code for each platform become outputs of that data instead of the source

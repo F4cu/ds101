@@ -188,6 +188,17 @@ and describes tools or examples that have since changed. Older sources used only
 - [Figma Learn, "Use slots to build flexible components in Figma"](https://help.figma.com/hc/en-us/articles/38231200344599-Use-slots-to-build-flexible-components-in-Figma), living doc: one slot property across variants
 - [Murphy Trueman, "What your components look like as data"](https://blog.murphytrueman.com/what-your-components-look-like-as-data/), 2026: descriptive layer names and enum properties
 
+## Component usability
+
+- [Murphy Trueman, "Why your components break in production (and how to fix it)"](https://blog.murphytrueman.com/p/api-driven-design-systems), 2025: the five states, data contracts, and containing errors
+- [Murphy Trueman, "Every component in your design system is a promise"](https://blog.murphytrueman.com/every-component-in-your-design-system-is-a-promise/), 2026: the untyped `variant` prop and its typed alternative
+- [Carbon Design System, "Overflow content"](https://carbondesignsystem.com/patterns/overflow-content/), living doc: where not to truncate, and "Show more" over fades
+- [Alice Packard, "12 ways to make your Figma components more delightful to use"](https://www.alicepackarddesign.com/blog/12-ways-to-make-your-figma-components-more-delightful-to-use), 2022: the star-rating example, top-layer edits, overrides on swap, and auto layout guardrails
+- [MUI, "API design approach"](https://mui.com/material-ui/guides/api/), living doc: spreading props to the root, forwarding `ref`, and controlled components
+- [Nathan Curtis, "The Figma Component Review"](https://nathanacurtis.substack.com/p/the-figma-component-review-f42114450b4d), 2022: the review order and the palette-style example
+- [Nathan Curtis, "Component Examples as Data"](https://nathanacurtis.substack.com/p/component-examples-as-data), 2026: the empty Card and ready-made examples
+- [Nathan Curtis, "Configuration Collapse"](https://nathanacurtis.substack.com/p/configuration-collapse), 2026
+
 ## System inventory
 
 - Murphy Trueman, `design-system-ops` — [`knowledge-notes/component-governance.md`](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/component-governance.md), living doc: token-to-component coupling, composition mapping, cross-system dependencies, and the eight lifecycle stages

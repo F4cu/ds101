@@ -14,7 +14,7 @@ Every prop you ship is a promise you keep forever, or a breaking change you'll h
 
 ## The problem
 
-Left unchecked, components pile up props one product request at a time, and each addition feels reasonable on its own. [Nathan Curtis](https://nathanacurtis.substack.com/p/configuration-collapse) calls the end state "configuration collapse": a component full of layout props, visibility toggles, and deeply nested subcomponent trees that exist only to control what's shown and where. The fix isn't a rule against adding props. It's a standing discipline about *which* props earn a permanent place in the API.
+Left unchecked, components pile up props one product request at a time, and each addition feels reasonable on its own. [Nathan Curtis](https://nathanacurtis.substack.com/p/configuration-collapse) calls the end state "configuration collapse": a component full of layout props, visibility toggles, and deeply nested subcomponent trees that exist only to control what's shown and where. The fix isn't a rule against adding props. It's a standing discipline about *which* props earn a permanent place in the API. A clean API is only part of the job, though. A component can still break on real data or be slow to edit in Figma, which [Component usability](/ds101/component-usability/) covers.
 
 ## Choosing configuration or composition
 

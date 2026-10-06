@@ -63,6 +63,7 @@ export default defineConfig({
 						'component-composition-in-code',
 						'component-api-design',
 						'component-property-naming',
+						'component-usability',
 						'component-accessibility',
 						'layout-accessibility',
 					],
