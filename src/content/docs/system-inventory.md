@@ -52,7 +52,7 @@ The same link works for newer parts of the system. Kavcic's [agentic flows inven
 
 ### Record what each component uses
 
-Components depend on each other as well as on tokens. Trueman's [`codebase-index`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/codebase-index/SKILL.md) records the link in both directions: Card `uses` Button, and Button is `usedBy` Card. From that he sorts components into three kinds:
+Components depend on each other as well as on tokens. Trueman's [`codebase-index`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/codebase-index/SKILL.md) records the link in both directions: Card `uses` Button, and Button is `usedBy` Card. From that she sorts components into three kinds:
 
 - **leaf**: uses no other system component
 - **root**: nothing else in the system renders it
@@ -91,5 +91,5 @@ Expect to update it by hand. Curtis finds it "difficult to automate producing th
 ## Common mistakes
 
 - **Inventorying only the code.** Curtis pulls tokens from Figma styles as well as from token files and component code, because each holds tokens the others don't. Trueman's index checks the Figma inventory against the code inventory for the same reason: to find components that exist in design but not in code, or the reverse.
-- **Marking a component unused because nothing imports it directly.** In Trueman's example, no page imports Tooltip, but CopyButton renders it and CodeBlock renders CopyButton. He also warns that a public component with no users inside the system's repo is still meant for product repos the index doesn't scan. "No in-repo consumers" isn't "unused." Check [Dependency observability](/ds101/dependency-observability/) before treating it as a [removal candidate](/ds101/component-lifecycle/#criteria-for-removing-a-component).
+- **Marking a component unused because nothing imports it directly.** In Trueman's example, no page imports Tooltip, but CopyButton renders it and CodeBlock renders CopyButton. She also warns that a public component with no users inside the system's repo is still meant for product repos the index doesn't scan. "No in-repo consumers" isn't "unused." Check [Dependency observability](/ds101/dependency-observability/) before treating it as a [removal candidate](/ds101/component-lifecycle/#criteria-for-removing-a-component).
 - **Using a doneness matrix for work that doesn't fit one.** [Curtis](https://nathanacurtis.substack.com/p/doneness-matrices-c7f0a026365f) says to skip it when there are only a few parts, when the parts can't progress in parallel, when the list of parts keeps changing, or when different parts need different stages.

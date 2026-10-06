@@ -20,7 +20,7 @@ Time and attention are scarce. An over-documented badge burns the same hours tha
 
 ### Challenge Rating
 
-The design-system-ops notes ([`knowledge-notes/component-bestiary-reference.md`](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/component-bestiary-reference.md)) borrow a mechanic from a companion project, the Component Bestiary, which catalogues UI components as D&D-style creatures. A **Challenge Rating (CR)** ranks *implementation danger*, not visual complexity. A high-CR component "is not necessarily large or visually complex — it is dangerous to implement incorrectly."
+The design-system-ops notes ([`knowledge-notes/component-bestiary-reference.md`](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/component-bestiary-reference.md)) borrow a mechanic from a companion project, the Component Bestiary, which catalogs UI components as D&D-style creatures. A **Challenge Rating (CR)** ranks *implementation danger*, not visual complexity. A high-CR component "is not necessarily large or visually complex — it is dangerous to implement incorrectly."
 
 - **Badges, CR 1–2**: misuse creates minor inconsistency, so basic usage guidelines are enough.
 - **Modals, CR 5–7**: misuse causes real user harm through accessibility regressions.
@@ -89,7 +89,7 @@ The same scoping shows up in product UI. AWS Cloudscape's [user-authorized actio
 
 - **Figma**: reads components, tokens, and variants for spec generation and token review.
 - **Mintlify**: turns published docs into a searchable knowledge base without leaving the editor.
-- **GitHub**: reviews PRs and diffs token definitions to catch design-code drift (see [Dependency observability](/ds101/dependency-observability/)).
+- **GitHub**: reviews pull requests (PRs) and diffs token definitions to catch design-code drift (see [Dependency observability](/ds101/dependency-observability/)).
 - **GitLab**: manages issues, merge requests, and CI pipelines through AI workflows.
 - **PostHog**: checks design decisions against real adoption and conversion data (see [Measuring adoption](/ds101/measuring-adoption/)).
 - **Slack**: makes chat history searchable for decision tracking and adoption signals.

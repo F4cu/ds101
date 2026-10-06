@@ -22,20 +22,20 @@ Trueman puts the reframe plainly: you're not inheriting components, you're inher
 
 ### 1. Read the system before judging it
 
-[Trueman](https://blog.murphytrueman.com/design-system-archaeology/): "An audit asks what's broken. Archaeology asks what was meant." Judging a component before understanding why it exists is the first mistake most inheritors make. His reading order:
+[Trueman](https://blog.murphytrueman.com/design-system-archaeology/): "An audit asks what's broken. Archaeology asks what was meant." Judging a component before understanding why it exists is the first mistake most inheritors make. Her reading order:
 
 1. **Tokens first**, since they show what the previous team believed about structure.
 2. **Component architecture** next, treating anything that breaks the system's own pattern as a scar, not a bug.
 3. **Contribution history**: git logs, Figma file history, and RFCs (written change proposals circulated for feedback before a decision), to learn *when* and *who* decided things.
 4. **Documentation last**, because reading it first gives false confidence about how much you understand.
 
-He sorts what he finds into **load-bearing lore**, undocumented decisions that still matter (like an accessibility fix or a cross-team compromise), and **vestigial lore**, workarounds for a problem that no longer exists. The test: if you can't answer "why is it like this," treat it as load-bearing until proven otherwise.
+She sorts what she finds into **load-bearing lore**, undocumented decisions that still matter (like an accessibility fix or a cross-team compromise), and **vestigial lore**, workarounds for a problem that no longer exists. The test: if you can't answer "why is it like this," treat it as load-bearing until proven otherwise.
 
 ### 2. Ship one small, precise fix in the first 90 days
 
 [Trueman](https://blog.murphytrueman.com/design-system-archaeology/) is specific about the early period:
 
-- **Don't rebuild.** He cites Joel Spolsky's warning that "crufty-looking parts encode hard-earned knowledge," the logic behind Netscape's failed full rewrite.
+- **Don't rebuild.** She cites Joel Spolsky's warning that "crufty-looking parts encode hard-earned knowledge," the logic behind Netscape's failed full rewrite.
 - **Don't rename anything.** A rename ripples through code, docs, and every team's mental model before you've earned that call.
 - **Don't publish your early judgments.** Keep them private until at least month three.
 

@@ -18,13 +18,13 @@ Pick the wrong model for your org's size and maturity, and you get one of two fa
 
 ## Choosing a team model
 
-Start centralized, then add federation on purpose. [Curtis](https://medium.com/@nathanacurtis/the-fallacy-of-federated-design-systems-23b9a9a05542) has revised his own framing: treating centralized and federated as alternatives was a mistake. Federation is never pursued first, and it never succeeds without a funded centre underneath. Keep the core centralized (tokens, foundations, accessibility, component contracts), and layer federation on top deliberately.
+Start centralized, then add federation on purpose. [Curtis](https://medium.com/@nathanacurtis/the-fallacy-of-federated-design-systems-23b9a9a05542) has revised his own framing: treating centralized and federated as alternatives was a mistake. Federation is never pursued first, and it never succeeds without a funded center underneath. Keep the core centralized (tokens, foundations, accessibility, component contracts), and layer federation on top deliberately.
 
 <div class="mermaid-wrap">
 
 ```mermaid
 flowchart TD
-  Core["Central core team<br/>tokens, foundations,<br/>accessibility, contracts"] --> A["Product team A"]
+  Core["Central system team<br/>tokens, foundations,<br/>accessibility, contracts"] --> A["Product team A"]
   Core --> B["Product team B"]
   A -.->|contributes| Core
   B -.->|contributes| Core
@@ -48,15 +48,15 @@ Designers from several product teams decide on the system together. Only 13% of 
 
 ### Cyclical
 
-[Jina Anne](https://medium.com/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b), drawing on her time at Salesforce, adds a fourth model. A central core team and a federated contributor group keep informing each other, rather than one replacing the other.
+[Jina Anne](https://medium.com/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b), drawing on her time at Salesforce, adds a fourth model. A central system team and a federated contributor group keep informing each other, rather than one replacing the other.
 
 ## Practices
 
-### Staff the core team across disciplines
+### Staff the system team across disciplines
 
 [Jina Anne](https://24ways.org/2017/design-systems-and-hybrids/) points out that design-systems work is often the natural home for hybrid practitioners, such as designer-coders who don't fit a pure design or pure engineering team. Build the model around cross-functional roles (design, code, content, accessibility, product). That gives hybrids a home instead of leaving them caught between two teams.
 
-### Give the core team service levels
+### Give the system team service levels
 
 A centralized team that other teams depend on is running infrastructure, whether it says so or not. The design-system-ops contract notes ([`knowledge-notes/design-to-code-contract.md`](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/design-to-code-contract.md)) spell out what that means for teams using the system. Upgrades shouldn't break them. Bug reports get an expected response time: "A system that takes three weeks to acknowledge a bug report is not functioning as infrastructure." Releases follow a predictable cadence, and nothing changes without documentation. The toolkit's [executive communication notes](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/executive-communication.md) use the same framing to argue for staffing: say "the infrastructure needs a defined service level: response time for bug reports, a predictable release cadence, documented API contracts" rather than "we need a dedicated team."
 

@@ -47,7 +47,7 @@ Components that fill a large region need a landmark too. Murphy Trueman's [per-c
 
 ### Label landmarks that repeat
 
-A dashboard often has more than one landmark of the same type, such as main navigation and a filter panel, or two side panels. The APG says each one needs its own label so a screen reader user can tell them apart. The exception is when both have the same content and purpose, like pagination above and below a table. Leave the role out of the label, because the screen reader already says it: a navigation labelled "Site Navigation" is read out as "Site Navigation Navigation," so label it "Site."
+A dashboard often has more than one landmark of the same type, such as main navigation and a filter panel, or two side panels. The APG says each one needs its own label so a screen reader user can tell them apart. The exception is when both have the same content and purpose, like pagination above and below a table. Leave the role out of the label, because the screen reader already says it: a navigation labeled "Site Navigation" is read out as "Site Navigation Navigation," so label it "Site."
 
 ### Let the page set a heading's level
 
@@ -82,4 +82,4 @@ Keyboard order is easy to lose between design and build, because a design file s
 
 - **Wrapping every dashboard card in its own landmark.** Cloudscape's dashboard guidance warns: "Don't add unnecessary markup for roles and landmarks." If every card is a landmark, the list of regions becomes as long as the page, and jumping between regions stops saving time.
 - **Reordering the grid with CSS alone.** Moving a card to the top row with CSS changes what sighted users see first, but a screen reader still reads it in its old position. WCAG lists this as a failure when the order carries meaning.
-- **Changing the shell without annotating the change.** Carbon asks for an annotation wherever a product's header departs from the default behaviour or labels, because headers "appear similar until interacted with."
+- **Changing the shell without annotating the change.** Carbon asks for an annotation wherever a product's header departs from the default behavior or labels, because headers "appear similar until interacted with."

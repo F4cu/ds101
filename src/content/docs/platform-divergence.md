@@ -37,7 +37,7 @@ flowchart TD
 
 ### Value differences: resolved in tokens
 
-San Francisco on iOS and Roboto on Android fill the same type role. That's a value difference, and [token layering](/ds101/token-architecture/) resolves it. The semantic token stays one thing, and platform becomes a dimension the build pipeline exports against.
+San Francisco on iOS and Roboto on Android fill the same type role. That's a value difference, and [token tiers](/ds101/token-architecture/) resolves it. The semantic token stays one thing, and platform becomes a dimension the build pipeline exports against.
 
 [Curtis traces a token's path](https://medium.com/eightshapes-llc/reimagining-a-token-taxonomy-462d35b2b033) through a production pipeline. A value defined once in Style Dictionary doesn't reach a component directly. It flows through a build step into platform-specific output files, and design teams often don't know this middle layer exists. A `font.body` semantic token resolves to a different platform file, not a different token:
 
@@ -83,7 +83,7 @@ A confirmation pattern might be a centered Dialog on iOS but a bottom-anchored s
 
 ### Push values down, structure up
 
-When a difference is a *value* (a size, a color, a type role), resolve it at the semantic token layer, so one alias serves every platform. When it's *structural or behavioral* (which control appears, how it's triggered, what happens on dismiss), push it up to the component contract, where each platform can implement it natively.
+When a difference is a *value* (a size, a color, a type role), resolve it at the semantic tier, so one alias serves every platform. When it's *structural or behavioral* (which control appears, how it's triggered, what happens on dismiss), push it up to the component contract, where each platform can implement it natively.
 
 ### Make contracts checkable, not just descriptive
 
@@ -99,4 +99,4 @@ Neither mechanism decides the interesting cases for you. Whether a difference sh
 
 ## Common mistakes
 
-- **Forking a token per platform for something that was never a value problem.** If two platforms need different components, not different values, adding `spacing.4.ios` and `spacing.4.android` doesn't fix the mismatch. It hides a contract problem inside the token layer, where the next person won't think to look. Source: [Curtis, "Reimagining a Token Taxonomy"](https://medium.com/eightshapes-llc/reimagining-a-token-taxonomy-462d35b2b033).
+- **Forking a token per platform for something that was never a value problem.** If two platforms need different components, not different values, adding `spacing.4.ios` and `spacing.4.android` doesn't fix the mismatch. It hides a contract problem inside the token tiers, where the next person won't think to look. Source: [Curtis, "Reimagining a Token Taxonomy"](https://medium.com/eightshapes-llc/reimagining-a-token-taxonomy-462d35b2b033).

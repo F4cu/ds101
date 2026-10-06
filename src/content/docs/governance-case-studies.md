@@ -42,11 +42,11 @@ The context that made it work: ten people is a small, sustainable number, consis
 
 ### GOV.UK: a public community backlog
 
-The **GOV.UK** Design System runs on a public community backlog, documented in the open and at a different scale than most private-company examples. It's a public GitHub repo where anyone across UK government can propose a component or pattern. A working group reviews each proposal for whether it's useful and not a duplicate, then marks it to-do and pairs it with a contributor. Most major additions come from outside the core team, but it isn't a free-for-all. A named community designer runs weekly catch-ups with whoever is building the thing, the GOV.UK equivalent of Curtis's steward role.
+The **GOV.UK** Design System runs on a public community backlog, documented in the open and at a different scale than most private-company examples. It's a public GitHub repo where anyone across UK government can propose a component or pattern. A working group reviews each proposal for whether it's useful and not a duplicate, then marks it to-do and pairs it with a contributor. Most major additions come from outside the system team, but it isn't a free-for-all. A named community designer runs weekly catch-ups with whoever is building the thing, the GOV.UK equivalent of Curtis's steward role.
 
 The team's own account of iterating the model is candid about what they got wrong the first time. [Chris Ballantine-Thomas](https://designnotes.blog.gov.uk/2023/05/31/iterating-the-gov-uk-design-system-contribution-model/) writes: "In the past, we often waited for teams to approach us for proposals for patterns and components, which did not always match with the community's needs."
 
-Their fix was to flip from reactive to proactive: publish what the team currently wants built *before* anyone proposes it. That way contributor effort lands on something the system needs, rather than being reviewed and declined after the fact. The context that made it work: a public-sector team working in the open, across many departments, with a funded core team to run the backlog.
+Their fix was to flip from reactive to proactive: publish what the team currently wants built *before* anyone proposes it. That way contributor effort lands on something the system needs, rather than being reviewed and declined after the fact. The context that made it work: a public-sector team working in the open, across many departments, with a funded system team to run the backlog.
 
 ## Patterns across cases
 

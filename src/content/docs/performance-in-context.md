@@ -51,7 +51,7 @@ Component usage tools are the mirror image. Import scanners like **Pinterest's**
 
 ### Trace drop-offs back to the component
 
-A component can be adopted, accessible, and on-brand, and still be the exact step where checkout, onboarding, or an upgrade flow slows down or loses users. Product teams' existing funnel tools can answer that. The missing piece is linking a drop-off step to the component instance at that step, so the finding reaches the design system team instead of dead-ending as "step 3 has high abandonment."
+A component can be adopted, accessible, and on-brand, and still be the exact step where checkout, onboarding, or an upgrade flow slows down or loses users. Product teams' existing funnel tools can answer that. The missing piece is linking a drop-off step to the component instance at that step, so the finding reaches the system team instead of dead-ending as "step 3 has high abandonment."
 
 ### Demand more evidence for context-level findings
 

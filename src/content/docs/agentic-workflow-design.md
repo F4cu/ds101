@@ -57,7 +57,7 @@ A generator paired with a reviewer that sends work back. The guide calls it the 
 
 ### Set autonomy per action, not per agent
 
-How much review an action needs depends on what it does, not on which agent does it. [Kavcic](https://www.intodesignsystems.com/blog/design-system-not-ready-for-ai-agents) sorts agent changes by confidence and risk: a lint fix or a doc typo can merge on its own, a token update opens a draft PR a person merges, and a new API or breaking change is only ever a suggestion. [CI for agentic workflows](/ds101/ci-for-agentic-workflows/) covers how a pipeline enforces those tiers. The design-system-ops orchestration guide builds the checkpoints into each chain as **human gates**, spelled out in the chain's definition rather than left to the agent's judgment.
+How much review an action needs depends on what it does, not on which agent does it. [Kavcic](https://www.intodesignsystems.com/blog/design-system-not-ready-for-ai-agents) sorts agent changes by confidence and risk: a lint fix or a doc typo can merge on its own, a token update opens a draft pull request (PR) a person merges, and a new API or breaking change is only ever a suggestion. [CI for agentic workflows](/ds101/ci-for-agentic-workflows/) covers how a pipeline enforces those tiers. The design-system-ops orchestration guide builds the checkpoints into each chain as **human gates**, spelled out in the chain's definition rather than left to the agent's judgment.
 
 ### Never silently skip a failed step
 

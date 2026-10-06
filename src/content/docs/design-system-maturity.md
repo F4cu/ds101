@@ -48,7 +48,7 @@ Whether teams actually use, trust, and rely on the system, measured rather than 
 
 ### Run the assessment as a conversation
 
-Wang's process: 4–8 evaluators score all six dimensions independently on a 1–5 scale. They include design-system team members across design, engineering, product, and content, plus product-team representatives and sponsors. Then they meet to "triangulate and align," focusing on where their scores diverge rather than where they agree. The result is plotted as a hexagonal radar chart and reassessed quarterly, or after a major org change. Wang is explicit that the biggest value isn't the shape. It's the discussion that happens because people had to justify their number to each other.
+Wang's process: 4–8 evaluators score all six dimensions independently on a 1–5 scale. They include system team members across design, engineering, product, and content, plus product-team representatives and sponsors. Then they meet to "triangulate and align," focusing on where their scores diverge rather than where they agree. The result is plotted as a hexagonal radar chart and reassessed quarterly, or after a major org change. Wang is explicit that the biggest value isn't the shape. It's the discussion that happens because people had to justify their number to each other.
 
 ### Prefer a balanced shape over a big uneven one
 

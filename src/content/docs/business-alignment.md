@@ -30,7 +30,7 @@ This fits when the current state creates technical, compliance, or user-facing r
 
 ### Lead with cost
 
-This fits when the problem is waste, such as teams maintaining separate versions of the same interface elements. The pattern is: "We are currently [current state], which costs us [figure, labelled]. We can recover this by [investment]." It works with engineering leadership and finance-minded organizations. The cost is real inputs. Leadership documents get forwarded and checked months later, and the notes warn that "a number that turns out to be invented costs more credibility than the whole document earned." [Estimating ROI](/ds101/estimating-roi/) covers building that figure from labelled inputs.
+This fits when the problem is waste, such as teams maintaining separate versions of the same interface elements. The pattern is: "We are currently [current state], which costs us [figure, labelled]. We can recover this by [investment]." It works with engineering leadership and finance-minded organizations. The cost is real inputs. Leadership documents get forwarded and checked months later, and the notes warn that "a number that turns out to be invented costs more credibility than the whole document earned." [Estimating ROI](/ds101/estimating-roi/) covers building that figure from labeled inputs.
 
 ## Practices
 
