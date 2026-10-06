@@ -36,8 +36,11 @@ npm run freshness  # list pages overdue for a freshness review
   (`'token-architecture'`) unless its nav label needs to differ from the page's `title`
   frontmatter, in which case use `{ slug: '...', label: '...' }`.
 - **`src/styles/custom.css`** — the only custom CSS on top of Starlight's stock theme:
-  WCAG line-length caps and the `.mermaid-wrap` scroll-box
-  style. Deliberately does not reskin Starlight's default colors/fonts/sidebar chrome.
+  WCAG line-length caps, one accent hue (`--ds-accent-hue`) driving Starlight's accent
+  ramp in both themes, the tip aside ("Key takeaways") rebound from purple to that
+  accent, text-accent borders on blockquotes and tips, body links in the text color
+  (sidebar and nav keep the accent), and the `.mermaid-wrap` scroll-box style.
+  Otherwise leaves Starlight's fonts, layout and sidebar chrome alone.
 - **Content pages** (`src/content/docs/*.md`) — each is a standalone topic page. The
   `title` frontmatter field is what Starlight renders as the page's H1 and browser-tab
   title — don't also put a `# Title` line in the body, Starlight adds it automatically.
