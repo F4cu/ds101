@@ -58,6 +58,10 @@ and describes tools or examples that have since changed. Older sources used only
 - [W3C, "Web Content Accessibility Guidelines (WCAG) 2.2"](https://www.w3.org/TR/WCAG22/), 2023
 - [European Union, Directive (EU) 2019/882 (European Accessibility Act)](https://eur-lex.europa.eu/eli/dir/2019/882/oj), 2019 — applies from 28 June 2025
 - [ETSI, EN 301 549 V3.2.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf), 2021 — the EAA's harmonised standard, referencing WCAG 2.1 AA
+- [Nathan Curtis, Directed Edges `specs`, "ADR 067: Element Behavior Roles via `anatomy.role`"](https://github.com/DirectedEdges/specs/blob/main/adr/067-anatomy-element-roles.md), 2026: roles as an authored fact, the three look-alike pills, and the `div`-plus-ARIA output without them
+- [Nathan Curtis, Directed Edges `specs`, "ADR 068: Form Control and Field Plumbing Role Concepts"](https://github.com/DirectedEdges/specs/blob/main/adr/068-form-control-roles.md), 2026: control and part roles such as `label` and `errormessage`
+- [Nathan Curtis, Directed Edges `specs`, "ADR 087: Behavior Actions via `anatomy.action`"](https://github.com/DirectedEdges/specs/blob/main/adr/087-behavior-actions.md), 2026: role versus action, and the alert's dismiss button
+- [Directed Edges `specs`, `Anatomy.ts`](https://github.com/DirectedEdges/specs/blob/main/packages/schema/types/Anatomy.ts), living doc: the anatomy element shape, and role lists on composed instances
 
 ## Layout accessibility
 
@@ -174,6 +178,15 @@ and describes tools or examples that have since changed. Older sources used only
 - [Wealthfront Engineering, "Building Wealthfront's multi-platform design system"](https://eng.wealthfront.com/2022/05/10/building-wealthfronts-multi-platform-design-system/), 2022
 - Murphy Trueman, `design-system-ops`, [`skills/metadata-schema-generator/SKILL.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/metadata-schema-generator/SKILL.md), living doc: prohibited prop combinations
 - [Murphy Trueman, "Slots and the control paradox"](https://murphytrueman.substack.com/p/slots-and-the-control-paradox), 2025: deciding what stays locked
+- [W3C, ARIA Authoring Practices Guide, "Button Pattern"](https://www.w3.org/WAI/ARIA/apg/patterns/button/), living doc: toggle buttons and `aria-pressed`
+- [W3C, ARIA Authoring Practices Guide, "Tabs Pattern"](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/), living doc: `aria-selected` on the active tab
+- [W3C, ARIA Authoring Practices Guide, "Radio Group Pattern"](https://www.w3.org/WAI/ARIA/apg/patterns/radio/), living doc: `aria-checked` on each radio, one checked per group
+- [Radix Primitives, "Toggle"](https://www.radix-ui.com/primitives/docs/components/toggle), living doc: `pressed` and `onPressedChange`
+- [Radix Primitives, "Toggle Group"](https://www.radix-ui.com/primitives/docs/components/toggle-group), living doc: `value` and `onValueChange` on the group
+- [React Aria, "ToggleButton"](https://react-spectrum.adobe.com/react-aria/ToggleButton.html), living doc: the `isSelected` boolean
+- [React Aria, "TagGroup"](https://react-spectrum.adobe.com/react-aria/TagGroup.html), living doc: `selectedKeys` on the group
+- [MUI, "ToggleButton API"](https://mui.com/material-ui/api/toggle-button/), living doc: the `selected` prop
+- [Nathan Curtis, Directed Edges `specs`, "ADR 067: Element Behavior Roles via `anatomy.role`"](https://github.com/DirectedEdges/specs/blob/main/adr/067-anatomy-element-roles.md), 2026: a checkbox's selected state emitted as `aria-selected`
 
 ## Component property naming
 
@@ -186,6 +199,8 @@ and describes tools or examples that have since changed. Older sources used only
 - [Figma Learn, "Apply changes to instances"](https://help.figma.com/hc/en-us/articles/360039150733-Apply-changes-to-instances), living doc: which overrides carry across variants and instance swaps
 - [Figma Learn, "Swap components and instances"](https://help.figma.com/hc/en-us/articles/360039150413-Swap-components-and-instances), living doc: swapping from the Assets panel keeps only text overrides
 - [Figma Learn, "Use slots to build flexible components in Figma"](https://help.figma.com/hc/en-us/articles/38231200344599-Use-slots-to-build-flexible-components-in-Figma), living doc: one slot property across variants
+- [Nathan Curtis, Directed Edges `specs`, "ADR 066: Lossless key formatting"](https://github.com/DirectedEdges/specs/blob/main/adr/066-lossless-key-formatting.md), 2026: what converting layer names to keys loses, and the safe character set
+- [Nathan Curtis, Directed Edges `specs`, "ADR 058: Collapsing Wrapped Primitives"](https://github.com/DirectedEdges/specs/blob/main/adr/058-wrapper-collapse.md), 2026: unstyled wrapper frames dropped from the spec
 - [Murphy Trueman, "What your components look like as data"](https://blog.murphytrueman.com/what-your-components-look-like-as-data/), 2026: descriptive layer names and enum properties
 
 ## Component usability

@@ -108,6 +108,38 @@ An override is a hidden dependency that can break silently on the next release. 
 
 When teams do need to restyle, give them a documented way in so they don't reach into internals. [MUI](https://mui.com/material-ui/guides/api/) passes undocumented props such as `className` to the root element, and every component accepts a `classes` prop keyed by documented names, with the root always called `root`. Because the names are documented, renaming one is a visible API change rather than a silent break like `.card__title`. To decide what stays locked, [Murphy Trueman](https://murphytrueman.substack.com/p/slots-and-the-control-paradox) asks what "must stay consistent for brand identity, accessibility, or technical reasons?" and treats everything else as a candidate for flexibility. [Component property naming](/ds101/component-property-naming/) covers how to name the props themselves.
 
+### Let the pattern decide who owns selection
+
+Before naming a toggle's boolean, decide whether it's one toggle or one choice among siblings. The two need different APIs. The ARIA Authoring Practices Guide gives each its own state. A [toggle button](https://www.w3.org/WAI/ARIA/apg/patterns/button/) carries `aria-pressed`, and each one is independent of the others. [Tabs](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) and listbox options carry `aria-selected`, which means chosen from the items in their container. Checkboxes and [radio buttons](https://www.w3.org/WAI/ARIA/apg/patterns/radio/) carry `aria-checked`. Each radio carries its own, but only one in the group can be checked at a time.
+
+Libraries split their APIs along the same line. In [Radix](https://www.radix-ui.com/primitives/docs/components/toggle), a lone toggle owns its state:
+
+```tsx title="One toggle"
+<Toggle.Root
+  pressed={bold}
+  onPressedChange={setBold}
+/>
+```
+
+A [Toggle Group](https://www.radix-ui.com/primitives/docs/components/toggle-group) owns the selection, and its items take no pressed prop at all:
+
+```tsx title="A set of toggles"
+<ToggleGroup.Root
+  type="single"
+  value={align}
+  onValueChange={setAlign}
+>
+  <ToggleGroup.Item value="left" />
+  <ToggleGroup.Item value="center" />
+</ToggleGroup.Root>
+```
+
+Notice where the state lives. Because the group holds the value, no item can disagree with it, and two items can't both claim to be selected in a single-choice set. [React Aria](https://react-spectrum.adobe.com/react-aria/ToggleButton.html) draws the same line: a `ToggleButton` takes an `isSelected` boolean, while a [`TagGroup`](https://react-spectrum.adobe.com/react-aria/TagGroup.html) takes `selectedKeys` for the whole set.
+
+What libraries don't agree on is the lone toggle's prop name. Radix calls it `pressed`, React Aria `isSelected`, and [MUI](https://mui.com/material-ui/api/toggle-button/) `selected`. A naming convention can't settle that, but the structure question comes first and has a right answer. Pick one name and use it everywhere, as [Component property naming](/ds101/component-property-naming/#name-one-concept-one-way-across-components) covers.
+
+Getting the pattern wrong shows up in generated code too. [Curtis](https://github.com/DirectedEdges/specs/blob/main/adr/067-anatomy-element-roles.md) found his spec tool turning a checkbox's selected state into `aria-selected`, "a listbox-option attribute, incorrect for a checkbox," until each part's role was recorded in the spec. [Component accessibility](/ds101/component-accessibility/#record-each-parts-role-in-the-spec) covers that.
+
 ### Share decisions across platforms, not implementations
 
 The same component often needs to work on web, iOS, and Android without looking identical on all three. [Wealthfront's engineering team](https://eng.wealthfront.com/2022/05/10/building-wealthfronts-multi-platform-design-system/) calls this "design once, build anywhere": share tokens (padding, radius, color, typography) and intent, and let the implementation follow each platform's conventions. Their example: a Dialog floats centered on desktop web, while its mobile counterpart is a BottomSheet attached to the bottom edge. It's a different component and interaction model, built on the same decisions.
