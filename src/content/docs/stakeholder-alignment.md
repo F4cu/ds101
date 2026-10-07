@@ -4,9 +4,7 @@ reviewed: 2026-09-16
 reviewIn: 24
 ---
 
-> "Design systems don't fail because of components. They fail because they lose alignment with the organisation."
->
-> — [Marianne Ashton-Booth, "From Silos to Systems"](https://marianneashtonbooth.com), UXDX Berlin 2026
+> "Design systems don't fail because of components. They fail because they lose alignment with the organisation." — [Marianne A.](https://marianneashtonbooth.com)
 
 At scale, a design system is a small organization inside a bigger one, and it has to stay legible to, and connected with, everything around it. Staying aligned takes a toolkit, not one framework: a way to map who your stakeholders are, and others to match altitude, timing, and pitch to each group. This whole page draws on Ashton-Booth's talk.
 

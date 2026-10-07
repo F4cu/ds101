@@ -14,9 +14,7 @@ An accessible component library doesn't make an accessible product, but it's sti
 
 ## The problem
 
-> "Using the GOV.UK Design System in a service does not immediately make that service accessible. Additional research, design, development and testing work is needed."
->
-> — [GOV.UK Design System, "Accessibility strategy"](https://design-system.service.gov.uk/accessibility/accessibility-strategy/)
+> "Using the GOV.UK Design System in a service does not immediately make that service accessible. Additional research, design, development and testing work is needed." — [GOV.UK](https://design-system.service.gov.uk/accessibility/accessibility-strategy/)
 
 It's tempting to read "we use the design system" as "we're accessible." [Nathan Curtis](https://medium.com/eightshapes-llc/accessible-design-systems-dont-guarantee-accessible-products-3478e3a462ba) has watched leadership make that leap: when accessibility came up in one system pitch, an executive's reaction was "Oh, our teams will make accessible products if they use the system? Sold!" Curtis's point is that every adopting team still has three jobs. It configures each component it uses, composes many components into a screen, and builds its own components where the system has none. "Composition reveals how preposterous it is to think a design system's parts guarantee accessibility." [Performance in context](/ds101/performance-in-context/) covers catching the failures that only show up where a component is used.
 

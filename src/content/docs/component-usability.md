@@ -14,9 +14,7 @@ A component can be well structured and still be hard to use. It's hard to use wh
 
 ## The problem
 
-> "When these components hit production, they'd break unpredictably, forcing developers to implement their own solutions that sidestepped the design system entirely."
->
-> — [Murphy Trueman, "Why your components break in production"](https://blog.murphytrueman.com/p/api-driven-design-systems)
+> "When these components hit production, they'd break unpredictably, forcing developers to implement their own solutions that sidestepped the design system entirely." — [Murphy T.](https://blog.murphytrueman.com/p/api-driven-design-systems)
 
 Most hard-to-use components aren't broken in one big way. They fail in several small ways, and each failure was a reasonable decision when it was made. This Card puts together failures that Curtis, Supernova, and Braid each describe on [Component API design](/ds101/component-api-design/) and [Component composition in code](/ds101/component-composition-in-code/):
 

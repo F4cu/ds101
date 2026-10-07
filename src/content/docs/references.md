@@ -17,6 +17,13 @@ and describes tools or examples that have since changed. Older sources used only
 - Murphy Trueman, [`design-system-ops`](https://github.com/murphytrueman/design-system-ops) — `knowledge-notes/*.md`, the primary source for Part 1 and most of Part 2's governance mechanics. Living doc.
 - [Nathan Curtis, "Component Contracts and Schemas"](https://nathanacurtis.substack.com/p/component-contracts-and-schemas), 2026: `READY_FOR_DEV` handoff, keeping contracts current, and ADRs
 - [Design Tokens Community Group, "Design Tokens Specification Reaches First Stable Version"](https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/), W3C, 2025: the 2025.10 stable release and the tools that read it
+- [Figma, "Control opacity at scale"](https://www.figma.com/release-notes/?title=control-opacity-at-scale), release notes, 2026: opacity on color variables without detaching
+- [Tokens Studio, "Modified Colors"](https://docs.tokens.studio/manage-tokens/token-types/color/modified), living doc: alpha and mix modifiers, Pro only, resolved to hex on export to Figma
+- [Design Tokens Community Group, "Design Tokens Format Module 2025.10"](https://w3c.github.io/cg-reports/design-tokens/CG-FINAL-format-20251028/), 2025: curly-brace aliases target whole tokens only
+- [Design Tokens Community Group, "Design Tokens Color Module 2025.10"](https://w3c.github.io/cg-reports/design-tokens/CG-FINAL-color-20251028/), 2025: color value structure with optional alpha
+- [Stuart Robson, "How Colour Works with the DTCG Design Tokens Color Module"](https://www.alwaystwisted.com/articles/a-design-tokens-workflow-part-17), Always Twisted, 2026
+- [GitButler, design-core PR #47, "write colors aliased with their own opacity as color-mix"](https://github.com/gitbutlerapp/design-core/pull/47), 2026
+- [figma/plugin-typings issue #381, "opacity on a translucent color source is … silently ignored"](https://github.com/figma/plugin-typings/issues/381), 2026
 - Alla Kholmatova, *Design Systems: A Practical Guide to Creating Design Languages for Digital Products* (O'Reilly, 2017)
 - [Jina Anne, "Design Systems are for People"](https://www.aiga.org/inspiration/talks/jina-anne-design-systems-are-for-people), AIGA, n.d.
 

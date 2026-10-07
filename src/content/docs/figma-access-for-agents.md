@@ -27,9 +27,7 @@ library turned into code, or kept in sync with it.
 names the cost:
 
 > "MCP fetches and processes vast payloads every time, throwing countless tokens to take
-> it through its paces. Nothing persists. The work is disposable."
->
-> — [Nathan Curtis, "Figma Component Specs on Command"](https://nathanacurtis.substack.com/p/figma-component-specs-on-command)
+> it through its paces. Nothing persists. The work is disposable." — [Nathan C.](https://nathanacurtis.substack.com/p/figma-component-specs-on-command)
 
 That data is mostly noise, too. In his button example, Figma returns 26,901
 properties when about 350 matter, and 45 full variant copies when what matters is 15

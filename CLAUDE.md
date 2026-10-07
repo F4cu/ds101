@@ -36,8 +36,11 @@ npm run freshness  # list pages overdue for a freshness review
   (`'token-architecture'`) unless its nav label needs to differ from the page's `title`
   frontmatter, in which case use `{ slug: '...', label: '...' }`.
 - **`src/styles/custom.css`** — the only custom CSS on top of Starlight's stock theme:
-  WCAG line-length caps and the `.mermaid-wrap` scroll-box
-  style. Deliberately does not reskin Starlight's default colors/fonts/sidebar chrome.
+  WCAG line-length caps, one accent hue (`--ds-accent-hue`) driving Starlight's accent
+  ramp in both themes, the tip aside ("Key takeaways") rebound from purple to that
+  accent, text-accent borders on blockquotes and tips, body links in the text color
+  (sidebar and nav keep the accent), and the `.mermaid-wrap` scroll-box style.
+  Otherwise leaves Starlight's fonts, layout and sidebar chrome alone.
 - **Content pages** (`src/content/docs/*.md`) — each is a standalone topic page. The
   `title` frontmatter field is what Starlight renders as the page's H1 and browser-tab
   title — don't also put a `# Title` line in the body, Starlight adds it automatically.
@@ -113,9 +116,12 @@ table of contents lists every practice as a short label. See `release-management
      `### Criteria for …` heading with a numbered list of questions in the order a reviewer
      asks them. Each decision rule has one owning page. Other pages link to it.
    - **Citations inline.** Name the practitioner in the sentence and put the link on the
-     name ("[Curtis](…) defines…"). No trailing "— author, title" lines. Block quotes keep
-     their attribution line (`> — [Author, "Title"](url)`), separated from the quote by
-     a blank `>` line so it renders as its own muted paragraph (styled in `custom.css`).
+     name ("[Curtis](…) defines…"). No trailing "— author, title" lines. Block quotes end
+     with an inline attribution on the quote's last line: first name plus last initial,
+     linked to the source (`> "…quote." — [Nathan C.](url)`). Organizations use a short
+     name (`[GOV.UK](url)`). A quote taken from someone else's work links the
+     secondary source (`— Nathan C., via [Brad F.](url)`). The full title lives in
+     `references.md`.
    - **Block quotes only in the lead or `## The problem`**, for a standalone author quote
      that anchors the page's argument (at most one per section). Quotes anywhere else stay
      inline in the sentence, so block quotes don't pile up and flatten the hierarchy.

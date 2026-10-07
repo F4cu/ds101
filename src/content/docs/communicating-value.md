@@ -14,9 +14,7 @@ A design system has to justify itself in the funder's terms. "It's more consiste
 
 ## The problem
 
-> "A style guide is an artifact of design process. A design system is a living, funded product with a roadmap & backlog, serving an ecosystem."
->
-> — Nathan Curtis, EightShapes, quoted in Brad Frost, *Atomic Design*, Chapter 5
+> "A style guide is an artifact of design process. A design system is a living, funded product with a roadmap & backlog, serving an ecosystem." — Nathan C., via [Brad F.](https://atomicdesign.bradfrost.com/chapter-5/)
 
 A style guide can just sit there and still be useful. A design system can't: it has to keep earning its funding. Systems that can't explain their value beyond "it's tidier" are the first thing cut in a budget squeeze, because nobody outside the team can see what's at stake in losing them.
 

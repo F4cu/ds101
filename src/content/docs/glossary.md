@@ -27,6 +27,10 @@ referenced. See [Token architecture](/ds101/token-architecture/).
 letting different tools read and write the same token files. See
 [Token architecture](/ds101/token-architecture/).
 
+**Modified color** (Tokens Studio) — a color token derived from another by lightening,
+darkening, mixing, or changing its alpha, so it stays linked to its base. See
+[Token architecture](/ds101/token-architecture/#keep-translucent-colors-linked-to-their-base).
+
 **Resolver file** — a DTCG file that composes token sets into modes, such as light/dark
 or brand variants, for theming. See [Token architecture](/ds101/token-architecture/).
 

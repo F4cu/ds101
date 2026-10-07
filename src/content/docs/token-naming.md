@@ -14,9 +14,7 @@ A token's name is how people and agents find the decision behind it. Design syst
 
 ## The problem
 
-> "Every inconsistent pattern erodes trust. Friction scales linearly; mistrust scales exponentially."
->
-> — [Murphy Trueman, "Why design system naming feels impossible"](https://blog.murphytrueman.com/p/why-design-system-naming-feels-impossible)
+> "Every inconsistent pattern erodes trust. Friction scales linearly; mistrust scales exponentially." — [Murphy T.](https://blog.murphytrueman.com/p/why-design-system-naming-feels-impossible)
 
 Inconsistency starts inside one system. When [Curtis](https://nathanacurtis.substack.com/p/reimagining-a-token-taxonomy-462d35b2b033) audited a client's tokens, Badge used `$esds-color-palette-neutral-90` for its neutral background while Alert used `$esds-color-background-light` for the same purpose. Nobody could tell from the names that the two meant the same thing.
 

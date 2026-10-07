@@ -3,6 +3,29 @@
 :root {
 	--measure: 600px;
 }
+
+/* One accent hue for the whole site. Starlight's defaults drift: the dark-mode accent
+   is hue 224, the light-mode accent 234, and tip asides use purple (281). Saturation and
+   lightness stay at Starlight's defaults so contrast is unchanged; only the hue is unified. */
+:root {
+	--ds-accent-hue: 224;
+	--sl-color-accent-low: hsl(var(--ds-accent-hue), 54%, 20%);
+	--sl-color-accent: hsl(var(--ds-accent-hue), 100%, 60%);
+	--sl-color-accent-high: hsl(var(--ds-accent-hue), 100%, 85%);
+}
+:root[data-theme='light'] {
+	--sl-color-accent-high: hsl(var(--ds-accent-hue), 80%, 30%);
+	--sl-color-accent: hsl(var(--ds-accent-hue), 90%, 60%);
+	--sl-color-accent-low: hsl(var(--ds-accent-hue), 88%, 90%);
+}
+
+/* Rebind the tip aside ("Key takeaways") from purple to the accent ramp. Starlight
+   scopes these variables to the aside class, so they're overridden there, not on :root. */
+.starlight-aside--tip {
+	--sl-color-asides-text-accent: var(--sl-color-accent-high);
+	--sl-color-asides-border: var(--sl-color-text-accent);
+	background-color: var(--sl-color-accent-low);
+}
 .sl-markdown-content p,
 .sl-markdown-content li,
 .sl-markdown-content blockquote,
@@ -13,16 +36,21 @@
 	max-width: var(--measure);
 }
 
-/* Tint the block quote rule with the theme accent so quotes read as highlighted.
-   Starlight has no border-specific accent token; --sl-color-accent is its base accent. */
-.sl-markdown-content blockquote {
-	border-inline-start-color: var(--sl-color-accent);
+/* Body links take the surrounding text color (the underline marks them) so they don't
+   compete with the content. Sidebar and nav links aren't in .sl-markdown-content and keep
+   their colors. Starlight's hover rule is in a layer, so it's restated here. */
+.sl-markdown-content a:not(:where(.not-content *)) {
+	color: inherit;
 }
-/* The attribution is the quote's last paragraph ("> — Author" after a blank ">" line) */
-.sl-markdown-content blockquote > p:last-child:not(:first-child) {
-	margin-top: 0.5rem;
-	color: var(--sl-color-gray-3);
-	font-size: var(--sl-text-sm);
+.sl-markdown-content a:hover:not(:where(.not-content *)) {
+	color: var(--sl-color-white);
+}
+
+/* Tint the block quote rule with the text accent so quotes read as highlighted and match
+   link color. Starlight has no border-specific accent token; --sl-color-text-accent is
+   the lighter accent-high in dark mode (the base accent reads as a saturated blue there). */
+.sl-markdown-content blockquote {
+	border-inline-start-color: var(--sl-color-text-accent);
 }
 
 /* Mermaid diagrams don't reflow — scroll them within their own box instead of the page */

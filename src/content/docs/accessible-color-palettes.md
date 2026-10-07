@@ -14,9 +14,7 @@ A palette is accessible when anyone using it can tell which colors are safe toge
 
 ## The problem
 
-> "Any system designer responsible for color must be familiar with WCAG 2.0 rules, have a tool to test color pairs."
->
-> — [Nathan Curtis, "Color in Design Systems"](https://nathanacurtis.substack.com/p/color-in-design-systems-a1c80f65fa3)
+> "Any system designer responsible for color must be familiar with WCAG 2.0 rules, have a tool to test color pairs." — [Nathan C.](https://nathanacurtis.substack.com/p/color-in-design-systems-a1c80f65fa3)
 
 Curtis's 2016 advice still holds, but it assumes one person checks pairs one at a time. A typical palette starts with a brand color, a few grays, and red, amber, and green for feedback, with shades picked by eye. Nobody knows which blue is safe on which gray, so teams pick what looks right on their monitor. Then dark mode arrives: every pair needs checking again, some tokens never got a dark value, and raised cards look sunken. Then a second brand arrives with a red primary, and error messages stop standing out.
 
@@ -61,7 +59,7 @@ Swatches show what colors exist, not which go together. Curtis recommends "rever
 A token name doesn't tell you its contrast. `color.text.secondary` might pass in light mode and fail in dark mode. Trueman's theme audit asks you to "compute contrast from resolved values (follow aliases to the final colour in that theme) rather than judging by name." It also covers the cases automated checks get wrong:
 
 - **Wide-gamut colors.** Colors defined in OKLCH, Lab, LCH, or Display P3 can be more vivid than a standard (sRGB) screen shows. Convert them to sRGB first, and "say when a value was out of gamut and clipped."
-- **Transparent colors.** "A colour with alpha has no contrast ratio on its own." Blend it over the background it sits on first. If that background isn't known, report the ratio as not computed rather than guess.
+- **Transparent colors.** "A colour with alpha has no contrast ratio on its own." Blend it over the background it sits on first. If that background isn't known, report the ratio as not computed rather than guess. When a token aliases a base color and adds opacity, use the alpha it resolves to, not the number on the token. Figma ignores that number when the base is already translucent ([Token architecture](/ds101/token-architecture/#keep-translucent-colors-linked-to-their-base)).
 - **Non-text elements.** Borders, focus indicators, and icons need 3:1 too, and are the pairs most often skipped.
 
 In dark mode, check the surfaces as well as the text. Trueman: "Raised surfaces should be lighter than the base background — elevation reads as lightness in dark themes, since shadows barely show. A surface darker than the background reads as sunken." Dark mode needs its own surface steps, not the light ones inverted.

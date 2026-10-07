@@ -14,9 +14,7 @@ A contribution model decides how people outside the system team propose, build, 
 
 ## The problem
 
-> "You can't define contribution until you truly understand what problem it's solving in your organisation."
->
-> — [Ness Grixti, "Rethinking Contribution"](https://nessgrixti.com/articles/rethinking-contribution-lessons-from-the-messy-middle-of-design-systems/)
+> "You can't define contribution until you truly understand what problem it's solving in your organisation." — [Ness G.](https://nessgrixti.com/articles/rethinking-contribution-lessons-from-the-messy-middle-of-design-systems/)
 
 A process designed without that answer either builds a formal pipeline for contributors who don't exist, or leaves an open door with a README that nobody walks through.
 

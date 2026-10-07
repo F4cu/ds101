@@ -16,9 +16,7 @@ Governance is how a design system decides things on purpose, and how it remember
 
 Without recorded decisions, teams argue the same questions forever. The design-system-ops governance notes ([`knowledge-notes/component-governance.md`](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/component-governance.md)) put it plainly: "A team that has maintained records for two years knows why their system looks the way it does. A team that has not is perpetually re-litigating the same questions."
 
-> "The biggest existential threat to any system is neglect."
->
-> — Alex Schleifer, Airbnb, quoted in Brad Frost, *Atomic Design*, Chapter 5
+> "The biggest existential threat to any system is neglect." — Alex S., via [Brad F.](https://atomicdesign.bradfrost.com/chapter-5/)
 
 Governance doesn't die from a bad decision. It dies from decisions nobody bothered to make or record.
 
