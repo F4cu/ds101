@@ -63,6 +63,24 @@ That subset is smaller than it looks. GOV.UK doesn't rely on automated tools alo
 
 The toolkit turns the same idea into a reporting rule: "PASS requires evidence from the running component or a computed ratio. Code-only inference is ⚠️ WARN (unverified)." If nobody has run the component with a keyboard and a screen reader, the report says so instead of passing it.
 
+### Record each part's role in the spec
+
+A Figma file can't say what a part does. In [Curtis's decision record on anatomy roles](https://github.com/DirectedEdges/specs/blob/main/adr/067-anatomy-element-roles.md), "a checkbox control and a decorative square are the same node type." His test library has three components with the same anatomy (a container, a leading icon, and a label) that need three different behaviors: a plain pill, a selectable pill that acts as a checkbox, and a toggle button. No layer structure or naming pattern told them apart, so code generated from their specs rendered every one as a `div` with ARIA attributes added on top, with no native button or checkbox underneath. His conclusion: "The role is an authored fact that must be carried in the spec."
+
+His `specs` tool reads that fact from a Figma Dev Mode annotation on the part, such as `role:checkbox`, and writes it into that part's entry in the anatomy. The [design-to-code contract](/ds101/design-to-code-contract/) already asks for a role before build. This puts it on the specific part, where a code generator or an agent can find it. The role words name how the control behaves, not HTML tags, so each platform maps `checkbox` to its own native control. The [form-control roles](https://github.com/DirectedEdges/specs/blob/main/adr/068-form-control-roles.md) also name the parts around a control, like `label`, `description`, and `errormessage`, so a label is matched to the control it names instead of being linked by hand. When a nested component provides two of those parts, like a field label that also carries a description, the parent can list both roles on that one instance so both get linked.
+
+Keep what a part *is* separate from what activating it *does*. In [a later decision record](https://github.com/DirectedEdges/specs/blob/main/adr/087-behavior-actions.md), an alert's close button is still a button: it announces as one and uses the same native element. What sets it apart is that activating it closes the alert. Curtis records that as an action rather than a new `dismissbutton` role, because a role for every behavior and control pair would stop matching any platform's real controls. His test for telling them apart: does it change how the control is announced? A toggle button announces whether it's pressed, so that's a role. The close button doesn't, so that's an action. In the shape of the schema's [`Anatomy` type](https://github.com/DirectedEdges/specs/blob/main/packages/schema/types/Anatomy.ts):
+
+```yaml title="Alert anatomy excerpt"
+dismiss:
+  type: instance
+  instanceOf: IconButton
+  actions:
+    - type: dismiss
+```
+
+Notice that the alert doesn't give its child a role. The icon button keeps its own `button` role, and the alert only adds that activating this particular child closes it. The annotations only reach code if you generate code from specs, as Curtis's tool does, and the list of roles is still growing with each release.
+
 ### Throw errors for missing accessibility props
 
 Configuring a single component is still the adopting team's job, like setting a notification's role or a checkbox label's `for` attribute. Curtis wants that work to "feel like a checklist," and the system can make it one. It can itemize the blanks to fill (such as aria labels for popovers, lists, and buttons), build required HTML elements and properties into its output, and go as far as "requiring and throwing errors for missing properties." His example is a checkbox laid over an object with no visible label, which still needs a hidden one.

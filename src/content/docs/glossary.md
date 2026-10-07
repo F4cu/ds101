@@ -357,6 +357,14 @@ where a native HTML element already has the right meaning. See
 keyboard pattern, and how it gets its accessible label. Agreed before build, not left
 to QA. See [The design-to-code contract](/ds101/design-to-code-contract/).
 
+**Anatomy role** — what a part of a component *is* (a button, a checkbox, a label),
+recorded on that part in the spec so each platform can use its own native control.
+See [Component accessibility](/ds101/component-accessibility/#record-each-parts-role-in-the-spec).
+
+**Action** (anatomy action) — what activating a part *does*, such as closing the
+component it belongs to, recorded separately from its role. See
+[Component accessibility](/ds101/component-accessibility/#record-each-parts-role-in-the-spec).
+
 **Agentic workflow pattern** — one of several ways multiple AI agents coordinate on a
 task: sequential chain, parallel agents (what design-system-ops calls a parallel
 fan-out), supervisor, or generator/reviewer loop (what design-system-ops calls the
