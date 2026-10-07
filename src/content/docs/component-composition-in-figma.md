@@ -79,7 +79,7 @@ button:
           opacity: 0.36
 ```
 
-Read it as: whenever `disabled` is true, the button's root element gets 0.36 opacity, whatever the other props are. Figma can't express a rule like that, so the file repeats it 96 times. [Multi-platform component specs](/ds101/multi-platform-component-specs/#define-components-as-data-and-generate-figma-from-it) covers moving a component's definition into data.
+Read it as: whenever `disabled` is true, the button's root element gets 0.36 opacity, whatever the other props are. Figma can't express a rule like that, so the file repeats it 96 times. [Component specs](/ds101/component-specs/#author-the-spec-as-data-in-the-repo) covers moving a component's definition into data.
 
 ### Instance swap
 

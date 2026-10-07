@@ -16,6 +16,7 @@ and describes tools or examples that have since changed. Older sources used only
 
 - Murphy Trueman, [`design-system-ops`](https://github.com/murphytrueman/design-system-ops) — `knowledge-notes/*.md`, the primary source for Part 1 and most of Part 2's governance mechanics. Living doc.
 - [Nathan Curtis, "Component Contracts and Schemas"](https://nathanacurtis.substack.com/p/component-contracts-and-schemas), 2026: `READY_FOR_DEV` handoff, keeping contracts current, and ADRs
+- [Design Tokens Community Group, "Design Tokens Specification Reaches First Stable Version"](https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/), W3C, 2025: the 2025.10 stable release and the tools that read it
 - Alla Kholmatova, *Design Systems: A Practical Guide to Creating Design Languages for Digital Products* (O'Reilly, 2017)
 - [Jina Anne, "Design Systems are for People"](https://www.aiga.org/inspiration/talks/jina-anne-design-systems-are-for-people), AIGA, n.d.
 
@@ -103,13 +104,17 @@ and describes tools or examples that have since changed. Older sources used only
 - [Nathan Curtis, "Slots in Design Systems"](https://nathanacurtis.substack.com/p/slots-in-design-systems), 2025: preferred or permitted children
 - [Murphy Trueman, "Slots and the control paradox"](https://murphytrueman.substack.com/p/slots-and-the-control-paradox), 2025: slots replacing the instance-swap workaround
 
-## Multi-platform component specs
+## Component specs
 
-- [Nathan Curtis, "Component Specifications"](https://medium.com/eightshapes-llc/component-specifications-1492ca4c94c), 2023
-- [Nathan Curtis, "Components as Data"](https://medium.com/@nathanacurtis/components-as-data-2be178777f21), 2025
+- [Nathan Curtis, "Component Specifications"](https://medium.com/eightshapes-llc/component-specifications-1492ca4c94c), 2023: specs for teams who never meet
+- [Nathan Curtis, "Components as Data"](https://medium.com/@nathanacurtis/components-as-data-2be178777f21), 2025: Figma as an output, and the raw color caught in data
+- [Nathan Curtis, "Component Contracts and Schemas"](https://nathanacurtis.substack.com/p/component-contracts-and-schemas), 2026: the `size` enum, `READY_FOR_DEV`, and contract versus description
 - [Nathan Curtis, "The EightShapes Specs Figma Plugin"](https://nathanacurtis.substack.com/p/the-eightshapes-specs-figma-plugin-2892f21adc96), 2023
-- [Nathan Curtis, "Component Contracts and Schemas"](https://nathanacurtis.substack.com/p/component-contracts-and-schemas), 2026: the `size` enum example
-- [Design Tokens Community Group, "Design Tokens Specification Reaches First Stable Version"](https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/), W3C, October 2025
+- [Nathan Curtis, "What Component Specs Leave Behind"](https://nathanacurtis.substack.com/p/what-component-specs-leave-behind), 2026: the hex-for-token loss and what specs can't carry yet
+- [Nathan Curtis, Directed Edges `specs`, "ADR 067: Element Behavior Roles via `anatomy.role`"](https://github.com/DirectedEdges/specs/blob/main/adr/067-anatomy-element-roles.md), 2026: roles as an authored fact
+- [Shane P Williams, "The Job Nobody Is Hiring For Yet"](https://designsystemscollective.substack.com/p/the-job-nobody-is-hiring-for-yet), 2026: Figma, Storybook, and production each authoritative for a different question
+- [Romina Kavcic, "Gamechanger: Automatically sync design tokens from GitHub to Airtable"](https://learn.thedesignsystem.guide/p/gamechanger-automatically-sync-design), 2025: the repo as source, docs as a view
+- [Murphy Trueman, "Your design system is fragmenting into agent files"](https://blog.murphytrueman.com/your-design-system-is-fragmenting-into-agent-files/), 2026: the Storybook Component Manifest
 
 ## Platform divergence
 

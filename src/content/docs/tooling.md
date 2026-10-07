@@ -29,8 +29,7 @@ September 2026. Confirm before you buy.
 **DTCG format**: the shared, tool-independent file format for tokens. It's a
 specification, not a tool.\
 `Free` `Open standard`\
-Used in: [Token architecture](/ds101/token-architecture/),
-[Multi-platform component specs](/ds101/multi-platform-component-specs/)
+Used in: [Token architecture](/ds101/token-architecture/)
 
 **Style Dictionary**: turns one token file into each platform's output (CSS, iOS,
 Android).\
@@ -42,13 +41,13 @@ Used in: [Token architecture](/ds101/token-architecture/),
 **Terrazzo**: another token pipeline that reads the DTCG format.\
 `Open source` `Repo + build`
 ([docs](https://terrazzo.app/))\
-Used in: [Multi-platform component specs](/ds101/multi-platform-component-specs/)
+Used in: [Token architecture](/ds101/token-architecture/)
 
 **Tokens Studio**: edits tokens inside Figma and syncs them to a Git repo. Single-file
 sync to GitHub or GitLab is free. Themes and multi-file sync are Pro.\
 `Freemium` `Figma plugin` `Pro: themes, multi-file sync`
 ([docs](https://docs.tokens.studio/))\
-Used in: [Multi-platform component specs](/ds101/multi-platform-component-specs/),
+Used in: [Token architecture](/ds101/token-architecture/),
 [Context engineering](/ds101/context-engineering/)
 
 **Figma variables via REST API**: reading or writing variables from a script, for
@@ -65,7 +64,7 @@ anatomy, props, and layout/spacing specs from a component. Features like token
 references and subcomponents are Pro.\
 `Freemium` `Figma plugin` `Pro: tokens, nested specs`
 ([docs](https://www.specsplugin.com/))\
-Used in: [Multi-platform component specs](/ds101/multi-platform-component-specs/)
+Used in: [Component specs](/ds101/component-specs/)
 
 **specs-cli**: the command-line version of Specs. It reads a whole Figma library through
 the REST API and writes one YAML spec per component into the repo, with no AI involved.

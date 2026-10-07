@@ -105,7 +105,7 @@ Both tokens now hold the same purple. Only one name still tells the truth. [Toke
 
 ### Store tokens in the shared DTCG format
 
-The Design Tokens Community Group (DTCG) format is now a shared standard. Its first stable spec, DTCG 2025.10 (October 2025), defines 13 token types (color, dimension, fontFamily, and so on) and composite tokens like typography and shadow. In a composite token, each sub-value must itself reference tokens correctly, not just the top-level value. The spec also defines resolver files, which combine token sets into modes like light/dark or brand variants.
+The Design Tokens Community Group (DTCG) format is now a shared standard. Its [first stable release](https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/) had editors from Figma, Adobe, Google, Microsoft, Meta, and others agreeing on one file format, which Style Dictionary, Tokens Studio, Terrazzo, and Figma can all read. That spec, DTCG 2025.10 (October 2025), defines 13 token types (color, dimension, fontFamily, and so on) and composite tokens like typography and shadow. In a composite token, each sub-value must itself reference tokens correctly, not just the top-level value. The spec also defines resolver files, which combine token sets into modes like light/dark or brand variants.
 
 In a DTCG file, the dotted name becomes nested groups, and each token is an object with its value in `$value` and its type in `$type`:
 
@@ -126,7 +126,7 @@ The path through the groups (`color` → `action` → `primary`) is the token's 
 
 ### Keep platforms out of token names
 
-Per the design-system-ops notes, platform differences (web pixels vs. iOS points, different typefaces) are handled by transformation tooling, never encoded in the name. Transformation tooling is software like Style Dictionary that converts one token file into each platform's native format. So it's `spacing.4`, not `spacing.web.4`. [Platform divergence](/ds101/platform-divergence/) walks through that transformation step end to end. [Multi-platform component specs](/ds101/multi-platform-component-specs/) applies the same platform-neutral idea to whole components.
+Per the design-system-ops notes, platform differences (web pixels vs. iOS points, different typefaces) are handled by transformation tooling, never encoded in the name. Transformation tooling is software like Style Dictionary that converts one token file into each platform's native format. So it's `spacing.4`, not `spacing.web.4`. [Platform divergence](/ds101/platform-divergence/) walks through that transformation step end to end. [Component specs](/ds101/component-specs/) applies the same platform-neutral idea to whole components.
 
 ### Treat token names as contracts
 
@@ -134,6 +134,7 @@ Per the design-system-ops notes, platform differences (web pixels vs. iOS points
 
 ## Common mistakes
 
+- **Adopting the DTCG format without checking tool support.** A stable spec doesn't mean every tool in your stack has caught up. Check that your version of Style Dictionary, Tokens Studio, or another pipeline tool actually supports 2025.10 before depending on it.
 - **Running a primitives-only system.** Without a semantic layer, theming is impossible. Every value change means hunting down every primitive reference instead of repointing one alias.
 - **Letting token count grow faster than the product.** That growth usually means one-off tokens are being created instead of existing intent being reused.
 - **Creating component tokens for every component up front.** [Curtis](https://nathanacurtis.substack.com/p/naming-tokens-in-design-systems-9e86c7444676) adds tokens gradually, naming them inside a component and promoting them to shared tokens only when other components need the same decision.

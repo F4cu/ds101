@@ -232,7 +232,12 @@ its own local state (uncontrolled). See [Component usability](/ds101/component-u
 directly as structured data (YAML/JSON) rather than a Figma file, so Figma and
 generated code for each platform become outputs of that data instead of the source
 it's reverse-engineered from. See
-[Multi-platform component specs](/ds101/multi-platform-component-specs/).
+[Component specs](/ds101/component-specs/).
+
+**Component spec** — the record of what a component must be: its anatomy, props,
+states, token references, and the facts a design file can't show, like each part's
+role. It can be authored in Figma, as data in the repo, or derived from code. See
+[Component specs](/ds101/component-specs/).
 
 **Component contract** — a precise, verifiable declaration of what a component must do
 (its intent), as opposed to a description a platform team can interpret loosely; the
