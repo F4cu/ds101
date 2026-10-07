@@ -144,7 +144,7 @@ Getting the pattern wrong shows up in generated code too. [Curtis](https://githu
 
 The same component often needs to work on web, iOS, and Android without looking identical on all three. [Wealthfront's engineering team](https://eng.wealthfront.com/2022/05/10/building-wealthfronts-multi-platform-design-system/) calls this "design once, build anywhere": share tokens (padding, radius, color, typography) and intent, and let the implementation follow each platform's conventions. Their example: a Dialog floats centered on desktop web, while its mobile counterpart is a BottomSheet attached to the bottom edge. It's a different component and interaction model, built on the same decisions.
 
-That only works if the intent is recorded somewhere neutral. [Multi-platform component specs](/ds101/multi-platform-component-specs/) covers how. [Platform divergence](/ds101/platform-divergence/) explains why a structural split like Dialog vs. BottomSheet needs a component contract rather than a token.
+That only works if the intent is recorded somewhere neutral. [Component specs](/ds101/component-specs/) covers where to record it. [Platform divergence](/ds101/platform-divergence/) explains why a structural split like Dialog vs. BottomSheet needs a component contract rather than a token.
 
 ### Separate what a component guarantees from what it guides
 

@@ -183,7 +183,7 @@ company."
   [benchmarked MCP formats](/ds101/context-engineering/) against real prompts.
 - **Expecting the spec to cover behavior.** Curtis calls Figma's data model "stable,
   incomplete and evolving slowly." Behavior, motion, and accessibility still need their
-  own specs. See [Multi-platform component specs](/ds101/multi-platform-component-specs/).
+  own specs. See [Component specs](/ds101/component-specs/#record-what-the-design-cant-show).
 - **Treating a failed check as a mistake.** In Bormüller's words, "Red means *changed*,
   not *wrong*." If the change was intended, take a new snapshot and review the diff, as
   you would with a snapshot test in code.

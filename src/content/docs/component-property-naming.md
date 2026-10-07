@@ -26,7 +26,7 @@ Curtis's fix is a short, shared step before production. Draft the component's **
 
 How formal that step is depends on who builds. On a small team, he assigns a developer to draft the proposal, the whole team critiques it, and the designer speaks to what it means for Figma and the docs. When two or more people build from the same spec, it becomes its own task, done when everyone has "agreed on a provisional API direction across outputs." Anyone who starts early accepts they may have to refactor.
 
-His 2021 post drafted in Google Docs or Asana templates. In his 2026 ["Component Contracts and Schemas"](https://nathanacurtis.substack.com/p/component-contracts-and-schemas), the component is written as data instead, and designers mark it `READY_FOR_DEV` rather than holding a handoff meeting. The tool changed, but the agreement still happens before the build. See [Multi-platform component specs](/ds101/multi-platform-component-specs/) and [The design-to-code contract](/ds101/design-to-code-contract/).
+His 2021 post drafted in Google Docs or Asana templates. In his 2026 ["Component Contracts and Schemas"](https://nathanacurtis.substack.com/p/component-contracts-and-schemas), the component is written as data instead, and designers mark it `READY_FOR_DEV` rather than holding a handoff meeting. The tool changed, but the agreement still happens before the build. See [Component specs](/ds101/component-specs/) and [The design-to-code contract](/ds101/design-to-code-contract/).
 
 ### Use the same names, options, and defaults in both tools
 

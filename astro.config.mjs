@@ -9,6 +9,7 @@ export default defineConfig({
 	base: '/ds101',
 	// Old page URLs from before file names were unified with page titles
 	redirects: {
+		'/multi-platform-component-specs/': '/ds101/component-specs/',
 		'/adoption-measurement/': '/ds101/measuring-adoption/',
 		'/ai-context-and-readiness/': '/ds101/ai-readiness/',
 		'/component-building/': '/ds101/component-composition-in-figma/',
@@ -52,13 +53,13 @@ export default defineConfig({
 						'token-naming',
 						'accessible-color-palettes',
 						'design-to-code-contract',
-						'multi-platform-component-specs',
 						'platform-divergence',
 					],
 				},
 				{
 					label: 'Components',
 					items: [
+						'component-specs',
 						'component-composition-in-figma',
 						'component-composition-in-code',
 						'component-api-design',
