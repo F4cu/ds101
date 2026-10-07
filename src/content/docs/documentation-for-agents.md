@@ -14,7 +14,7 @@ A page of prose with a sidebar is a good shape for a person skimming for one fac
 
 ## The problem
 
-The two audiences need different formats, not different amounts of effort. One document written to serve both usually under-serves whichever reader didn't get the format built for them. Atlassian's design system team measured what the right format is worth. After shipping an MCP server and structured schemas for components, icons, tokens, and lint rules, [they reported](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era) "52% accuracy improvement in AI calls, 34% faster on average across ADS specific tasks, 26% reduction in AI tooling calls, 16% reduction in AI token usage."
+The two audiences need different formats, not different amounts of effort. One document written to serve both usually under-serves whichever reader didn't get the format built for them. Atlassian's system team measured what the right format is worth. After shipping an MCP server and structured schemas for components, icons, tokens, and lint rules, [they reported](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era) "52% accuracy improvement in AI calls, 34% faster on average across ADS specific tasks, 26% reduction in AI tooling calls, 16% reduction in AI token usage."
 
 ## Practices
 

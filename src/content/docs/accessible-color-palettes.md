@@ -64,7 +64,7 @@ A token name doesn't tell you its contrast. `color.text.secondary` might pass in
 - **Transparent colors.** "A colour with alpha has no contrast ratio on its own." Blend it over the background it sits on first. If that background isn't known, report the ratio as not computed rather than guess.
 - **Non-text elements.** Borders, focus indicators, and icons need 3:1 too, and are the pairs most often skipped.
 
-In dark mode, check the surfaces as well as the text. Trueman: "Raised surfaces should be lighter than the base background — elevation reads as lightness in dark themes, since shadows barely show. A surface darker than the background reads as sunken." A dark theme needs its own surface steps, not the light ones inverted.
+In dark mode, check the surfaces as well as the text. Trueman: "Raised surfaces should be lighter than the base background — elevation reads as lightness in dark themes, since shadows barely show. A surface darker than the background reads as sunken." Dark mode needs its own surface steps, not the light ones inverted.
 
 ### Keep feedback colors apart from the brand
 

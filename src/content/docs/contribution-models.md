@@ -4,7 +4,7 @@ reviewed: 2026-09-16
 reviewIn: 24
 ---
 
-A contribution model decides how people outside the core team propose, build, and ship changes to the system. It sits between two neighbors. [Team models](/ds101/team-models/) decide who owns the system. [Component lifecycle](/ds101/component-lifecycle/) decides what a contribution has to clear to get in. [Fostering contribution](/ds101/fostering-contribution/) covers the culture that makes people show up at all.
+A contribution model decides how people outside the system team propose, build, and ship changes to the system. It sits between two neighbors. [Team models](/ds101/team-models/) decide who owns the system. [Component lifecycle](/ds101/component-lifecycle/) decides what a contribution has to clear to get in. [Fostering contribution](/ds101/fostering-contribution/) covers the culture that makes people show up at all.
 
 :::tip[Key takeaways]
 - **Fit the process to your org's problem.** A process built for the wrong problem ends up as a pipeline nobody uses.
@@ -28,7 +28,7 @@ At 80+ teams, Grixti says the problem is visibility: the system team can't see w
 
 ### Count contributions, not participation
 
-[Curtis](https://medium.com/eightshapes-llc/defining-design-system-contributions-eb48e00e8898) defines a contribution as a proposal, design, code, doc, or asset, made by someone outside the core team and released through the system for others to reuse. Attending office hours or filing a bug is participation. That's valuable, but it isn't a contribution. Blur the two, and the process has to cover an endless surface and never ships.
+[Curtis](https://medium.com/eightshapes-llc/defining-design-system-contributions-eb48e00e8898) defines a contribution as a proposal, design, code, doc, or asset, made by someone outside the system team and released through the system for others to reuse. Attending office hours or filing a bug is participation. That's valuable, but it isn't a contribution. Blur the two, and the process has to cover an endless surface and never ships.
 
 ### Match the workflow to the contribution's size
 
@@ -59,4 +59,4 @@ In zeroheight's *Design Systems Report 2026*, 69% of teams say anyone on the pro
 
 ## Common mistakes
 
-- **Pitching open contribution to leadership as extra capacity.** Contribution volume stays small whatever the org's size. In the short term, reviewing a contribution usually costs the core team more than building the thing itself. The real reasons to run a contribution model are legitimacy, spreading knowledge, and surfacing requirements the core team would never see.
+- **Pitching open contribution to leadership as extra capacity.** Contribution volume stays small whatever the org's size. In the short term, reviewing a contribution usually costs the system team more than building the thing itself. The real reasons to run a contribution model are legitimacy, spreading knowledge, and surfacing requirements the system team would never see.

@@ -30,7 +30,7 @@ The legal baseline can lag too. In the EU, the [European Accessibility Act](http
 
 - **Keyboard navigation:** everything works with a keyboard alone, and composite widgets follow the ARIA Authoring Practices Guide (APG) pattern for their type.
 - **Screen reader experience:** the component announces its role, state, and a name that makes sense out of context.
-- **Colour and contrast:** text, borders, and focus indicators meet WCAG contrast in every state, and colour never carries meaning alone. It's the one dimension you can check from token values before anything is built.
+- **Color and contrast:** text, borders, and focus indicators meet WCAG contrast in every state, and color never carries meaning alone. It's the one dimension you can check from token values before anything is built.
 - **Focus management:** focus moves into a layer when it opens, stays inside a modal, and returns to the trigger when it closes.
 - **ARIA implementation:** roles match what the component does and carry their required attributes, and no ARIA is used where a native HTML element already has the right meaning. A component that fills a large region of the page, such as a navigation or a main content area, sits inside the right landmark.
 
@@ -109,5 +109,5 @@ A component that exists only in Figma can be checked against its spec, but not a
 
 - **Promising leadership that the system makes products accessible.** Curtis warns that "touting system accessibility can grossly distort expectations." Half a decade into one organization's system, its leaders asked: "So, we aren't accessible? I hear we can't say that, even though everyone adopted the system. How's this possible?" Say what the system covers, and what each team still owns.
 - **Treating a clean automated scan as a pass.** Going by GOV.UK's 30% figure, a scan with no errors still leaves most issues unchecked.
-- **Reporting contrast as a bare pass or fail.** The toolkit asks for "actual contrast ratio figures, not just pass/fail," so a reader can see how close a borderline colour came and which token to change.
+- **Reporting contrast as a bare pass or fail.** The toolkit asks for "actual contrast ratio figures, not just pass/fail," so a reader can see how close a borderline color came and which token to change.
 - **Checking focus only in the default state.** Focus has to hold up in every interactive state, including error and selected.

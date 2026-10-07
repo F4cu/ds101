@@ -123,7 +123,11 @@ versus who's just weighing in. See [Decision governance](/ds101/decision-governa
 dedicated team, several product teams together, or both informing each other. See
 [Team models](/ds101/team-models/).
 
-**Contribution model** — how people outside the core team propose, build, and ship
+**System team** (core team) — the team that builds, maintains, and runs the design
+system, as opposed to the product teams that use it and the contributors who add to it
+from outside. See [Team models](/ds101/team-models/).
+
+**Contribution model** — how people outside the system team propose, build, and ship
 changes to a system, distinct from who owns it and from the criteria a change has to
 clear. See [Contribution models](/ds101/contribution-models/).
 
@@ -142,7 +146,7 @@ to use as part of their own work. See [Team models](/ds101/team-models/).
 build the system together, rather than one team owning it centrally. See
 [Team models](/ds101/team-models/).
 
-**Cyclical model** — a centralized core team and a federated contributor group that
+**Cyclical model** — a centralized system team and a federated contributor group that
 continuously inform each other, rather than one model replacing the other. See
 [Team models](/ds101/team-models/).
 
@@ -242,7 +246,7 @@ role. It can be authored in Figma, as data in the repo, or derived from code. Se
 **Component contract** — a precise, verifiable declaration of what a component must do
 (its intent), as opposed to a description a platform team can interpret loosely; the
 mechanism for handling structural or behavioral differences between platforms, as
-opposed to token layering for value differences. See
+opposed to token tiers for value differences. See
 [Platform divergence](/ds101/platform-divergence/).
 
 **Coverage vs. usage vs. adoption** — three distinct measurements often conflated into
@@ -497,7 +501,7 @@ spacing, and components all at once — closer to a revolution than a refinement
 distinct from an incremental release. See
 [Inheriting a legacy system](/ds101/inheriting-a-legacy-system/).
 
-**Kickstart** — a hands-on session where the design-system team migrates a sample
+**Kickstart** — a hands-on session where the system team migrates a sample
 product alongside an adopter, in the adopter's own environment, instead of handing over
 a migration guide and leaving them to it. See
 [Inheriting a legacy system](/ds101/inheriting-a-legacy-system/).

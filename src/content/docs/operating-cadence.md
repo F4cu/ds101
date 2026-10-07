@@ -4,7 +4,7 @@ reviewed: 2026-09-16
 reviewIn: 24
 ---
 
-[Governance](/ds101/decision-governance/) decides what's in the system and why. Operating cadence makes sure people outside the core team actually *know* that. It takes several channels working together: a release rhythm, a standing place to ask questions, a named guide for bigger work, advocates, and a route for feedback to get back in. A system can be perfectly governed and still fail if nobody hears about a change, knows who to ask, or has anywhere to complain.
+[Governance](/ds101/decision-governance/) decides what's in the system and why. Operating cadence makes sure people outside the system team actually *know* that. It takes several channels working together: a release rhythm, a standing place to ask questions, a named guide for bigger work, advocates, and a route for feedback to get back in. A system can be perfectly governed and still fail if nobody hears about a change, knows who to ask, or has anywhere to complain.
 
 :::tip[Key takeaways]
 - **Start with the smallest cadence you can sustain.** Promises a small team drops within a month hurt trust more than never making them.
@@ -25,7 +25,7 @@ Left undesigned, communication defaults to whoever happens to be in the room. Th
 [Curtis](https://medium.com/eightshapes-llc/design-system-communications-ca679ffc36d3) recommends organizing around who needs to hear what, not around subject matter:
 
 - `#system-design` for help, shared ideas, cross-product visibility, and critique notes.
-- `#system-development` for API and PR review calls and working-session summaries.
+- `#system-development` for API and pull request (PR) review calls and working-session summaries.
 - `#system-general` for major announcements, sprint reviews, and calls for planning input.
 
 He also suggests a "message matrix" that plots problem, channel, audience, and frequency together, as a planning tool to keep the cadence intentional.
@@ -74,7 +74,7 @@ Frost's list of feedback routes is deliberately plural: issue trackers (GitHub, 
 graph LR
   A["Announce<br/>release notes, channel post"] --> B["Use<br/>teams consume the change"]
   B --> C["Feedback<br/>office hours, surveys, PR comments"]
-  C --> D["Triage<br/>steward or core team routes it"]
+  C --> D["Triage<br/>steward or system team routes it"]
   D --> E["Ship<br/>fix, enhancement, or decision"]
   E --> A
 ```

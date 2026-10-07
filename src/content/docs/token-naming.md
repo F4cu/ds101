@@ -24,7 +24,7 @@ Across systems, names for the same role diverge further. [Romina Kavcic](https:/
 
 ## Choosing a naming structure
 
-Each segment of a token name fills one **level**: a kind of information, like category or state. Choose how many levels to use by counting what your names have to tell apart. A single-brand product needs fewer levels than a system serving several brands, business units, and color modes. Either way, the choice matters less than applying it everywhere. Even the practitioners here disagree on order: Romina's [token generator](https://learn.thedesignsystem.guide/p/name-and-get-your-tokens-in-5-seconds) defaults to `component-category-property-state-role`, a different order from Murphy's below.
+Each segment of a token name fills one **level**: a kind of information, like category or state. Choose how many levels to use by counting what your names have to tell apart. A single-brand product needs fewer levels than a system serving several brands, business units, and color modes. Either way, the choice matters less than applying it everywhere. Even the practitioners here disagree on order: Romina's [token generator](https://learn.thedesignsystem.guide/p/name-and-get-your-tokens-in-5-seconds) defaults to `component-category-property-state-role`, a different order from Trueman's below.
 
 ### Curtis's full taxonomy
 
@@ -34,13 +34,13 @@ Curtis's post is from 2020. It predates Figma variables and the resolver files i
 
 ### A short intent path
 
-Murphy's [design-system-ops notes](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/token-architecture.md) use a four-part path, `category.role.variant.state`, as in `color.action.primary`. It's a subset of Curtis's levels, with no namespace and no separate property. It fits a single-brand system that wants short names people can say out loud in a meeting. The cost is that one token like `color.action.primary` may serve text, fills, and borders at once. Curtis notes that broad tokens trade precision for flexibility. In his own audit, that trade showed up as an overbroad token the team had to split (see Common mistakes).
+Trueman's [design-system-ops notes](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/token-architecture.md) use a four-part path, `category.role.variant.state`, as in `color.action.primary`. It's a subset of Curtis's levels, with no namespace and no separate property. It fits a single-brand system that wants short names people can say out loud in a meeting. The cost is that one token like `color.action.primary` may serve text, fills, and borders at once. Curtis notes that broad tokens trade precision for flexibility. In his own audit, that trade showed up as an overbroad token the team had to split (see Common mistakes).
 
 ## Practices
 
 ### Order segments from broad to specific
 
-Put namespaces first and modifiers last, with the base levels in the middle. [Curtis](https://nathanacurtis.substack.com/p/naming-tokens-in-design-systems-9e86c7444676) and the [design-system-ops notes](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/token-architecture.md) agree here, even though their segments differ: a name should read as a path, narrowing at each step. Murphy's [own example](https://blog.murphytrueman.com/p/why-design-system-naming-feels-impossible) of Curtis's levels in order is `ds-button-primary-large`: namespace, object, variant, scale. DTCG files nest groups in the same order.
+Put namespaces first and modifiers last, with the base levels in the middle. [Curtis](https://nathanacurtis.substack.com/p/naming-tokens-in-design-systems-9e86c7444676) and the [design-system-ops notes](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/token-architecture.md) agree here, even though their segments differ: a name should read as a path, narrowing at each step. Trueman's [own example](https://blog.murphytrueman.com/p/why-design-system-naming-feels-impossible) of Curtis's levels in order is `ds-button-primary-large`: namespace, object, variant, scale. DTCG files nest groups in the same order.
 
 ### Use only the levels a token needs
 
@@ -60,16 +60,16 @@ A name alone doesn't carry enough meaning. In [Romina's](https://learn.thedesign
 
 ### Check names against the convention automatically
 
-A written convention drifts unless something checks it. Murphy's [token-audit skill](https://github.com/murphytrueman/design-system-ops/blob/main/skills/token-audit/SKILL.md) finds the dominant casing, separator, and segment order within each tier, then flags tokens that break the pattern, like `color.blue-500` next to `color.blue.500`. It also flags platform names in token names and tokens nothing references. The same checks can run in CI (continuous integration, the automated checks on every pull request), so a bad name is caught before it ships.
+A written convention drifts unless something checks it. Trueman's [token-audit skill](https://github.com/murphytrueman/design-system-ops/blob/main/skills/token-audit/SKILL.md) finds the dominant casing, separator, and segment order within each tier, then flags tokens that break the pattern, like `color.blue-500` next to `color.blue.500`. It also flags platform names in token names and tokens nothing references. The same checks can run in CI (continuous integration, the automated checks on every pull request), so a bad name is caught before it ships.
 
 ### Record why each name was chosen
 
-Naming debates come back unless the reasoning is written down. [Murphy](https://blog.murphytrueman.com/p/why-design-system-naming-feels-impossible) keeps a decision log ("When you decide on `PrimaryButton` instead of `ButtonPrimary`, explain the reasoning") and a glossary of the conventions. For contested choices, [Curtis's](https://nathanacurtis.substack.com/p/reimagining-a-token-taxonomy-462d35b2b033) team workshopped alternatives in FigJam with silent dot voting before agreeing as a group. [Decision governance](/ds101/decision-governance/) covers where those records live.
+Naming debates come back unless the reasoning is written down. [Trueman](https://blog.murphytrueman.com/p/why-design-system-naming-feels-impossible) keeps a decision log ("When you decide on `PrimaryButton` instead of `ButtonPrimary`, explain the reasoning") and a glossary of the conventions. For contested choices, [Curtis's](https://nathanacurtis.substack.com/p/reimagining-a-token-taxonomy-462d35b2b033) team workshopped alternatives in FigJam with silent dot voting before agreeing as a group. [Decision governance](/ds101/decision-governance/) covers where those records live.
 
 ## Common mistakes
 
 - **Using vague words as a whole role.** The [token-audit skill](https://github.com/murphytrueman/design-system-ops/blob/main/skills/token-audit/SKILL.md) flags `alt`, `misc`, `other`, `normal`, and `default` or `base` used as the entire role (`color.default`). As a state segment (`color.action.default`) they're fine.
-- **Abbreviating for the team that wrote the name.** [Murphy's](https://blog.murphytrueman.com/p/why-design-system-naming-feels-impossible) example is `nav-prim-dk-mob`, which makes sense only to its authors. A short system namespace is the exception. [Curtis](https://nathanacurtis.substack.com/p/naming-tokens-in-design-systems-9e86c7444676) finds names of five characters or fewer work well there.
+- **Abbreviating for the team that wrote the name.** [Trueman's](https://blog.murphytrueman.com/p/why-design-system-naming-feels-impossible) example is `nav-prim-dk-mob`, which makes sense only to its authors. A short system namespace is the exception. [Curtis](https://nathanacurtis.substack.com/p/naming-tokens-in-design-systems-9e86c7444676) finds names of five characters or fewer work well there.
 - **Picking a word that means several things.** [Curtis](https://nathanacurtis.substack.com/p/naming-tokens-in-design-systems-9e86c7444676) warns that even top-level categories trip on this: `type` is a homonym that readers take to mean many different things.
 - **Stretching one token over many purposes.** In [Curtis's audit](https://nathanacurtis.substack.com/p/reimagining-a-token-taxonomy-462d35b2b033), `$esds-color-interactive-primary` covered selection, completion, focus, and clickability, and had to be split into separate tokens.
 - **Comparing systems by raw token count.** [Romina](https://learn.thedesignsystem.guide/p/50-design-token-files-one-problem) argues the semantic count, "how many UI decisions the system has pre-made and named," is the number to compare, not the size of the primitive palette.

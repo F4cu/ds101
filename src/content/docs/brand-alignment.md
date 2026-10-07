@@ -30,13 +30,13 @@ Print, packaging, signage, campaign pages, and usually the marketing or brochure
 
 ## Practices
 
-### Let a brand refresh flow through the token layer
+### Let a brand refresh flow through the token tiers
 
 **Wise's** 2023 brand refresh is the clearest real example. It didn't stay a marketing-only exercise. It drove a 2024 rebuild of the product system's token infrastructure (the "Editorial Design System") to carry the new identity through to product surfaces ([Ness Grixti's case study](https://nessgrixti.com/portfolio/wise-multi-brand/)). [Governance case studies](/ds101/governance-case-studies/) covers what went wrong when a related brand-theming change was handled as a local fork instead of a system-wide change.
 
 ### Keep brand values at the primitive tier
 
-[Token architecture](/ds101/token-architecture/)'s three tiers (primitive → semantic → component) are where brand and product actually meet in code. A rebrand should mean updating the primitive-tier values that encode the brand's colors, type, and spacing in one place, with the semantic and component tiers picking up the change automatically. If brand values get hardcoded further down the stack, the next rebrand means hunting down every reference instead of changing one layer.
+[Token architecture](/ds101/token-architecture/)'s three tiers (primitive → semantic → component) are where brand and product actually meet in code. A rebrand should mean updating the primitive-tier values that encode the brand's colors, type, and spacing in one place, with the semantic and component tiers picking up the change automatically. If brand values get hardcoded further down the stack, the next rebrand means hunting down every reference instead of changing one tier.
 
 <div class="mermaid-wrap">
 

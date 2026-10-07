@@ -18,7 +18,7 @@ At scale, a design system is a small organization inside a bigger one, and it ha
 
 ## The problem
 
-ITVX's Mosaic design system shows the scale problem. What started in 2015 as ITV Hub grew into ITVX by 2022, and the design system's operating model grew with it. A central core of 3 people (1 head of design systems and 2 designers) now works with 14 cross-functional partners (2 tech managers, 7 engineers, 7 designers). Together they feed 13 product workstreams across 2 product pillars, supporting 6 platforms and about 15,000 devices (browser, CTV, tvOS, iOS, Android, Roku). At that scale, no core team can personally track what every stakeholder needs. The tools below make that tracking explicit instead of leaving it to whoever is in the room.
+ITVX's Mosaic design system shows the scale problem. What started in 2015 as ITV Hub grew into ITVX by 2022, and the design system's operating model grew with it. A central core of 3 people (1 head of design systems and 2 designers) now works with 14 cross-functional partners (2 tech managers, 7 engineers, 7 designers). Together they feed 13 product workstreams across 2 product pillars, supporting 6 platforms and about 15,000 devices (browser, CTV, tvOS, iOS, Android, Roku). At that scale, no system team can personally track what every stakeholder needs. The tools below make that tracking explicit instead of leaving it to whoever is in the room.
 
 ## Choosing a framework
 
@@ -94,7 +94,7 @@ Running only the tactical horizon produces a system that's always fighting fires
 
 ```mermaid
 flowchart TD
-  Team["Design system team"] --> Now["Now: tactical<br/>unblock teams"]
+  Team["System team"] --> Now["Now: tactical<br/>unblock teams"]
   Team --> Next["Next: strategic<br/>set direction"]
   Team --> Future["Future: normative<br/>build trust"]
 ```
