@@ -1,10 +1,10 @@
 ---
-title: Component Composition in Figma
+title: Figma Composition
 reviewed: 2026-09-18
 reviewIn: 12
 ---
 
-A component gets its flexibility from smaller components nested inside it and from slots that accept them, not from piling more variants and booleans onto one flat layer. This page covers how to build that structure in Figma. [Component composition in code](/ds101/component-composition-in-code/) defines the layers (primitives, subcomponents, slots) and how the same structure is built in code.
+A component gets its flexibility from smaller components nested inside it and from slots that accept them, not from piling more variants and booleans onto one flat layer. This page covers how to build that structure in Figma. [Code Composition](/ds101/code-composition/) defines the layers (primitives, subcomponents, slots) and how the same structure is built in code.
 
 :::tip[Key takeaways]
 - **Build flexibility with nested instances and slots.** A flat variant set eventually misses a request, and designers detach instead.
@@ -16,7 +16,7 @@ A component gets its flexibility from smaller components nested inside it and fr
 
 A component built as one flat layer tree, with a variant for every case, eventually hits a wall. A real product request doesn't match any existing variant, and two variants built as mutually exclusive options can't be combined. The designer's only way forward is to detach the instance and hand-edit it. That quietly removes the instance from the system: it stops getting updates, stops showing up in coverage metrics, and nobody notices until an audit finds it.
 
-[Nathan Curtis's talk "Architecting Subcomponents"](https://www.youtube.com/watch?v=NiDoqI_ZhvY) (Schema by Figma, 2022) frames the subcomponent approach as the answer. Instead of the system team "playing constant catch-up, adding prop after prop," the system offers composable parts and lets the requester assemble their own answer. The flat alternative is the same "configuration collapse" failure from [Component API design](/ds101/component-api-design/), showing up in the Figma file instead of the code.
+[Nathan Curtis's talk "Architecting Subcomponents"](https://www.youtube.com/watch?v=NiDoqI_ZhvY) (Schema by Figma, 2022) frames the subcomponent approach as the answer. Instead of the system team "playing constant catch-up, adding prop after prop," the system offers composable parts and lets the requester assemble their own answer. The flat alternative is the same "configuration collapse" failure from [API Design](/ds101/api-design/), showing up in the Figma file instead of the code.
 
 ## Practices
 
@@ -28,7 +28,7 @@ A nested instance holds one piece in one fixed place. Before Figma had native sl
 
 ### Treat every component property like a code prop
 
-Figma's component properties (variant, boolean, text, and instance swap) are, as [Figma's own team](https://www.figma.com/blog/taking-cues-from-code/) puts it, "essentially React properties for Figma components." Each one should earn a permanent place the way a code prop does, not get added because one request needs it. Every property is a surface someone has to maintain and every consumer has to learn. The rule from [Component API design](/ds101/component-api-design/) applies before a single property gets added: configurable for the common case, composable for the uncommon one.
+Figma's component properties (variant, boolean, text, and instance swap) are, as [Figma's own team](https://www.figma.com/blog/taking-cues-from-code/) puts it, "essentially React properties for Figma components." Each one should earn a permanent place the way a code prop does, not get added because one request needs it. Every property is a surface someone has to maintain and every consumer has to learn. The rule from [API Design](/ds101/api-design/) applies before a single property gets added: configurable for the common case, composable for the uncommon one.
 
 ### Nest in layers, base components first
 
@@ -53,7 +53,7 @@ In the same example, each level exposes only the properties that matter at that 
 
 ### Limit each slot to preferred instances
 
-Without a list, a slot accepts any instance in the library. Figma lets a slot carry a curated list of [preferred instances](https://help.figma.com/hc/en-us/articles/38231200344599-Use-slots-to-build-flexible-components-in-Figma), plus an "Only allow preferred instances" setting that tells designers to stick to that list. [Curtis](https://nathanacurtis.substack.com/p/slots-in-design-systems) includes "preferred or permitted children by both type and quantity" among the properties of a well-architected slot, "such as only Checkbox Items in a Checkbox Group's slot but any quantity you need." [Trueman](https://murphytrueman.substack.com/p/slots-and-the-control-paradox) calls it "maintaining guardrails while enabling creativity." In code, the same idea is a [typed container](/ds101/component-composition-in-code/#slots).
+Without a list, a slot accepts any instance in the library. Figma lets a slot carry a curated list of [preferred instances](https://help.figma.com/hc/en-us/articles/38231200344599-Use-slots-to-build-flexible-components-in-Figma), plus an "Only allow preferred instances" setting that tells designers to stick to that list. [Curtis](https://nathanacurtis.substack.com/p/slots-in-design-systems) includes "preferred or permitted children by both type and quantity" among the properties of a well-architected slot, "such as only Checkbox Items in a Checkbox Group's slot but any quantity you need." [Trueman](https://murphytrueman.substack.com/p/slots-and-the-control-paradox) calls it "maintaining guardrails while enabling creativity." In code, the same idea is a [typed container](/ds101/code-composition/#slots).
 
 ### Nest only after a second real reuse
 
@@ -79,7 +79,7 @@ button:
           opacity: 0.36
 ```
 
-Read it as: whenever `disabled` is true, the button's root element gets 0.36 opacity, whatever the other props are. Figma can't express a rule like that, so the file repeats it 96 times. [Component specs](/ds101/component-specs/#author-the-spec-as-data-in-the-repo) covers moving a component's definition into data.
+Read it as: whenever `disabled` is true, the button's root element gets 0.36 opacity, whatever the other props are. Figma can't express a rule like that, so the file repeats it 96 times. [Specifications](/ds101/specifications/#author-the-spec-as-data-in-the-repo) covers moving a component's definition into data.
 
 ### Instance swap
 

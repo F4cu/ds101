@@ -1,5 +1,5 @@
 ---
-title: Inheriting a Legacy System
+title: System Takeover
 reviewed: 2026-09-18
 reviewIn: 24
 ---

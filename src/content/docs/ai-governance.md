@@ -1,5 +1,5 @@
 ---
-title: Governance for AI
+title: AI Governance
 reviewed: 2026-09-16
 reviewIn: 6
 ---

@@ -40,7 +40,7 @@ IBM Carbon's [**Carbon for AI**](https://carbondesignsystem.com/guidelines/carbo
 
 AWS Cloudscape's [**user-authorized actions**](https://cloudscape.design/gen-ai/patterns/user-authorized-actions/) pattern is the most concrete authorization model any of these systems publish. Instead of one yes/no prompt, it offers a scope selector: "Allow this time," "Allow for this chat," or "Always allow," so trust is granted at the level the user intends. Two rules sharpen it. "Don't show the authorization dialog for a tool that is already trusted for the session." And for actions that can't be undone, the user has to type a confirmation before the Allow button enables.
 
-It's the UI version of the problem [Scaling AI effort to risk](/ds101/scaling-ai-effort-to-risk/) and [Agentic workflow design](/ds101/agentic-workflow-design/) solve for agent access: scale trust to risk and reversibility, not convenience.
+It's the UI version of the problem [Risk Management](/ds101/risk-management/) and [Agentic Workflows](/ds101/agentic-workflows/) solve for agent access: scale trust to risk and reversibility, not convenience.
 
 ### Separate conversations from automations
 

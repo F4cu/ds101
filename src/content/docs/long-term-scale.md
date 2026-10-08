@@ -1,5 +1,5 @@
 ---
-title: Scaling Across Decades
+title: Long-term Scale
 reviewed: 2026-09-18
 reviewIn: 24
 ---
@@ -16,7 +16,7 @@ Most design-system advice assumes a normal software lifecycle: a few years, one 
 
 Left alone, a large industrial company collects one specialized design system per product line. Each is reasonable on its own, and each solves the same problems slightly differently. Nobody chose that. It's what happens when long-lived products get built years apart, sometimes by teams that arrive through an acquisition with their own tooling. The result is duplicated component work, a UX that feels inconsistent across one company's portfolio, and legacy products stranded outside whatever comes next.
 
-This page covers the organizational version of the problem: why the fragmentation happens. For what to do when you're the one who inherits such a system, see [Inheriting a legacy system](/ds101/inheriting-a-legacy-system/).
+This page covers the organizational version of the problem: why the fragmentation happens. For what to do when you're the one who inherits such a system, see [System Takeover](/ds101/system-takeover/).
 
 ## Practices
 

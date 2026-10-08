@@ -1,5 +1,5 @@
 ---
-title: Accessible Color Palettes
+title: Accessible Colors
 reviewed: 2026-09-27
 reviewIn: 12
 ---
@@ -22,7 +22,7 @@ Each failure has the same cause: the palette records colors but not the relation
 
 ## Choosing a palette source
 
-Start with the legal question. If your product has to meet a regulation such as the European Accessibility Act, you'll be measured against WCAG 2 AA ([Component accessibility](/ds101/component-accessibility/) covers why). Murphy Trueman's [`theme-audit` skill](https://github.com/murphytrueman/design-system-ops/blob/main/skills/theme-audit/SKILL.md) sets the baseline: "4.5:1 for body text, 3:1 for large text and for non-text elements such as borders, focus indicators and icons." Then ask how many themes and brands you need, and whether anyone on the team can own color.
+Start with the legal question. If your product has to meet a regulation such as the European Accessibility Act, you'll be measured against WCAG 2 AA ([Accessibility](/ds101/accessibility/) covers why). Murphy Trueman's [`theme-audit` skill](https://github.com/murphytrueman/design-system-ops/blob/main/skills/theme-audit/SKILL.md) sets the baseline: "4.5:1 for body text, 3:1 for large text and for non-text elements such as borders, focus indicators and icons." Then ask how many themes and brands you need, and whether anyone on the team can own color.
 
 Some palettes are built on **APCA** (Accessible Perceptual Contrast Algorithm) instead. It scores contrast as a lightness value (written Lc) and accounts for font size and whether text is lighter or darker than its background. [Maximilian Blazek](https://ubuntu.com/blog/generating-color-palettes-for-design-systems-inspired-by-apca), a designer at Canonical, explains the appeal: WCAG "produces both false positives and false negatives when it evaluates contrast between two colors." But APCA isn't part of any published WCAG standard, so passing it doesn't show compliance.
 
@@ -52,7 +52,7 @@ Then let contrast set the gaps. Blazek builds on the idea that "contrast should 
 
 ### Publish the pairs you've tested
 
-Swatches show what colors exist, not which go together. Curtis recommends "reversed pairings to adopt or avoid," such as white on blue and blue on white. His 2017 post on [light and dark modes](https://nathanacurtis.substack.com/p/light-dark-9f8ea42c9081) uses EightShapes' Contrast Grid, which shows every text color against every background at once. Put a grid like that next to the palette, with the actual ratios rather than pass or fail, so a reader can see how close a borderline pair came ([Component accessibility](/ds101/component-accessibility/) explains why).
+Swatches show what colors exist, not which go together. Curtis recommends "reversed pairings to adopt or avoid," such as white on blue and blue on white. His 2017 post on [light and dark modes](https://nathanacurtis.substack.com/p/light-dark-9f8ea42c9081) uses EightShapes' Contrast Grid, which shows every text color against every background at once. Put a grid like that next to the palette, with the actual ratios rather than pass or fail, so a reader can see how close a borderline pair came ([Accessibility](/ds101/accessibility/) explains why).
 
 ### Check contrast on resolved values in every theme
 
@@ -66,7 +66,7 @@ In dark mode, check the surfaces as well as the text. Trueman: "Raised surfaces 
 
 ### Keep feedback colors apart from the brand
 
-Error, warning, and success colors only work if they stand out, and the brand color is the one most likely to get in the way. For every brand, Trueman's audit compares each feedback color with that brand's primary action color and flags anything below 3:1, "because a brand whose primary is red makes error states invisible." [Governance case studies](/ds101/governance-case-studies/) shows another way a second brand's colors go wrong, at Wise.
+Error, warning, and success colors only work if they stand out, and the brand color is the one most likely to get in the way. For every brand, Trueman's audit compares each feedback color with that brand's primary action color and flags anything below 3:1, "because a brand whose primary is red makes error states invisible." [Case Studies](/ds101/case-studies/) shows another way a second brand's colors go wrong, at Wise.
 
 If they're too close, change one. Either way, an error state needs an icon or text too, since [WCAG 2.2](https://www.w3.org/TR/WCAG22/) doesn't allow color to be the only signal.
 

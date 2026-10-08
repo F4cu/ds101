@@ -50,7 +50,7 @@ The executive communication notes warn that "a multi-year, multi-scope ask feels
 
 ### Say what's different from last time
 
-If the company tried a design system before and it didn't stick, the notes put it simply: "readers remember." Don't leave the earlier attempt unmentioned. Name what happened and what is specifically different this time. [Inheriting a legacy system](/ds101/inheriting-a-legacy-system/) covers finding out what that earlier attempt actually decided.
+If the company tried a design system before and it didn't stick, the notes put it simply: "readers remember." Don't leave the earlier attempt unmentioned. Name what happened and what is specifically different this time. [System Takeover](/ds101/system-takeover/) covers finding out what that earlier attempt actually decided.
 
 ### Follow the proposal through to a decision
 

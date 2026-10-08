@@ -1,5 +1,5 @@
 ---
-title: References
+title: Citations
 ---
 
 Every source cited across the wiki, grouped by page, in reading order. Inline
@@ -37,7 +37,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Romina Kavcic, "50 design token files, one problem: your agents can't read the meaning"](https://learn.thedesignsystem.guide/p/50-design-token-files-one-problem), 2026: eight names for one role, agents blending conventions, the brand-crimson test, and semantic token counts
 - [Romina Kavcic, "Name and get your tokens in 5 seconds"](https://learn.thedesignsystem.guide/p/name-and-get-your-tokens-in-5-seconds), 2025: the generator's default segment order
 
-## Accessible color palettes
+## Accessible Colors
 
 - [Nathan Curtis, "Color in Design Systems"](https://nathanacurtis.substack.com/p/color-in-design-systems-a1c80f65fa3), 2016 `Dated` — written against WCAG 2.0 and HSL-lightness naming, before perceptual color spaces like OKLCH were usable in CSS; cited for the principles (tested pairs, reversed pairings, few options)
 - [Nathan Curtis, "Light & Dark Color Modes in Design Systems"](https://nathanacurtis.substack.com/p/light-dark-9f8ea42c9081), 2017: the Contrast Grid
@@ -51,11 +51,11 @@ and describes tools or examples that have since changed. Older sources used only
 - [Carbon Design System, "Color: Overview"](https://carbondesignsystem.com/elements/color/overview/), living doc: tokens, roles, and values, and the layering model
 - [Atlassian Design System, "Color"](https://atlassian.design/foundations/color), living doc: choosing a token instead of a shade, and WCAG AA contrast targets
 - [Radix Colors, "Create a custom palette"](https://www.radix-ui.com/colors/custom), living doc: introduced with Radix Themes 3.0 in 2024
-- [Maximilian Blazek, "Generating accessible color palettes for design systems … inspired by APCA!"](https://ubuntu.com/blog/generating-color-palettes-for-design-systems-inspired-by-apca), Canonical, 2025: WCAG's false positives and negatives, perceptual color spaces, spacing steps by contrast, and Canonical choosing WCAG
+- [Maximilian Blazek, "Generating Accessible Colors for design systems … inspired by APCA!"](https://ubuntu.com/blog/generating-color-palettes-for-design-systems-inspired-by-apca), Canonical, 2025: WCAG's false positives and negatives, perceptual color spaces, spacing steps by contrast, and Canonical choosing WCAG
 - [Vanilla framework, "Color settings"](https://vanillaframework.io/docs/settings/color-settings), living doc: Canonical's WCAG 2.2 AA target
 - [W3C, "Web Content Accessibility Guidelines (WCAG) 2.2"](https://www.w3.org/TR/WCAG22/), 2023: color not the only signal
 
-## Component accessibility
+## Accessibility
 
 - Murphy Trueman, `design-system-ops` — [`skills/accessibility-per-component/SKILL.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/accessibility-per-component/SKILL.md), living doc: the five audit dimensions, the evidence rule, and the extended protocol for complex components
 - Murphy Trueman, `design-system-ops` — [`sample-outputs/fixture-accessibility-per-component.md`](https://github.com/murphytrueman/design-system-ops/blob/main/sample-outputs/fixture-accessibility-per-component.md), living doc: the Tooltip sample audit
@@ -84,7 +84,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Cloudscape Design System, "Configurable dashboard"](https://cloudscape.design/patterns/general/service-dashboard/configurable-dashboard/), living doc: letting users rearrange dashboard items
 - Murphy Trueman, `design-system-ops` — [`skills/accessibility-per-component/SKILL.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/accessibility-per-component/SKILL.md), living doc: the landmark-regions check for components that fill a page region
 
-## Component composition in code
+## Code Composition
 
 - [Nathan Curtis, "Subcomponents"](https://medium.com/eightshapes-llc/subcomponents-753ce9f6600a), 2022
 - [Nathan Curtis, "Slots in Design Systems"](https://nathanacurtis.substack.com/p/slots-in-design-systems), 2025
@@ -99,7 +99,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Braid Design System, "Layout"](https://seek-oss.github.io/braid-design-system/foundations/layout), living doc: layout components own all spacing between elements
 - [React Spectrum, "Dialog"](https://react-spectrum.adobe.com/Dialog), living doc: Spectrum 2 Dialog slots, and `CustomDialog` for custom layouts
 
-## Component composition in Figma
+## Figma Composition
 
 - [Nathan Curtis, "Architecting Subcomponents"](https://www.youtube.com/watch?v=NiDoqI_ZhvY), Schema by Figma, 2022
 - [Figma, "Taking cues from code"](https://www.figma.com/blog/taking-cues-from-code/), 2022
@@ -111,13 +111,13 @@ and describes tools or examples that have since changed. Older sources used only
 - [Nathan Curtis, "Slots in Design Systems"](https://nathanacurtis.substack.com/p/slots-in-design-systems), 2025: preferred or permitted children
 - [Murphy Trueman, "Slots and the control paradox"](https://murphytrueman.substack.com/p/slots-and-the-control-paradox), 2025: slots replacing the instance-swap workaround
 
-## Component specs
+## Specifications
 
 - [Nathan Curtis, "Component Specifications"](https://medium.com/eightshapes-llc/component-specifications-1492ca4c94c), 2023: specs for teams who never meet
 - [Nathan Curtis, "Components as Data"](https://medium.com/@nathanacurtis/components-as-data-2be178777f21), 2025: Figma as an output, and the raw color caught in data
 - [Nathan Curtis, "Component Contracts and Schemas"](https://nathanacurtis.substack.com/p/component-contracts-and-schemas), 2026: the `size` enum, `READY_FOR_DEV`, and contract versus description
 - [Nathan Curtis, "The EightShapes Specs Figma Plugin"](https://nathanacurtis.substack.com/p/the-eightshapes-specs-figma-plugin-2892f21adc96), 2023
-- [Nathan Curtis, "What Component Specs Leave Behind"](https://nathanacurtis.substack.com/p/what-component-specs-leave-behind), 2026: the hex-for-token loss and what specs can't carry yet
+- [Nathan Curtis, "What Specifications Leave Behind"](https://nathanacurtis.substack.com/p/what-component-specs-leave-behind), 2026: the hex-for-token loss and what specs can't carry yet
 - [Nathan Curtis, Directed Edges `specs`, "ADR 067: Element Behavior Roles via `anatomy.role`"](https://github.com/DirectedEdges/specs/blob/main/adr/067-anatomy-element-roles.md), 2026: roles as an authored fact
 - [Shane P Williams, "The Job Nobody Is Hiring For Yet"](https://designsystemscollective.substack.com/p/the-job-nobody-is-hiring-for-yet), 2026: Figma, Storybook, and production each authoritative for a different question
 - [Romina Kavcic, "Gamechanger: Automatically sync design tokens from GitHub to Airtable"](https://learn.thedesignsystem.guide/p/gamechanger-automatically-sync-design), 2025: the repo as source, docs as a view
@@ -171,7 +171,7 @@ and describes tools or examples that have since changed. Older sources used only
 - Murphy Trueman, `design-system-ops` — [`skills/onboarding/SKILL.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/onboarding/SKILL.md), living doc: the shared core and role sections, the first two weeks, and marking team policies to confirm
 - [Ness Grixti, "Wise Design System Onboarding"](https://nessgrixti.com/portfolio/wise-design-onboarding/), n.d. — the self-serve Figma course
 
-## Design system maturity
+## System Maturity
 
 - [Huei-Hsin Wang, "Design-System Maturity: A 6-Dimension Framework,"](https://www.nngroup.com/articles/design-system-maturity/) Nielsen Norman Group, 2026
 
@@ -182,7 +182,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Ness Grixti, "Rethinking Contribution: Lessons from the Messy Middle of Design Systems"](https://nessgrixti.com/articles/rethinking-contribution-lessons-from-the-messy-middle-of-design-systems/), 2025
 - zeroheight, *Design Systems Report 2026*
 
-## Component API design
+## API Design
 
 - [Nathan Curtis, "Configuration Collapse"](https://nathanacurtis.substack.com/p/configuration-collapse), 2026
 - [Supernova, "Building Durable Component APIs for Design Systems"](https://www.supernova.io/blog/building-durable-component-apis-for-design-systems), 2023
@@ -200,7 +200,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [MUI, "ToggleButton API"](https://mui.com/material-ui/api/toggle-button/), living doc: the `selected` prop
 - [Nathan Curtis, Directed Edges `specs`, "ADR 067: Element Behavior Roles via `anatomy.role`"](https://github.com/DirectedEdges/specs/blob/main/adr/067-anatomy-element-roles.md), 2026: a checkbox's selected state emitted as `aria-selected`
 
-## Component property naming
+## Property Naming
 
 - [Nathan Curtis, "Crafting Component API, Together"](https://medium.com/eightshapes-llc/crafting-ui-component-api-together-81946d140371), 2021 `Dated` — predates Figma's boolean, text, and instance-swap properties (2022) and slots; cited for the principles, with tool details from Curtis's 2026 posts
 - [Nathan Curtis, "Code Only" Props in Figma](https://nathanacurtis.substack.com/p/code-only-props-in-figma), 2026
@@ -215,7 +215,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Nathan Curtis, Directed Edges `specs`, "ADR 058: Collapsing Wrapped Primitives"](https://github.com/DirectedEdges/specs/blob/main/adr/058-wrapper-collapse.md), 2026: unstyled wrapper frames dropped from the spec
 - [Murphy Trueman, "What your components look like as data"](https://blog.murphytrueman.com/what-your-components-look-like-as-data/), 2026: descriptive layer names and enum properties
 
-## Component usability
+## Usability
 
 - [Murphy Trueman, "Why your components break in production (and how to fix it)"](https://blog.murphytrueman.com/p/api-driven-design-systems), 2025: the five states, data contracts, and containing errors
 - [Murphy Trueman, "Every component in your design system is a promise"](https://blog.murphytrueman.com/every-component-in-your-design-system-is-a-promise/), 2026: the untyped `variant` prop and its typed alternative
@@ -254,20 +254,20 @@ and describes tools or examples that have since changed. Older sources used only
 - Spotify Encore — daily version-usage statistics and slot/prop-override analytics, referenced via [Murphy Trueman](https://blog.murphytrueman.com/we-know-how-to-build-design-systems-but-we-dont-know-how-to-operate-them/) (2026) and [Figma, "How Spotify's design system goes beyond platforms"](https://www.figma.com/blog/creating-coherence-how-spotifys-design-system-goes-beyond-platforms/) (2023)
 - [Dependency-Track documentation](https://docs.dependencytrack.org/), living doc — SBOM-based component analysis, the supply-chain-security analogue of this practice
 
-## Governance case studies
+## Case Studies
 
 - [Ness Grixti, "Wise Multi-Brand Design System — Case Study"](https://nessgrixti.com/portfolio/wise-multi-brand/), n.d.
 - zeroheight, *Design Systems Report 2026*
 - Figma / Design Executive Council — Grammarly champions-network anecdote, via "The new business case for design systems" (2026)
 - [Chris Ballantine-Thomas, "Iterating the GOV.UK Design System contribution model"](https://designnotes.blog.gov.uk/2023/05/31/iterating-the-gov-uk-design-system-contribution-model/), 2023
 
-## Scaling across decades
+## Long-term Scale
 
 - [Kathrin Schalber, "UXT to Siemens Industrial Experience Migration"](https://ix.siemens.io/blog/2025/09/31/uxt-eos), Siemens iX blog, October 2025
 - [Siemens iX documentation](https://ix.siemens.io/docs/home/overview) and [Siemens iX on GitHub](https://github.com/siemens/ix), living docs — open-source, multi-framework (React, Angular, Vue, Blazor) design system
 - David Sward, "Solving the Design System Problem When Products Live for Decades," UXDX EMEA 2026 — cited from the published session description; no public transcript or recording was available at time of writing, so claims drawn from it are flagged inline as his framing rather than independently verified
 
-## Inheriting a legacy system
+## System Takeover
 
 - [Murphy Trueman, "Design system archaeology"](https://blog.murphytrueman.com/design-system-archaeology/), April 2026
 - [Nathan Curtis, "Adopting Design System Generations"](https://nathanacurtis.substack.com/p/adopting-design-system-generations-900535442a16), 2024
@@ -287,7 +287,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Omlet, "Scaling adoption and advocacy for an enterprise-wide design system with Guy Segal"](https://omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/), 2024 — Thomson Reuters ambassador pods
 - zeroheight, *Design Systems Report 2026* — staffing data
 
-## Measuring adoption
+## Adoption Metrics
 
 - [Murphy Trueman, "The component adoption gap: understanding the psychology behind design system success"](https://murphytrueman.substack.com/p/the-component-adoption-gap-understanding), 2025
 - zeroheight, *Design Systems Report 2026*
@@ -316,7 +316,7 @@ and describes tools or examples that have since changed. Older sources used only
 ## Brand alignment
 
 - [userQ, "Design Systems vs. Brand Guidelines"](https://userq.com/design-systems-vs-brand-guidelines-understanding-the-key-differences/), 2025
-- [Ness Grixti, "Wise Multi-Brand Design System — Case Study"](https://nessgrixti.com/portfolio/wise-multi-brand/), n.d. — also cited in [Governance case studies](/ds101/governance-case-studies/)
+- [Ness Grixti, "Wise Multi-Brand Design System — Case Study"](https://nessgrixti.com/portfolio/wise-multi-brand/), n.d. — also cited in [Case Studies](/ds101/case-studies/)
 - [DHL Brand Hub](https://www.dpdhl-brands.com/en/group/), living doc; [MetaDesign — DHL](https://metadesign.com/en/work/dhl), 2019 — brand-management platform, cited as a boundary example rather than a design-system case study
 
 ## Stakeholder alignment & planning horizons
@@ -327,7 +327,7 @@ and describes tools or examples that have since changed. Older sources used only
 - Simon Sinek's Golden Circle (Why/How/What), from *Start With Why* (2009), applied to stakeholder levels by Ashton-Booth
 - zeroheight, *Design Systems Report 2026*
 
-## AI readiness, governance under AI consumption, agentic workflow design, AI output discipline, scaling AI effort
+## AI readiness, governance under AI consumption, Agentic Workflows, AI output discipline, scaling AI effort
 
 - [Romina Kavcic, "Design tokens that AI can actually read"](https://learn.thedesignsystem.guide/p/design-tokens-that-ai-can-actually), 2025
 - [Romina Kavcic, "Should you build an agent for your design system"](https://learn.thedesignsystem.guide/p/should-you-build-an-agent-for-your), 2026
@@ -340,7 +340,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Shane P Williams, "Drift Doesn't Announce Itself"](https://designsystemscollective.substack.com/p/drift-doesnt-announce-itself), 2026 — Design Systems Collective
 - [Shane P Williams, "The Job Nobody Is Hiring For Yet"](https://designsystemscollective.substack.com/p/the-job-nobody-is-hiring-for-yet), 2026 — Design Systems Collective
 
-## CI for agentic workflows
+## Agent CI Pipelines
 
 - [GitHub, "Safe Outputs"](https://github.github.com/gh-aw/reference/safe-outputs/), living doc — GitHub Agentic Workflows documentation
 - [Sil Bormüller, "Your Design System Is Not Ready for AI Agents"](https://www.intodesignsystems.com/blog/design-system-not-ready-for-ai-agents), 2026 — conference write-up carrying Romina Kavcic's CI trust-tier framework, Jan Six's GitHub Primer safe-outputs example, and Diana Wolosin's Indeed pipeline figures, from the AI Design Systems Conference 2026
@@ -360,13 +360,13 @@ and describes tools or examples that have since changed. Older sources used only
 - [Atlassian, "Atlassian Design System: building the context engine for the AI era"](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era), 2026
 - [Microsoft Learn, "Human-centered design for agents"](https://learn.microsoft.com/en-us/agents/design-guidelines/human-centered-design), living doc — flagged on the source page as AI-generated content on an official Microsoft doc, not an individually authored piece
 
-## Figma access for agents
+## Figma Agent Access
 
-- [Nathan Curtis, "Figma Component Specs on Command"](https://nathanacurtis.substack.com/p/figma-component-specs-on-command), 2026: MCP vs. mechanical extraction, the button and action list compression figures, AI downstream of specs
+- [Nathan Curtis, "Figma Specifications on Command"](https://nathanacurtis.substack.com/p/figma-component-specs-on-command), 2026: MCP vs. mechanical extraction, the button and action list compression figures, AI downstream of specs
 - [Directed Edges, `specs`](https://github.com/DirectedEdges/specs), living doc: `specs-cli` setup, personal access token, and licensing
 - [Sil Bormüller, `figma-cli` README](https://github.com/silships/figma-cli/blob/main/README.md), living doc: connection modes, the self-measured token comparison with API-based MCP, the `snapshot`/`check` commands, and reuse handles with `instantiate`
 - [Sil Bormüller, `figma-cli` `roundtrip.js`](https://github.com/silships/figma-cli/blob/main/src/lib/roundtrip.js), living doc: the "renders white" failure and the token-layer comparison behind `check --roundtrip`
-- [Nathan Curtis, "What Component Specs Leave Behind"](https://nathanacurtis.substack.com/p/what-component-specs-leave-behind), 2026: rendering specs back into Figma, the hex-for-token loss, and what specs can't carry yet
+- [Nathan Curtis, "What Specifications Leave Behind"](https://nathanacurtis.substack.com/p/what-component-specs-leave-behind), 2026: rendering specs back into Figma, the hex-for-token loss, and what specs can't carry yet
 - [Sil Bormüller, `figma-cli` SECURITY.md](https://github.com/silships/figma-cli/blob/main/SECURITY.md), living doc: what each connection mode touches
 
 ## Tooling

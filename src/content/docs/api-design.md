@@ -1,5 +1,5 @@
 ---
-title: Component API Design
+title: API Design
 reviewed: 2026-09-16
 reviewIn: 12
 ---
@@ -14,7 +14,7 @@ Every prop you ship is a promise you keep forever, or a breaking change you'll h
 
 ## The problem
 
-Left unchecked, components pile up props one product request at a time, and each addition feels reasonable on its own. [Nathan Curtis](https://nathanacurtis.substack.com/p/configuration-collapse) calls the end state "configuration collapse": a component full of layout props, boolean props, and deeply nested subcomponent trees that exist only to control what's shown and where. The fix isn't a rule against adding props. It's a standing discipline about *which* props earn a permanent place in the API. A clean API is only part of the job, though. A component can still break on real data or be slow to edit in Figma, which [Component usability](/ds101/component-usability/) covers.
+Left unchecked, components pile up props one product request at a time, and each addition feels reasonable on its own. [Nathan Curtis](https://nathanacurtis.substack.com/p/configuration-collapse) calls the end state "configuration collapse": a component full of layout props, boolean props, and deeply nested subcomponent trees that exist only to control what's shown and where. The fix isn't a rule against adding props. It's a standing discipline about *which* props earn a permanent place in the API. A clean API is only part of the job, though. A component can still break on real data or be slow to edit in Figma, which [Usability](/ds101/usability/) covers.
 
 ## Choosing configuration or composition
 
@@ -42,7 +42,7 @@ Two signals that something belongs in composition: it's used in only one context
 </Dialog>
 ```
 
-`showFooter` disappears, because leaving the footer out just means not writing it. Alignment and styling, if still needed, move onto `Dialog.Footer`, the one part they affect, instead of growing Dialog's top-level API. [Component composition in code](/ds101/component-composition-in-code/#compound-components) shows how parts like `Dialog.Footer` are built.
+`showFooter` disappears, because leaving the footer out just means not writing it. Alignment and styling, if still needed, move onto `Dialog.Footer`, the one part they affect, instead of growing Dialog's top-level API. [Code Composition](/ds101/code-composition/#compound-components) shows how parts like `Dialog.Footer` are built.
 
 ### Configure with props
 
@@ -56,7 +56,7 @@ For structural and content variation. Curtis documents real before-and-after cas
 - An Alert's three-level subcomponent hierarchy for title, description, and actions became one slotted body with ready-made layout examples.
 - A Card was hollowed out into a plain container, so specialized teams build purpose-driven extensions instead of the core system adding more configuration.
 
-The cost: consumers assemble more themselves, so they need good examples. [Component composition in code](/ds101/component-composition-in-code/) names the pieces involved.
+The cost: consumers assemble more themselves, so they need good examples. [Code Composition](/ds101/code-composition/) names the pieces involved.
 
 ## Practices
 
@@ -106,7 +106,7 @@ An override is a hidden dependency that can break silently on the next release. 
 
 `.card__title` is an internal class name, not part of Card's API. If the system team renames it in a refactor, the promo loses its styling, and nothing in the release notes warned anyone, because no prop changed. The composed version puts the product team's own heading inside Card. The only thing it depends on is that Card accepts children, which is documented and versioned.
 
-When teams do need to restyle, give them a documented way in so they don't reach into internals. [MUI](https://mui.com/material-ui/guides/api/) passes undocumented props such as `className` to the root element, and every component accepts a `classes` prop keyed by documented names, with the root always called `root`. Because the names are documented, renaming one is a visible API change rather than a silent break like `.card__title`. To decide what stays locked, [Murphy Trueman](https://murphytrueman.substack.com/p/slots-and-the-control-paradox) asks what "must stay consistent for brand identity, accessibility, or technical reasons?" and treats everything else as a candidate for flexibility. [Component property naming](/ds101/component-property-naming/) covers how to name the props themselves.
+When teams do need to restyle, give them a documented way in so they don't reach into internals. [MUI](https://mui.com/material-ui/guides/api/) passes undocumented props such as `className` to the root element, and every component accepts a `classes` prop keyed by documented names, with the root always called `root`. Because the names are documented, renaming one is a visible API change rather than a silent break like `.card__title`. To decide what stays locked, [Murphy Trueman](https://murphytrueman.substack.com/p/slots-and-the-control-paradox) asks what "must stay consistent for brand identity, accessibility, or technical reasons?" and treats everything else as a candidate for flexibility. [Property Naming](/ds101/property-naming/) covers how to name the props themselves.
 
 ### Let the pattern decide who owns selection
 
@@ -136,15 +136,15 @@ A [Toggle Group](https://www.radix-ui.com/primitives/docs/components/toggle-grou
 
 Notice where the state lives. Because the group holds the value, no item can disagree with it, and two items can't both claim to be selected in a single-choice set. [React Aria](https://react-spectrum.adobe.com/react-aria/ToggleButton.html) draws the same line: a `ToggleButton` takes an `isSelected` boolean, while a [`TagGroup`](https://react-spectrum.adobe.com/react-aria/TagGroup.html) takes `selectedKeys` for the whole set.
 
-What libraries don't agree on is the lone toggle's prop name. Radix calls it `pressed`, React Aria `isSelected`, and [MUI](https://mui.com/material-ui/api/toggle-button/) `selected`. A naming convention can't settle that, but the structure question comes first and has a right answer. Pick one name and use it everywhere, as [Component property naming](/ds101/component-property-naming/#name-one-concept-one-way-across-components) covers.
+What libraries don't agree on is the lone toggle's prop name. Radix calls it `pressed`, React Aria `isSelected`, and [MUI](https://mui.com/material-ui/api/toggle-button/) `selected`. A naming convention can't settle that, but the structure question comes first and has a right answer. Pick one name and use it everywhere, as [Property Naming](/ds101/property-naming/#name-one-concept-one-way-across-components) covers.
 
-Getting the pattern wrong shows up in generated code too. [Curtis](https://github.com/DirectedEdges/specs/blob/main/adr/067-anatomy-element-roles.md) found his spec tool turning a checkbox's selected state into `aria-selected`, "a listbox-option attribute, incorrect for a checkbox," until each part's role was recorded in the spec. [Component accessibility](/ds101/component-accessibility/#record-each-parts-role-in-the-spec) covers that.
+Getting the pattern wrong shows up in generated code too. [Curtis](https://github.com/DirectedEdges/specs/blob/main/adr/067-anatomy-element-roles.md) found his spec tool turning a checkbox's selected state into `aria-selected`, "a listbox-option attribute, incorrect for a checkbox," until each part's role was recorded in the spec. [Accessibility](/ds101/accessibility/#record-each-parts-role-in-the-spec) covers that.
 
 ### Share decisions across platforms, not implementations
 
 The same component often needs to work on web, iOS, and Android without looking identical on all three. [Wealthfront's engineering team](https://eng.wealthfront.com/2022/05/10/building-wealthfronts-multi-platform-design-system/) calls this "design once, build anywhere": share tokens (padding, radius, color, typography) and intent, and let the implementation follow each platform's conventions. Their example: a Dialog floats centered on desktop web, while its mobile counterpart is a BottomSheet attached to the bottom edge. It's a different component and interaction model, built on the same decisions.
 
-That only works if the intent is recorded somewhere neutral. [Component specs](/ds101/component-specs/) covers where to record it. [Platform divergence](/ds101/platform-divergence/) explains why a structural split like Dialog vs. BottomSheet needs a component contract rather than a token.
+That only works if the intent is recorded somewhere neutral. [Specifications](/ds101/specifications/) covers where to record it. [Platform divergence](/ds101/platform-divergence/) explains why a structural split like Dialog vs. BottomSheet needs a component contract rather than a token.
 
 ### Separate what a component guarantees from what it guides
 

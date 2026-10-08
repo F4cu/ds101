@@ -32,7 +32,7 @@ Print, packaging, signage, campaign pages, and usually the marketing or brochure
 
 ### Let a brand refresh flow through the token tiers
 
-**Wise's** 2023 brand refresh is the clearest real example. It didn't stay a marketing-only exercise. It drove a 2024 rebuild of the product system's token infrastructure (the "Editorial Design System") to carry the new identity through to product surfaces ([Ness Grixti's case study](https://nessgrixti.com/portfolio/wise-multi-brand/)). [Governance case studies](/ds101/governance-case-studies/) covers what went wrong when a related brand-theming change was handled as a local fork instead of a system-wide change.
+**Wise's** 2023 brand refresh is the clearest real example. It didn't stay a marketing-only exercise. It drove a 2024 rebuild of the product system's token infrastructure (the "Editorial Design System") to carry the new identity through to product surfaces ([Ness Grixti's case study](https://nessgrixti.com/portfolio/wise-multi-brand/)). [Case Studies](/ds101/case-studies/) covers what went wrong when a related brand-theming change was handled as a local fork instead of a system-wide change.
 
 ### Keep brand values at the primitive tier
 

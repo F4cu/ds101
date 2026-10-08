@@ -1,5 +1,5 @@
 ---
-title: Start here
+title: Start Here
 ---
 
 This wiki covers the layer above day-to-day design system work: the operational and
@@ -54,7 +54,7 @@ draws on them:
   parts and guarding parts used outside their parent
 - **Alice Packard**: what makes a Figma component easy for designers to use
 
-The [references](/ds101/references/) page collects every citation in one place.
+The [Citations](/ds101/citations/) page collects every citation in one place.
 
 ## How to read a page
 
@@ -65,16 +65,16 @@ a structure to understand first. Every page ends with **Common mistakes**.
 
 ## How the wiki is organized
 
-1. **Getting started**: auditing, piloting, inheriting a system, assessing maturity.
-2. **Foundations**: what a design system is, token tiers, the design-to-code contract,
-   and multiple platforms.
-3. **Components**: composition, API design, and accessibility.
-4. **Governance**: ownership, decisions, contribution, lifecycle, inventory, releases, cadence.
-5. **Metrics**: adoption, performance in context, dependencies, doc coverage.
-6. **Business alignment**: the business case, brand, and stakeholders.
-7. **Agentic AI**: making the system usable by agents, designing agent workflows, and
-   designing AI features in your product.
+1. **01. Strategy**: audit, pilot, take over an existing system, or assess its maturity.
+2. **02. Foundations**: core concepts, token architecture and naming, accessible colors, Design-to-Code Contract, and platform divergence.
+3. **03. Components**: specifications, composition in Figma and code, APIs, property naming, usability, and accessibility.
+4. **04. Governance**: team and decision models, contribution, lifecycle, inventory, releases, cadence, onboarding, long-term scale, and case studies.
+5. **05. Health**: adoption, performance, dependencies, and documentation coverage.
+6. **06. Business**: value, ROI, brand, and stakeholder alignment.
+7. **07. AI Integration**: readiness, context, documentation, governance, risk, Figma access, workflows, CI, output discipline, and UI patterns.
 
-Start with [What a design system is](/ds101/what-a-design-system-is/), or jump to any
+**Reference**: the glossary and citations.
+
+Start with [Core Concepts](/ds101/core-concepts/), or jump to any
 section from the sidebar. The [glossary](/ds101/glossary/) defines every term along the
 way.

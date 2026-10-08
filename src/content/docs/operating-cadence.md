@@ -16,7 +16,7 @@ reviewIn: 24
 
 [Nathan Curtis](https://medium.com/eightshapes-llc/design-system-communications-ca679ffc36d3) observes that "not every system team runs a predictable cadence... but every system has some kind of cadence to plan, work, critique, demo, and release things." The question isn't whether a rhythm exists. It's whether it's designed or accidental.
 
-Left undesigned, communication defaults to whoever happens to be in the room. That's why [adoption measurement](/ds101/measuring-adoption/) keeps surfacing "weak communication" as a top blocker, even for systems people already trust. Trusting a system isn't the same as knowing what changed, who to ask, or where to send feedback.
+Left undesigned, communication defaults to whoever happens to be in the room. That's why [adoption measurement](/ds101/adoption-metrics/) keeps surfacing "weak communication" as a top blocker, even for systems people already trust. Trusting a system isn't the same as knowing what changed, who to ask, or where to send feedback.
 
 ## Practices
 
@@ -60,7 +60,7 @@ Brad Frost's *Atomic Design* (Chapter 5) pairs office hours with a second ritual
 - presentations timed to land inside existing team meetings and quarterly planning
 - a formal advocate program, with recognition that shows up in performance reviews, not just a Slack shout-out
 
-In the same research, **Spotify's** team prioritized collaboration and feedback loops when reworking their system, and **News UK** relied on onboarding resources and empowered advocates to ship a multi-brand system. [Governance case studies](/ds101/governance-case-studies/) covers Grammarly's ten-person advocate network.
+In the same research, **Spotify's** team prioritized collaboration and feedback loops when reworking their system, and **News UK** relied on onboarding resources and empowered advocates to ship a multi-brand system. [Case Studies](/ds101/case-studies/) covers Grammarly's ten-person advocate network.
 
 Two larger programs show what triggers a formal ambassador structure. **Salesforce** built its Lightning Design System Ambassador program because support had become "centralized with a design systems team, and not scaling well." Implementation was inconsistent, contribution paths were unclear, and core-team responses were slow. Ambassadors embedded in product teams closed the gap ([Catriona Shedd](http://www.catrionashedd.com/portfolio/design-systems-ambassador-at-salesforce/)). **Thomson Reuters** runs the model across 150+ brands, organized into more than a dozen product "pods," each with an ambassador (usually lead level or higher) in a weekly meeting. Director Guy Segal describes the payoff as visibility in both directions. One ambassador called the meetings "the first time...we can all come together as a group and see what all the other teams are working on" ([Omlet](https://omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/)).
 

@@ -1,5 +1,5 @@
 ---
-title: Design System Maturity
+title: System Maturity
 reviewed: 2026-09-19
 reviewIn: 24
 ---
@@ -30,7 +30,7 @@ Capacity, makeup, and whether the team model fits the org's size. See [Team mode
 
 ### Infrastructure robustness
 
-Tokens, components, tooling, and the handoff underneath them. See [Token architecture](/ds101/token-architecture/) and [The design-to-code contract](/ds101/design-to-code-contract/).
+Tokens, components, tooling, and the handoff underneath them. See [Token architecture](/ds101/token-architecture/) and [Design-to-Code Contract](/ds101/design-to-code-contract/).
 
 ### Governance
 
@@ -42,7 +42,7 @@ Documentation, onboarding, and how actively the team equips people to use the sy
 
 ### Adoption
 
-Whether teams actually use, trust, and rely on the system, measured rather than assumed. See [Measuring adoption](/ds101/measuring-adoption/) and [Dependency observability](/ds101/dependency-observability/).
+Whether teams actually use, trust, and rely on the system, measured rather than assumed. See [Adoption Metrics](/ds101/adoption-metrics/) and [Dependency observability](/ds101/dependency-observability/).
 
 ## Practices
 
