@@ -1,5 +1,5 @@
 ---
-title: Figma Access for Agents
+title: Figma Agent Access
 reviewed: 2026-09-27
 reviewIn: 6
 ---
@@ -20,7 +20,7 @@ Use MCP when you're exploring, and a CLI when the answer is already in the data.
 ## The problem
 
 The usual route today is a live connection. An agent opens the file through the
-[Figma MCP server](/ds101/scaling-ai-effort-to-risk/), reads what it needs, and writes
+[Figma MCP server](/ds101/risk-management/), reads what it needs, and writes
 code. That works for one component at a time. It breaks down when you want a whole
 library turned into code, or kept in sync with it.
 [Nathan Curtis](https://nathanacurtis.substack.com/p/figma-component-specs-on-command)
@@ -69,7 +69,7 @@ again, results vanish when the chat ends, and reads count against the seat's lim
 
 Curtis built `specs-cli` for the extraction step. It reads a Figma library through the
 REST API and writes one compact spec per component into your repo, with anatomy, props,
-styles, token references, and variants stored as differences. The button above goes
+styles, token Citations, and variants stored as differences. The button above goes
 from 1.38 MB of raw JSON to a 10 KB spec in about a second, 134 times smaller. Coding
 agents then read the spec files, not Figma.
 
@@ -125,7 +125,7 @@ this without AI and use zero tokens. AI belongs in this pipeline: *downstream*."
 model's work starts from the spec: "Coding agents take a spec and generate types,
 structure, styling, behaviors, and accessibility in parallel, governed by rules and
 skills. Humans review this at gates rather than doing discovery themselves."
-[CI for agentic workflows](/ds101/ci-for-agentic-workflows/) covers how to set those
+[Agent CI Pipelines](/ds101/agent-ci-pipelines/) covers how to set those
 gates.
 
 ### Check the canvas without a model
@@ -181,7 +181,7 @@ company."
   [benchmarked MCP formats](/ds101/context-engineering/) against real prompts.
 - **Expecting the spec to cover behavior.** Curtis calls Figma's data model "stable,
   incomplete and evolving slowly." Behavior, motion, and accessibility still need their
-  own specs. See [Component specs](/ds101/component-specs/#record-what-the-design-cant-show).
+  own specs. See [Specifications](/ds101/specifications/#record-what-the-design-cant-show).
 - **Treating a failed check as a mistake.** In Bormüller's words, "Red means *changed*,
   not *wrong*." If the change was intended, take a new snapshot and review the diff, as
   you would with a snapshot test in code.

@@ -1,5 +1,5 @@
 ---
-title: The Design-to-Code Contract
+title: Design-to-Code Contract
 reviewed: 2026-07-02
 reviewIn: 12
 ---
@@ -26,17 +26,17 @@ Met when the spec can be built without clarifying questions:
 
 - Every state is designed: default, hover, active, focus, disabled, loading, error.
 - Responsive behaviour is specified.
-- Edge cases like long strings and empty states are covered. [Component usability](/ds101/component-usability/#design-every-state-against-real-data) lists the states to design.
+- Edge cases like long strings and empty states are covered. [Usability](/ds101/usability/#design-every-state-against-real-data) lists the states to design.
 - Token usage is explicit in the file.
 - The component API (props, types, defaults) is agreed before build.
-- Accessibility is handled now, not deferred: focus indicators, contrast, touch targets, and the ARIA contract (the component's role, keyboard pattern, and how it gets its label). [Component accessibility](/ds101/component-accessibility/) covers what to check.
+- Accessibility is handled now, not deferred: focus indicators, contrast, touch targets, and the ARIA contract (the component's role, keyboard pattern, and how it gets its label). [Accessibility](/ds101/accessibility/) covers what to check.
 
 ### Build contract
 
 Met when:
 
 - All specified states are implemented, not just the happy path.
-- Token references are correct at every tier, with no hardcoded values.
+- Token Citations are correct at every tier, with no hardcoded values.
 - Accessibility is implemented *and tested*, not just reviewed.
 - The result is checked against the spec, not built from memory.
 - Unit tests and Storybook coverage exist.
@@ -88,11 +88,11 @@ A contract that lags behind the components does more harm than no contract. Curt
 
 ### Change the contract through recorded decisions
 
-Strict doesn't mean frozen. Curtis: "A contract that can't change dies, and a contract that changes without governance was never actually a contract." He calls architectural decision records (ADRs), short notes on what changed and why, "the machinery to evolve component specs." [Decision governance](/ds101/decision-governance/) covers how to keep those records.
+Strict doesn't mean frozen. Curtis: "A contract that can't change dies, and a contract that changes without governance was never actually a contract." He calls architectural decision records (ADRs), short notes on what changed and why, "the machinery to evolve Specifications." [Decision governance](/ds101/decision-governance/) covers how to keep those records.
 
 ## Common mistakes
 
-- **Delivering designs as screenshots.** A developer can't inspect token references or check spacing and states from a flat image. The toolkit is blunt: a screenshot "is not a design contract — it is a visual reference." The Figma file is the minimum. Curtis goes further: a definition taken straight from one party's tool, "like a Figma file," is "testimony, not a contract." [Component specs](/ds101/component-specs/) covers where to write the platform-neutral version.
+- **Delivering designs as screenshots.** A developer can't inspect token Citations or check spacing and states from a flat image. The toolkit is blunt: a screenshot "is not a design contract — it is a visual reference." The Figma file is the minimum. Curtis goes further: a definition taken straight from one party's tool, "like a Figma file," is "testimony, not a contract." [Specifications](/ds101/specifications/) covers where to write the platform-neutral version.
 - **Saying "just copy the existing component."** That makes the old implementation the spec, so every problem in it (missing states, hardcoded values, accessibility gaps) gets faithfully copied into the new one. If the old component were a reliable spec, you probably wouldn't be building a new one.
 - **Deferring accessibility to QA.** Per the toolkit, accessibility issues found in QA "cost significantly more to fix than issues caught in design." That's why the design contract requires them before build starts.
 - **Writing the docs after release.** Docs written under pressure after shipping "tend to describe the component as built rather than as intended," and they reach the teams who needed them after those teams have already worked it out for themselves, "sometimes incorrectly."

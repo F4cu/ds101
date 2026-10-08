@@ -42,7 +42,7 @@ The split doesn't have to mean two separate files. In [Murphy Trueman's componen
 
 ### Expect the structuring to help humans too
 
-[Atlassian's](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era) sharpest line on why this isn't AI-only busywork: "To identify the rules that help LLMs, you also uncover the rules that help explain these concepts to humans — and that's a good thing." [Governance for AI](/ds101/governance-for-ai/) makes the same claim from Shane P Williams's side: work that makes the system legible to agents is quality work for everyone.
+[Atlassian's](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era) sharpest line on why this isn't AI-only busywork: "To identify the rules that help LLMs, you also uncover the rules that help explain these concepts to humans — and that's a good thing." [AI Governance](/ds101/ai-governance/) makes the same claim from Shane P Williams's side: work that makes the system legible to agents is quality work for everyone.
 
 ### Treat tokens as an API
 

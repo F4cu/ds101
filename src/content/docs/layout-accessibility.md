@@ -4,7 +4,7 @@ reviewed: 2026-09-25
 reviewIn: 12
 ---
 
-A screen can be built entirely from components that pass their audits and still be hard to use with a screen reader. The problems come from how the components are put together: the order the page is read in, its heading structure, and the landmarks that let someone jump between regions. These all exist only once components are combined into a layout, so a design system has to handle them in its page templates and layout guidance, not in single components. An accessible layout still needs accessible components inside it, which [Component accessibility](/ds101/component-accessibility/) covers.
+A screen can be built entirely from components that pass their audits and still be hard to use with a screen reader. The problems come from how the components are put together: the order the page is read in, its heading structure, and the landmarks that let someone jump between regions. These all exist only once components are combined into a layout, so a design system has to handle them in its page templates and layout guidance, not in single components. An accessible layout still needs accessible components inside it, which [Accessibility](/ds101/accessibility/) covers.
 
 :::tip[Key takeaways]
 - **Build landmarks into the page shell.** Without them, screen reader users have no quick way to jump between regions.
@@ -51,7 +51,7 @@ A dashboard often has more than one landmark of the same type, such as main navi
 
 Curtis's point is that the same text can be the page title on one screen and a third-level heading on another. His example: "what might be the largest heading on one screen (such as a product spec's page title) may be the third largest heading on another page (such as a product's home page)." He recommends that teams "separate the concept of heading level (the visual outcome of applying style properties) from H tag (HTML elements like H1, H2, H3, and so on)."
 
-In practice, a card, panel, or section component takes its heading tag as a setting, and its visual size is a separate setting. The team building the dashboard then gives the page one `h1`, gives each group of widgets an `h2`, and gives each card inside a group an `h3`, however big each title looks. [Cloudscape](https://cloudscape.design/foundation/core-principles/accessibility/Building-accessible-experiences/) asks for "descriptive section headings following a proper heading hierarchy." [Component API design](/ds101/component-api-design/) covers how to expose a setting like this without letting the component's options grow out of control.
+In practice, a card, panel, or section component takes its heading tag as a setting, and its visual size is a separate setting. The team building the dashboard then gives the page one `h1`, gives each group of widgets an `h2`, and gives each card inside a group an `h3`, however big each title looks. [Cloudscape](https://cloudscape.design/foundation/core-principles/accessibility/Building-accessible-experiences/) asks for "descriptive section headings following a proper heading hierarchy." [API Design](/ds101/api-design/) covers how to expose a setting like this without letting the component's options grow out of control.
 
 ### Put the most important content first in the code
 
@@ -74,7 +74,7 @@ Dashboards that users can rearrange are still an open question. Cloudscape's [co
 
 ### Annotate a layout's keyboard order once
 
-Keyboard order is easy to lose between design and build, because a design file shows where things sit but not the order they're reached in. Carbon's [keyboard guidance](https://carbondesignsystem.com/guidelines/accessibility/keyboard/) gives a default: start with the header, then the main navigation, then the content "from left to right, top to bottom," and end with the footer. For its UI shell, Carbon asks each product for "a one-time design exercise to annotate the UI shell keyboard interaction." After that, "individual product pages only need to annotate the header if something differs." A system can take the same approach with its page templates: annotate the landmarks, heading levels, and tab order once per template, and ask product teams to note only what they change. [The design-to-code contract](/ds101/design-to-code-contract/) covers where annotations like these fit in the handoff.
+Keyboard order is easy to lose between design and build, because a design file shows where things sit but not the order they're reached in. Carbon's [keyboard guidance](https://carbondesignsystem.com/guidelines/accessibility/keyboard/) gives a default: start with the header, then the main navigation, then the content "from left to right, top to bottom," and end with the footer. For its UI shell, Carbon asks each product for "a one-time design exercise to annotate the UI shell keyboard interaction." After that, "individual product pages only need to annotate the header if something differs." A system can take the same approach with its page templates: annotate the landmarks, heading levels, and tab order once per template, and ask product teams to note only what they change. [Design-to-Code Contract](/ds101/design-to-code-contract/) covers where annotations like these fit in the handoff.
 
 ## Common mistakes
 

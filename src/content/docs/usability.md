@@ -1,5 +1,5 @@
 ---
-title: Component Usability
+title: Usability
 reviewed: 2026-10-06
 reviewIn: 12
 ---
@@ -16,7 +16,7 @@ A component can be well structured and still be hard to use. It's hard to use wh
 
 > "When these components hit production, they'd break unpredictably, forcing developers to implement their own solutions that sidestepped the design system entirely." — [Murphy T.](https://blog.murphytrueman.com/p/api-driven-design-systems)
 
-Most hard-to-use components aren't broken in one big way. They fail in several small ways, and each failure was a reasonable decision when it was made. This Card puts together failures that Curtis, Supernova, and Braid each describe on [Component API design](/ds101/component-api-design/) and [Component composition in code](/ds101/component-composition-in-code/):
+Most hard-to-use components aren't broken in one big way. They fail in several small ways, and each failure was a reasonable decision when it was made. This Card puts together failures that Curtis, Supernova, and Braid each describe on [API Design](/ds101/api-design/) and [Code Composition](/ds101/code-composition/):
 
 ```tsx title="Hard to use"
 <Card
@@ -73,7 +73,7 @@ interface ButtonProps {
 }
 ```
 
-In the typed version, the editor lists the four options as the engineer types, a misspelled value fails the build, and the usage rule sits next to the prop instead of in a separate docs page. Which combinations of valid values to block is covered in [Component API design](/ds101/component-api-design/#support-only-the-prop-combinations-you-document).
+In the typed version, the editor lists the four options as the engineer types, a misspelled value fails the build, and the usage rule sits next to the prop instead of in a separate docs page. Which combinations of valid values to block is covered in [API Design](/ds101/api-design/#support-only-the-prop-combinations-you-document).
 
 ### Behave like the element underneath
 
@@ -83,15 +83,15 @@ MUI also keeps state props predictable. A component is controlled "when it's man
 
 ### Put common edits on the top layer
 
-Packard's first test for a Figma component is that "the most common modifications are accessible from the component's top layer." Her bad example is a star rating where changing the score takes fifteen steps, with repeated "double click into the instance" and trips back to the design panel. Rebuilt with an instance swap property on each star, it takes nine steps, and the designer picks each star from a dropdown instead of clicking into the instance. [Curtis's Figma component review](https://nathanacurtis.substack.com/p/the-figma-component-review-f42114450b4d) adds that those properties should be "consistent with the component code API," so the panel a designer uses is the props list an engineer reads. [Component composition in Figma](/ds101/component-composition-in-figma/#expose-only-the-properties-each-level-needs) covers which nested properties to expose.
+Packard's first test for a Figma component is that "the most common modifications are accessible from the component's top layer." Her bad example is a star rating where changing the score takes fifteen steps, with repeated "double click into the instance" and trips back to the design panel. Rebuilt with an instance swap property on each star, it takes nine steps, and the designer picks each star from a dropdown instead of clicking into the instance. [Curtis's Figma component review](https://nathanacurtis.substack.com/p/the-figma-component-review-f42114450b4d) adds that those properties should be "consistent with the component code API," so the panel a designer uses is the props list an engineer reads. [Figma Composition](/ds101/figma-composition/#expose-only-the-properties-each-level-needs) covers which nested properties to expose.
 
-Packard also asks that "overrides not lost on common swaps," because each lost edit "erodes designers' trust in that component." [Component property naming](/ds101/component-property-naming/#name-layers-identically-in-every-variant) covers the layer naming that keeps them. Her extra step is in the text layers: put the "3" and the "days ago" in separate layers, so a designer can change the number without retyping the label.
+Packard also asks that "overrides not lost on common swaps," because each lost edit "erodes designers' trust in that component." [Property Naming](/ds101/property-naming/#name-layers-identically-in-every-variant) covers the layer naming that keeps them. Her extra step is in the text layers: put the "3" and the "days ago" in separate layers, so a designer can change the number without retyping the label.
 
 ### Build the limits into the layout
 
 A component should hold its intended shape without the designer remembering the rules. Packard's example: "If a button component is meant to maintain a 40px height at all times, the auto layout settings should be configured" to keep it there. The component should also be "free of rogue artifacts," including "draft ideas lurking around in hidden auto-layout layers," which show up in the layers panel and confuse anyone looking for the part they're supposed to edit.
 
-In code, the same idea is letting the parent own the spacing. A Card with its own margin forces the `style={{ marginBottom: 24 }}` fix from the example above. [Component composition in code](/ds101/component-composition-in-code/#let-the-parent-own-the-space-between-parts) shows the alternative.
+In code, the same idea is letting the parent own the spacing. A Card with its own margin forces the `style={{ marginBottom: 24 }}` fix from the example above. [Code Composition](/ds101/code-composition/#let-the-parent-own-the-space-between-parts) shows the alternative.
 
 ### Ship examples, not just props
 
@@ -112,7 +112,7 @@ Asked in this order during a component review, following the order of [Curtis's 
 9. Does it pass undocumented props and its `ref` through to the root element?
 10. Is there a ready-made example for each common composition?
 
-[Component accessibility](/ds101/component-accessibility/) has its own checks, which run alongside these.
+[Accessibility](/ds101/accessibility/) has its own checks, which run alongside these.
 
 Run the Card from [The problem](#the-problem) through the list and it comes out like this:
 
@@ -133,7 +133,7 @@ The boolean props are gone, because leaving a part out means not writing it. `va
 
 ## Common mistakes
 
-- **Reading detachment as a discipline problem.** A spike in detached instances usually points at the component, not the designers. [Performance in context](/ds101/performance-in-context/#slice-detachment-spikes-by-page) covers telling a component flaw from a context mismatch.
+- **Reading detachment as a discipline problem.** A spike in detached instances usually points at the component, not the designers. [System Performance](/ds101/system-performance/#slice-detachment-spikes-by-page) covers telling a component flaw from a context mismatch.
 - **Fixing a usability gap with one more prop.** Each prop added to unblock one team makes the component harder for everyone else to read. That's how the Card above got `isPromo` ([Curtis](https://nathanacurtis.substack.com/p/configuration-collapse)).
 - **Truncating labels and error messages to make them fit.** Carbon rules it out for exactly those strings, because they're the ones a user needs in full.
 - **Applying palette styles where semantic ones belong.** Curtis's review flags a generic style like "Palette > Blue > 50" where a semantic one like "Text > Link > On Dark" belongs, because only the second says what the color is for.

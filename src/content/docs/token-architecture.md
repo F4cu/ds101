@@ -4,7 +4,7 @@ reviewed: 2026-07-02
 reviewIn: 12
 ---
 
-Tokens work in three tiers: raw values, the intent those values serve, and optionally the components that use them. References only ever point one tier down. That's what makes a rebrand or dark mode a one-line change instead of a search through the whole codebase.
+Tokens work in three tiers: raw values, the intent those values serve, and optionally the components that use them. Citations only ever point one tier down. That's what makes a rebrand or dark mode a one-line change instead of a search through the whole codebase.
 
 :::tip[Key takeaways]
 - **Reference strictly one tier down.** A token that skips the semantic tier silently misses the next rebrand.
@@ -76,7 +76,7 @@ The curly braces mark an **alias**: a value that points at another token by name
 
 ### Reference strictly downward
 
-References flow component → semantic → primitive, never sideways and never skipping a tier. The design-system-ops notes call a skipped tier "the most architecturally damaging token violation." `button.background.default: {color.blue.500}` *appears* to work, because the right color shows up. But "a rebrand or theme change that correctly updates the semantic tier will not reach this component." It breaks silently, and you only find out mid-rebrand.
+Citations flow component → semantic → primitive, never sideways and never skipping a tier. The design-system-ops notes call a skipped tier "the most architecturally damaging token violation." `button.background.default: {color.blue.500}` *appears* to work, because the right color shows up. But "a rebrand or theme change that correctly updates the semantic tier will not reach this component." It breaks silently, and you only find out mid-rebrand.
 
 ```json title="Skips a tier"
 "button.background.default":
@@ -145,7 +145,7 @@ Apply the opacity to an opaque base. In Figma, opacity on a color that is alread
 
 ### Keep platforms out of token names
 
-Per the design-system-ops notes, platform differences (web pixels vs. iOS points, different typefaces) are handled by transformation tooling, never encoded in the name. Transformation tooling is software like Style Dictionary that converts one token file into each platform's native format. So it's `spacing.4`, not `spacing.web.4`. [Platform divergence](/ds101/platform-divergence/) walks through that transformation step end to end. [Component specs](/ds101/component-specs/) applies the same platform-neutral idea to whole components.
+Per the design-system-ops notes, platform differences (web pixels vs. iOS points, different typefaces) are handled by transformation tooling, never encoded in the name. Transformation tooling is software like Style Dictionary that converts one token file into each platform's native format. So it's `spacing.4`, not `spacing.web.4`. [Platform divergence](/ds101/platform-divergence/) walks through that transformation step end to end. [Specifications](/ds101/specifications/) applies the same platform-neutral idea to whole components.
 
 ### Treat token names as contracts
 
@@ -158,4 +158,4 @@ Per the design-system-ops notes, platform differences (web pixels vs. iOS points
 - **Letting token count grow faster than the product.** That growth usually means one-off tokens are being created instead of existing intent being reused.
 - **Creating component tokens for every component up front.** [Curtis](https://nathanacurtis.substack.com/p/naming-tokens-in-design-systems-9e86c7444676) adds tokens gradually, naming them inside a component and promoting them to shared tokens only when other components need the same decision.
 - **Assuming a translucent alias survives export.** Each tool stores "base color plus opacity" its own way. A step that doesn't understand it either flattens it to a fixed color, as Tokens Studio does when it exports to Figma, or fails the build, as Terrazzo did for [GitButler](https://github.com/gitbutlerapp/design-core/pull/47). Check the generated output, not just the source file.
-- **Keeping tokens nothing uses.** Trueman's [token-audit skill](https://github.com/murphytrueman/design-system-ops/blob/main/skills/token-audit/SKILL.md) flags tokens that no other token or component references. They clutter autocomplete and confuse the people choosing between them.
+- **Keeping tokens nothing uses.** Trueman's [token-audit skill](https://github.com/murphytrueman/design-system-ops/blob/main/skills/token-audit/SKILL.md) flags tokens that no other token or component Citations. They clutter autocomplete and confuse the people choosing between them.

@@ -1,5 +1,5 @@
 ---
-title: Governance Case Studies
+title: Case Studies
 reviewed: 2026-09-16
 reviewIn: 24
 ---
@@ -24,7 +24,7 @@ Without concrete cases, governance principles are easy to agree with and hard to
 
 What got missed: core product components, like buttons, inputs, and the rest of the shared library, were already being used *inside* Editorial. Those nested instances were still bound to the original single-brand tokens. When the new theme was applied, the surrounding Editorial patterns updated correctly, but the nested product components kept their default colors. The inconsistency only showed up after the fork was live.
 
-The lesson: nested components inherit their token bindings, not their surrounding context. A component deep in a composition that references an unthemed token looks fine right up until someone applies a theme around it. What would have worked: registering the request centrally even though it looked single-surface, so the system team could see the nesting risk before the fork. This was one piece of a larger brand refresh. [Brand alignment](/ds101/brand-alignment/) covers how Wise's 2023 rebrand reshaped its token infrastructure. Source: [Ness Grixti's Wise case study](https://nessgrixti.com/portfolio/wise-multi-brand/).
+The lesson: nested components inherit their token bindings, not their surrounding context. A component deep in a composition that Citations an unthemed token looks fine right up until someone applies a theme around it. What would have worked: registering the request centrally even though it looked single-surface, so the system team could see the nesting risk before the fork. This was one piece of a larger brand refresh. [Brand alignment](/ds101/brand-alignment/) covers how Wise's 2023 rebrand reshaped its token infrastructure. Source: [Ness Grixti's Wise case study](https://nessgrixti.com/portfolio/wise-multi-brand/).
 
 ### zeroheight: the adoption paradox
 

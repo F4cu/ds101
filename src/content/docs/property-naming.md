@@ -1,5 +1,5 @@
 ---
-title: Component Property Naming
+title: Property Naming
 reviewed: 2026-09-25
 reviewIn: 12
 ---
@@ -26,11 +26,11 @@ Curtis's fix is a short, shared step before production. Draft the component's **
 
 How formal that step is depends on who builds. On a small team, he assigns a developer to draft the proposal, the whole team critiques it, and the designer speaks to what it means for Figma and the docs. When two or more people build from the same spec, it becomes its own task, done when everyone has "agreed on a provisional API direction across outputs." Anyone who starts early accepts they may have to refactor.
 
-His 2021 post drafted in Google Docs or Asana templates. In his 2026 ["Component Contracts and Schemas"](https://nathanacurtis.substack.com/p/component-contracts-and-schemas), the component is written as data instead, and designers mark it `READY_FOR_DEV` rather than holding a handoff meeting. The tool changed, but the agreement still happens before the build. See [Component specs](/ds101/component-specs/) and [The design-to-code contract](/ds101/design-to-code-contract/).
+His 2021 post drafted in Google Docs or Asana templates. In his 2026 ["Component Contracts and Schemas"](https://nathanacurtis.substack.com/p/component-contracts-and-schemas), the component is written as data instead, and designers mark it `READY_FOR_DEV` rather than holding a handoff meeting. The tool changed, but the agreement still happens before the build. See [Specifications](/ds101/specifications/) and [Design-to-Code Contract](/ds101/design-to-code-contract/).
 
 ### Use the same names, options, and defaults in both tools
 
-Curtis's rule: "Both developer and design tools should evoke consistent property names, option names, and defaults." That covers the parts too, as [Component composition in code](/ds101/component-composition-in-code/#match-part-names-across-figma-and-code) explains.
+Curtis's rule: "Both developer and design tools should evoke consistent property names, option names, and defaults." That covers the parts too, as [Code Composition](/ds101/code-composition/#match-part-names-across-figma-and-code) explains.
 
 ```text title="Figma draft"
 Card
@@ -103,7 +103,7 @@ MUI's rule: use a boolean when exactly two values are needed, and an enum "when 
 <Button variant="fab" />
 ```
 
-With booleans, nothing stops a consumer from turning both on. The enum makes the options mutually exclusive, so there's no conflicting pair to [prohibit](/ds101/component-api-design/#support-only-the-prop-combinations-you-document). The same logic applies to lookalike components. [Murphy Trueman](https://blog.murphytrueman.com/what-your-components-look-like-as-data/) argues for one `appearance: success | warning | critical | info` property over four separate components, because four components drift apart on their own.
+With booleans, nothing stops a consumer from turning both on. The enum makes the options mutually exclusive, so there's no conflicting pair to [prohibit](/ds101/api-design/#support-only-the-prop-combinations-you-document). The same logic applies to lookalike components. [Murphy Trueman](https://blog.murphytrueman.com/what-your-components-look-like-as-data/) argues for one `appearance: success | warning | critical | info` property over four separate components, because four components drift apart on their own.
 
 ### Name layers identically in every variant
 

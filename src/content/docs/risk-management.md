@@ -1,5 +1,5 @@
 ---
-title: Scaling AI Effort to Risk
+title: Risk Management
 reviewed: 2026-07-02
 reviewIn: 6
 ---
@@ -24,13 +24,13 @@ The design-system-ops notes ([`knowledge-notes/component-bestiary-reference.md`]
 
 - **Badges, CR 1–2**: misuse creates minor inconsistency, so basic usage guidelines are enough.
 - **Modals, CR 5–7**: misuse causes real user harm through accessibility regressions.
-- **Date pickers and data tables, CR 7–9**: these should trigger a mandatory [accessibility audit](/ds101/component-accessibility/) before release.
+- **Date pickers and data tables, CR 7–9**: these should trigger a mandatory [accessibility audit](/ds101/accessibility/) before release.
 
 ## Practices
 
 ### Spend depth where the rating is highest
 
-The rating calibrates everything downstream: documentation depth ("the cost of an AI tool getting a modal wrong is higher than the cost of it getting a badge wrong"), audit order, and contribution standards. A high-CR component contributed without enough expertise "is worse than no component, because it provides false confidence while introducing real risk." The rating isn't fixed per component, either. The same component's effective CR shifts with where it's placed. See [Performance in context](/ds101/performance-in-context/).
+The rating calibrates everything downstream: documentation depth ("the cost of an AI tool getting a modal wrong is higher than the cost of it getting a badge wrong"), audit order, and contribution standards. A high-CR component contributed without enough expertise "is worse than no component, because it provides false confidence while introducing real risk." The rating isn't fixed per component, either. The same component's effective CR shifts with where it's placed. See [System Performance](/ds101/system-performance/).
 
 <div class="mermaid-wrap">
 
@@ -79,7 +79,7 @@ flowchart TD
 
 </div>
 
-The design layer doesn't have to be a live connection. For mechanical work like extracting specs for a whole library, a command-line tool can do it once and leave files in the repo. See [Figma access for agents](/ds101/figma-access-for-agents/).
+The design layer doesn't have to be a live connection. For mechanical work like extracting specs for a whole library, a command-line tool can do it once and leave files in the repo. See [Figma Agent Access](/ds101/figma-agent-access/).
 
 The same scoping shows up in product UI. AWS Cloudscape's [user-authorized actions](https://cloudscape.design/gen-ai/patterns/user-authorized-actions/) pattern scopes an agent's permission per decision ("Allow this time," "Allow for this chat," or "Always allow") instead of one blanket grant. See [Agentic UI patterns](/ds101/agentic-ui-patterns/).
 
@@ -91,7 +91,7 @@ The same scoping shows up in product UI. AWS Cloudscape's [user-authorized actio
 - **Mintlify**: turns published docs into a searchable knowledge base without leaving the editor.
 - **GitHub**: reviews pull requests (PRs) and diffs token definitions to catch design-code drift (see [Dependency observability](/ds101/dependency-observability/)).
 - **GitLab**: manages issues, merge requests, and CI pipelines through AI workflows.
-- **PostHog**: checks design decisions against real adoption and conversion data (see [Measuring adoption](/ds101/measuring-adoption/)).
+- **PostHog**: checks design decisions against real adoption and conversion data (see [Adoption Metrics](/ds101/adoption-metrics/)).
 - **Slack**: makes chat history searchable for decision tracking and adoption signals.
 
 ### Fail honestly when a connection breaks

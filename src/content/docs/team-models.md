@@ -62,7 +62,7 @@ A centralized team that other teams depend on is running infrastructure, whether
 
 ### Revisit the model as the org grows
 
-A small org that over-invests in federation pays for coordination it doesn't need. An enterprise still run by one maintainer is understaffed for its scale. Treat the model as something that grows with the org, not a one-time decision. ITVX's Mosaic shows a hybrid at scale: a central core of 3 people works with 14 cross-functional partners across 13 product workstreams (see [Stakeholder alignment](/ds101/stakeholder-alignment/)). [Design system maturity](/ds101/design-system-maturity/) scores this as "team effectiveness," read against the org's size.
+A small org that over-invests in federation pays for coordination it doesn't need. An enterprise still run by one maintainer is understaffed for its scale. Treat the model as something that grows with the org, not a one-time decision. ITVX's Mosaic shows a hybrid at scale: a central core of 3 people works with 14 cross-functional partners across 13 product workstreams (see [Stakeholder alignment](/ds101/stakeholder-alignment/)). [System Maturity](/ds101/system-maturity/) scores this as "team effectiveness," read against the org's size.
 
 ## Common mistakes
 

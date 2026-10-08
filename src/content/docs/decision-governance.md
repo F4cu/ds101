@@ -24,7 +24,7 @@ Governance doesn't die from a bad decision. It dies from decisions nobody bother
 
 ### Record decisions, including declined ones
 
-The same notes keep the fix lightweight. A decision record needs only the context, the options considered, the decision, and its consequences. But it has to cover the decisions a new team member would need to understand, including *declined* proposals, so a future team doesn't reverse something without knowing it was already considered. [Governance for AI](/ds101/governance-for-ai/) adds that each record also needs an owner who re-checks it against reality.
+The same notes keep the fix lightweight. A decision record needs only the context, the options considered, the decision, and its consequences. But it has to cover the decisions a new team member would need to understand, including *declined* proposals, so a future team doesn't reverse something without knowing it was already considered. [AI Governance](/ds101/ai-governance/) adds that each record also needs an owner who re-checks it against reality.
 
 ### Write down who owns each decision
 
@@ -56,7 +56,7 @@ Only the first and fourth rows restate the sourced examples directly. The rest a
 
 ### Make accessibility everyone's standard
 
-A common mistake at enterprise scale is routing every accessibility question to one specialist or a small team, on the theory that centralizing expertise centralizes quality. It does the opposite. Everyone else stops treating accessibility as their job, the specialist becomes a bottleneck on every release, and issues that should have been caught earlier surface at a late review nobody can act on cheaply. The [design-to-code contract](/ds101/design-to-code-contract/) puts accessibility in both the design and build contracts for this reason. Keep a specialist as the escalation path, not the only checkpoint. [Component accessibility](/ds101/component-accessibility/) covers what everyone should be checking.
+A common mistake at enterprise scale is routing every accessibility question to one specialist or a small team, on the theory that centralizing expertise centralizes quality. It does the opposite. Everyone else stops treating accessibility as their job, the specialist becomes a bottleneck on every release, and issues that should have been caught earlier surface at a late review nobody can act on cheaply. The [design-to-code contract](/ds101/design-to-code-contract/) puts accessibility in both the design and build contracts for this reason. Keep a specialist as the escalation path, not the only checkpoint. [Accessibility](/ds101/accessibility/) covers what everyone should be checking.
 
 ### Let knowledge flow upstream too
 
@@ -84,7 +84,7 @@ graph TD
 
 </div>
 
-This ladder tracks how governance practices build up within one team over time. [Design system maturity](/ds101/design-system-maturity/) covers a newer framework that treats governance as one of six independent dimensions, instead of one linear track.
+This ladder tracks how governance practices build up within one team over time. [System Maturity](/ds101/system-maturity/) covers a newer framework that treats governance as one of six independent dimensions, instead of one linear track.
 
 ## Common mistakes
 

@@ -49,7 +49,7 @@ flowchart TD
 
 ### Publish what you want built
 
-The **GOV.UK** Design System runs a public community backlog on GitHub. Anyone in UK government can propose a component. A working group checks that it's useful and not a duplicate, and a named community designer runs weekly catch-ups with the contributor. [Chris Ballantine-Thomas](https://designnotes.blog.gov.uk/2023/05/31/iterating-the-gov-uk-design-system-contribution-model/) describes their key fix: publish what the team wants built *before* anyone proposes it, instead of waiting for proposals that didn't match what the community needed. Contributor effort then lands on something the system needs. The full story is in [Governance case studies](/ds101/governance-case-studies/).
+The **GOV.UK** Design System runs a public community backlog on GitHub. Anyone in UK government can propose a component. A working group checks that it's useful and not a duplicate, and a named community designer runs weekly catch-ups with the contributor. [Chris Ballantine-Thomas](https://designnotes.blog.gov.uk/2023/05/31/iterating-the-gov-uk-design-system-contribution-model/) describes their key fix: publish what the team wants built *before* anyone proposes it, instead of waiting for proposals that didn't match what the community needed. Contributor effort then lands on something the system needs. The full story is in [Case Studies](/ds101/case-studies/).
 
 ### Expect a small group of contributors
 

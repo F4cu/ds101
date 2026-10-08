@@ -28,7 +28,7 @@ Wolosin didn't assume a metadata format would work. She tested it. At Indeed, sh
 
 ### Design the agent's environment, not just its instructions
 
-Jan Six designs agent experiences for Copilot at GitHub and created Tokens Studio, the widely used Figma design-tokens plugin. [He frames](https://www.intodesignsystems.com/agenda/build-design-systems-with-agents) context engineering as environment design, not prompt writing: "Agents are changing our world fast, multiplying what we can achieve. But they're only as good as the instructions we give them—and the environments we put them in." The environment includes what the agent can reach (see MCP layering in [Scaling AI effort to risk](/ds101/scaling-ai-effort-to-risk/)) as much as what it's told.
+Jan Six designs agent experiences for Copilot at GitHub and created Tokens Studio, the widely used Figma design-tokens plugin. [He frames](https://www.intodesignsystems.com/agenda/build-design-systems-with-agents) context engineering as environment design, not prompt writing: "Agents are changing our world fast, multiplying what we can achieve. But they're only as good as the instructions we give them—and the environments we put them in." The environment includes what the agent can reach (see MCP layering in [Risk Management](/ds101/risk-management/)) as much as what it's told.
 
 ### Load only the context each task needs
 

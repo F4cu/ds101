@@ -4,7 +4,7 @@ reviewed: 2026-09-25
 reviewIn: 24
 ---
 
-A new designer or engineer decides in their first week whether to build with the system or around it. Onboarding that's specific to this system, honest about its gaps, and clear about what to do when a part is missing keeps them building with it. [Measuring adoption](/ds101/measuring-adoption/) places onboarding at the first stage of adoption, before a team is using the system day to day.
+A new designer or engineer decides in their first week whether to build with the system or around it. Onboarding that's specific to this system, honest about its gaps, and clear about what to do when a part is missing keeps them building with it. [Adoption Metrics](/ds101/adoption-metrics/) places onboarding at the first stage of adoption, before a team is using the system day to day.
 
 :::tip[Key takeaways]
 - **Write onboarding for this system specifically.** Generic docs teach nothing, so newcomers start building around the system in week one.
@@ -44,4 +44,4 @@ Onboarding that needs a person every time doesn't scale, and onboarding that's h
 
 - **Stating good practice as the team's policy.** How often consumers should update, whether local wrappers are allowed, and what the system guarantees on accessibility are decisions, not facts. The skill's rule: "Don't fill a policy in from good practice. 'Update monthly' is a policy the team sets, not a fact the skill knows." Leave it marked as something to confirm until the team decides.
 - **Telling engineers to mock the system in tests.** The skill's engineer section says to render the real components instead, because "mocking replaces the roles, labels and behaviour your queries depend on."
-- **Implying the system makes the product accessible.** The guide should state the accessibility guarantee the system makes and what stays with the adopting team: "heading order, alt text, focus management of the composition." [Component accessibility](/ds101/component-accessibility/) covers where that line falls.
+- **Implying the system makes the product accessible.** The guide should state the accessibility guarantee the system makes and what stays with the adopting team: "heading order, alt text, focus management of the composition." [Accessibility](/ds101/accessibility/) covers where that line falls.

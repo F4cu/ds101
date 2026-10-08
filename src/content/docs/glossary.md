@@ -49,46 +49,46 @@ aliasing one name to the other so the value lives once. See
 literally named `Box` or `Stack`) with direct access to design tokens but no domain
 meaning of its own; the same idea Brad Frost calls an atom. Not to be confused with a
 primitive token (above), the raw-value tier of a token system. See
-[Component composition in code](/ds101/component-composition-in-code/).
+[Code Composition](/ds101/code-composition/).
 
 **Subcomponent** — an independently composable component with its own API, intended for
 use only within one specific parent component, such as `CardMedia` inside `Card`. Distinct
 from a primitive by scope, not size: a primitive is reusable anywhere, a subcomponent is
-tied to its parent. See [Component composition in code](/ds101/component-composition-in-code/).
+tied to its parent. See [Code Composition](/ds101/code-composition/).
 
 **Part** — Radix Primitives' term for the same concept as a subcomponent: one piece of a
 component exposed separately so consumers compose it rather than configure it through
-props, e.g. `Dialog.Trigger`, `Dialog.Content`. See [Component composition in code](/ds101/component-composition-in-code/).
+props, e.g. `Dialog.Trigger`, `Dialog.Content`. See [Code Composition](/ds101/code-composition/).
 
 **Compound component** — the code-level pattern that implements subcomponents/parts: a
 parent component composed from smaller components while retaining access to all of the
 parent's semantic elements, e.g. `Tabs.List`, `Tabs.Item`, `Tabs.Panel`. See
-[Component composition in code](/ds101/component-composition-in-code/).
+[Code Composition](/ds101/code-composition/).
 
 **Slot** — the insertion point a parent component exposes so a subcomponent or other
 content can be placed into it, rather than the piece placed there. Leaning on slots
 trades a large configuration-prop surface for a small number of well-defined insertion
-points. In Figma, a slot is a native component property. See [Component composition in code](/ds101/component-composition-in-code/).
+points. In Figma, a slot is a native component property. See [Code Composition](/ds101/code-composition/).
 
 **Typed container** — a slot that accepts only specific children, such as a Card zone
 that takes `CardMedia` but not arbitrary content. Nathan Curtis's term; the opposite of an
-open slot. See [Component composition in code](/ds101/component-composition-in-code/#slots).
+open slot. See [Code Composition](/ds101/code-composition/#slots).
 
 **Component property** (Figma) — a variant, boolean, text, or instance-swap property
 attached directly to a Figma component; the design-tool equivalent of a prop in code. See
-[Component composition in Figma](/ds101/component-composition-in-figma/).
+[Figma Composition](/ds101/figma-composition/).
 
 **Nested instance** — a subcomponent instance placed inside a parent component in Figma,
 with its own properties optionally exposed up through the parent's properties panel. See
-[Component composition in Figma](/ds101/component-composition-in-figma/).
+[Figma Composition](/ds101/figma-composition/).
 
 **Preferred instances** (Figma) — the curated list of components a slot offers to designers,
 optionally enforced with "Only allow preferred instances"; Figma's version of a typed
-container. See [Component composition in Figma](/ds101/component-composition-in-figma/).
+container. See [Figma Composition](/ds101/figma-composition/).
 
 **Design-to-code contract** — an explicit agreement about what "done" means at each
 stage (design, build, documentation, release) of building a component. See
-[The design-to-code contract](/ds101/design-to-code-contract/).
+[Design-to-Code Contract](/ds101/design-to-code-contract/).
 
 **Interface inventory** — a screenshot-and-catalog pass over every distinct treatment of every UI element already shipping, done before designing new tokens or components. See [UI audit](/ds101/ui-audit/).
 
@@ -117,7 +117,7 @@ See [Decision governance](/ds101/decision-governance/).
 **Maturity dimension** — one of six independent axes (organizational alignment, team
 effectiveness, infrastructure robustness, governance, support, adoption) a design system
 can be scored on separately, rather than collapsed into one overall stage. See
-[Design system maturity](/ds101/design-system-maturity/).
+[System Maturity](/ds101/system-maturity/).
 
 **RACI matrix** — a table assigning each governance decision one Responsible, one
 Accountable, and any number of Consulted or Informed parties, so it's clear who decides
@@ -191,61 +191,61 @@ contribution, and who may finish the work themselves if the contributor stalls. 
 
 **Composition** (component API) — building structural or content variation by nesting
 and combining smaller pieces, instead of adding a configuration prop for every
-variation. See [Component API design](/ds101/component-api-design/).
+variation. See [API Design](/ds101/api-design/).
 
 **Boolean prop** (show/hide toggle) — a prop that is either on or off, such as
 `showFooter` or `disabled`. Figma's equivalent is a boolean property. See
-[Component API design](/ds101/component-api-design/).
+[API Design](/ds101/api-design/).
 
 **Configuration collapse** — the end state of a component that has accumulated so many
 layout props, boolean props, and nested subcomponents that its API becomes harder to
 use than the problem it was meant to solve. See
-[Component API design](/ds101/component-api-design/).
+[API Design](/ds101/api-design/).
 
 **Prop bloat** — the gradual, request-by-request accumulation of component properties
 that each seem reasonable individually but together make a component fragile and hard
-to maintain. See [Component API design](/ds101/component-api-design/).
+to maintain. See [API Design](/ds101/api-design/).
 
 **Prohibited combination** — a pair of prop values that the code accepts but the system
 doesn't support (like a ghost button at large size), recorded in the component's
 metadata with a reason and a severity so tools can refuse or flag it. See
-[Component API design](/ds101/component-api-design/).
+[API Design](/ds101/api-design/).
 
 **Multi-platform (vs. cross-platform)** — sharing one set of design decisions and
 intent across platforms while letting the implementation diverge to match each
 platform's conventions, rather than forcing one implementation to run everywhere
-identically. See [Component API design](/ds101/component-api-design/).
+identically. See [API Design](/ds101/api-design/).
 
 **Anatomy** (component anatomy) — a component's named parts and how they nest, agreed
 once so Figma layers and code markup use the same names. See
-[Component property naming](/ds101/component-property-naming/).
+[Property Naming](/ds101/property-naming/).
 
 **Code-only prop** — a prop that exists in code but changes nothing visible, such as `id`
 or `ariaLabel`, so it has no natural place in Figma's properties panel. See
-[Component property naming](/ds101/component-property-naming/).
+[Property Naming](/ds101/property-naming/).
 
 **Instance override** (Figma) — an edit made to one instance of a component, such as
 changed text or a swapped icon, that Figma carries into another variant only if the
-layer names match. See [Component property naming](/ds101/component-property-naming/).
+layer names match. See [Property Naming](/ds101/property-naming/).
 
 **Data contract** (component) — a list of the fields a component needs, which are
 optional, what format each takes, and what it shows when one is missing or malformed.
-See [Component usability](/ds101/component-usability/).
+See [Usability](/ds101/usability/).
 
 **Controlled component** — a component whose state, such as its value or whether it's
 open, is set by its parent through props (`value` and `onChange`), rather than kept in
-its own local state (uncontrolled). See [Component usability](/ds101/component-usability/).
+its own local state (uncontrolled). See [Usability](/ds101/usability/).
 
 **Components as data** — authoring a component's anatomy, props, styles, and variants
 directly as structured data (YAML/JSON) rather than a Figma file, so Figma and
 generated code for each platform become outputs of that data instead of the source
 it's reverse-engineered from. See
-[Component specs](/ds101/component-specs/).
+[Specifications](/ds101/specifications/).
 
 **Component spec** — the record of what a component must be: its anatomy, props,
-states, token references, and the facts a design file can't show, like each part's
+states, token Citations, and the facts a design file can't show, like each part's
 role. It can be authored in Figma, as data in the repo, or derived from code. See
-[Component specs](/ds101/component-specs/).
+[Specifications](/ds101/specifications/).
 
 **Component contract** — a precise, verifiable declaration of what a component must do
 (its intent), as opposed to a description a platform team can interpret loosely; the
@@ -256,11 +256,11 @@ opposed to token tiers for value differences. See
 **Coverage vs. usage vs. adoption** — three distinct measurements often conflated into
 one: coverage is what proportion of a product is built from the system; usage is how
 often specific components are reached for; adoption is whether a team is meaningfully
-on the system at all. See [Measuring adoption](/ds101/measuring-adoption/).
+on the system at all. See [Adoption Metrics](/ds101/adoption-metrics/).
 
 **Adoption stage** — where a team sits on a five-stage path (aware, installed, consuming,
 contributing, advocating) in how deeply it has taken up the system. See
-[Measuring adoption](/ds101/measuring-adoption/).
+[Adoption Metrics](/ds101/adoption-metrics/).
 
 **Three rungs of "documented"** — a component can exist (has a story), be described (has
 a props reference), or be guided (has usage guidance) — three different bars, often
@@ -301,15 +301,15 @@ benefit side of an ROI estimate. See [Estimating ROI](/ds101/estimating-roi/).
 **European Accessibility Act (EAA)** — the EU directive that has required many
 consumer-facing products and services to be accessible since 28 June 2025. Its technical
 standard, EN 301 549, currently points to WCAG 2.1 AA. See
-[Component accessibility](/ds101/component-accessibility/).
+[Accessibility](/ds101/accessibility/).
 
 **Evidence rule** (accessibility) — an audit criterion passes only with evidence from the
 running component or a computed contrast ratio; anything inferred from code alone is a
-warning, not a pass. See [Component accessibility](/ds101/component-accessibility/).
+warning, not a pass. See [Accessibility](/ds101/accessibility/).
 
 **WCAG** (Web Content Accessibility Guidelines) — the W3C's accessibility standard,
 organized into A, AA, and AAA conformance levels; 2.2 AA is the usual audit baseline. See
-[Component accessibility](/ds101/component-accessibility/).
+[Accessibility](/ds101/accessibility/).
 
 **Landmark** (landmark region) — a named region of a page, such as the header,
 navigation, main content, or footer, that screen reader users can list and jump to. See
@@ -351,37 +351,37 @@ one automatically, the **Storybook Component Manifest**. See
 
 **Agentic pass** — a run of an AI agent over a design, after it's marked ready for
 development, that fills in the behavior and accessibility details a Figma file can't
-hold. See [The design-to-code contract](/ds101/design-to-code-contract/).
+hold. See [Design-to-Code Contract](/ds101/design-to-code-contract/).
 
 **APG** (ARIA Authoring Practices Guide) — the W3C's reference for how each widget type
 (menu, tabs, combobox, and so on) should behave for keyboard and screen-reader users.
-See [Component accessibility](/ds101/component-accessibility/).
+See [Accessibility](/ds101/accessibility/).
 
 **ARIA** (Accessible Rich Internet Applications) — HTML attributes that tell assistive
 technology what a custom element is and what state it's in. First rule: don't use it
 where a native HTML element already has the right meaning. See
-[Component accessibility](/ds101/component-accessibility/).
+[Accessibility](/ds101/accessibility/).
 
 **ARIA contract** — the accessibility part of a component's design spec: its role, its
 keyboard pattern, and how it gets its accessible label. Agreed before build, not left
-to QA. See [The design-to-code contract](/ds101/design-to-code-contract/).
+to QA. See [Design-to-Code Contract](/ds101/design-to-code-contract/).
 
 **Anatomy role** — what a part of a component *is* (a button, a checkbox, a label),
 recorded on that part in the spec so each platform can use its own native control.
-See [Component accessibility](/ds101/component-accessibility/#record-each-parts-role-in-the-spec).
+See [Accessibility](/ds101/accessibility/#record-each-parts-role-in-the-spec).
 
 **Action** (anatomy action) — what activating a part *does*, such as closing the
 component it belongs to, recorded separately from its role. See
-[Component accessibility](/ds101/component-accessibility/#record-each-parts-role-in-the-spec).
+[Accessibility](/ds101/accessibility/#record-each-parts-role-in-the-spec).
 
 **Agentic workflow pattern** — one of several ways multiple AI agents coordinate on a
 task: sequential chain, parallel agents (what design-system-ops calls a parallel
 fan-out), supervisor, or generator/reviewer loop (what design-system-ops calls the
-feedback loop). See [Agentic workflow design](/ds101/agentic-workflow-design/).
+feedback loop). See [Agentic Workflows](/ds101/agentic-workflows/).
 
 **Autonomy level** — how much human review an AI agent's action requires before it takes
 effect, ranging from fully autonomous to human-only. See
-[Agentic workflow design](/ds101/agentic-workflow-design/).
+[Agentic Workflows](/ds101/agentic-workflows/).
 
 **Scope note** — a brief statement of what an AI audit inspected, what it didn't, and what
 it assumed, attached to the output so its claims can't be mistaken for broader knowledge
@@ -394,33 +394,33 @@ to be defended with evidence instead of hidden behind a number. See
 
 **Safe outputs** — a CI pattern where an agent runs with no write permissions and can only
 emit a structured request (open an issue, propose a PR); a separate, permission-controlled
-job decides whether to act on it. See [CI for agentic workflows](/ds101/ci-for-agentic-workflows/).
+job decides whether to act on it. See [Agent CI Pipelines](/ds101/agent-ci-pipelines/).
 
 **Trust tier** (CI) — one of three levels a CI-triggered agent change is sorted into by
 confidence and risk — auto-merge, draft PR, or suggest-only — assigned per action, not per
-agent. See [CI for agentic workflows](/ds101/ci-for-agentic-workflows/).
+agent. See [Agent CI Pipelines](/ds101/agent-ci-pipelines/).
 
 **Challenge Rating (CR)** — a difficulty rating for a UI component based on how dangerous
 it is to implement incorrectly, used to calibrate how much documentation and audit rigor
-it deserves. See [Scaling AI effort](/ds101/scaling-ai-effort-to-risk/).
+it deserves. See [Scaling AI effort](/ds101/risk-management/).
 
 **MCP (Model Context Protocol)** — the interface that lets AI agents read data (design
 files, component metadata, code) directly from its source instead of a stale copy.
-See [Scaling AI effort](/ds101/scaling-ai-effort-to-risk/).
+See [Scaling AI effort](/ds101/risk-management/).
 
 **MCP layer** — one of three separated tiers of MCP access in a design system (the
 design tool, the system's own metadata, the code-mapping bridge), kept apart so no
 single connection becomes a bottleneck or a single point of failure. See
-[Scaling AI effort](/ds101/scaling-ai-effort-to-risk/).
+[Scaling AI effort](/ds101/risk-management/).
 
 **CLI (command-line interface)** — a program run by typing short commands. For design
 systems, a CLI can extract specs from Figma or check a Figma file with a script and no
 model, so an agent reads the compact result instead of raw Figma data over MCP. See
-[Figma access for agents](/ds101/figma-access-for-agents/).
+[Figma Agent Access](/ds101/figma-agent-access/).
 
-**Round trip** — exporting a design system (tokens or component specs) and importing it
+**Round trip** — exporting a design system (tokens or Specifications) and importing it
 back, then comparing the result with the original to find what the format lost. See
-[Figma access for agents](/ds101/figma-access-for-agents/).
+[Figma Agent Access](/ds101/figma-agent-access/).
 
 **Context engineering** — building a structured, machine-readable layer of scoped
 metadata that gives an AI agent what prose documentation alone can't,
@@ -479,36 +479,36 @@ order, every time — is a schema; the specific dish is the data filled into it.
 **Design language** — the shared visual and interaction vocabulary a design system
 expresses; used at industrial scale to describe the single, unifying layer that holds
 together products built on different tech stacks, by different teams, sometimes
-decades apart. See [Scaling across decades](/ds101/scaling-across-decades/).
+decades apart. See [Long-term Scale](/ds101/long-term-scale/).
 
 **RFC** (Request for Comments) — a written proposal for a significant change, circulated
 so people can weigh in before it's decided rather than after; part of a system's
 contribution history worth reading when inheriting it. See
-[Inheriting a legacy system](/ds101/inheriting-a-legacy-system/).
+[System Takeover](/ds101/system-takeover/).
 
 **Design system archaeology** — the discipline of reading and understanding an existing
 design system you didn't build, distinct from an audit: an audit asks what's broken,
 archaeology asks what was meant. See
-[Inheriting a legacy system](/ds101/inheriting-a-legacy-system/).
+[System Takeover](/ds101/system-takeover/).
 
 **Load-bearing lore** — an undocumented decision in an inherited system that still
 matters (an accessibility fix, a cross-team compromise); the default assumption for
 anything you can't explain, until proven otherwise. See
-[Inheriting a legacy system](/ds101/inheriting-a-legacy-system/).
+[System Takeover](/ds101/system-takeover/).
 
 **Vestigial lore** — an undocumented decision in an inherited system that was a
 workaround for a problem that no longer exists. See
-[Inheriting a legacy system](/ds101/inheriting-a-legacy-system/).
+[System Takeover](/ds101/system-takeover/).
 
 **Generation** (design system) — an overhaul large enough to touch colors, typography,
 spacing, and components all at once — closer to a revolution than a refinement — as
 distinct from an incremental release. See
-[Inheriting a legacy system](/ds101/inheriting-a-legacy-system/).
+[System Takeover](/ds101/system-takeover/).
 
 **Kickstart** — a hands-on session where the system team migrates a sample
 product alongside an adopter, in the adopter's own environment, instead of handing over
 a migration guide and leaving them to it. See
-[Inheriting a legacy system](/ds101/inheriting-a-legacy-system/).
+[System Takeover](/ds101/system-takeover/).
 
 **Tokens/components as an API** — the framing that a design system's tokens and
 components are already an API contract, read by AI as much as by humans, and should be
@@ -517,17 +517,17 @@ See [Documentation for agents](/ds101/documentation-for-agents/).
 
 **Color scale** — a set of steps of one hue, from lightest to darkest, where each step has
 a job (background, border, text) and the gap between steps is set by contrast. See
-[Accessible color palettes](/ds101/accessible-color-palettes/).
+[Accessible Colors](/ds101/accessible-colors/).
 
 **APCA** (Accessible Perceptual Contrast Algorithm) — a contrast formula that scores
 readability as a lightness contrast value (Lc) and accounts for font size and polarity.
 Not part of any published WCAG standard. See
-[Accessible color palettes](/ds101/accessible-color-palettes/).
+[Accessible Colors](/ds101/accessible-colors/).
 
 **Perceptually uniform color space** — a color space such as OKLCH where equal steps in
 a value look like equal steps to a person, unlike RGB or HSL. See
-[Accessible color palettes](/ds101/accessible-color-palettes/).
+[Accessible Colors](/ds101/accessible-colors/).
 
 **Contrast grid** — a table of every text color against every background, with the
 contrast of each pair, published next to the palette. See
-[Accessible color palettes](/ds101/accessible-color-palettes/).
+[Accessible Colors](/ds101/accessible-colors/).

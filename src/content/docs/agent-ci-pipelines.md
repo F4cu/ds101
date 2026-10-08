@@ -1,10 +1,10 @@
 ---
-title: CI for Agentic Workflows
+title: Agent CI Pipelines
 reviewed: 2026-09-18
 reviewIn: 6
 ---
 
-[Agentic workflow design](/ds101/agentic-workflow-design/) sets an autonomy level per action: how much review it needs before it takes effect. CI (continuous integration, the automated pipeline that tests and ships code changes) is where most of those levels actually get enforced for anything touching code, tokens, or docs. An agent that can write files but can't merge them is only really constrained if something sits between "the agent produced this" and "this is live." That something is almost always a CI job.
+[Agentic Workflows](/ds101/agentic-workflows/) sets an autonomy level per action: how much review it needs before it takes effect. CI (continuous integration, the automated pipeline that tests and ships code changes) is where most of those levels actually get enforced for anything touching code, tokens, or docs. An agent that can write files but can't merge them is only really constrained if something sits between "the agent produced this" and "this is live." That something is almost always a CI job.
 
 :::tip[Key takeaways]
 - **Keep the agent read-only.** An agent with write access is one prompt injection away from an unauthorized change.
@@ -56,7 +56,7 @@ A CI job that re-reads a component's full prose docs on every run pays a real, r
 
 ### Make metadata completeness a merge gate
 
-The design-system-ops notes treat incomplete metadata as a release blocker: "before a component is considered release-ready, its metadata should pass a quality gate: all props documented, all interactive states defined, accessibility contract complete, structured JSON metadata in sync with text description... treating incomplete documentation with the same seriousness as failing tests." Wire that gate into CI instead of a manual pre-release checklist. A checklist item gets skipped under deadline pressure. A failing pipeline doesn't merge. Automated accessibility scans belong in the same pipeline. [Component accessibility](/ds101/component-accessibility/) covers what they catch and what still needs testing by hand.
+The design-system-ops notes treat incomplete metadata as a release blocker: "before a component is considered release-ready, its metadata should pass a quality gate: all props documented, all interactive states defined, accessibility contract complete, structured JSON metadata in sync with text description... treating incomplete documentation with the same seriousness as failing tests." Wire that gate into CI instead of a manual pre-release checklist. A checklist item gets skipped under deadline pressure. A failing pipeline doesn't merge. Automated accessibility scans belong in the same pipeline. [Accessibility](/ds101/accessibility/) covers what they catch and what still needs testing by hand.
 
 ## Common mistakes
 

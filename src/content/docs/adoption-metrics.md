@@ -1,5 +1,5 @@
 ---
-title: Measuring Adoption
+title: Adoption Metrics
 reviewed: 2026-07-02
 reviewIn: 24
 ---
@@ -74,4 +74,4 @@ No method is solved. Each org below found a real limit, and knowing where each o
 
 - **Turning team breakdowns into a public league table.** Ranking "best" and "worst" adopters makes people defensive instead of honest about their numbers. It flattens context: a team building a custom data-visualization library isn't failing to adopt, the system may just not cover their domain. And it blurs two findings a good report keeps apart, "chose not to use" and "needed something the system doesn't provide." Only the first is an adoption problem (design-system-ops adoption notes).
 
-These numbers stop at "is it used." They don't say whether an adopted component is helping or hurting in a specific flow. [Performance in context](/ds101/performance-in-context/) covers that next layer.
+These numbers stop at "is it used." They don't say whether an adopted component is helping or hurting in a specific flow. [System Performance](/ds101/system-performance/) covers that next layer.

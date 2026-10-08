@@ -1,10 +1,10 @@
 ---
-title: Component Accessibility
+title: Accessibility
 reviewed: 2026-09-25
 reviewIn: 12
 ---
 
-An accessible component library doesn't make an accessible product, but it's still the cheapest place to fix most accessibility problems, because every fix in a component reaches every product that uses it. Accessible components still need an accessible layout around them, which [Layout accessibility](/ds101/layout-accessibility/) covers. This page covers what to check on each component, how to prove it works, and what the system can't do for the teams using it. When those checks happen is owned by [The design-to-code contract](/ds101/design-to-code-contract/), and who owns them by [Decision governance](/ds101/decision-governance/).
+An accessible component library doesn't make an accessible product, but it's still the cheapest place to fix most accessibility problems, because every fix in a component reaches every product that uses it. Accessible components still need an accessible layout around them, which [Layout accessibility](/ds101/layout-accessibility/) covers. This page covers what to check on each component, how to prove it works, and what the system can't do for the teams using it. When those checks happen is owned by [Design-to-Code Contract](/ds101/design-to-code-contract/), and who owns them by [Decision governance](/ds101/decision-governance/).
 
 :::tip[Key takeaways]
 - **Automate the scan, then test by hand.** A clean automated scan still leaves most issues unchecked.
@@ -16,7 +16,7 @@ An accessible component library doesn't make an accessible product, but it's sti
 
 > "Using the GOV.UK Design System in a service does not immediately make that service accessible. Additional research, design, development and testing work is needed." — [GOV.UK](https://design-system.service.gov.uk/accessibility/accessibility-strategy/)
 
-It's tempting to read "we use the design system" as "we're accessible." [Nathan Curtis](https://medium.com/eightshapes-llc/accessible-design-systems-dont-guarantee-accessible-products-3478e3a462ba) has watched leadership make that leap: when accessibility came up in one system pitch, an executive's reaction was "Oh, our teams will make accessible products if they use the system? Sold!" Curtis's point is that every adopting team still has three jobs. It configures each component it uses, composes many components into a screen, and builds its own components where the system has none. "Composition reveals how preposterous it is to think a design system's parts guarantee accessibility." [Performance in context](/ds101/performance-in-context/) covers catching the failures that only show up where a component is used.
+It's tempting to read "we use the design system" as "we're accessible." [Nathan Curtis](https://medium.com/eightshapes-llc/accessible-design-systems-dont-guarantee-accessible-products-3478e3a462ba) has watched leadership make that leap: when accessibility came up in one system pitch, an executive's reaction was "Oh, our teams will make accessible products if they use the system? Sold!" Curtis's point is that every adopting team still has three jobs. It configures each component it uses, composes many components into a screen, and builds its own components where the system has none. "Composition reveals how preposterous it is to think a design system's parts guarantee accessibility." [System Performance](/ds101/system-performance/) covers catching the failures that only show up where a component is used.
 
 The opposite failure is a system team that overstates what it has checked. The toolkit's audit rules are written against two versions of this: a component audit that stops at contrast, or that reads the source code and reports what it *should* do as if someone had tested it, produces a report that looks complete. Teams then ship on the strength of it.
 
@@ -55,7 +55,7 @@ Notice that nothing visible changed. This kind of failure doesn't show up in a v
 
 ### Automate the floor, then test by hand
 
-Some accessibility failures are mechanical, and those belong in CI (continuous integration, the automated pipeline that checks every code change before it merges). The toolkit's [CI skill](https://github.com/murphytrueman/design-system-ops/blob/main/skills/cicd-integration/SKILL.md) runs axe-core, an automated accessibility checker, on each rendered component, through tools like `jest-axe`, Playwright, or the Storybook test runner. Its reasoning is that some problems "should never have reached a human reviewer because they are mechanically detectable," and automating them lets audits "focus on the problems only humans can evaluate." It's also clear about the limit: axe-core "catches the machine-detectable subset of WCAG issues; keyboard and screen reader checks stay manual." [CI for agentic workflows](/ds101/ci-for-agentic-workflows/) covers how a check like this blocks a merge.
+Some accessibility failures are mechanical, and those belong in CI (continuous integration, the automated pipeline that checks every code change before it merges). The toolkit's [CI skill](https://github.com/murphytrueman/design-system-ops/blob/main/skills/cicd-integration/SKILL.md) runs axe-core, an automated accessibility checker, on each rendered component, through tools like `jest-axe`, Playwright, or the Storybook test runner. Its reasoning is that some problems "should never have reached a human reviewer because they are mechanically detectable," and automating them lets audits "focus on the problems only humans can evaluate." It's also clear about the limit: axe-core "catches the machine-detectable subset of WCAG issues; keyboard and screen reader checks stay manual." [Agent CI Pipelines](/ds101/agent-ci-pipelines/) covers how a check like this blocks a merge.
 
 That subset is smaller than it looks. GOV.UK doesn't rely on automated tools alone, because "a 2017 study from GDS concluded that only about 30% of issues are found by automated testing tools." The team combines automated tests with manual testing on screen readers, screen magnifiers, high-contrast modes, and speech recognition, and records which browser and assistive technology combinations it tested. Its research rule goes further: "user research must include disabled people and should also include people with a variety of access needs and impairment types."
 
@@ -97,7 +97,7 @@ Some problems can't be fixed right away, and some sit in the assistive technolog
 
 ### Give complex components a deeper audit
 
-Buttons, badges, and basic inputs "tend to pass most checks," according to the toolkit. The failures that are subtle and compound live in comboboxes, date pickers, data tables, modals, and tabs, which get extra checks. A date picker, for example, should read each day as a spoken date like "Tuesday 9 March 2026," not a string of digits, and let the user type a date instead of using the calendar. The same toolkit's [Challenge Rating](/ds101/scaling-ai-effort-to-risk/) scores date pickers and data tables high enough to require an accessibility audit before release.
+Buttons, badges, and basic inputs "tend to pass most checks," according to the toolkit. The failures that are subtle and compound live in comboboxes, date pickers, data tables, modals, and tabs, which get extra checks. A date picker, for example, should read each day as a spoken date like "Tuesday 9 March 2026," not a string of digits, and let the user type a date instead of using the calendar. The same toolkit's [Challenge Rating](/ds101/risk-management/) scores date pickers and data tables high enough to require an accessibility audit before release.
 
 ### Keep design-stage and build-stage findings apart
 

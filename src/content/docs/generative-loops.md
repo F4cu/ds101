@@ -14,7 +14,7 @@ A **generative loop** is any orchestration shape where an agent's output feeds b
 
 ## The problem
 
-[Agentic workflow design](/ds101/agentic-workflow-design/) names four orchestration patterns from the design-system-ops orchestration guide ([`knowledge-notes/agent-orchestration-guide.md`](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/agent-orchestration-guide.md)): sequential chain, parallel agents, supervisor, and what the guide calls the **feedback loop**. This wiki uses the more specific name, generator/reviewer loop.
+[Agentic Workflows](/ds101/agentic-workflows/) names four orchestration patterns from the design-system-ops orchestration guide ([`knowledge-notes/agent-orchestration-guide.md`](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/agent-orchestration-guide.md)): sequential chain, parallel agents, supervisor, and what the guide calls the **feedback loop**. This wiki uses the more specific name, generator/reviewer loop.
 
 The first three each have a built-in end. A sequential chain finishes when its last agent runs. Parallel agents finish when every branch reports back. A supervisor finishes when it stops delegating. None needs a stopping rule, because stopping is just finishing. A generator/reviewer loop is the one pattern that routes work back to *itself*, and nothing about that shape says when to quit. Per the same guide, it "can loop indefinitely if convergence criteria are not defined."
 

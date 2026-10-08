@@ -1,5 +1,5 @@
 ---
-title: What a Design System Is
+title: Core Concepts
 reviewed: 2026-07-02
 reviewIn: 12
 ---
@@ -26,7 +26,7 @@ The raw vocabulary: colors, spacing, type sizes. [Token architecture](/ds101/tok
 
 ### Components
 
-The assembled units built from that vocabulary. [Component composition in code](/ds101/component-composition-in-code/) names their layers and how they're built in code, and [Component composition in Figma](/ds101/component-composition-in-figma/) covers the same structure in the design file.
+The assembled units built from that vocabulary. [Code Composition](/ds101/code-composition/) names their layers and how they're built in code, and [Figma Composition](/ds101/figma-composition/) covers the same structure in the design file.
 
 ### Governance
 

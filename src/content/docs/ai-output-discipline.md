@@ -14,7 +14,7 @@ An AI tool auditing your tokens, components, or docs only knows what it found in
 
 ## The problem
 
-A design system lead running these audits usually knows the system better than the tool does. The first time a report states something false as fact, like "components are not accessible" when it simply found no ARIA attributes in the files it read, the lead stops trusting the report's other findings too, including the correct ones. Overconfidence is worse than an incomplete scan. An incomplete scan just needs a wider net next time. A report that states unverified claims as fact poisons every future run. [Agentic workflow design](/ds101/agentic-workflow-design/) flags scoped claims as one thing an agent needs before publishing anything. This page is the fuller rule.
+A design system lead running these audits usually knows the system better than the tool does. The first time a report states something false as fact, like "components are not accessible" when it simply found no ARIA attributes in the files it read, the lead stops trusting the report's other findings too, including the correct ones. Overconfidence is worse than an incomplete scan. An incomplete scan just needs a wider net next time. A report that states unverified claims as fact poisons every future run. [Agentic Workflows](/ds101/agentic-workflows/) flags scoped claims as one thing an agent needs before publishing anything. This page is the fuller rule.
 
 ## Practices
 

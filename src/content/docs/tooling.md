@@ -61,23 +61,23 @@ Used in: [System inventory](/ds101/system-inventory/)
 
 **Specs (formerly EightShapes Specs)**: Nathan Curtis's Figma plugin. It generates
 anatomy, props, and layout/spacing specs from a component. Features like token
-references and subcomponents are Pro.\
+Citations and subcomponents are Pro.\
 `Freemium` `Figma plugin` `Pro: tokens, nested specs`
 ([docs](https://www.specsplugin.com/))\
-Used in: [Component specs](/ds101/component-specs/)
+Used in: [Specifications](/ds101/specifications/)
 
 **specs-cli**: the command-line version of Specs. It reads a whole Figma library through
 the REST API and writes one YAML spec per component into the repo, with no AI involved.
 It needs a Figma personal access token, and subscribers add a Specs license key.\
 `Open source` `Figma API` `Repo`
 ([repo](https://github.com/DirectedEdges/specs))\
-Used in: [Figma access for agents](/ds101/figma-access-for-agents/)
+Used in: [Figma Agent Access](/ds101/figma-agent-access/)
 
 **Figma Code Connect**: maps a Figma component to its import in code, so agents see the
 real `import` line instead of guessing it.\
 `Paid` `Figma Org/Enterprise` `Full or Dev seat`
 ([docs](https://help.figma.com/hc/en-us/articles/23920389749655-Code-Connect))\
-Used in: [Scaling AI effort to risk](/ds101/scaling-ai-effort-to-risk/)
+Used in: [Risk Management](/ds101/risk-management/)
 
 **Storybook**: live component examples and docs. Since 10.3 it also generates a
 component manifest (a JSON index of components and props) that agents can query
@@ -88,7 +88,7 @@ still in preview.\
 ([docs](https://storybook.js.org/docs/ai/manifests))\
 Used in: [AI readiness](/ds101/ai-readiness/),
 [Documentation coverage](/ds101/documentation-coverage/),
-[Governance for AI](/ds101/governance-for-ai/),
+[AI Governance](/ds101/ai-governance/),
 [Onboarding adopters](/ds101/onboarding-adopters/)
 
 ## Inventory and adoption
@@ -98,8 +98,8 @@ work on the free Starter plan with a Full or Dev seat, at 10 calls a minute. Vie
 Collab seats get about 20 calls a month.\
 `Free` `Figma API`
 ([rate limits](https://developers.figma.com/docs/rest-api/rate-limits/))\
-Used in: [Measuring adoption](/ds101/measuring-adoption/),
-[CI for agentic workflows](/ds101/ci-for-agentic-workflows/)
+Used in: [Adoption Metrics](/ds101/adoption-metrics/),
+[Agent CI Pipelines](/ds101/agent-ci-pipelines/)
 
 **Figma library analytics**: built-in component usage stats. The in-app view needs an
 Organization plan. The Library Analytics API, the version a script can read, needs
@@ -107,14 +107,14 @@ Enterprise.\
 `Paid` `Figma Org/Enterprise`
 ([in-app](https://help.figma.com/hc/en-us/articles/360039238353-View-and-explore-library-analytics),
 [API](https://developers.figma.com/docs/rest-api/library-analytics-intro/))\
-Used in: [Measuring adoption](/ds101/measuring-adoption/)
+Used in: [Adoption Metrics](/ds101/adoption-metrics/)
 
 **FigStats (Pinterest) and Atlassian's adoption scanner**: usage trackers for Figma and
 code, built internally. The small-team version of FigStats is a script on the Figma REST
 API. For code, it's a script that counts imports.\
 `In-house`\
-Used in: [Measuring adoption](/ds101/measuring-adoption/),
-[Performance in context](/ds101/performance-in-context/)
+Used in: [Adoption Metrics](/ds101/adoption-metrics/),
+[System Performance](/ds101/system-performance/)
 
 **Airtable**: Romina Kavcic's browsable view of token files, synced one way from GitHub.\
 `Freemium`
@@ -125,8 +125,8 @@ Used in: [System inventory](/ds101/system-inventory/)
 production. It checks design decisions against real usage.\
 `Freemium`
 ([pricing](https://posthog.com/pricing))\
-Used in: [Performance in context](/ds101/performance-in-context/),
-[Scaling AI effort to risk](/ds101/scaling-ai-effort-to-risk/)
+Used in: [System Performance](/ds101/system-performance/),
+[Risk Management](/ds101/risk-management/)
 
 ## Quality and CI
 
@@ -134,7 +134,7 @@ Used in: [Performance in context](/ds101/performance-in-context/),
 (open-source browser testing), or the Storybook test runner. It catches only the
 machine-detectable subset of issues.\
 `Open source` `CI`\
-Used in: [Component accessibility](/ds101/component-accessibility/)
+Used in: [Accessibility](/ds101/accessibility/)
 
 **Chromatic**: visual regression testing for Storybook. It screenshots every story on
 each change and flags pixel differences for review. It's also a place to publish
@@ -142,15 +142,15 @@ Storybook. The free plan covers 5,000 snapshots a month in Chrome. Paid plans st
 $179 a month.\
 `Freemium` `Storybook` `CI`
 ([pricing](https://www.chromatic.com/pricing))\
-Related: [Measuring adoption](/ds101/measuring-adoption/),
-[CI for agentic workflows](/ds101/ci-for-agentic-workflows/)
+Related: [Adoption Metrics](/ds101/adoption-metrics/),
+[Agent CI Pipelines](/ds101/agent-ci-pipelines/)
 
 **GitHub Agentic Workflows**: runs an agent inside GitHub Actions with no write access.
 The agent can only request actions, and a separate job checks and runs them. The model
 behind it (Copilot, Claude Code, Codex, and others) brings its own billing.\
 `CI` `GitHub Actions` `AI engine billing`
 ([docs](https://github.github.com/gh-aw/))\
-Used in: [CI for agentic workflows](/ds101/ci-for-agentic-workflows/)
+Used in: [Agent CI Pipelines](/ds101/agent-ci-pipelines/)
 
 ## Releases
 
@@ -172,7 +172,7 @@ instructions an agent follows. The repo is free, but running it takes a paid Cla
 ([repo](https://github.com/murphytrueman/design-system-ops),
 [Claude Code plans](https://code.claude.com/docs/en/setup))\
 Used in: [System inventory](/ds101/system-inventory/),
-[Component accessibility](/ds101/component-accessibility/),
+[Accessibility](/ds101/accessibility/),
 [Onboarding adopters](/ds101/onboarding-adopters/),
 [Context engineering](/ds101/context-engineering/)
 
@@ -189,7 +189,7 @@ month (20 on Starter).\
 `Freemium` `Figma API` `Dev/Full seat for daily use`
 ([guide](https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server),
 [limits](https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/))\
-Used in: [Scaling AI effort to risk](/ds101/scaling-ai-effort-to-risk/)
+Used in: [Risk Management](/ds101/risk-management/)
 
 **Figma plugin for Claude Code**: bundles the Figma MCP server settings with Figma's
 own skills. `figma-use` writes frames, components, and variables into a Figma file.
@@ -204,7 +204,7 @@ paid feature.\
 [skills](https://help.figma.com/hc/en-us/articles/39166810751895-Figma-skills-for-MCP),
 [write access](https://developers.figma.com/docs/figma-mcp-server/write-to-canvas/),
 [pricing note](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/))\
-Used in: [Scaling AI effort to risk](/ds101/scaling-ai-effort-to-risk/)
+Used in: [Risk Management](/ds101/risk-management/)
 
 **figma-cli**: Sil Bormüller's CLI that lets Claude Code or Cursor build in Figma
 Desktop directly, with no API token and no Figma rate limit. It also exports JSX,
@@ -212,12 +212,12 @@ Storybook stories, and DTCG tokens, and checks a file against saved contracts in
 The default connection mode patches the desktop app. Browser and Safe modes don't.\
 `Open source` `Figma Desktop` `Claude Code or Cursor`
 ([repo](https://github.com/silships/figma-cli))\
-Used in: [Figma access for agents](/ds101/figma-access-for-agents/)
+Used in: [Figma Agent Access](/ds101/figma-agent-access/)
 
 **Other MCP connections**: Kavcic's starter set is GitHub, GitLab, Mintlify, PostHog,
 and Slack. Each one follows that tool's own plan and permissions.\
 `Varies`\
-Used in: [Scaling AI effort to risk](/ds101/scaling-ai-effort-to-risk/)
+Used in: [Risk Management](/ds101/risk-management/)
 
 ## Starting without a budget
 
