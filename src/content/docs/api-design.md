@@ -87,6 +87,8 @@ Supernova's warning: "if your system permits a certain usage, it will likely be 
 
 The severity tells tools what to do. With `error`, they should refuse to generate the combination. With `warning`, they flag it for review. Each rule also carries its reason, so a reviewer or an agent that hits it knows why, not just that it's blocked.
 
+Some combinations are design questions, not API ones. [Curtis](https://medium.com/@nathanacurtis/the-sorry-state-of-states-89dd4668737e) asks whether a text input can have both `error` and `disabled` set. The API allows it. The experience doesn't hold up, though: the user is asked to fix an error in a field they can't edit, and the two visual cues compete. He doesn't require a rule either way, but asks for "at least a conversation if not explicit asset" so developers know what happens when both are true. The answer is a prohibited combination or a documented design.
+
 ### Prefer composition over style overrides
 
 An override is a hidden dependency that can break silently on the next release. Composition stays part of the documented, versioned API. [Supernova](https://www.supernova.io/blog/building-durable-component-apis-for-design-systems) makes this case, and [MUI's API design guide](https://mui.com/material-ui/guides/api/) reaches the same split on its own from a component-engineering angle: props for styling, composition for structure.
