@@ -110,6 +110,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Figma Learn, "The difference between slots, instance swaps, and variants"](https://help.figma.com/hc/articles/38741465279895), living doc: when to use each
 - [Nathan Curtis, "Slots in Design Systems"](https://nathanacurtis.substack.com/p/slots-in-design-systems), 2025: preferred or permitted children
 - [Murphy Trueman, "Slots and the control paradox"](https://murphytrueman.substack.com/p/slots-and-the-control-paradox), 2025: slots replacing the instance-swap workaround
+- [Nathan Curtis, "The Sorry State of States"](https://medium.com/@nathanacurtis/the-sorry-state-of-states-89dd4668737e), 2024: disabled as its own variant property
 
 ## Specifications
 
@@ -199,6 +200,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [React Aria, "TagGroup"](https://react-spectrum.adobe.com/react-aria/TagGroup.html), living doc: `selectedKeys` on the group
 - [MUI, "ToggleButton API"](https://mui.com/material-ui/api/toggle-button/), living doc: the `selected` prop
 - [Nathan Curtis, Directed Edges `specs`, "ADR 067: Element Behavior Roles via `anatomy.role`"](https://github.com/DirectedEdges/specs/blob/main/adr/067-anatomy-element-roles.md), 2026: a checkbox's selected state emitted as `aria-selected`
+- [Nathan Curtis, "The Sorry State of States"](https://medium.com/@nathanacurtis/the-sorry-state-of-states-89dd4668737e), 2024: error with disabled as a design question
 
 ## Property Naming
 
@@ -214,6 +216,8 @@ and describes tools or examples that have since changed. Older sources used only
 - [Nathan Curtis, Directed Edges `specs`, "ADR 066: Lossless key formatting"](https://github.com/DirectedEdges/specs/blob/main/adr/066-lossless-key-formatting.md), 2026: what converting layer names to keys loses, and the safe character set
 - [Nathan Curtis, Directed Edges `specs`, "ADR 058: Collapsing Wrapped Primitives"](https://github.com/DirectedEdges/specs/blob/main/adr/058-wrapper-collapse.md), 2026: unstyled wrapper frames dropped from the spec
 - [Murphy Trueman, "What your components look like as data"](https://blog.murphytrueman.com/what-your-components-look-like-as-data/), 2026: descriptive layer names and enum properties
+- [Nathan Curtis, "The Sorry State of States"](https://medium.com/@nathanacurtis/the-sorry-state-of-states-89dd4668737e), 2024: ten Figma kits vs. their code, splitting prop-driven states from interaction states
+- [Nathan Curtis, "Analysis of Variants"](https://nathanacurtis.substack.com/p/analysis-of-variants-9e440c30b93e), 2025: invalid configurations read from a Figma asset
 
 ## Usability
 

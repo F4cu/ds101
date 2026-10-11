@@ -228,6 +228,10 @@ or `ariaLabel`, so it has no natural place in Figma's properties panel. See
 changed text or a swapped icon, that Figma carries into another variant only if the
 layer names match. See [Property Naming](/ds101/property-naming/).
 
+**Interaction state** — a state the user's interaction triggers, such as hover, active,
+or focus, as opposed to a state a developer sets through a prop, such as `disabled` or
+`readOnly`. See [Property Naming](/ds101/property-naming/).
+
 **Data contract** (component) — a list of the fields a component needs, which are
 optional, what format each takes, and what it shows when one is missing or malformed.
 See [Usability](/ds101/usability/).

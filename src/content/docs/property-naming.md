@@ -54,7 +54,7 @@ A tool's own convention can still force a different word. [Supernova's example](
 
 Not every prop belongs in both tools. Curtis sorts a Dropdown's props into three lists. Both tools get `required`, `inlineLabel`, and `helperTextPlacement`, with the same options and defaults. Code alone gets `id` and `ariaLabel`, which change nothing on screen.
 
-States are the tricky case. Code sets `disabled`, `error`, and `readOnly` through props, but hover and focus happen only through interaction. In Figma, Curtis gathers all of them into one State menu, as long as its option labels match the code's.
+States are the tricky case. Code sets `disabled`, `error`, and `readOnly` through props, but hover and focus happen only through interaction. Curtis's 2021 post gathered all of them into one Figma State menu. He has since dropped that advice, and [Split states that code sets as props](#split-states-that-code-sets-as-props) covers what replaced it.
 
 The 2021 lists are shorter today. They predate Figma's boolean, text, and instance-swap properties, which [Figma's team](https://www.figma.com/blog/taking-cues-from-code/) describes as "essentially React properties for Figma components." Helper text, which Curtis listed as code only, can now be a boolean plus a text property in both tools. His 2026 "Code Only" Props post goes further and brings code-only props into Figma as text and variant properties on nested instances, kept in a layer named "Code only props", so the spec carries them too.
 
@@ -105,6 +105,40 @@ MUI's rule: use a boolean when exactly two values are needed, and an enum "when 
 
 With booleans, nothing stops a consumer from turning both on. The enum makes the options mutually exclusive, so there's no conflicting pair to [prohibit](/ds101/api-design/#support-only-the-prop-combinations-you-document). The same logic applies to lookalike components. [Murphy Trueman](https://blog.murphytrueman.com/what-your-components-look-like-as-data/) argues for one `appearance: success | warning | critical | info` property over four separate components, because four components drift apart on their own.
 
+### Split states that code sets as props
+
+"State" covers two kinds of thing. Hover, active, and focus come from the user interacting with the element. Disabled, read-only, and error are props a developer sets. In ["The Sorry State of States"](https://medium.com/@nathanacurtis/the-sorry-state-of-states-89dd4668737e) (2024), Curtis compared the text inputs of ten published Figma kits, including Material, Carbon, Primer, and Polaris, with their code. Nine of the ten put disabled in one `state` property, and eight did the same with focus and with error. Their code libraries mostly did it the other way: `disabled` and `readOnly` were separate boolean props, and error was a boolean or, in Primer, a `validationStatus` enum. He reverses his own 2021 advice here, saying the old post "was more than comfortable with diverging state across design and code assets."
+
+The fix is to give Figma the same shape as the code:
+
+```text title="One state menu"
+state: rest | hover | focus |
+  disabled | readonly | error
+```
+
+```text title="Split by who sets it"
+disabled: false | true
+readOnly: false | true
+validation: none | error | success
+state: rest | hover | active | focus
+```
+
+In the split version, every property that a developer sets has a matching prop in code, so each one maps to a prop without translation. Validation is an enum because error and success can't both be true, and showing success looks different from showing neither. The [boolean-or-enum rule](#switch-from-a-boolean-to-an-enum-past-two-values) applies. The order follows precedence. Disabled overrides read-only, and both limit which interaction states exist, so they come first.
+
+Splitting also shows which combinations are impossible. A disabled input has no hover, active, or focus state, and a read-only one has focus but no hover or active. Curtis's 2025 ["Analysis of Variants"](https://nathanacurtis.substack.com/p/analysis-of-variants-9e440c30b93e) reads them straight from the Figma asset and records them as data:
+
+```yaml title="Invalid configurations"
+invalidConfigurations:
+  - disabled: true
+    state: hover
+  - disabled: true
+    state: active
+```
+
+This list can be generated only after disabled has its own property. A single `state` menu can't express "disabled and hovered" at all, so there's nothing to rule out. That makes the result useful to the [prohibited combinations](/ds101/api-design/#support-only-the-prop-combinations-you-document) a system documents. Curtis also points to the cost on the automation side: a state menu that doesn't match the code needs a mapping in tools like Code Connect, and those mappings "could be avoided."
+
+He stops short of splitting everything. In 2024 he kept focus inside `state` instead of making it a boolean, because users trigger it, developers rarely set it, and it overrides hover rather than combining with it. He calls that line a judgment call that moves as design and code converge. The example in his 2025 post already lists a separate `focused` prop. Split what code sets, keep what users trigger together, and revisit the line when automation needs more.
+
 ### Name layers identically in every variant
 
 In Figma, the layer name is how an instance's edits find their way into a new variant. [Figma's docs](https://help.figma.com/hc/en-us/articles/360039150733-Apply-changes-to-instances) say changes carry over when you switch variants, or swap one instance for another, only if the layer names match. [Swapping by dragging a component from the Assets panel](https://help.figma.com/hc/en-us/articles/360039150413-Swap-components-and-instances) is stricter: Figma keeps only text overrides and drops every other edit. Text is more forgiving, and keeps its edits when the text layer's name and nesting are similar. Structure can't be edited on an instance at all: layer order, position, and constraints stay locked to the main component.
@@ -120,5 +154,6 @@ Structure that means nothing to code is dropped the same way. A heading built as
 ## Common mistakes
 
 - **Leaving Figma's default layer names.** "Frame 47" and "Text" carry no meaning to a developer or an agent reading the file, and a rename later breaks override matching across every variant at once. Name layers after the agreed parts from the start ([Trueman](https://blog.murphytrueman.com/what-your-components-look-like-as-data/)).
-- **Giving Figma's State menu its own vocabulary.** Gathering prop-driven and interaction-driven states into one menu is fine. Labeling one `Invalid` when the prop is `error` isn't, because the menu stops mapping to code ([Curtis](https://medium.com/eightshapes-llc/crafting-ui-component-api-together-81946d140371)).
+- **Giving Figma states their own vocabulary.** Labeling an option `Invalid` when the prop is `error` means the property stops mapping to code ([Curtis](https://medium.com/eightshapes-llc/crafting-ui-component-api-together-81946d140371)).
+- **Encoding combinations as compound options.** Adding `hover selected` to a radio button's `state` menu covers one missing pair, but a checkbox with indeterminate needs twelve. Curtis makes selection its own property, so every combination exists without a new option name ([Curtis](https://medium.com/@nathanacurtis/the-sorry-state-of-states-89dd4668737e)).
 - **Building before the draft is agreed, without saying so.** Curtis doesn't forbid starting early, but whoever does has to accept the refactor when the agreed API differs. Starting quietly turns that refactor into an argument about whose names win.

@@ -65,7 +65,7 @@ The three don't replace each other. [Figma's guidance](https://help.figma.com/hc
 
 ### Variants
 
-Use them for a closed set of mutually exclusive states on one component, like a button's default, hover, active, and disabled.
+Use them for a closed set of mutually exclusive states on one component, like a button's rest, hover, and active. A state that code sets as a prop, like disabled, gets its own variant property rather than another option in that set, so the Figma asset has the same shape as the code ([Property Naming](/ds101/property-naming/#split-states-that-code-sets-as-props)).
 
 Know what they cost as the set grows: each new state multiplies every existing combination. [Nathan Curtis](https://nathanacurtis.substack.com/p/component-contracts-and-schemas) counts it for a disabled state. A Figma button with 96 variants "requires 96 more variants, each carrying the varied `opacity` property," which he calls "massive redundancy – maybe 500ish layers – for one simple intent." A contract written as data states the same decision once:
 
