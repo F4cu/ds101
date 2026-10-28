@@ -46,6 +46,31 @@ Judgment guidance works best as principles the agent can apply. [Cris Morales](h
 
 What you choose to spell out sets how much the output varies. In Morales's [experiment](https://southleft.com/insights/design-systems/the-autonomy-vs-alignment-dial-for-ai/), guidance built from recipes and worked examples pulled every run toward the same composition. Guidance stating principles made runs agree on those decisions and differ everywhere else. "Naming creates consistency and silence creates variety." A blind panel preferred the principles version on layout and use of space, 137 to 93, but found no overall winner, so neither style is simply better. Name the decisions that must come out the same every time, and leave the rest to the agent. Either way, test the file. Both Morales and Vercel built theirs through repeated evals (see [Agent Evals](/ds101/agent-evals/)).
 
+### Write selection guidance against the alternatives
+
+An agent rarely picks between a button and a table. It picks between a button and a link, or a toast and an inline alert, so guidance that describes each component on its own leaves the hardest choice open. [Murphy Trueman's AI-readiness note](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/ai-readiness.md) makes this the first test of a component description: an agent reading only the description should be able to choose the component "over alternatives," which "requires distinguishing the component from similar components with overlapping use cases."
+
+[Morales's component metadata](https://www.giorris.dev/thoughts/design-system-documentation-as-structured-metadata) gives each anti-pattern three parts: the scenario, the reason it fails, and the alternative. His Button entry shows the case that matters most here, where the alternative is a different component:
+
+```ts title="Button.metadata.ts (excerpt)"
+antiPatterns: [
+  {
+    scenario:
+      "Using button for plain navigation without action",
+    reason:
+      "Buttons indicate actions, not navigation",
+    alternative:
+      "Use Link component for navigation"
+  }
+]
+```
+
+Morales says the format "forces precision." "You can't write 'don't overuse primary buttons.'" You have to name the scenario and what to do instead. His `aiHints.selectionCriteria` applies the same rule to choosing a variant: not "use primary for important stuff," but "Main action user should take on the page/section." None of it is new knowledge. He took it from the "When to use" and "Avoid" sections the team already had, plus the "when should I use X vs Y?" questions in Slack.
+
+The redirect itself is an old habit from guidelines written for people. [Curtis's guidelines](https://nathanacurtis.substack.com/p/component-design-guidelines-eca706100e7c), from 2018, years before agents read design system docs, already end each "Don't use when" with one: "Succinctly redirect to an appropriate alternative with a subsequent sentence beginning with 'Instead, use Tooltip.'" What the agent era adds is the structure, so a tool can check the rule before it generates code.
+
+Keep each anti-pattern specific to its component. Trueman warns that generic advice ("use this component appropriately") "does not prevent misuse," and [scales the effort by risk](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/component-bestiary-reference.md): components that can cause real harm get full anti-pattern coverage, simple ones a few lines. This doesn't contradict the previous practice: an anti-pattern with its alternative is one of the decisions that must come out the same every time. No source in this guide has yet measured how much a redirect improves an agent's picks. Test it with [Agent Evals](/ds101/agent-evals/) on the pairs your team confuses most.
+
 ### Expect the structuring to help humans too
 
 [Atlassian's](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era) sharpest line on why this isn't AI-only busywork: "To identify the rules that help LLMs, you also uncover the rules that help explain these concepts to humans — and that's a good thing." [AI Governance](/ds101/ai-governance/) makes the same claim from Shane P Williams's side: work that makes the system legible to agents is quality work for everyone.
