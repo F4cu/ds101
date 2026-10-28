@@ -16,11 +16,15 @@ An AI-ready design system is one AI agents and tools can use, reason about, and 
 
 Without explicit context, errors compound. The same notes call this the **context cascade**: context quality at the source carries through every downstream consumer. Strong metadata in a Figma component leads to accurate AI-generated code, correct implementation, and reliable tests. Weak metadata leads to hallucinated props (properties the AI invents because the real ones weren't documented), broken implementation, and failed tests. Every layer either inherits good context or amplifies bad context. There's no neutral handoff.
 
+The cascade reaches agents from two sides. [Cris Morales](https://southleft.com/insights/design-systems/what-does-ai-readiness-mean-in-design-systems/) of Southleft splits readiness into **repository readiness**, how well an agent can navigate the system's own repo and complete tasks in it, which matters most to the system team, and **consumption readiness**, how well an agent uses the system from outside, through MCP, a CLI, or the docs. The two can be far apart. Southleft's projects scored over 90 on the first and, by its own estimate, around 40–50 on the second.
+
 ## Practices
 
 ### Invest in context at the source
 
 Because the cascade compounds, the cheapest place to fix context is where it starts: the component's metadata in Figma and code. An hour spent there pays off in every layer built on top of it.
+
+The source is the component and the contract generated from it, not extra files describing them. Lists copied into agent files go stale, and agents trust them anyway. [Context engineering](/ds101/context-engineering/#point-to-the-contract-instead-of-copying-it) covers how to point to the source instead.
 
 ### Publish a machine-readable component manifest
 
@@ -83,4 +87,4 @@ Per the design-system-ops notes, components with ambiguous names, undocumented a
 
 ## Common mistakes
 
-- **Treating AI readiness as a separate AI layer bolted onto the system.** It isn't. The work is quality work, done with more precision, and it helps every consumer, including the humans.
+- **Treating AI readiness as a separate AI layer bolted onto the system.** It isn't. The work is quality work, done with more precision, and it helps every consumer, including the humans. Southleft's evals back this up: a system in its first phase and Meta's eight-year-old Astryx landed in the same band, 95.68 against 96.19. Morales credits plain engineering, "Clean code is machine-readable code," and expects the label to fade the way "mobile-friendly" did.

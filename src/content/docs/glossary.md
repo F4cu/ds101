@@ -437,6 +437,15 @@ loadable units (Diana Wolosin's benchmarked metadata format; Murphy Trueman's
 `AGENTS.md` entry point linking out to per-task files) that give an agent what it needs for a given task without handing it
 everything at once. See [Context engineering](/ds101/context-engineering/).
 
+**Repository readiness / consumption readiness** — Cris Morales's two sides of AI
+readiness: how well an agent works inside the system's own repo, versus how well it uses
+the system from outside through MCP, a CLI, or the docs. See
+[AI Readiness](/ds101/ai-readiness/).
+
+**Structured discoverability** — laying out agent files as an index, with each fact in one
+place and everything else pointing to it, so an agent finds what it needs when it needs it
+instead of trusting a copied list. See [Context engineering](/ds101/context-engineering/).
+
 **Generative loop** — any orchestration shape where an agent's output feeds back into
 another round of generation; not every generative loop includes a review step. See
 [Generative loops](/ds101/generative-loops/).
@@ -452,6 +461,20 @@ single piece of output: propose a context format or metadata schema, measure how
 agents actually perform against it, revise. Diana Wolosin's benchmark of eight MCP
 configurations against 1,056 prompts is the concrete example. See
 [Generative loops](/ds101/generative-loops/).
+
+**Eval** (agent) — a fixed set of intent-level tasks run through an agent, with the output
+checked against the system's real components and tokens and judged against rubrics. See
+[Agent Evals](/ds101/agent-evals/).
+
+**Bare baseline** — an eval run with no agent files, skills, or docs loaded, used to
+measure whether added guidance helps or hurts. See [Agent Evals](/ds101/agent-evals/).
+
+**Mechanical vs. judgment checks** — deterministic checks on imports, props, tokens,
+accessibility, and compiling, versus rubric-based calls on whether the agent made the right
+design decision. See [Agent Evals](/ds101/agent-evals/).
+
+**Ghost token** — a token named in an agent file that doesn't exist in the system, often
+because the agent that wrote the file made it up. See [Agent Evals](/ds101/agent-evals/).
 
 **Response regeneration** — AWS Cloudscape's shippable UI pattern for generative loops:
 thumbs-up/thumbs-down controls plus a dedicated regenerate action, putting the same

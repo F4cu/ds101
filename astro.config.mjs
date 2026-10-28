@@ -130,6 +130,7 @@ export default defineConfig({
 						'figma-agent-access',
 						'agentic-workflows',
 						'generative-loops',
+						'agent-evals',
 						'agent-ci-pipelines',
 						'ai-output-discipline',
 						'agentic-ui-patterns',

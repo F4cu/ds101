@@ -334,6 +334,7 @@ and describes tools or examples that have since changed. Older sources used only
 ## AI readiness, governance under AI consumption, Agentic Workflows, AI output discipline, scaling AI effort
 
 - [Romina Kavcic, "Design tokens that AI can actually read"](https://learn.thedesignsystem.guide/p/design-tokens-that-ai-can-actually), 2025
+- [Cris Morales, "What Does AI-Readiness Mean in Design Systems?"](https://southleft.com/insights/design-systems/what-does-ai-readiness-mean-in-design-systems/), 2026 — Southleft: repository vs. consumption readiness, the Astryx comparison
 - [Romina Kavcic, "Should you build an agent for your design system"](https://learn.thedesignsystem.guide/p/should-you-build-an-agent-for-your), 2026
 - [Murphy Trueman, "Your next design system user is an agent"](https://blog.murphytrueman.com/your-next-design-system-user/), 2025
 - [Murphy Trueman, "Your design system is fragmenting into agent files"](https://blog.murphytrueman.com/your-design-system-is-fragmenting-into-agent-files/), 2026: the Storybook Component Manifest and its MCP add-on
@@ -350,8 +351,20 @@ and describes tools or examples that have since changed. Older sources used only
 - [Sil Bormüller, "Your Design System Is Not Ready for AI Agents"](https://www.intodesignsystems.com/blog/design-system-not-ready-for-ai-agents), 2026 — conference write-up carrying Romina Kavcic's CI trust-tier framework, Jan Six's GitHub Primer safe-outputs example, and Diana Wolosin's Indeed pipeline figures, from the AI Design Systems Conference 2026
 - Murphy Trueman, `design-system-ops` — `knowledge-notes/ai-readiness.md`. Living doc.
 
+## Agent Evals
+
+- [Murphy Trueman, "Design systems need evals"](https://blog.murphytrueman.com/design-systems-need-evals/), 2026: mechanical vs. judgment checks, intent-level prompts, the promptfoo example, regression suites in CI
+- [Cris Morales, "What Does AI-Readiness Mean in Design Systems?"](https://southleft.com/insights/design-systems/what-does-ai-readiness-mean-in-design-systems/), 2026 — Southleft: bare runs beating agent files, ghost tokens, the `AGENTS.md` refactor figures, the password-field judgment failure
+- [Cris Morales, "The autonomy vs alignment dial for AI"](https://southleft.com/insights/design-systems/the-autonomy-vs-alignment-dial-for-ai/), 2026 — Southleft: extended briefs, the visual re-grading pass, the 19-reviewer blind panel, the output-to-rule loop
+- [Christoph Hellmuth, Open Design System Bench](https://github.com/christophhdesign/open-design-system-bench), living doc: context levels, scoring dimensions and weights, the screenshot gallery, run profiles and CI gates. v1.3 (October 2026) made bare runs fully bare, so earlier baselines aren't directly comparable.
+- [Vercel, "How our agents build on-brand pages with design.md"](https://vercel.com/blog/how-our-agents-build-on-brand-pages-with-design-md), 2026: frozen eval scenarios, blind A/B review, routing corrections to prose, stylesheet, or check, the 39 vs. 91 failure count
+
 ## Context engineering, documentation for agents, agentic UI patterns, generative loops
 
+- [Cris Morales, "What Does AI-Readiness Mean in Design Systems?"](https://southleft.com/insights/design-systems/what-does-ai-readiness-mean-in-design-systems/), 2026 — Southleft: hardcoded lists in agent files, ghost tokens, "one truth in one place," the `AGENTS.md` refactor, principles over answer lists, the password-field missing slot
+- [Cris Morales, "The autonomy vs alignment dial for AI"](https://southleft.com/insights/design-systems/the-autonomy-vs-alignment-dial-for-ai/), 2026 — Southleft: "Agents consume files as truths," recipes vs. principles, "naming creates consistency and silence creates variety"
+- [Vercel, "How our agents build on-brand pages with design.md"](https://vercel.com/blog/how-our-agents-build-on-brand-pages-with-design-md), 2026: a public guidance file for agents outside the codebase, named anti-patterns, observable rules
+- [Vercel, `design.md`](https://vercel.com/design.md), living doc
 - [Diana Wolosin, "Design Systems for AI: Introducing the Context Engine"](https://www.designsystemscollective.com/design-systems-for-ai-introducing-the-context-engine-777726da6a01), n.d.
 - Murphy Trueman, `design-system-ops`, [`skills/metadata-schema-generator/SKILL.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/metadata-schema-generator/SKILL.md), living doc: per-value `semantic` guidance in component metadata
 - [Romina Kavcic, "Design tokens that AI can actually read"](https://learn.thedesignsystem.guide/p/design-tokens-that-ai-can-actually), 2025: the token `meta` example
