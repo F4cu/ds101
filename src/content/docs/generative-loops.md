@@ -30,7 +30,7 @@ A generator/reviewer loop needs an explicit stopping condition before it runs, n
 
 ### Measure whether a format works
 
-Diana Wolosin's benchmark of eight MCP configurations against 1,056 prompts (propose a format, measure how agents resolve it, revise) is a generative loop applied to infrastructure: a **format-evaluation loop**, where the candidate is a context format, not a piece of content. It isn't one of the four orchestration patterns. It's evidence that the same discipline (define "correct," then measure against it) recurs outside workflow design. A format that looks reasonable isn't necessarily the one that performs best. [Context engineering](/ds101/context-engineering/) has the full account.
+Diana Wolosin's benchmark of eight MCP configurations against 1,056 prompts (propose a format, measure how agents resolve it, revise) is a generative loop applied to infrastructure: a **format-evaluation loop**, where the candidate is a context format, not a piece of content. It isn't one of the four orchestration patterns. It's evidence that the same discipline (define "correct," then measure against it) recurs outside workflow design. A format that looks reasonable isn't necessarily the one that performs best. [Context engineering](/ds101/context-engineering/) has the full account. [Agent Evals](/ds101/agent-evals/) applies the same loop to agent files and design guidance, including why a reviewer model needs to see the rendered page, not only the code.
 
 ### Ship the loop as a UI pattern
 
