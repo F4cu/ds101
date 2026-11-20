@@ -558,3 +558,21 @@ a value look like equal steps to a person, unlike RGB or HSL. See
 **Contrast grid** — a table of every text color against every background, with the
 contrast of each pair, published next to the palette. See
 [Accessible Colors](/ds101/accessible-colors/).
+
+**Intake** — the route by which requests reach the system team (a form, a channel, an
+issue template), and the few fields each request has to carry. See
+[Product Ownership](/ds101/product-ownership/).
+
+**Triage** — sorting each incoming request by kind and urgency, then declining it,
+starting it, or moving it to the backlog. See
+[Product Ownership](/ds101/product-ownership/).
+
+**Roadmap horizon** — one column of a now/next/later roadmap; later horizons carry less
+detail and no dates. See [Product Ownership](/ds101/product-ownership/).
+
+**Support rota** — a schedule naming who answers support requests each day, with that
+person's sprint work paused. See [Product Ownership](/ds101/product-ownership/).
+
+**MoSCoW** — a prioritisation method that sorts items into Must, Should, Could, and
+Won't, with a recorded rationale for each. See
+[Product Ownership](/ds101/product-ownership/).

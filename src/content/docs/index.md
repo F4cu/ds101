@@ -38,7 +38,8 @@ draws on them:
   published AI interaction patterns
 - **Diana Wolosin**, **Shane P Williams**, **Jan Six**: documentation and context for
   AI agents
-- **GOV.UK Design System**: accessibility strategy, contribution, and community rhythm
+- **GOV.UK Design System**: accessibility strategy, contribution, community rhythm,
+  prioritisation, and support
 - **Supernova**: business cases, ROI, API durability, and versioning
 - **Dan Mall**: pilot strategy
 - **Amy Hupe** and **Inayaili de León**: getting people to contribute
@@ -53,6 +54,8 @@ draws on them:
 - **Braid** (SEEK), **React Spectrum** (Adobe), and **Kent C. Dodds**: spacing between
   parts and guarding parts used outside their parent
 - **Alice Packard**: what makes a Figma component easy for designers to use
+- **Nord**, **GitLab** (Pajamas and the product design handbook), and **Fleet**:
+  backlog prioritisation, capacity, and saying no
 
 The [Citations](/ds101/citations/) page collects every citation in one place.
 
@@ -68,7 +71,7 @@ a structure to understand first. Every page ends with **Common mistakes**.
 1. **01. Strategy**: audit, pilot, take over an existing system, or assess its maturity.
 2. **02. Foundations**: core concepts, token architecture and naming, accessible colors, Design-to-Code Contract, and platform divergence.
 3. **03. Components**: specifications, composition in Figma and code, APIs, property naming, usability, and accessibility.
-4. **04. Governance**: team and decision models, contribution, lifecycle, inventory, releases, cadence, onboarding, long-term scale, and case studies.
+4. **04. Governance**: team and decision models, product ownership, contribution, lifecycle, inventory, releases, cadence, onboarding, long-term scale, and case studies.
 5. **05. Health**: adoption, performance, dependencies, and documentation coverage.
 6. **06. Business**: value, ROI, brand, and stakeholder alignment.
 7. **07. AI Integration**: readiness, context, documentation, governance, risk, Figma access, workflows, CI, output discipline, and UI patterns.

@@ -167,6 +167,26 @@ and describes tools or examples that have since changed. Older sources used only
 - [Design System Tactics, "RACI"](https://www.designsystemtactics.com/tactics/raci), 2025
 - [DesignX, "Design System Governance: An Enterprise Guide"](https://designx.co/design-system-governance-enterprise/), n.d.
 
+## Product ownership
+
+- [Nathan Curtis, "A Design System isn't a Project. It's a Product, Serving Products."](https://nathanacurtis.substack.com/p/a-design-system-isn-t-a-project-it-s-a-product-serving-products-74dcfffef935), 2016: no funded persistence after launch
+- [Nathan Curtis, "Roadmaps for Design Systems"](https://nathanacurtis.substack.com/p/what-s-will-your-design-system-deliver-4b81d41be0d4), 2015: now/next/later, leaving out the detail, and the responsive-images example
+- [Nathan Curtis, "Design System Leader(s) & Manager(s)"](https://nathanacurtis.substack.com/p/design-system-leader-s-manager-s-3bfa49d79883), 2017: the Systems Lead's three hats
+- [Nathan Curtis, "Design Systems Support"](https://nathanacurtis.substack.com/p/design-systems-support), 2020: case categories, intake fields, first response versus resolution, triage locations, the sample refusal, and the support-time estimate
+- [Nathan Curtis, "Using Jira for Design Systems"](https://nathanacurtis.substack.com/p/using-jira-for-design-systems-10ec31c3327e), 2019: per-step stories, epic types, and versions as buckets (Morningstar)
+- [GOV.UK Design System team playbook, "How we prioritise"](https://team-playbook.design-system.service.gov.uk/how-we-work/how-we-prioritise/), living doc: the three question sets
+- [GOV.UK Design System team playbook, "Delivery cycle"](https://team-playbook.design-system.service.gov.uk/how-we-work/delivery-cycle/), living doc: three-week cycles plus a reflection week, started January 2024
+- [GOV.UK Design System team playbook, "Decision making techniques"](https://team-playbook.design-system.service.gov.uk/guides/decision-making-techniques/), living doc: MoSCoW, the accountable decision maker, and recorded rationale
+- [GOV.UK Design System team playbook, "Daily support responsibilities"](https://team-playbook.design-system.service.gov.uk/support/support-responsibilites/), updated 2023: the support rota and pausing sprint work
+- [GOV.UK Design System, "Roadmap"](https://design-system.service.gov.uk/community/roadmap/), updated 2026: three horizons and undated future plans
+- [UXPin, "Advice to New Design System Managers from 5 Experts"](https://www.uxpin.com/studio/blog/advice-to-new-design-system-managers/), 2023: Nina Jurcic on the manager as Product Owner, expanding the most-used components, and saying no
+- [Nord Design System, "Backlog Prioritization"](https://nordhealth.design/backlog-prioritization-model), living doc: the impact/effort 2×2 and the PM's role
+- [Nord Design System, "Support"](https://nordhealth.design/resources/support/), living doc: "as time permits" and weekly office hours
+- [GitLab Pajamas, "Contributing"](https://design.gitlab.com/contribute/contributing), updated 2026: core, extended, and out-of-scope classification, and support levels
+- [GitLab Handbook, "Product Designer Priorities and Capacity Management"](https://handbook.gitlab.com/handbook/upstream-studios/product-design/workflow/capacity-management/), living doc: the must/should/nice order and issue weights
+- [Fleet handbook, "Product design"](https://fleetdm.com/handbook/product), living doc: unpacking requests within a week, and the three-line request summary
+- [Fleet handbook, "Product groups"](https://fleetdm.com/handbook/company/product-groups), living doc: the four gate criteria, core versus context, "not now," the one-business-day notice, and continuous flow instead of sprints
+
 ## Onboarding adopters
 
 - Murphy Trueman, `design-system-ops` — [`skills/onboarding/SKILL.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/onboarding/SKILL.md), living doc: the shared core and role sections, the first two weeks, and marking team policies to confirm

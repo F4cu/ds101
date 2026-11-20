@@ -89,6 +89,7 @@ export default defineConfig({
 					label: '04. Governance',
 					items: [
 						'team-models',
+						'product-ownership',
 						'decision-governance',
 						'contribution-models',
 						'fostering-contribution',

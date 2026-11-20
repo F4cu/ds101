@@ -351,7 +351,7 @@ Likely probes and where the answer will live:
 
 - [ ] Re-read `CLAUDE.md` page conventions, plus `release-management.md` and `contribution-models.md` as template references
 - [ ] Check `contribution-models`, `decision-governance` and `component-lifecycle` for overlaps before writing §1 practices 3 and 6
-- [ ] Write `product-ownership.md` and add it to the sidebar (Governance)
+- [x] Write `product-ownership.md` and add it to the sidebar (Governance) — done 2026-11-20, with its citations, glossary terms (intake, triage, roadmap horizon, support rota, MoSCoW) and the index.md source line; prioritisation became `## Choosing a prioritisation method`
 - [ ] Write `component-qa.md` and add it to the sidebar (Components)
 - [ ] Extend `release-management.md` (§2)
 - [ ] Small edits to `usability.md`, `design-to-code-contract.md` and optionally `team-models.md` (§4, §5)
