@@ -360,5 +360,7 @@ Likely probes and where the answer will live:
 - [ ] Read Pajamas `uik-breaking-changes` and `uik-release-notes` before writing §2
 - [ ] `glossary.md`: add new terms
 - [ ] Re-verify Figma plan availability for branching vs publishing before stating it
+- [ ] **Re-fetch every source before merging.** `product-ownership.md` and `component-qa.md` (written 2026-11-20) quote from this file's notes, not from a fresh read. Re-open each source in the §0 table, check every quoted string word for word, and check each paraphrase against the source. Medium/eightshapes block automated fetches; use the Substack mirrors (see the access note in §0)
+- [ ] Run the `ux-writing-review` skill over every page touched by this handoff, once all sections are written and the sources re-checked
 - [ ] `npm run build` passes; check on a phone-width viewport
 - [ ] Set this handoff to `status: done`
