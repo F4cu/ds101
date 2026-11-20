@@ -352,7 +352,7 @@ Likely probes and where the answer will live:
 - [ ] Re-read `CLAUDE.md` page conventions, plus `release-management.md` and `contribution-models.md` as template references
 - [ ] Check `contribution-models`, `decision-governance` and `component-lifecycle` for overlaps before writing §1 practices 3 and 6
 - [x] Write `product-ownership.md` and add it to the sidebar (Governance) — done 2026-11-20, with its citations, glossary terms (intake, triage, roadmap horizon, support rota, MoSCoW) and the index.md source line; prioritisation became `## Choosing a prioritisation method`
-- [ ] Write `component-qa.md` and add it to the sidebar (Components)
+- [x] Write `component-qa.md` and add it to the sidebar (Components) — done 2026-11-20; its criteria are the release gate and link to `usability`'s existing "Criteria for a usable component" (built from C-REV) instead of repeating it; usability and design-to-code-contract now link to it
 - [ ] Extend `release-management.md` (§2)
 - [ ] Small edits to `usability.md`, `design-to-code-contract.md` and optionally `team-models.md` (§4, §5)
 - [ ] `citations.md`: add every new source with its year and `Dated` tags where flagged

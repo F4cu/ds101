@@ -576,3 +576,11 @@ person's sprint work paused. See [Product Ownership](/ds101/product-ownership/).
 **MoSCoW** — a prioritisation method that sorts items into Must, Should, Could, and
 Won't, with a recorded rationale for each. See
 [Product Ownership](/ds101/product-ownership/).
+
+**Kitchen sink page** — a page kept apart from a component's documentation that shows
+every property combination and content stress case, used for review and visual diffing.
+See [Component QA](/ds101/component-qa/).
+
+**Visual test case** — a frame or story showing a component under one specific condition
+(long content, a narrow container, a filled slot) so a reviewer can confirm an edit
+changed only what was intended. See [Component QA](/ds101/component-qa/).

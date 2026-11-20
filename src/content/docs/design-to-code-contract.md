@@ -59,6 +59,8 @@ Met when:
 - Release notes are written in plain terms.
 - Breaking changes come with a documented migration path. See [Release management](/ds101/release-management/).
 
+[Component QA](/ds101/component-qa/) covers how a second person checks the build and release contracts before a component is published.
+
 ## Practices
 
 ### Close each contract before the next stage starts

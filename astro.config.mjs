@@ -81,6 +81,7 @@ export default defineConfig({
 						'api-design',
 						'property-naming',
 						'usability',
+						'component-qa',
 						'accessibility',
 						'layout-accessibility',
 					],

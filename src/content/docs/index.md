@@ -70,7 +70,7 @@ a structure to understand first. Every page ends with **Common mistakes**.
 
 1. **01. Strategy**: audit, pilot, take over an existing system, or assess its maturity.
 2. **02. Foundations**: core concepts, token architecture and naming, accessible colors, Design-to-Code Contract, and platform divergence.
-3. **03. Components**: specifications, composition in Figma and code, APIs, property naming, usability, and accessibility.
+3. **03. Components**: specifications, composition in Figma and code, APIs, property naming, usability, QA, and accessibility.
 4. **04. Governance**: team and decision models, product ownership, contribution, lifecycle, inventory, releases, cadence, onboarding, long-term scale, and case studies.
 5. **05. Health**: adoption, performance, dependencies, and documentation coverage.
 6. **06. Business**: value, ROI, brand, and stakeholder alignment.

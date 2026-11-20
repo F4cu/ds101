@@ -203,6 +203,15 @@ and describes tools or examples that have since changed. Older sources used only
 - [Ness Grixti, "Rethinking Contribution: Lessons from the Messy Middle of Design Systems"](https://nessgrixti.com/articles/rethinking-contribution-lessons-from-the-messy-middle-of-design-systems/), 2025
 - zeroheight, *Design Systems Report 2026*
 
+## Component QA
+
+- [Nathan Curtis, "Component QA in Design Systems"](https://nathanacurtis.substack.com/p/component-qa-in-design-systems-b18cb4decb9c), 2017 `Dated` — browser examples name IE; cited for the eight check areas, a predictable reviewer role, not gating on usability testing, and separating test artifacts from docs
+- [Nathan Curtis, "Component Testing Plans"](https://nathanacurtis.substack.com/p/component-testing-plans-face830d7e44), 2019 `Dated` — tool examples (IE11, BackstopJS) are out of date; cited for growing criteria per planning period and the translation stress cases
+- [Nathan Curtis, "Testing Figma Components"](https://nathanacurtis.substack.com/p/testing-figma-components-a47fc978465f), 2022: three testing models, prerequisites, what asset testing checks, and how much polish is enough
+- [Nathan Curtis, "Component Visual Test Cases"](https://nathanacurtis.substack.com/p/component-visual-test-cases-e501e2d21def), 2022: the five test case types and test cases beside the variant grid
+- [Nathan Curtis, "The Figma Component Review"](https://nathanacurtis.substack.com/p/the-figma-component-review-f42114450b4d), 2022: Pass/Fail/Not Applicable, specific criteria, the four review steps, and no accessibility item
+- [Nathan Curtis, "Doneness Matrices"](https://nathanacurtis.substack.com/p/doneness-matrices-c7f0a026365f), 2010: components as rows, criteria as columns
+
 ## API Design
 
 - [Nathan Curtis, "Configuration Collapse"](https://nathanacurtis.substack.com/p/configuration-collapse), 2026
