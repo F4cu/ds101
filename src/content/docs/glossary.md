@@ -612,3 +612,7 @@ told to trust, using a short-lived identity token instead of a stored npm token.
 **Provenance** (npm) — a signed statement linking a published package to the repository and
 build that produced it; it proves origin, not safety. See
 [Code Library Releases](/ds101/code-library-releases/).
+
+**Monorepo** — one repository holding several packages, such as tokens, icons, and
+components, released with shared tooling. See
+[Code Library Releases](/ds101/code-library-releases/).

@@ -14,7 +14,7 @@ Publishing a Figma library doesn't change anyone's files. It offers an update th
 
 ## The problem
 
-A code release reaches products when a team bumps a version. A Figma release reaches them when a designer clicks Update, often without knowing what the update changes. [GitLab's Pajamas](https://design.gitlab.com/get-started/uik-breaking-changes) defines a breaking change in a Figma library as "anything that would require a designer to take any action after updating," such as changed dimensions or lost overrides. If the release doesn't say which updates are like that, designers either accept everything and repair their files afterwards, or stop accepting updates and drift away from the library. The shared rules for versions, deprecation, and changelogs live in [Release management](/ds101/release-management/). This page covers what's different when the thing being released is a Figma library.
+A code release reaches products when a team bumps a version. A Figma release reaches them when a designer clicks Update, often without knowing what the update changes. [GitLab's design system, Pajamas](https://design.gitlab.com/get-started/uik-breaking-changes) defines a breaking change in a Figma library as "anything that would require a designer to take any action after updating," such as changed dimensions or lost overrides. If the release doesn't say which updates are like that, designers either accept everything and repair their files afterwards, or stop accepting updates and drift away from the library. The shared rules for versions, deprecation, and changelogs live in [Release management](/ds101/release-management/). This page covers what's different when the thing being released is a Figma library.
 
 ## Practices
 
