@@ -132,6 +132,8 @@ export default defineConfig({
 						'ai-governance',
 						'risk-management',
 						'figma-agent-access',
+						'authoring-harness',
+						'ai-prototyping',
 						'agentic-workflows',
 						'generative-loops',
 						'agent-evals',

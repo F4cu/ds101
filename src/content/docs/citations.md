@@ -123,6 +123,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Shane P Williams, "The Job Nobody Is Hiring For Yet"](https://designsystemscollective.substack.com/p/the-job-nobody-is-hiring-for-yet), 2026: Figma, Storybook, and production each authoritative for a different question
 - [Romina Kavcic, "Gamechanger: Automatically sync design tokens from GitHub to Airtable"](https://learn.thedesignsystem.guide/p/gamechanger-automatically-sync-design), 2025: the repo as source, docs as a view
 - [Murphy Trueman, "Your design system is fragmenting into agent files"](https://blog.murphytrueman.com/your-design-system-is-fragmenting-into-agent-files/), 2026: the Storybook Component Manifest
+- [Nathan Curtis, "A Spec-first Component Authoring Harness"](https://nathanacurtis.substack.com/p/a-spec-first-component-authoring), 2026: the example that passed after its prop option was dropped, and the cross-file check
 
 ## Platform divergence
 
@@ -412,6 +413,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Shane P Williams, "The Informal Contract Is Over"](https://designsystemscollective.substack.com/p/the-informal-contract-is-over), 2026 — Design Systems Collective
 - [Shane P Williams, "Drift Doesn't Announce Itself"](https://designsystemscollective.substack.com/p/drift-doesnt-announce-itself), 2026 — Design Systems Collective
 - [Shane P Williams, "The Job Nobody Is Hiring For Yet"](https://designsystemscollective.substack.com/p/the-job-nobody-is-hiring-for-yet), 2026 — Design Systems Collective
+- [Atlassian, "The AI PDLC Playbook"](https://atlassianblog.wpengine.com/wp-content/uploads/2026/11/ai-pdlc-playbook.pdf), 2026: decision boundaries and the security-fix example
 
 ## Agent CI Pipelines
 
@@ -426,6 +428,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Cris Morales, "The autonomy vs alignment dial for AI"](https://southleft.com/insights/design-systems/the-autonomy-vs-alignment-dial-for-ai/), 2026 — Southleft: extended briefs, the visual re-grading pass, the 19-reviewer blind panel, the output-to-rule loop
 - [Christoph Hellmuth, Open Design System Bench](https://github.com/christophhdesign/open-design-system-bench), living doc: context levels, scoring dimensions and weights, the screenshot gallery, run profiles and CI gates. v1.3 (October 2026) made bare runs fully bare, so earlier baselines aren't directly comparable.
 - [Vercel, "How our agents build on-brand pages with design.md"](https://vercel.com/blog/how-our-agents-build-on-brand-pages-with-design-md), 2026: frozen eval scenarios, blind A/B review, routing corrections to prose, stylesheet, or check, the 39 vs. 91 failure count
+- [Sudharsanam Narasimhan, Kylor Hall and Michael Abrahamian, "Giving AI agents design system context from the terminal: what we learned building a CLI"](https://www.atlassian.com/blog/ai-at-work/giving-ai-agents-design-system-context-from-the-terminal-what-we-learned-building-a-cli), Atlassian, 2026: transcripts showing agents reading source files instead of instructions
 
 ## Context engineering, documentation for agents, agentic UI patterns, generative loops
 
@@ -448,6 +451,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [GitLab Pajamas, "AI-human interaction"](https://design.gitlab.com/patterns/ai-human-interaction/), living doc — patterns explicitly flagged by GitLab as still in development
 - [Atlassian, "Atlassian Design System: building the context engine for the AI era"](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era), 2026
 - [Microsoft Learn, "Human-centered design for agents"](https://learn.microsoft.com/en-us/agents/design-guidelines/human-centered-design), living doc — flagged on the source page as AI-generated content on an official Microsoft doc, not an individually authored piece
+- [Sudharsanam Narasimhan, Kylor Hall and Michael Abrahamian, "Giving AI agents design system context from the terminal: what we learned building a CLI"](https://www.atlassian.com/blog/ai-at-work/giving-ai-agents-design-system-context-from-the-terminal-what-we-learned-building-a-cli), Atlassian, 2026: one dataset served through a skill, MCP server and CLI, the CLI vs. MCP benchmark, and reading transcripts
 
 ## Figma Agent Access
 
@@ -457,6 +461,17 @@ and describes tools or examples that have since changed. Older sources used only
 - [Sil Bormüller, `figma-cli` `roundtrip.js`](https://github.com/silships/figma-cli/blob/main/src/lib/roundtrip.js), living doc: the "renders white" failure and the token-layer comparison behind `check --roundtrip`
 - [Nathan Curtis, "What Specifications Leave Behind"](https://nathanacurtis.substack.com/p/what-component-specs-leave-behind), 2026: rendering specs back into Figma, the hex-for-token loss, and what specs can't carry yet
 - [Sil Bormüller, `figma-cli` SECURITY.md](https://github.com/silships/figma-cli/blob/main/SECURITY.md), living doc: what each connection mode touches
+
+## Authoring Harness
+
+- [Nathan Curtis, "A Spec-first Component Authoring Harness"](https://nathanacurtis.substack.com/p/a-spec-first-component-authoring), 2026: the seven harness parts, the token and timing figures from his sessions, reference packs, analysis reports, and cross-file validation
+- [Sudharsanam Narasimhan, Kylor Hall and Michael Abrahamian, "Giving AI agents design system context from the terminal: what we learned building a CLI"](https://www.atlassian.com/blog/ai-at-work/giving-ai-agents-design-system-context-from-the-terminal-what-we-learned-building-a-cli), Atlassian, 2026: agents reading source files instead of instructions
+
+## AI Prototyping
+
+- [Guy Jenkins, "Building Protobox: Our Home-Grown AI Prototyping Tool"](https://www.linkedin.com/pulse/building-protobox-our-home-grown-ai-prototyping-tool-guy-jenkins-gsw7c/), Atlassian, 2026: Protobox, the failure list, Pre-flight and Spec-gen, and code in the convergence phase
+- [Atlassian, "The AI PDLC Playbook"](https://atlassianblog.wpengine.com/wp-content/uploads/2026/11/ai-pdlc-playbook.pdf), 2026: what the prototype spec contains, the estimated design-to-build figure, and Ship to Prod
+- [Atlassian Design System, llms-full.txt](https://atlassian.design/llms-full.txt), living doc: the instruction to use only listed tokens
 
 ## Tooling
 

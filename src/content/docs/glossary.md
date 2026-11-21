@@ -620,3 +620,21 @@ components, released with shared tooling. See
 **DRI** (directly responsible individual) — the one named person who makes the final call on
 a type of decision, even when other roles contribute. See
 [Team models](/ds101/team-models/).
+
+**Harness** (authoring) — the setup around an agent that writes specs or components:
+the schema, the skills and rules it loads, the references it reads, the templates it
+starts from, and the checks that run on every edit. Nathan Curtis's term. See
+[Authoring Harness](/ds101/authoring-harness/).
+
+**Reference pack** — a group of references an agent reads at one stage of a task and
+doesn't reopen, such as an API pack before writing props and a styling pack once styling
+starts. See [Authoring Harness](/ds101/authoring-harness/#load-references-at-the-stage-that-needs-them).
+
+**Coded prototype** — a working prototype built in code from the system's real
+components, often with AI, so people can react to real interactions and data before
+committing to build. See [AI Prototyping](/ds101/ai-prototyping/).
+
+**Decision boundary** — the written line between what an agent may do on its own and
+where a person must decide, defined by what the agent can do, what evidence it provides,
+when a person steps in, and what happens when evidence is missing. Atlassian's term. See
+[Agentic Workflows](/ds101/agentic-workflows/#set-autonomy-per-action-not-per-agent).

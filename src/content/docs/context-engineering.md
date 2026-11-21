@@ -24,7 +24,9 @@ Prose written for people relies on things a model doesn't have: skimming for rel
 
 ### Test context formats against real agent behavior
 
-Wolosin didn't assume a metadata format would work. She tested it. At Indeed, she benchmarked eight MCP (Model Context Protocol) configurations against 1,056 prompts to find which structure agents actually resolved correctly. The "obviously correct" format isn't obvious until you measure it. [Generative loops](/ds101/generative-loops/) covers the same propose-measure-revise discipline in agent orchestration, where the harder question is when the loop stops, and [Agent Evals](/ds101/agent-evals/) covers how to set up the measuring.
+Wolosin didn't assume a metadata format would work. She tested it. At Indeed, she benchmarked eight MCP (Model Context Protocol) configurations against 1,056 prompts to find which structure agents actually resolved correctly. The "obviously correct" format isn't obvious until you measure it.
+
+The way context reaches the agent matters as well as its format. Atlassian's design system serves one generated dataset of components, tokens, icons, accessibility guidance, and lint rules through three routes: an agent skill, an MCP server, and a command-line tool. In [its own benchmark](https://www.atlassian.com/blog/ai-at-work/giving-ai-agents-design-system-context-from-the-terminal-what-we-learned-building-a-cli) of front-end tasks, the command-line route cut mean time per task from 352 to 325 seconds and mean tokens from 218,000 to 201,000, compared with the MCP route. The team reports quality held, but publishes no pass rates. Its most useful fixes came from reading run transcripts, in problems "no metric flagged." [Generative loops](/ds101/generative-loops/) covers the same propose-measure-revise discipline in agent orchestration, where the harder question is when the loop stops, and [Agent Evals](/ds101/agent-evals/) covers how to set up the measuring.
 
 ### Design the agent's environment, not just its instructions
 

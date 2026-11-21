@@ -59,6 +59,8 @@ A generator paired with a reviewer that sends work back. The guide calls it the 
 
 How much review an action needs depends on what it does, not on which agent does it. [Kavcic](https://www.intodesignsystems.com/blog/design-system-not-ready-for-ai-agents) sorts agent changes by confidence and risk: a lint fix or a doc typo can merge on its own, a token update opens a draft pull request (PR) a person merges, and a new API or breaking change is only ever a suggestion. [Agent CI Pipelines](/ds101/agent-ci-pipelines/) covers how a pipeline enforces those tiers. The design-system-ops orchestration guide builds the checkpoints into each chain as **human gates**, spelled out in the chain's definition rather than left to the agent's judgment.
 
+Atlassian's [AI PDLC Playbook](https://atlassianblog.wpengine.com/wp-content/uploads/2026/11/ai-pdlc-playbook.pdf) calls the line between the two a **decision boundary** and defines one with four questions: what the agent can do, what evidence it must provide, when a person steps in, and what happens when the evidence isn't enough. In its security example, agents investigate vulnerabilities, propose fixes, and run the tests. Engineers decide whether each fix is safe to merge, and a fix without enough evidence stays unapproved until someone supplies it.
+
 ### Never silently skip a failed step
 
 From the orchestration guide: a skipped audit is worse than a failed one, "because the consumer assumes the audit passed." Every step either succeeds, fails visibly, or reports that it didn't run.

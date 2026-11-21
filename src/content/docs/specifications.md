@@ -88,6 +88,8 @@ props:
 
 The `enum` (a fixed list of allowed values) "reduces any possible size to three legal choices." In a loose document, "every value is just text, and text accepts anything," so `size: med` slips through. Against the schema, it fails.
 
+A per-file schema still misses references between files. In Curtis's [later harness](https://nathanacurtis.substack.com/p/a-spec-first-component-authoring), an example kept `size: Large` after the button dropped Large, and passed until he added a rule checking examples against props. [Authoring Harness](/ds101/authoring-harness/#validate-every-edit-across-files) covers that second layer.
+
 ### Keep one spec for every platform
 
 Write the spec once, neutrally, and let each platform build its own native version from it. Specs maintained by hand for each platform drift apart the same way parallel implementations do. Platforms will still differ. Values that differ, like San Francisco on iOS and Roboto on Android, belong in tokens. Structure that differs, like a confirmation that's a dialog on iOS and a bottom sheet on Android, belongs in the spec as a recorded decision. [Platform divergence](/ds101/platform-divergence/) owns that split.
