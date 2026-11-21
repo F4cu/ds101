@@ -114,7 +114,7 @@ and describes tools or examples that have since changed. Older sources used only
 
 ## Specifications
 
-- [Nathan Curtis, "Component Specifications"](https://medium.com/eightshapes-llc/component-specifications-1492ca4c94c), 2023: specs for teams who never meet
+- [Nathan Curtis, "Component Specifications"](https://medium.com/eightshapes-llc/component-specifications-1492ca4c94c), 2023: specs for teams who never meet, and the text wrapping (overflow) section
 - [Nathan Curtis, "Components as Data"](https://medium.com/@nathanacurtis/components-as-data-2be178777f21), 2025: Figma as an output, and the raw color caught in data
 - [Nathan Curtis, "Component Contracts and Schemas"](https://nathanacurtis.substack.com/p/component-contracts-and-schemas), 2026: the `size` enum, `READY_FOR_DEV`, and contract versus description
 - [Nathan Curtis, "The EightShapes Specs Figma Plugin"](https://nathanacurtis.substack.com/p/the-eightshapes-specs-figma-plugin-2892f21adc96), 2023
@@ -153,6 +153,8 @@ and describes tools or examples that have since changed. Older sources used only
 - Murphy Trueman, `design-system-ops` — [`knowledge-notes/design-to-code-contract.md`](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/design-to-code-contract.md) and [`executive-communication.md`](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/executive-communication.md), living doc: service levels for the core team
 - [Nathan Curtis, "Team Models for Scaling a Design System"](https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0), 2015
 - [Nathan Curtis, "The Fallacy of Federated Design Systems"](https://medium.com/@nathanacurtis/the-fallacy-of-federated-design-systems-23b9a9a05542), 2024
+- [Nathan Curtis, "Designing a Systems Team"](https://nathanacurtis.substack.com/p/designing-a-systems-team-d22f27a2d81d), 2017: must, should, and could-have roles, and authority from both disciplines
+- [Fleet handbook, "Product groups"](https://fleetdm.com/handbook/company/product-groups), living doc: DRI areas for designer, tech lead, and QA (product-team process)
 - [Nathan Curtis, "Defining Design System Contributions"](https://medium.com/eightshapes-llc/defining-design-system-contributions-eb48e00e8898), 2020
 - [Jina Anne, "The Salesforce Team Model for Scaling a Design System"](https://medium.com/salesforce-ux/the-salesforce-team-model-for-scaling-a-design-system-d89c2a2d404b), 2015 — Salesforce UX
 - [Jina Anne, "Design Systems and Hybrids"](https://24ways.org/2017/design-systems-and-hybrids/), 24ways, 2017

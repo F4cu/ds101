@@ -616,3 +616,7 @@ build that produced it; it proves origin, not safety. See
 **Monorepo** — one repository holding several packages, such as tokens, icons, and
 components, released with shared tooling. See
 [Code Library Releases](/ds101/code-library-releases/).
+
+**DRI** (directly responsible individual) — the one named person who makes the final call on
+a type of decision, even when other roles contribute. See
+[Team models](/ds101/team-models/).
