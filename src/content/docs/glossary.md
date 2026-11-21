@@ -592,3 +592,15 @@ main file. See [Figma Library Releases](/ds101/figma-library-releases/).
 **Publish description** (Figma) — the note Figma asks for each time a library is published,
 shown to designers when they accept the update and in version history. See
 [Figma Library Releases](/ds101/figma-library-releases/).
+
+**Visual breaking change** — a style change, such as a new text color, font weight, or
+outer margin, that can break an adopter's screen even though no code API changed. See
+[Release Management](/ds101/release-management/).
+
+**Changeset** — a small file added with a code change that names the packages it affects,
+the version bump, and a summary, later turned into version numbers and changelog entries.
+See [Release Management](/ds101/release-management/).
+
+**Prerelease** — a version published for early testing, such as `2.0.0-beta.0`, under an npm
+tag other than `latest` so a plain install doesn't pick it up. See
+[Release Management](/ds101/release-management/).

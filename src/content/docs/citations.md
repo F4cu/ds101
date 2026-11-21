@@ -272,7 +272,18 @@ and describes tools or examples that have since changed. Older sources used only
 
 ## Release management: versioning, changelogs & migration guides
 
-- [Nathan Curtis, "Versioning Design Systems"](https://medium.com/eightshapes-llc/versioning-design-systems-48cceb5ace4d), 2018
+- [Nathan Curtis, "Versioning Design Systems"](https://medium.com/eightshapes-llc/versioning-design-systems-48cceb5ace4d), 2018: SemVer, `1.0.0` as a commitment, tokens as a separate package, deprecation windows (Salesforce, Origami), side-by-side components and versioned doc URLs (Morningstar)
+- [Nathan Curtis, "Visual Breaking Change in Design Systems"](https://nathanacurtis.substack.com/p/visual-breaking-change-in-design-systems-1e9109fac9c4), 2018: breaking-change rules for color, typography, and space
+- [Nathan Curtis, "Dealing with Dependencies Inside Design Systems"](https://nathanacurtis.substack.com/p/dealing-with-dependencies-inside-design-systems-aa6ce2cf7bc3), 2018 `Dated` — the Atlaskit release wizard and Sketch plugins describe 2018 tooling; cited for dependents, per-dependent bumps, and release order
+- [Atlassian Design System, "Release phases"](https://atlassian.design/release-phases), living doc: Early Access, Beta, General Availability, Intent to Deprecate, and Deprecated
+- [Atlassian Design System, "Atlassians"](https://atlassian.design/get-started/develop/atlassians), living doc: deprecation notices from the ESLint plugin
+- [Atlassian Design System, "With AI"](https://atlassian.design/get-started/with-ai), living doc: the internal agent skill, the public CLI and MCP server
+- [Atlassian Design System, llms.txt](https://atlassian.design/llms.txt), living doc: deprecated packages, replacements, and codemods for language models
+- [Changesets, "Writing changesets"](https://github.com/changesets/changesets/blob/main/docs/guide/writing-changesets.md), living doc: what a changeset contains and migration steps for majors
+- [Changesets, "Technical decisions"](https://github.com/changesets/changesets/blob/main/docs/guide/technical-decisions.md), living doc: combined bumps and dependents bumped as patches
+- [Changesets, "Automating Changesets"](https://github.com/changesets/changesets/blob/main/docs/guide/automating.md), living doc: version pull requests and trusted publishing
+- [Changesets, "Prereleases"](https://github.com/changesets/changesets/blob/main/docs/guide/prereleases.md), living doc: prerelease mode, tags, and its warnings
+- [Changesets, "Snapshot releases"](https://github.com/changesets/changesets/blob/main/docs/guide/snapshot-releases.md), living doc: test builds and the missing-tag risk
 - [Supernova, "8 Examples of Versioning in Leading Design Systems"](https://www.supernova.io/blog/8-examples-of-versioning-in-leading-design-systems), 2024
 - [Design Tokens Substack, "How to Manage Breaking Changes in Design Tokens"](https://designtokens.substack.com/p/how-to-manage-breaking-changes-in), 2026
 - [zeroheight, "Handling breaking changes in a design system without causing chaos"](https://zeroheight.com/blog/handling-breaking-changes-in-a-design-system-without-causing-chaos/), 2026 — Shaun Bent

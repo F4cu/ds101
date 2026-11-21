@@ -26,7 +26,7 @@ A Figma branch is a copy of the library file where changes can be made and revie
 
 ### Publish tokens before components
 
-A component can only bind to a variable once the library holding that variable is published. Pajamas therefore publishes its design tokens library as soon as a token branch merges, not at the end of the milestone (its monthly release), so component branches can use the new variables straight away. Community copies of the files are published after the organization library. Non-breaking fixes don't wait for the release either: "We favor continuous delivery," so bug fixes and patches ship any time during the milestone. The order is tokens, then components, then public copies. It's the Figma version of [versioning token changes on their own](/ds101/release-management/#version-token-changes-on-their-own).
+A component can only bind to a variable once the library holding that variable is published. Pajamas therefore publishes its design tokens library as soon as a token branch merges, not at the end of the milestone (its monthly release), so component branches can use the new variables straight away. Community copies of the files are published after the organization library. Non-breaking fixes don't wait for the release either: "We favor continuous delivery," so bug fixes and patches ship any time during the milestone. The order is tokens, then components, then public copies. It's the Figma version of [versioning token changes on their own](/ds101/release-management/#make-the-version-number-tell-the-truth).
 
 ### Write the reason in the publish description
 
@@ -34,7 +34,7 @@ Each publish asks for a description, ["a summary of any decisions or changes"](h
 
 ### Expect every file to accept the update
 
-[Figma](https://help.figma.com/hc/en-us/articles/360039234193) shows a blue badge on the Libraries icon in each file that uses the library. A designer then applies changes asset by asset with Update, or all at once with Update all, after comparing old and new side by side or as an overlay. Until someone with edit access to that file does this, it keeps the old version. A release isn't finished when it's published: tell teams it exists ([Release management](/ds101/release-management/#push-every-release-to-consuming-teams) covers the push), and say whether it's safe to click Update all.
+[Figma](https://help.figma.com/hc/en-us/articles/360039234193) shows a blue badge on the Libraries icon in each file that uses the library. A designer then applies changes asset by asset with Update, or all at once with Update all, after comparing old and new side by side or as an overlay. Until someone with edit access to that file does this, it keeps the old version. A release isn't finished when it's published: tell teams it exists ([Release management](/ds101/release-management/#tell-teams-what-changed) covers the push), and say whether it's safe to click Update all.
 
 ### Label breaking changes by impact
 
@@ -49,7 +49,7 @@ Its [published notes](https://design.gitlab.com/get-started/uik-release-notes) p
 
 ### Mark deprecations on the component itself
 
-Pajamas keeps a deprecated component or style ["available for at least one milestone"](https://design.gitlab.com/get-started/uik-breaking-changes) before removing it. Its name and description field start with `(⚠ DEPRECATED)`, the description says what to use instead, and the Link field points to the replacement. Deprecated pages move to the bottom of the file. Designers see the warning on the instance they're already using, which is the rule [Release management](/ds101/release-management/#deprecate-before-you-remove) sets for every deprecation. Pajamas also says to keep the link to the deprecated component intact, and not to create a new component named DEPRECATED.
+Pajamas keeps a deprecated component or style ["available for at least one milestone"](https://design.gitlab.com/get-started/uik-breaking-changes) before removing it. Its name and description field start with `(⚠ DEPRECATED)`, the description says what to use instead, and the Link field points to the replacement. Deprecated pages move to the bottom of the file. Designers see the warning on the instance they're already using, which is the rule [Release management](/ds101/release-management/#give-adopters-time-to-move) sets for every deprecation. Pajamas also says to keep the link to the deprecated component intact, and not to create a new component named DEPRECATED.
 
 ## Common mistakes
 
