@@ -284,6 +284,9 @@ and describes tools or examples that have since changed. Older sources used only
 - [Changesets, "Automating Changesets"](https://github.com/changesets/changesets/blob/main/docs/guide/automating.md), living doc: version pull requests and trusted publishing
 - [Changesets, "Prereleases"](https://github.com/changesets/changesets/blob/main/docs/guide/prereleases.md), living doc: prerelease mode, tags, and its warnings
 - [Changesets, "Snapshot releases"](https://github.com/changesets/changesets/blob/main/docs/guide/snapshot-releases.md), living doc: test builds and the missing-tag risk
+- [npm Docs, "npm-dist-tag"](https://docs.npmjs.com/cli/v12/commands/npm-dist-tag), updated 2025: `latest` as the default install and tags with no special meaning
+- [npm Docs, "Trusted publishing for npm packages"](https://docs.npmjs.com/trusted-publishers), updated 2026: publishing from CI without a stored token, supported runners, and automatic provenance
+- [npm Docs, "Generating provenance statements"](https://docs.npmjs.com/generating-provenance-statements), updated 2026: what provenance proves and what it doesn't
 - [Supernova, "8 Examples of Versioning in Leading Design Systems"](https://www.supernova.io/blog/8-examples-of-versioning-in-leading-design-systems), 2024
 - [Design Tokens Substack, "How to Manage Breaking Changes in Design Tokens"](https://designtokens.substack.com/p/how-to-manage-breaking-changes-in), 2026
 - [zeroheight, "Handling breaking changes in a design system without causing chaos"](https://zeroheight.com/blog/handling-breaking-changes-in-a-design-system-without-causing-chaos/), 2026 — Shaun Bent

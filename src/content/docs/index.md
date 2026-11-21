@@ -56,6 +56,7 @@ draws on them:
 - **Alice Packard**: what makes a Figma component easy for designers to use
 - **Nord**, **GitLab** (Pajamas and the product design handbook), and **Fleet**:
   backlog prioritisation, capacity, and saying no
+- **npm** docs and **Changesets**: publishing tags, provenance, and monorepo releases
 
 The [Citations](/ds101/citations/) page collects every citation in one place.
 
