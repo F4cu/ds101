@@ -599,8 +599,16 @@ outer margin, that can break an adopter's screen even though no code API changed
 
 **Changeset** — a small file added with a code change that names the packages it affects,
 the version bump, and a summary, later turned into version numbers and changelog entries.
-See [Release Management](/ds101/release-management/).
+See [Code Library Releases](/ds101/code-library-releases/).
 
 **Prerelease** — a version published for early testing, such as `2.0.0-beta.0`, under an npm
 tag other than `latest` so a plain install doesn't pick it up. See
-[Release Management](/ds101/release-management/).
+[Code Library Releases](/ds101/code-library-releases/).
+
+**Trusted publishing** (npm) — publishing a package from a CI workflow the registry has been
+told to trust, using a short-lived identity token instead of a stored npm token. See
+[Code Library Releases](/ds101/code-library-releases/).
+
+**Provenance** (npm) — a signed statement linking a published package to the repository and
+build that produced it; it proves origin, not safety. See
+[Code Library Releases](/ds101/code-library-releases/).

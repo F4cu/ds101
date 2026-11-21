@@ -274,20 +274,7 @@ and describes tools or examples that have since changed. Older sources used only
 
 - [Nathan Curtis, "Versioning Design Systems"](https://medium.com/eightshapes-llc/versioning-design-systems-48cceb5ace4d), 2018: SemVer, `1.0.0` as a commitment, tokens as a separate package, deprecation windows (Salesforce, Origami), side-by-side components and versioned doc URLs (Morningstar)
 - [Nathan Curtis, "Visual Breaking Change in Design Systems"](https://nathanacurtis.substack.com/p/visual-breaking-change-in-design-systems-1e9109fac9c4), 2018: breaking-change rules for color, typography, and space
-- [Nathan Curtis, "Dealing with Dependencies Inside Design Systems"](https://nathanacurtis.substack.com/p/dealing-with-dependencies-inside-design-systems-aa6ce2cf7bc3), 2018 `Dated` — the Atlaskit release wizard and Sketch plugins describe 2018 tooling; cited for dependents, per-dependent bumps, and release order
 - [Atlassian Design System, "Release phases"](https://atlassian.design/release-phases), living doc: Early Access, Beta, General Availability, Intent to Deprecate, and Deprecated
-- [Atlassian Design System, "Atlassians"](https://atlassian.design/get-started/develop/atlassians), living doc: deprecation notices from the ESLint plugin
-- [Atlassian Design System, "With AI"](https://atlassian.design/get-started/with-ai), living doc: the internal agent skill, the public CLI and MCP server
-- [Atlassian Design System, llms.txt](https://atlassian.design/llms.txt), living doc: deprecated packages, replacements, and codemods for language models
-- [Changesets, "Writing changesets"](https://github.com/changesets/changesets/blob/main/docs/guide/writing-changesets.md), living doc: what a changeset contains and migration steps for majors
-- [Changesets, "Technical decisions"](https://github.com/changesets/changesets/blob/main/docs/guide/technical-decisions.md), living doc: combined bumps and dependents bumped as patches
-- [Changesets, "Automating Changesets"](https://github.com/changesets/changesets/blob/main/docs/guide/automating.md), living doc: version pull requests and trusted publishing
-- [Changesets, "Prereleases"](https://github.com/changesets/changesets/blob/main/docs/guide/prereleases.md), living doc: prerelease mode, tags, and its warnings
-- [Changesets, "Snapshot releases"](https://github.com/changesets/changesets/blob/main/docs/guide/snapshot-releases.md), living doc: test builds and the missing-tag risk
-- [npm Docs, "npm-dist-tag"](https://docs.npmjs.com/cli/v12/commands/npm-dist-tag), updated 2025: `latest` as the default install and tags with no special meaning
-- [npm Docs, "Trusted publishing for npm packages"](https://docs.npmjs.com/trusted-publishers), updated 2026: publishing from CI without a stored token, supported runners, and automatic provenance
-- [npm Docs, "Generating provenance statements"](https://docs.npmjs.com/generating-provenance-statements), updated 2026: what provenance proves and what it doesn't
-- [Supernova, "8 Examples of Versioning in Leading Design Systems"](https://www.supernova.io/blog/8-examples-of-versioning-in-leading-design-systems), 2024
 - [Design Tokens Substack, "How to Manage Breaking Changes in Design Tokens"](https://designtokens.substack.com/p/how-to-manage-breaking-changes-in), 2026
 - [zeroheight, "Handling breaking changes in a design system without causing chaos"](https://zeroheight.com/blog/handling-breaking-changes-in-a-design-system-without-causing-chaos/), 2026 — Shaun Bent
 - [zeroheight, "Deprecating in design systems: When it's time to say goodbye"](https://help.zeroheight.com/hc/en-us/articles/36474257606555-Deprecating-in-design-systems-When-it-s-time-to-say-goodbye), n.d.
@@ -295,6 +282,30 @@ and describes tools or examples that have since changed. Older sources used only
 - [Keep a Changelog](https://keepachangelog.com), living doc
 - [UXPin, "How to Create a Design System Changelog"](https://www.uxpin.com/studio/blog/how-to-create-a-design-system-changelog/), 2025
 - [Nathan Curtis, "Design System Release Cadence"](https://medium.com/eightshapes-llc/design-system-release-cadence-2e3e6694ba21), 2018: the three mixes of code, docs, and toolkit releases, toolkit drift under continuous release, and the Adobe Spectrum quote
+- [Changesets, "Technical Decisions"](https://github.com/changesets/changesets/blob/main/docs/guide/technical-decisions.md), living doc: a new peer dependency released as a major
+- [GitLab Pajamas, "Breaking changes"](https://design.gitlab.com/get-started/uik-breaking-changes), updated 2026: a breaking change as anything a designer must act on after updating
+
+## Code library releases
+
+- [Nathan Curtis, "Dealing with Dependencies Inside Design Systems"](https://nathanacurtis.substack.com/p/dealing-with-dependencies-inside-design-systems-aa6ce2cf7bc3), 2018 `Dated` — the Atlaskit release wizard and Sketch plugins describe 2018 tooling; cited for dependents, per-dependent bumps, and release order
+- [Atlassian Design System, "Atlassians"](https://atlassian.design/get-started/develop/atlassians), living doc: deprecation notices from the ESLint plugin
+- [Atlassian Design System, "With AI"](https://atlassian.design/get-started/with-ai), living doc: the internal agent skill, the public CLI and MCP server
+- [Atlassian Design System, llms.txt](https://atlassian.design/llms.txt), living doc: deprecated packages, replacements, and codemods for language models
+- [Changesets, "Writing changesets"](https://github.com/changesets/changesets/blob/main/docs/guide/writing-changesets.md), living doc: what a changeset contains and migration steps for majors
+- [Changesets, "Technical Decisions"](https://github.com/changesets/changesets/blob/main/docs/guide/technical-decisions.md), living doc: combined bumps, dependents bumped as patches, and peer dependencies as majors
+- [Changesets, "Automating Changesets"](https://github.com/changesets/changesets/blob/main/docs/guide/automating.md), living doc: version pull requests and trusted publishing
+- [Changesets, "Prereleases"](https://github.com/changesets/changesets/blob/main/docs/guide/prereleases.md), living doc: prerelease mode, tags, and its warnings
+- [Changesets, "Snapshot Releases"](https://github.com/changesets/changesets/blob/main/docs/guide/snapshot-releases.md), living doc: test builds and the missing-tag risk
+- [npm Docs, "npm-dist-tag"](https://docs.npmjs.com/cli/v12/commands/npm-dist-tag), updated 2025: `latest` as the default install and tags with no special meaning
+- [npm Docs, "Trusted publishing for npm packages"](https://docs.npmjs.com/trusted-publishers), updated 2026: publishing from CI without a stored token, supported runners, and automatic provenance
+- [npm Docs, "Generating provenance statements"](https://docs.npmjs.com/generating-provenance-statements), updated 2026: what provenance proves and what it doesn't
+- [Supernova, "8 Examples of Versioning in Leading Design Systems"](https://www.supernova.io/blog/8-examples-of-versioning-in-leading-design-systems), 2024
+- [Nathan Curtis, "Versioning Design Systems"](https://medium.com/eightshapes-llc/versioning-design-systems-48cceb5ace4d), 2018: versioned doc URLs (Morningstar)
+- [Nathan Curtis, "Design System Release Cadence"](https://medium.com/eightshapes-llc/design-system-release-cadence-2e3e6694ba21), 2018: two to four hours per release at Salesforce Lightning and Morningstar
+- [Changesets, "Fixed Packages"](https://github.com/changesets/changesets/blob/main/docs/guide/fixed-packages.md), living doc: one version for a group
+- [Changesets, "Linked Packages"](https://github.com/changesets/changesets/blob/main/docs/guide/linked-packages.md), living doc: a shared number, bumped only on change
+- [Changesets, "Configuration File"](https://github.com/changesets/changesets/blob/main/docs/guide/config.md), living doc: `updateInternalDependencies` and the linked-versus-fixed warning
+- [zeroheight, "Deprecating in design systems: When it's time to say goodbye"](https://help.zeroheight.com/hc/en-us/articles/36474257606555-Deprecating-in-design-systems-When-it-s-time-to-say-goodbye), n.d.: build tooling that warns or fails on deprecated use
 
 ## Figma library releases
 
