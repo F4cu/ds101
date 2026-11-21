@@ -9,7 +9,7 @@ A design system only shows its value when products ship with it, so someone has 
 :::tip[Key takeaways]
 - **Name one owner who decides priorities.** Without one, roadmap items sit in "coming soon" for months because nobody can move them.
 - **Sort every request before you schedule it.** Otherwise every request gets treated as urgent, and the backlog follows whoever shouts loudest.
-- **Publish a response time and keep it.** Silence after a request strains the relationship faster than a slow fix does.
+- **Publish a response time and keep it.** Silence after a request strains the relationship and erodes trust.
 :::
 
 ## The problem
@@ -46,7 +46,7 @@ Keep the intake form light. For a feature request, Curtis asks whether it's new 
 
 [Curtis](https://nathanacurtis.substack.com/p/design-systems-support) separates the first response ("we heard you") from the resolution, and recommends publishing a response time for the first. His survey caption says "60% of teams respond in a day or less," without giving the sample size or method. Triage can happen at the daily standup, in a weekly planning queue, or in a "Not Yet Prioritized" bucket, which is his own preference. Keep channels few: chat is "by far the preferred, most responsive and effective channel." He adds his own caveat: "I'm not an authority on customer service workflow."
 
-**GOV.UK** turns this into a rota. The team publishes support hours, someone is on support each day, and that person drops sprint work: "Whilst on support, it is preferable to pause sprint work and prioritise support tasks" ([GOV.UK](https://team-playbook.design-system.service.gov.uk/support/support-responsibilites/)). The playbook page was last reviewed in 2023 and flags itself as possibly out of date.
+**GOV.UK** turns this into a rota. The team publishes support hours, someone is on support each day, and that person pauses sprint work: "Whilst on support, it is preferable to pause sprint work and prioritise support tasks" ([GOV.UK](https://team-playbook.design-system.service.gov.uk/support/support-responsibilites/)). The playbook page was last reviewed in 2023 and flags itself as possibly out of date.
 
 The sources don't agree on a number. Curtis says to publish one. **Fleet**, a product company whose handbook describes product-org process rather than design-system process, [unpacks every request within one week](https://fleetdm.com/handbook/product). **Nord** promises no number, only "as time permits" ([Nord](https://nordhealth.design/resources/support/)). Treat this as a range to choose from, not a standard.
 
@@ -70,7 +70,7 @@ To estimate what fits, GitLab uses optional issue weights of 1, 2, 3, 5, 8, and 
 
 [Curtis's Jira guide](https://nathanacurtis.substack.com/p/using-jira-for-design-systems-10ec31c3327e), drawn from his work with **Morningstar**, splits feature work into one story per step: Propose, Design, Code, Doc, and Publish. Each step has its own owner and definition of done, so a component that's designed but not documented shows up as unfinished. He groups epics into evergreen work (visual style, component fixes and additions, architecture, operations), formative work (strategy, early adopters, the doc site), and growth (new categories, major initiatives). Versions work as buckets: "Next Minor Release," "Not Yet Prioritized," and "Business as Usual." He calls Jira "an acquired taste."
 
-The rhythm around the backlog varies. Curtis describes sprints with grooming, planning, and standups. **GOV.UK** runs [fixed-length, three-week cycles](https://team-playbook.design-system.service.gov.uk/how-we-work/delivery-cycle/) followed by a reflection week for show and tell, a retro, and planning the next cycle. Fleet skips sprints, arguing that "batching work into fixed multi-week iterations creates unnecessary latency," and ships whatever is complete at each three-week release. Pick by team size and by how often adopters can absorb change. [Operating cadence](/ds101/operating-cadence/) covers the release rhythm and the channels around it.
+The rhythm around the backlog varies. Curtis describes sprints with grooming, planning, and standups. **GOV.UK** runs [fixed-length, three-week cycles](https://team-playbook.design-system.service.gov.uk/how-we-work/delivery-cycle/) followed by a reflection week for show and tell, a retro, and planning the next cycle. [Fleet](https://fleetdm.com/handbook/company/product-groups) skips sprints, arguing that "batching work into fixed multi-week iterations creates unnecessary latency," and ships whatever is complete at each three-week release. Pick by team size and by how often adopters can absorb change. [Operating cadence](/ds101/operating-cadence/) covers the release rhythm and the channels around it.
 
 ## Choosing a prioritisation method
 

@@ -26,7 +26,7 @@ His test for any team is that "your answer must be better than 'We check stuff a
 
 [Curtis's 2017 QA checklist](https://nathanacurtis.substack.com/p/component-qa-in-design-systems-b18cb4decb9c), written for web components, checks eight areas: visual quality through tokens, enough states and variations, responsiveness, content resilience (too much, too little, none), composability, functionality, accessibility, and browser and device compatibility. Usability testing is extra credit, not a gate: "We don't gate releases of an component — particularly the smallest ones — by usability testing."
 
-For Figma assets, [his component review](https://nathanacurtis.substack.com/p/the-figma-component-review-f42114450b4d) marks each item Pass, Fail, or Not Applicable, and warns that the items have to be specific: "Criteria to "Test the props" or "Check colors" is too vague for testers to jump in and feel confident." [Usability](/ds101/usability/#criteria-for-a-usable-component) owns the item-by-item review questions in that order. [Accessibility](/ds101/accessibility/) owns the accessibility checks.
+For Figma assets, [his component review](https://nathanacurtis.substack.com/p/the-figma-component-review-f42114450b4d) marks each item Pass, Fail, or Not Applicable, and warns that the items have to be specific: "Criteria to 'Test the props' or 'Check colors' is too vague for testers to jump in and feel confident." [Usability](/ds101/usability/#criteria-for-a-usable-component) owns the item-by-item review questions in that order. [Accessibility](/ds101/accessibility/) owns the accessibility checks.
 
 ### Have someone other than the builder test it
 
@@ -40,7 +40,7 @@ The workflow is the same in each: the builder writes the test cases, the tester 
 
 ### Test only once the API is stable
 
-Curtis's [prerequisites for testing a Figma component](https://nathanacurtis.substack.com/p/testing-figma-components-a47fc978465f) are that the design is handed off, the API is stable (element, property, and option names), and most features are built. Testing earlier means retesting after every rename. The test checks whether the asset shows what the code shows. It doesn't check whether the design is right for users. That's usability work, and it happens before handoff.
+Curtis's [prerequisites for testing a Figma component](https://nathanacurtis.substack.com/p/testing-figma-components-a47fc978465f) are that the design is handed off, the API is stable (element, property, and option names), and most features are built. The test checks whether the asset shows what the code shows. It doesn't check whether the design is right for users. That's [usability](/ds101/usability/) work.
 
 ### Stress content, not just variants
 
@@ -56,7 +56,7 @@ His [component testing plans](https://nathanacurtis.substack.com/p/component-tes
 
 ### Keep test cases apart from documentation
 
-Curtis's takeaway from his 2017 QA work is to "separate documentation from testing artifacts" ([Curtis](https://nathanacurtis.substack.com/p/component-qa-in-design-systems-b18cb4decb9c)). A "kitchen sink" page sits beside the docs page and holds every case, for review and visual diffing. Docs show the good examples. Test pages show the awkward ones. In Figma, his [visual test cases](https://nathanacurtis.substack.com/p/component-visual-test-cases-e501e2d21def) sit to the right of the variant grid and work like Storybook stories: they let a reviewer confirm that "edits change what you intend, and don't change anything else."
+Curtis's takeaway from his 2017 QA work is to "separate documentation from testing artifacts" ([Curtis](https://nathanacurtis.substack.com/p/component-qa-in-design-systems-b18cb4decb9c)). A "kitchen sink" page sits beside the docs page and holds every case, for review and visual diffing. A docs page is the wrong place, because it fits every example into the article's width and loads the CSS of everything else on the page. In Figma, his [visual test cases](https://nathanacurtis.substack.com/p/component-visual-test-cases-e501e2d21def) sit to the right of the variant grid and work like Storybook stories: they let a reviewer confirm that "edits change what you intend, and don't change anything else."
 
 ### Grow the test plan one criterion at a time
 
@@ -64,7 +64,7 @@ Curtis's [testing plans](https://nathanacurtis.substack.com/p/component-testing-
 
 ### Decide how much Figma polish is enough
 
-Curtis's [Figma testing post](https://nathanacurtis.substack.com/p/testing-figma-components-a47fc978465f) asks: "How much quality is essential before publishing a component?" Code quality comes first, because code is what ships to users. Taking a Figma library from 92% to 98% "good enough" might cost two designers six months, and in his words "design assets are roadkill on the path to production experiences." Set the bar on purpose, so the checklist doesn't hold a component back for detail adopters won't notice.
+Curtis's [Figma testing post](https://nathanacurtis.substack.com/p/testing-figma-components-a47fc978465f) asks: "How much quality is essential before publishing a component?" Code quality comes first, because code is what ships to users. Taking a Figma library from 92% to 98% "good enough" might cost two designers six months, and in his words "design assets are roadkill on the path to production experiences built in code that change constantly." Set the bar on purpose, so the checklist doesn't hold a component back for detail adopters won't notice.
 
 ### Criteria for publishing a component
 
