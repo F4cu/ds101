@@ -281,13 +281,16 @@ and describes tools or examples that have since changed. Older sources used only
 - [Keep a Changelog](https://keepachangelog.com), living doc
 - [UXPin, "How to Create a Design System Changelog"](https://www.uxpin.com/studio/blog/how-to-create-a-design-system-changelog/), 2025
 - [Nathan Curtis, "Design System Release Cadence"](https://medium.com/eightshapes-llc/design-system-release-cadence-2e3e6694ba21), 2018: the three mixes of code, docs, and toolkit releases, toolkit drift under continuous release, and the Adobe Spectrum quote
+
+## Figma library releases
+
 - [Nathan Curtis, "Figma Shared Libraries"](https://nathanacurtis.substack.com/p/figma-shared-libraries-d2dfbf9d1b8d), 2022: maintainers on main, contributors on branches
 - [Figma Learn, "Guide to branching"](https://help.figma.com/hc/en-us/articles/360063144053), living doc: publishing only from the main file, review options, and plan availability
 - [Figma, "Branching in Figma"](https://www.figma.com/best-practices/branching-in-figma/), n.d.: branches as pull requests for non-editors
 - [Figma Learn, "Publish a library"](https://help.figma.com/hc/en-us/articles/360025508373), living doc: the publish description and where subscribers see it
 - [Figma Learn, "Review and accept library updates"](https://help.figma.com/hc/en-us/articles/360039234193), living doc: the update badge, Update and Update all, and comparison views
 - [GitLab Pajamas, "Release process"](https://design.gitlab.com/get-started/uik-release-process), updated 2026: milestone releases, the four note categories, present-tense entries, a second designer's review, and publishing tokens first
-- [GitLab Pajamas, "Breaking changes"](https://design.gitlab.com/get-started/uik-breaking-changes), updated 2026: impact levels and keeping a deprecated item for at least one milestone
+- [GitLab Pajamas, "Breaking changes"](https://design.gitlab.com/get-started/uik-breaking-changes), updated 2026: the breaking-change definition, four impact levels, the configuration matrix, and deprecation marking
 - [GitLab Pajamas, "Release notes"](https://design.gitlab.com/get-started/uik-release-notes), updated 2026: breaking entries labelled by impact level
 
 ## Dependency observability

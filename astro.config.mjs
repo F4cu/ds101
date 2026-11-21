@@ -97,6 +97,7 @@ export default defineConfig({
 						'component-lifecycle',
 						'system-inventory',
 						'release-management',
+						'figma-library-releases',
 						'operating-cadence',
 						'onboarding-adopters',
 						'long-term-scale',
