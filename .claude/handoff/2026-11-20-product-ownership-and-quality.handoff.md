@@ -6,12 +6,15 @@ completed: 2026-11-21
 
 # Handoff: product ownership, library releases, component QA
 
-Research is done and the pages are not written yet. This file is the reference for writing them. It plans:
+**Outcome (2026-11-21):** done, merged to `main` and deployed. Shipped:
 
-- one new page, `product-ownership.md`
-- one new page, `component-qa.md`
-- an extension to `release-management.md`
-- small edits to `usability.md`, `design-to-code-contract.md` and `team-models.md`
+- new page `product-ownership.md` (Governance)
+- new page `component-qa.md` (Components)
+- release content split into three pages: `release-management` (hub), new `code-library-releases` and new `figma-library-releases` (scope change approved 2026-11-21; the plan below says "extend `release-management.md`")
+- small edits to `usability.md`, `design-to-code-contract.md`, `specifications.md` and `team-models.md`
+- citations, glossary and `index.md` source list updated; all quotes on the two new pages re-checked against fresh fetches
+
+The sections below are the original research notes and plan, kept as the record. Corrections found while writing are noted in the checklist.
 
 **Why:** the coverage audit on 2026-11-20 (against design-system-owner roles) found that the guide covers versioning, API design, platform divergence and migration basics well. It has no page on running the system as a product (roadmap, backlog, intake, triage, saying no) and nothing on how a Figma library gets reviewed and published. The goal is personal knowledge for interviews that probe this. The guide is not evidence of skill (see `ds-jobs/profile/evidence-map.md`, R2).
 
@@ -349,8 +352,8 @@ Likely probes and where the answer will live:
 
 ## Checklist for the writing session
 
-- [ ] Re-read `CLAUDE.md` page conventions, plus `release-management.md` and `contribution-models.md` as template references
-- [ ] Check `contribution-models`, `decision-governance` and `component-lifecycle` for overlaps before writing §1 practices 3 and 6
+- [x] Re-read `CLAUDE.md` page conventions, plus `release-management.md` and `contribution-models.md` as template references — prep step; not recorded by the writing sessions, superseded by the writing review
+- [x] Check `contribution-models`, `decision-governance` and `component-lifecycle` for overlaps before writing §1 practices 3 and 6 — not recorded as a separate step; the shipped practices link to all three pages instead of repeating them (checked 2026-11-21)
 - [x] Write `product-ownership.md` and add it to the sidebar (Governance) — done 2026-11-20, with its citations, glossary terms (intake, triage, roadmap horizon, support rota, MoSCoW) and the index.md source line; prioritisation became `## Choosing a prioritisation method`
 - [x] Write `component-qa.md` and add it to the sidebar (Components) — done 2026-11-20; its criteria are the release gate and link to `usability`'s existing "Criteria for a usable component" (built from C-REV) instead of repeating it; usability and design-to-code-contract now link to it
 - [x] Extend `release-management.md` (§2) — done 2026-11-21 from fresh reads of every §2 source: three new practices (review on a branch, publish from main; publish tokens before components; decide whether Figma and code ship together), plus Pajamas additions to the deprecation, changelog and push practices, one common mistake, citations and two glossary terms (Branch, Publish description). Corrections to §2 notes: C-CAD isn't Sketch-specific (Sketch appears once, as a hot-fix example), so no `Dated` tag; C-SHARED's 3+/12+ test decides whether a shared library is warranted, not promotion to core; the Pajamas release-notes page uses Additions/Changes/Fixes/Deprecations with `Breaking (low|medium|high)` labels in practice, not the four process-page categories; Figma's two pages disagree on whether a merged branch can be restored, so the page doesn't say
