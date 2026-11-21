@@ -353,13 +353,13 @@ Likely probes and where the answer will live:
 - [ ] Check `contribution-models`, `decision-governance` and `component-lifecycle` for overlaps before writing §1 practices 3 and 6
 - [x] Write `product-ownership.md` and add it to the sidebar (Governance) — done 2026-11-20, with its citations, glossary terms (intake, triage, roadmap horizon, support rota, MoSCoW) and the index.md source line; prioritisation became `## Choosing a prioritisation method`
 - [x] Write `component-qa.md` and add it to the sidebar (Components) — done 2026-11-20; its criteria are the release gate and link to `usability`'s existing "Criteria for a usable component" (built from C-REV) instead of repeating it; usability and design-to-code-contract now link to it
-- [ ] Extend `release-management.md` (§2)
+- [x] Extend `release-management.md` (§2) — done 2026-11-21 from fresh reads of every §2 source: three new practices (review on a branch, publish from main; publish tokens before components; decide whether Figma and code ship together), plus Pajamas additions to the deprecation, changelog and push practices, one common mistake, citations and two glossary terms (Branch, Publish description). Corrections to §2 notes: C-CAD isn't Sketch-specific (Sketch appears once, as a hot-fix example), so no `Dated` tag; C-SHARED's 3+/12+ test decides whether a shared library is warranted, not promotion to core; the Pajamas release-notes page uses Additions/Changes/Fixes/Deprecations with `Breaking (low|medium|high)` labels in practice, not the four process-page categories; Figma's two pages disagree on whether a merged branch can be restored, so the page doesn't say
 - [ ] Small edits to `usability.md`, `design-to-code-contract.md` and optionally `team-models.md` (§4, §5)
 - [ ] `citations.md`: add every new source with its year and `Dated` tags where flagged
 - [ ] `index.md`: add Nord, GitLab Pajamas/Handbook and Fleet to the named-source list (approved 2026-11-20)
-- [ ] Read Pajamas `uik-breaking-changes` and `uik-release-notes` before writing §2
+- [x] Read Pajamas `uik-breaking-changes` and `uik-release-notes` before writing §2 — 2026-11-21; deprecated items stay at least one milestone; the release-notes middle (18.8 back to 16.6) was only summarised, not read verbatim, and isn't quoted
 - [ ] `glossary.md`: add new terms
-- [ ] Re-verify Figma plan availability for branching vs publishing before stating it
+- [x] Re-verify Figma plan availability for branching vs publishing before stating it — 2026-11-21: branching on Education, Organization, Government, Enterprise; publishing also on Professional
 - [ ] **Re-fetch every source before merging.** `product-ownership.md` and `component-qa.md` (written 2026-11-20) quote from this file's notes, not from a fresh read. Re-open each source in the §0 table, check every quoted string word for word, and check each paraphrase against the source. Medium/eightshapes block automated fetches; use the Substack mirrors (see the access note in §0)
 - [ ] Run the `ux-writing-review` skill over every page touched by this handoff, once all sections are written and the sources re-checked
 - [ ] `npm run build` passes; check on a phone-width viewport

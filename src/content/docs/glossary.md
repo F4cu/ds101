@@ -584,3 +584,11 @@ See [Component QA](/ds101/component-qa/).
 **Visual test case** — a frame or story showing a component under one specific condition
 (long content, a narrow container, a filled slot) so a reviewer can confirm an edit
 changed only what was intended. See [Component QA](/ds101/component-qa/).
+
+**Branch** (Figma) — a copy of a Figma file where changes are made and reviewed without
+editing the original; a library can only be published after the branch is merged into the
+main file. See [Release Management](/ds101/release-management/).
+
+**Publish description** (Figma) — the note Figma asks for each time a library is published,
+shown to designers when they accept the update and in version history. See
+[Release Management](/ds101/release-management/).
