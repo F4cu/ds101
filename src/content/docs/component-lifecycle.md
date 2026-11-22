@@ -40,6 +40,18 @@ flowchart TD
 
 </div>
 
+The lane is the second sort. The first is the triage in [Product ownership](/ds101/product-ownership/), which sorts requests by how fast they need an answer. On **GOV.UK's** [Frontend tracker](https://github.com/alphagov/govuk-frontend/labels), both sorts are labels. Every new issue starts as `awaiting triage`. Triage adds a type, like `🐛 bug` or `feature request`, a component name such as `accordion`, and sometimes `⚠️ high priority`. GOV.UK has no lane labels, only `breaking change`, so the type label does the lane's job.
+
+Three requests show how the lanes split the work:
+
+| Request | Lane | Next |
+|---|---|---|
+| Dialog focus bug | Modification | Quick review |
+| New Drawer | Addition | Criteria for adding |
+| Retire old Modal | Removal | Trace usage first |
+
+The Drawer either fails an early question, for example because it's really a Dialog variant, or it becomes a `Drawer [Propose]` story ([Product ownership](/ds101/product-ownership/) shows the steps). The Modal goes through the criteria for removing, but tracing its users comes first (see Common mistakes below). The sources don't say whether an accepted removal gets its own step stories or a single release task.
+
 ### Criteria for adding a component
 
 Ask these in order. A proposal that fails an early question doesn't need a debate about the later ones.

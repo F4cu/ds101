@@ -167,6 +167,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [GOV.UK Design System, GitHub Discussions](https://github.com/alphagov/govuk-design-system/discussions), living doc: the community backlog category, which replaced the backlog repo in October 2026
 - Brad Frost, *Atomic Design* (2016), Chapter 5 — Inayaili de León Persson's Canonical Vanilla Framework (modification/addition/removal decision tree); Alex Schleifer and Jina Bolton quotes; Nathan Curtis's "living, funded product" line
 - [Cathy Dutton, "The Problem with Patterns,"](https://alistapart.com/article/problem-with-patterns/) A List Apart, 2018
+- [GOV.UK Frontend, issue labels](https://github.com/alphagov/govuk-frontend/labels), living doc: `awaiting triage`, type, component, and priority labels
 - [Ness Grixti, "Rethinking Contribution: Lessons from the Messy Middle of Design Systems"](https://nessgrixti.com/articles/rethinking-contribution-lessons-from-the-messy-middle-of-design-systems/), 2025
 - [Design System Tactics, "RACI"](https://www.designsystemtactics.com/tactics/raci), 2025
 - [DesignX, "Design System Governance: An Enterprise Guide"](https://designx.co/design-system-governance-enterprise/), n.d.
