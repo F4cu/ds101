@@ -22,6 +22,18 @@ Curtis's rule of thumb, from ["Configuration Collapse"](https://nathanacurtis.su
 
 Two signals that something belongs in composition: it's used in only one context, or it needs several props that only matter in combination. A footer that needs `footer`, `footerClassName`, `showFooter`, and `footerAlignment` is four props for one feature. A single composed `Dialog.Footer` child replaces all four.
 
+<div class="mermaid-wrap">
+
+```mermaid
+flowchart TD
+  Q1{"Used in only<br/>one context?"} -->|Yes| C["Compose with<br/>subcomponents"]
+  Q1 -->|No| Q2{"Several props that<br/>only matter together?"}
+  Q2 -->|Yes| C
+  Q2 -->|No| P["Configure<br/>with props"]
+```
+
+</div>
+
 ```tsx title="Configuration"
 <Dialog
   footer={<Button>Save</Button>}

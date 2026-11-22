@@ -20,6 +20,18 @@ Without a set release process, a release depends on whoever runs it remembering 
 
 If your library ships as one package, there's nothing to choose: it has one version. The choice appears once tokens, icons, and components ship as separate packages. [Supernova's survey of real systems](https://www.supernova.io/blog/8-examples-of-versioning-in-leading-design-systems) finds both options in production and doesn't rank them. The right one depends on how centralized the system team and its adopters already are.
 
+<div class="mermaid-wrap">
+
+```mermaid
+flowchart TD
+  Q1{"Ships as<br/>one package?"} -->|Yes| One["One version<br/>for everything"]
+  Q1 -->|No| Q2{"Central team ships<br/>them together?"}
+  Q2 -->|Yes| One
+  Q2 -->|No| Per["A version<br/>per package"]
+```
+
+</div>
+
 ### One version for everything
 
 Everything ships under one number ("we're on 4.2"), and releases are synchronized. This fits a centralized team shipping tokens, components, and guidelines together. The cost: a fix to one component forces every consumer into an upgrade. In [Changesets](https://github.com/changesets/changesets/blob/main/docs/guide/fixed-packages.md), these are "fixed" packages: "all packages will always have the same version," and they're published together even when some have no changes.

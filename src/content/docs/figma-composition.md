@@ -63,6 +63,18 @@ fourzerothree.in warns that nesting for flexibility nobody needs yet makes a com
 
 The three don't replace each other. [Figma's guidance](https://help.figma.com/hc/articles/38741465279895) separates them by how much the consumer may change: variants for states, instance swap for a fixed piece with a few swappable options, slots for freeform content inside fixed boundaries. Reaching for a variant when the real need is a swappable piece or open content is how a variant set grows past the point anyone can read it at a glance.
 
+<div class="mermaid-wrap">
+
+```mermaid
+flowchart TD
+  Q1{"Closed set<br/>of states?"} -->|Yes| V["Variants"]
+  Q1 -->|No| Q2{"Fixed spot, a few<br/>swappable options?"}
+  Q2 -->|Yes| I["Instance swap"]
+  Q2 -->|No| S["Slot<br/>add or rearrange pieces"]
+```
+
+</div>
+
 ### Variants
 
 Use them for a closed set of mutually exclusive states on one component, like a button's rest, hover, and active. A state that code sets as a prop, like disabled, gets its own variant property rather than another option in that set, so the Figma asset has the same shape as the code ([Property Naming](/ds101/property-naming/#split-states-that-code-sets-as-props)).
