@@ -177,7 +177,8 @@ and describes tools or examples that have since changed. Older sources used only
 - [Nathan Curtis, "Roadmaps for Design Systems"](https://nathanacurtis.substack.com/p/what-s-will-your-design-system-deliver-4b81d41be0d4), 2015: now/next/later, leaving out the detail, and the responsive-images example
 - [Nathan Curtis, "Design System Leader(s) & Manager(s)"](https://nathanacurtis.substack.com/p/design-system-leader-s-manager-s-3bfa49d79883), 2017: the Systems Lead's three hats
 - [Nathan Curtis, "Design Systems Support"](https://nathanacurtis.substack.com/p/design-systems-support), 2020: case categories, intake fields, first response versus resolution, triage locations, the sample refusal, and the support-time estimate
-- [Nathan Curtis, "Using Jira for Design Systems"](https://nathanacurtis.substack.com/p/using-jira-for-design-systems-10ec31c3327e), 2019: per-step stories, epic types, and versions as buckets (Morningstar)
+- [Nathan Curtis, "Using Jira for Design Systems"](https://nathanacurtis.substack.com/p/using-jira-for-design-systems-10ec31c3327e), 2019: per-step stories, epic types, versions as buckets, review sub-tasks, and the Dialog proposal (Morningstar)
+- [Nathan Curtis, "Design System Features, Step-by-Step"](https://nathanacurtis.substack.com/p/system-features-step-by-step-e69c90982630), 2017: owner and definition of done per step, and steps that close in order
 - [GOV.UK Design System, "Language navigation component: MVP and exploration"](https://github.com/alphagov/govuk-design-system/issues/5322), 2026: a cycle epic with sub-issues across two repos
 - [GOV.UK Frontend, "Release v6.7.0"](https://github.com/alphagov/govuk-frontend/issues/7663), 2026: the templated release epic
 - [GOV.UK Design System team playbook, "How we prioritise"](https://team-playbook.design-system.service.gov.uk/how-we-work/how-we-prioritise/), living doc: the three question sets

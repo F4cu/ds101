@@ -72,6 +72,18 @@ To estimate what fits, GitLab uses optional issue weights of 1, 2, 3, 5, 8, and 
 
 The steps aren't linked by a parent issue. Each one is a top-level story named for the feature plus its step, like `Color [Propose]` or `Color [Doc]`, and templated sub-tasks sit under each step. A component's steps are found by name, not by hierarchy.
 
+The sub-tasks are mostly reviews: "each task has different reviewers (for which we use subtasks)." Curtis's Jira guide gives a full sub-task list only for a new **Dialog**'s `[Propose]` story. His [earlier post on feature steps](https://nathanacurtis.substack.com/p/system-features-step-by-step-e69c90982630) gives the owner and definition of done for each step. That post calls Propose and Code "Discover" and "Build," and dates from 2017, when Sketch was the main design tool. Combined, a Dialog would run like this:
+
+| Story | Owner | Done when |
+|---|---|---|
+| `Dialog [Propose]` | Contributor | Scoped, then agreed or declined |
+| `Dialog [Design]` | Designer | Director approves; engineer can build it |
+| `Dialog [Code]` | Developer | Designer and peer engineer review |
+| `Dialog [Doc]` | Designer or dev | Technical editor reviews |
+| `Dialog [Publish]` | Developer | Pages and links tested |
+
+Steps can overlap, but they close in order, and Publish starts only after the rest are done. Curtis adds one assignment rule: "Don't preassign review subtasks." Assign each review sub-task when the review is ready to begin.
+
 **GOV.UK** splits the same work by cycle instead. Each cycle's goal gets one epic issue with a brief and a list of what the cycle should deliver. GitHub sub-issues hold the tasks, spread across two repos: the design-system site for design and guidance, and Frontend for code. A label per component, shared across both repos, ties work on the same component together from one cycle to the next. The table compares the two setups.
 
 | Level | Curtis | GOV.UK |
