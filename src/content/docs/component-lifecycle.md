@@ -33,12 +33,18 @@ Sorting first keeps a "should we add a new component" conversation from being ar
 ```mermaid
 flowchart TD
   Req["Incoming request"] --> Q{Which lane?}
-  Q -->|Modification| M["Quick review"]
+  Q -->|Modification| B{Breaking?}
+  B -->|No| M["Quick review"]
+  B -->|Yes| Maj["Major release<br/>deprecate first"]
   Q -->|Addition| A["Criteria for adding"]
   Q -->|Removal| R["Criteria for removing"]
 ```
 
 </div>
+
+A modification can still break adopters. Renaming a Dialog prop is a modification, but it's also a major release. Run it through the [criteria for a major release](/ds101/release-management/#criteria-for-a-major-release), and deprecate the old prop before you remove it.
+
+An accepted addition follows the steps in [Product ownership](/ds101/product-ownership/#split-the-backlog-by-delivery-step), from Propose to Publish. The [Design-to-code contract](/ds101/design-to-code-contract/) sets what each stage has to meet before the next one starts. Large systems also release a new component in phases. **Atlassian** starts it in Early Access at `0.x` and moves it to Beta and then General Availability as it settles ([Release management](/ds101/release-management/#use-semver-as-the-impact-signal)).
 
 The lane is the second sort. The first is the triage in [Product ownership](/ds101/product-ownership/), which sorts requests by how fast they need an answer. On **GOV.UK's** [Frontend tracker](https://github.com/alphagov/govuk-frontend/labels), both sorts are labels. Every new issue starts as `awaiting triage`. Triage adds a type, like `🐛 bug` or `feature request`, a component name such as `accordion`, and sometimes `⚠️ high priority`. GOV.UK has no lane labels, only `breaking change`, so the type label does the lane's job.
 
