@@ -70,6 +70,29 @@ To estimate what fits, GitLab uses optional issue weights of 1, 2, 3, 5, 8, and 
 
 [Curtis's Jira guide](https://nathanacurtis.substack.com/p/using-jira-for-design-systems-10ec31c3327e), drawn from his work with **Morningstar**, splits feature work into one story per step: Propose, Design, Code, Doc, and Publish. Each step has its own owner and definition of done, so a component that's designed but not documented shows up as unfinished. He groups epics into evergreen work (visual style, component fixes and additions, architecture, operations), formative work (strategy, early adopters, the doc site), and growth (new categories, major initiatives). Versions work as buckets: "Next Minor Release," "Not Yet Prioritized," and "Business as Usual." He calls Jira "an acquired taste."
 
+The steps aren't linked by a parent issue. Each one is a top-level story named for the feature plus its step, like `Color [Propose]` or `Color [Doc]`, and templated sub-tasks sit under each step. A component's steps are found by name, not by hierarchy.
+
+**GOV.UK** splits the same work by cycle instead. Each cycle's goal gets one epic issue with a brief and a list of what the cycle should deliver. GitHub sub-issues hold the tasks, spread across two repos: the design-system site for design and guidance, and Frontend for code. A label per component, shared across both repos, ties work on the same component together from one cycle to the next. The table compares the two setups.
+
+| Level | Curtis | GOV.UK |
+|---|---|---|
+| Epic | Standing category | One cycle's goal |
+| Story | One per fixed step | Free-form sub-issue |
+| Link | Name in the title | Parent epic, label |
+
+The [language navigation epic](https://github.com/alphagov/govuk-design-system/issues/5322) shows the steps without naming them. A sample of its 25 sub-issues:
+
+| Step | Sub-issue |
+|---|---|
+| Research | Reach out to services with language switchers |
+| Decide | Decide how to implement the language switcher |
+| Design | Language Switcher design specs |
+| Code | Create an accessible English/Welsh language switcher |
+| Guidance | Draft guidance on using the language switcher |
+| Review | Language switcher final review |
+
+Releases get their own epic, created from a template with "Who needs to work on this" and "Done when" checklists ([Release v6.7.0](https://github.com/alphagov/govuk-frontend/issues/7663)). The difference shows in the docs. Curtis's fixed Doc step makes missing documentation visible by default. With free-form sub-issues, guidance tasks exist only if someone adds them. The language navigation epic has seven because the team added them.
+
 The rhythm around the backlog varies. Curtis describes sprints with grooming, planning, and standups. **GOV.UK** runs [fixed-length, three-week cycles](https://team-playbook.design-system.service.gov.uk/how-we-work/delivery-cycle/) followed by a reflection week for show and tell, a retro, and planning the next cycle. [Fleet](https://fleetdm.com/handbook/company/product-groups) skips sprints, arguing that "batching work into fixed multi-week iterations creates unnecessary latency," and ships whatever is complete at each three-week release. Pick by team size and by how often adopters can absorb change. [Operating cadence](/ds101/operating-cadence/) covers the release rhythm and the channels around it.
 
 ## Choosing a prioritisation method

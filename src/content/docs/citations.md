@@ -164,6 +164,7 @@ and describes tools or examples that have since changed. Older sources used only
 - IBM Carbon — deprecation and migration-guide practice, cited as the standard reference for sunsetting. Living doc.
 - Martin Fowler, *Refactoring: Improving the Design of Existing Code* (1999) — the rule of three, credited there to Don Roberts
 - Chris Ballantine-Thomas, GOV.UK Design System, ["Iterating the GOV.UK Design System contribution model"](https://designnotes.blog.gov.uk/2023/05/31/iterating-the-gov-uk-design-system-contribution-model/), 2023
+- [GOV.UK Design System, GitHub Discussions](https://github.com/alphagov/govuk-design-system/discussions), living doc: the community backlog category, which replaced the backlog repo in October 2026
 - Brad Frost, *Atomic Design* (2016), Chapter 5 — Inayaili de León Persson's Canonical Vanilla Framework (modification/addition/removal decision tree); Alex Schleifer and Jina Bolton quotes; Nathan Curtis's "living, funded product" line
 - [Cathy Dutton, "The Problem with Patterns,"](https://alistapart.com/article/problem-with-patterns/) A List Apart, 2018
 - [Ness Grixti, "Rethinking Contribution: Lessons from the Messy Middle of Design Systems"](https://nessgrixti.com/articles/rethinking-contribution-lessons-from-the-messy-middle-of-design-systems/), 2025
@@ -177,6 +178,8 @@ and describes tools or examples that have since changed. Older sources used only
 - [Nathan Curtis, "Design System Leader(s) & Manager(s)"](https://nathanacurtis.substack.com/p/design-system-leader-s-manager-s-3bfa49d79883), 2017: the Systems Lead's three hats
 - [Nathan Curtis, "Design Systems Support"](https://nathanacurtis.substack.com/p/design-systems-support), 2020: case categories, intake fields, first response versus resolution, triage locations, the sample refusal, and the support-time estimate
 - [Nathan Curtis, "Using Jira for Design Systems"](https://nathanacurtis.substack.com/p/using-jira-for-design-systems-10ec31c3327e), 2019: per-step stories, epic types, and versions as buckets (Morningstar)
+- [GOV.UK Design System, "Language navigation component: MVP and exploration"](https://github.com/alphagov/govuk-design-system/issues/5322), 2026: a cycle epic with sub-issues across two repos
+- [GOV.UK Frontend, "Release v6.7.0"](https://github.com/alphagov/govuk-frontend/issues/7663), 2026: the templated release epic
 - [GOV.UK Design System team playbook, "How we prioritise"](https://team-playbook.design-system.service.gov.uk/how-we-work/how-we-prioritise/), living doc: the three question sets
 - [GOV.UK Design System team playbook, "Delivery cycle"](https://team-playbook.design-system.service.gov.uk/how-we-work/delivery-cycle/), living doc: three-week cycles plus a reflection week, started January 2024
 - [GOV.UK Design System team playbook, "Decision making techniques"](https://team-playbook.design-system.service.gov.uk/guides/decision-making-techniques/), living doc: MoSCoW, the accountable decision maker, and recorded rationale
@@ -333,6 +336,7 @@ and describes tools or examples that have since changed. Older sources used only
 - zeroheight, *Design Systems Report 2026*
 - Figma / Design Executive Council — Grammarly champions-network anecdote, via "The new business case for design systems" (2026)
 - [Chris Ballantine-Thomas, "Iterating the GOV.UK Design System contribution model"](https://designnotes.blog.gov.uk/2023/05/31/iterating-the-gov-uk-design-system-contribution-model/), 2023
+- [GOV.UK Design System, GitHub Discussions](https://github.com/alphagov/govuk-design-system/discussions), living doc: the community backlog category, which replaced the backlog repo in October 2026
 
 ## Long-term Scale
 
