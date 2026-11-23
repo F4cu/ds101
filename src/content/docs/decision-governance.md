@@ -32,7 +32,7 @@ When a role is implied rather than stated, every question gets re-decided inform
 
 A RACI matrix fixes this. It lists who is Responsible, Accountable, Consulted, and Informed for each recurring activity. [Design System Tactics](https://www.designsystemtactics.com/tactics/raci) builds one in five steps:
 
-1. Identify the roles (design, development, content, QA, leadership), plus an "influence mapping" pass to catch less obvious stakeholders.
+1. Identify the roles (design, development, content, QA, leadership), plus an [influence mapping](https://www.designsystemtactics.com/tactics/influence-mapping) pass to catch less obvious stakeholders. Put the system team at the centre of two or three rings, from high to low influence, place each group on a ring, and note "who can champion, who might block, and who needs more engagement." The [stakeholder map](/ds101/stakeholder-alignment/#stakeholder-map) is the fuller version, and its labels (required, consulted, accountable, informed) already line up with RACI.
 2. List the system's recurring activities: token updates, component reviews, releases, documentation, contribution workflows, QA, and governance decisions.
 3. Assign R, A, C, and I for each activity.
 4. Review the draft with the people it names.

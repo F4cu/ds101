@@ -119,6 +119,10 @@ effectiveness, infrastructure robustness, governance, support, adoption) a desig
 can be scored on separately, rather than collapsed into one overall stage. See
 [System Maturity](/ds101/system-maturity/).
 
+**Influence mapping** — placing stakeholders on rings of high to low influence around
+the system team, to spot champions, blockers, and groups that need more engagement before
+assigning roles. See [Decision governance](/ds101/decision-governance/).
+
 **RACI matrix** — a table assigning each governance decision one Responsible, one
 Accountable, and any number of Consulted or Informed parties, so it's clear who decides
 versus who's just weighing in. See [Decision governance](/ds101/decision-governance/).

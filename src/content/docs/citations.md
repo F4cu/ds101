@@ -174,6 +174,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [GOV.UK Design System, "Removing the 'Experimental' tag" (issue #3194)](https://github.com/alphagov/govuk-design-system/issues/3194), 2023: no Experimental tag removed since 2018, so the tag was dropped
 - [Ness Grixti, "Rethinking Contribution: Lessons from the Messy Middle of Design Systems"](https://nessgrixti.com/articles/rethinking-contribution-lessons-from-the-messy-middle-of-design-systems/), 2025
 - [Design System Tactics, "RACI"](https://www.designsystemtactics.com/tactics/raci), 2025
+- [Design System Tactics, "Influence Mapping"](https://www.designsystemtactics.com/tactics/influence-mapping), n.d.: rings of influence around the system team, and noting champions, blockers, and who needs more engagement
 - [DesignX, "Design System Governance: An Enterprise Guide"](https://designx.co/design-system-governance-enterprise/), n.d.
 
 ## Product ownership
