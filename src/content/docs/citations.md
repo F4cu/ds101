@@ -170,6 +170,8 @@ and describes tools or examples that have since changed. Older sources used only
 - [Brad Frost, "A Design System Governance Process"](https://bradfrost.com/blog/post/a-design-system-governance-process/), 2019: snowflakes as one-off product components on the product team's backlog, tracked for later refactoring
 - [Brad Frost, "The Design System Ecosystem"](https://bradfrost.com/blog/post/the-design-system-ecosystem/), 2023: the recipe layer, product-owned recipe libraries, and graduating a recipe into the core
 - [GOV.UK Frontend, issue labels](https://github.com/alphagov/govuk-frontend/labels), living doc: `awaiting triage`, type, component, and priority labels
+- [GOV.UK Design System, "Contribution criteria"](https://design-system.service.gov.uk/community/contribution-criteria/), living doc: useful and unique to propose; usable, consistent and versatile to publish; screenshots or links as evidence, evidence a replacement is better, and the versatile date input
+- [GOV.UK Design System, "Removing the 'Experimental' tag" (issue #3194)](https://github.com/alphagov/govuk-design-system/issues/3194), 2023: no Experimental tag removed since 2018, so the tag was dropped
 - [Ness Grixti, "Rethinking Contribution: Lessons from the Messy Middle of Design Systems"](https://nessgrixti.com/articles/rethinking-contribution-lessons-from-the-messy-middle-of-design-systems/), 2025
 - [Design System Tactics, "RACI"](https://www.designsystemtactics.com/tactics/raci), 2025
 - [DesignX, "Design System Governance: An Enterprise Guide"](https://designx.co/design-system-governance-enterprise/), n.d.
