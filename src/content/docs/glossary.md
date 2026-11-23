@@ -164,6 +164,15 @@ earn a shared abstraction until it's needed a third independent time; applied to
 systems as a bar for when a one-off component becomes a system candidate. See
 [Component lifecycle](/ds101/component-lifecycle/).
 
+**Snowflake** (component) — Brad Frost's term for a one-off component that only applies
+to one product or use case; it lives on that product team's backlog, tracked so it can be
+refactored into the system later. See [Component lifecycle](/ds101/component-lifecycle/).
+
+**Recipe** (component) — Brad Frost's term for a composition of system components that
+one product or product family uses consistently, maintained by that product team; a
+successful recipe can graduate into the core system. See
+[Component lifecycle](/ds101/component-lifecycle/).
+
 **Canonical Vanilla Framework** — Inayaili de León Persson's decision tree for sorting
 an incoming pattern request into modification, addition, or removal before debating its
 merits. See [Component lifecycle](/ds101/component-lifecycle/).

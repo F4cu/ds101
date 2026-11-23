@@ -58,6 +58,14 @@ Three requests show how the lanes split the work:
 
 The Drawer either fails an early question, for example because it's really a Dialog variant, or it becomes a `Drawer [Propose]` story ([Product ownership](/ds101/product-ownership/) shows the steps). The Modal goes through the criteria for removing, but tracing its users comes first (see Common mistakes below). The sources don't say whether an accepted removal gets its own step stories or a single release task.
 
+### Give local work a path to graduate
+
+Most requests that fail the criteria below still need building. If the only options are "in the system" or "on your own," teams take the second one and the system never hears about it. [Brad Frost](https://bradfrost.com/blog/post/a-design-system-governance-process/) calls a component that "only really pertains to one specific product or use case" a snowflake. It goes on the product team's backlog, not the system's. The system team still sets guidelines for tracking snowflakes, so that "refactoring into the design system" is easier later.
+
+Frost's [ecosystem model](https://bradfrost.com/blog/post/the-design-system-ecosystem/) adds a middle layer. Recipes are compositions of system components that a product or product family uses consistently but the whole organization doesn't. Product teams maintain and publish their own recipe libraries. The system team can "graduate" a recipe into the core "if it proves to be super successful," which makes the recipe layer "a little design system component incubator."
+
+Graduating doesn't skip the bar. A recipe that's ready to move up goes through the criteria for adding, like any other addition. Its time as a recipe answers some of those questions with evidence: which teams actually used it, and whether they used it for the same user problem.
+
 ### Criteria for adding a component
 
 Ask these in order. A proposal that fails an early question doesn't need a debate about the later ones.
