@@ -77,7 +77,20 @@ Ask these in order. A proposal that fails an early question doesn't need a debat
 
 The old refactoring rule applies here too: "Three strikes and you refactor," attributed to Don Roberts in Martin Fowler's *Refactoring* (1999).
 
-The four questions don't all get asked at the same time. [GOV.UK](https://design-system.service.gov.uk/community/contribution-criteria/) splits its criteria into two gates. To be accepted, a proposal has to be *useful*, with "evidence that this component or pattern would be useful for many teams or services," and *unique*, not a copy of something already in the system. Only at publication does it have to be *usable* (tested with "a representative sample of users, including those with disabilities"), *consistent* with existing styles and code standards, and *versatile* enough for a range of services, like a date input that can ask for a year only, a month and year, or a full date. Questions 1 to 3 above make up the proposal gate, and question 4 is the publish gate. Splitting them lets a team accept a proposal before the work exists without implying it's ready to ship.
+The four questions don't all get asked at the same time. [GOV.UK](https://design-system.service.gov.uk/community/contribution-criteria/) splits its criteria into two gates.
+
+To be accepted, a proposal has to be:
+
+- **Useful**, with "evidence that this component or pattern would be useful for many teams or services."
+- **Unique**, not a copy of something already in the system.
+
+Only at publication does it also have to be:
+
+- **Usable**, tested with "a representative sample of users, including those with disabilities."
+- **Consistent** with existing styles and code standards.
+- **Versatile** enough for a range of services, like a date input that can ask for a year only, a month and year, or a full date.
+
+Questions 1 to 3 above make up the proposal gate, and question 4 is the publish gate. Splitting them lets a team accept a proposal before the work exists without implying it's ready to ship.
 
 ### Criteria for removing a component
 
