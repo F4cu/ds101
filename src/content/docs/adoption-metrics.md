@@ -24,6 +24,12 @@ The design-system-ops adoption notes ([`knowledge-notes/adoption-measurement.md`
 
 The second is **token compliance**: whether teams use design tokens or hardcode raw color and spacing values. The notes call this "the adoption signal that most directly correlates with system value," because tokens are what make theming, rebranding, and consistency possible. A team can use every component and still undermine the system by hardcoding values around them.
 
+### Count partial adoption by layer
+
+Adoption isn't all or nothing. [Ben Callahan](https://bencallahan.com/design-system-micro-adoption) calls this **micro-adoption**: a team can take up the system at any layer, from foundations and tokens up to components and recipes. In a poll of 27 practitioners on his show *The Question*, about 70% said they allow it and none said they don't. Tokens and foundations were the most common lowest layer teams adopted, at about 35% each.
+
+Callahan describes adoption as "a spectrum of many types of use," so count it by layer instead of marking each team yes or no. A team on tokens alone needs a different conversation from a team that uses your components but hardcodes values around them. His attendees also listed the costs. Support and training multiply across layers. Custom builds on low layers are hard to refactor later. And partial use is "harder to track usage and more difficult to report on value to leadership." Their advice: say which layers you encourage, so teams know what counts.
+
 ### Break every number down by team
 
 From the same notes: "a system with 85% overall token compliance might have three teams at 98% and two teams at 40%. The system-level number suggests health; the team-level numbers reveal a problem."
@@ -54,6 +60,12 @@ Trust usually isn't the bottleneck people assume. zeroheight's *Design Systems R
 
 Her sharpest warning sign: fading adoption shows up as quiet disengagement, like teams that stop asking questions or stop showing up, more than as complaints. A team still complaining still wants the system to work. A team gone silent may have already built around it.
 
+### Track the reason behind each deviation
+
+A **deviation** is any place a team overrides the system's style, behavior, or structure: a detached Figma instance, an overridden token, a hand-built copy of an existing component. [Callahan](https://bencallahan.com/design-system-deviation-is-a-signal) reads it as "a sign that something in the system needs care," not as a broken rule. Most teams never look. Well over half of the 57 practitioners who answered his poll said they don't track deviation at all.
+
+**Honeycomb** shows what tracking takes (via Callahan). Its team scans product code with react-scanner and names the escape-hatch prop `UNSAFE_className`, so every override is easy to find. Each quarter they review which props get overridden, by which teams, and which patterns repeat. Callahan's advice is to record *why* a team deviated, not only *where*. Sort each deviation as necessary, optional, or unnecessary. And link a contribution path from the docs, so a team that has to deviate can tell you in the same moment.
+
 ## Choosing a measurement method
 
 No method is solved. Each org below found a real limit, and knowing where each one breaks is more useful than treating any as the answer.
@@ -73,5 +85,6 @@ No method is solved. Each org below found a real limit, and knowing where each o
 ## Common mistakes
 
 - **Turning team breakdowns into a public league table.** Ranking "best" and "worst" adopters makes people defensive instead of honest about their numbers. It flattens context: a team building a custom data-visualization library isn't failing to adopt, the system may just not cover their domain. And it blurs two findings a good report keeps apart, "chose not to use" and "needed something the system doesn't provide." Only the first is an adoption problem (design-system-ops adoption notes).
+- **Policing deviations.** [Callahan](https://bencallahan.com/design-system-deviation-is-a-signal) warns: "If your design system team acts like the UI police, you'll get silence." Teams then hide their overrides or rebuild components to look compliant, and the deviation data stops showing where the system falls short.
 
 These numbers stop at "is it used." They don't say whether an adopted component is helping or hurting in a specific flow. [System Performance](/ds101/system-performance/) covers that next layer.

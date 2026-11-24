@@ -57,6 +57,7 @@ draws on them:
 - **Nord**, **GitLab** (Pajamas and the product design handbook), and **Fleet**:
   backlog prioritisation, capacity, and saying no
 - **npm** docs and **Changesets**: publishing tags, provenance, and monorepo releases
+- **Ben Callahan**, Sparkbox: maturity, adoption, team makeup, and design systems and AI
 
 The [Citations](/ds101/citations/) page collects every citation in one place.
 

@@ -379,6 +379,8 @@ and describes tools or examples that have since changed. Older sources used only
 - [Productboard, "How we measure adoption of a design system at Productboard"](https://www.productboard.com/blog/how-we-measure-adoption-of-a-design-system-at-productboard/), 2021
 - [Mews Developers, "Building a design system adoption metric from production data"](https://developers.mews.com/design-system-adoption-metric-building/), 2025
 - [Ness Grixti, "The Hidden Work Behind Design System Adoption"](https://nessgrixti.com/articles/the-hidden-work-behind-design-system-adoption/), 2025
+- [Ben Callahan, "Design System Micro-Adoption"](https://bencallahan.com/design-system-micro-adoption), 2024: poll of 27 practitioners from *The Question*
+- [Ben Callahan, "Design System Deviation is a Signal"](https://bencallahan.com/design-system-deviation-is-a-signal), 2025: poll of 57 practitioners and the Honeycomb example
 
 ## Documentation coverage
 

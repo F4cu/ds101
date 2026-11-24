@@ -279,6 +279,14 @@ on the system at all. See [Adoption Metrics](/ds101/adoption-metrics/).
 contributing, advocating) in how deeply it has taken up the system. See
 [Adoption Metrics](/ds101/adoption-metrics/).
 
+**Micro-adoption** — Ben Callahan's term for a team taking up the system at only some
+layers, such as tokens without components. See
+[Adoption Metrics](/ds101/adoption-metrics/).
+
+**Deviation** — any place a team overrides the system's style, behavior, or structure,
+like a detached instance or an overridden token. See
+[Adoption Metrics](/ds101/adoption-metrics/).
+
 **Three rungs of "documented"** — a component can exist (has a story), be described (has
 a props reference), or be guided (has usage guidance) — three different bars, often
 conflated into one. See [Documentation coverage](/ds101/documentation-coverage/).
