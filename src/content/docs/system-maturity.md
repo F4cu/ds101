@@ -50,6 +50,14 @@ Whether teams actually use, trust, and rely on the system, measured rather than 
 
 Wang's process: 4–8 evaluators score all six dimensions independently on a 1–5 scale. They include system team members across design, engineering, product, and content, plus product-team representatives and sponsors. Then they meet to "triangulate and align," focusing on where their scores diverge rather than where they agree. The result is plotted as a hexagonal radar chart and reassessed quarterly, or after a major org change. Wang is explicit that the biggest value isn't the shape. It's the discussion that happens because people had to justify their number to each other.
 
+[Ness Grixti's Maturity Assessment tactic](https://www.designsystemtactics.com/tactics/maturity-assessment), which she credits to Ben Callahan's book *Maturing Design Systems*, adds a step before anyone scores. Write down what low, medium, and high maturity look like for each factor, so every evaluator scores against the same picture. She also splits the factors into two groups. The business side covers leadership support, collaboration, funding, and delivery culture. The system side covers adoption, contribution, documentation, and quality. Plotting both on one chart shows where the business and the system have grown apart.
+
+### Factor in how the system started
+
+[Ben Callahan's maturity model](https://sparkbox.com/foundry/design_system_maturity_model) sorts systems by origin. A **grassroots** system starts with one passionate contributor, little or no budget, and a scope limited to what helps its creator. A **top-down** system starts with an executive, a formal budget and team, and pressure to deliver for teams across the org. Callahan says the origin "makes a big difference in the priorities and challenges the team will experience," and calls ignoring it "one of the biggest missing pieces I've seen."
+
+The origin predicts the hurdles. A grassroots system first struggles to find time for the work, and later to win executive support. A top-down system first struggles to find partners across disciplines, and later to keep its funding. Name the origin before you read the scores, so a low score on the expected hurdle reads as the next problem to plan for, not a surprise.
+
 ### Prefer a balanced shape over a big uneven one
 
 "A 10-person startup and a 10,000-person enterprise can both have a mature design system, but the conditions that define maturity can differ significantly." A small, balanced radar, with modest scores and nothing neglected, is healthier than a large, uneven one. Picture infrastructure at 5 because someone built beautiful components alone, while governance and adoption sit at 1 because nobody else knows the system exists.
@@ -61,4 +69,4 @@ This wiki's deepest take on team effectiveness is Nathan Curtis's team-model tax
 ## Common mistakes
 
 - **Reading a low score on one dimension as a system-wide failure.** A startup scoring low on governance because it has no formal RFC process isn't failing. At three product teams, it may not need one yet. Read every score against org size and stage, not a universal target.
-- **Filling out the six scores alone.** A team that scores itself without the cross-functional discussion gets a number with none of the alignment that made the exercise worth running.
+- **Mandating adoption of a system that doesn't help yet.** Top-down systems often order every team to use them. [Callahan](https://sparkbox.com/foundry/design_system_maturity_model) says that "the mandate for adoption tends to crush the collaborative spirit," and teams stop wanting to contribute back. The real trouble starts when the system "doesn't do much for people and yet there is a mandate that they use it."

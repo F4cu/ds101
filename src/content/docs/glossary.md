@@ -119,6 +119,11 @@ effectiveness, infrastructure robustness, governance, support, adoption) a desig
 can be scored on separately, rather than collapsed into one overall stage. See
 [System Maturity](/ds101/system-maturity/).
 
+**Grassroots vs. top-down origin** — Ben Callahan's split between a system started by
+one passionate contributor without a budget and one started by an executive with a
+funded team. Each origin brings different hurdles. See
+[System Maturity](/ds101/system-maturity/).
+
 **Influence mapping** — placing stakeholders on rings of high to low influence around
 the system team, to spot champions, blockers, and groups that need more engagement before
 assigning roles. See [Decision governance](/ds101/decision-governance/).

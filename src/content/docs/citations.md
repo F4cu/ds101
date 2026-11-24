@@ -208,6 +208,8 @@ and describes tools or examples that have since changed. Older sources used only
 ## System Maturity
 
 - [Huei-Hsin Wang, "Design-System Maturity: A 6-Dimension Framework,"](https://www.nngroup.com/articles/design-system-maturity/) Nielsen Norman Group, 2026
+- [Ben Callahan, "A Maturity Model for Design Systems"](https://sparkbox.com/foundry/design_system_maturity_model), Sparkbox Foundry, 2021: grassroots vs. top-down origins and the mandate warning
+- [Design System Tactics, "Maturity Assessment"](https://www.designsystemtactics.com/tactics/maturity-assessment), n.d.: Ness Grixti's tactic, credited to Callahan's book *Maturing Design Systems*
 
 ## Fostering contribution
 
