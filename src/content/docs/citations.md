@@ -147,6 +147,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Big Medium, "Design Systems: Pilots & Scorecards"](https://bigmedium.com/ideas/links/design-systems-pilots-scorecards.html), 2017 — summarizing Dan Mall's original pilots-and-scorecards article
 - [Dan Mall, via NTT Data, "Design that scales: Unlocking design system success with Dan Mall"](https://launch.nttdata.com/insights/design-that-scales-unlocking-design-system-success-with-dan-mall), 2025
 - [Dan Mall, "Dan Mall: creating a sustainable design system practice,"](https://ellessmedia.com/csi/dan-mall/) Content Strategy Interviews, 2023
+- [Ben Callahan, "Inside Out, or Outside In?"](https://bencallahan.com/inside-out-or-outside-in), 2023: poll of 53 practitioners on building foundations or patterns first
 
 ## Team models, decision governance, component lifecycle & contribution models
 
@@ -176,6 +177,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Design System Tactics, "RACI"](https://www.designsystemtactics.com/tactics/raci), 2025
 - [Design System Tactics, "Influence Mapping"](https://www.designsystemtactics.com/tactics/influence-mapping), n.d.: rings of influence around the system team, and noting champions, blockers, and who needs more engagement
 - [DesignX, "Design System Governance: An Enterprise Guide"](https://designx.co/design-system-governance-enterprise/), n.d.
+- [Ben Callahan, "Design System Team Makeup"](https://bencallahan.com/design-system-team-makeup), 2023: poll of 60 practitioners on team size and missing roles
 
 ## Product ownership
 
@@ -217,6 +219,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Inayaili de León, "Design Systems: How to Foster Participation,"](https://www.youtube.com/watch?v=6xZHHHgTt9A) Design Systems London, 2018
 - [Ness Grixti, "Rethinking Contribution: Lessons from the Messy Middle of Design Systems"](https://nessgrixti.com/articles/rethinking-contribution-lessons-from-the-messy-middle-of-design-systems/), 2025
 - zeroheight, *Design Systems Report 2026*
+- [Ben Callahan, "Fixing Design System Contribution"](https://bencallahan.com/fixing-design-system-contribution), 2023: poll of 34 practitioners on contribution volume and barriers
 
 ## Component QA
 

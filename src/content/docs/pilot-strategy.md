@@ -59,6 +59,8 @@ Mall's projects typically run four to nine pilots. Build a small library of ten 
 
 Instead of pitching the system as an idea and asking for budget up front, [Mall](https://launch.nttdata.com/insights/design-that-scales-unlocking-design-system-success-with-dan-mall) runs the pilot quietly and measures what it saved a real team. His example: an app that used to take six months and about $375K was built in three months for about $175K. He brings that number, not a deck of principles, to whoever controls the next round of funding. [Communicating value](/ds101/communicating-value/) and [Business alignment](/ds101/business-alignment/) cover how to build the case from it.
 
+What you show leadership doesn't have to be what you build first. [Ben Callahan](https://bencallahan.com/inside-out-or-outside-in) asked 53 practitioners how they'd spend six months of funding for a team of two or three. About 68% would build foundations first, which he calls "inside out." About 23% would start from patterns and user journeys, "outside in." Outside in pleases leadership sooner and ties more easily to goals, but foundations added later mean rework. The compromise he quotes from one attendee: "Sell Outside In while building Inside Out."
+
 ### 7. Aim for 80% standard, not 100%
 
 Mall's picture of a healthy system past its first pilots: about 80% of product work built from standard components, and about 20% left as legitimate custom work, not a failure to comply. A system that expects 100% compliance is fighting the custom cases it was never designed for, and teams will leave it rather than fight back.
