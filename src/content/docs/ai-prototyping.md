@@ -50,9 +50,12 @@ Atlassian estimates this cut design-to-build time by up to 50% in two pilot work
 
 Protobox code runs in a sandbox and doesn't ship. Jenkins calls production "the logical, next step," not the current state. When Atlassian did let product managers and designers ship code, it kept the changes small and low-risk. Over three months, 50+ of them shipped 100+ production changes, and every one went through engineering review and the standard deployment process. The playbook's rule is that "widening who can contribute doesn't change who is accountable": engineering still owns the technical quality of what ships. [Agentic Workflows](/ds101/agentic-workflows/#set-autonomy-per-action-not-per-agent) covers matching review to what a change can break.
 
+The line holds beyond Atlassian. [Ben Callahan](https://bencallahan.com/where-ai-is-failing-design-systems) surveyed 95 design system practitioners in 2025 on where AI helps and where it fails. In his synthesis of their answers, AI earns trust on exploratory work: research, summaries, first drafts, and throwaway prototypes. It loses trust on work that has to match the system exactly and repeatably, like production code and pixel-level decisions. His summary: treat AI as "a collaborator that scaffolds, accelerates, and proposes, not a factory that ships."
+
 ## Common mistakes
 
 - **Shipping the demo.** A prototype only has to work for the path someone shows. Jenkins's "interaction that only works on the happy path" is the failure that reaches users if the code goes straight to production.
+- **Treating a prototype review as usability evidence.** A demo that reviews well shows the idea is worth testing, not that users can use it. Callahan's list of where to lean on AI includes low-risk prototyping, but explicitly "not for usability evidence."
 - **Moving all design work into code.** Jenkins keeps pixel work in Figma. Code that's started too early locks in layout before the idea has been explored.
 - **Prototyping outside the system.** A general AI tool with no access to your components builds its own. The prototype then reviews well and can't be built as shown.
 - **Reading Atlassian's numbers as a forecast.** "Up to an estimated 50%" comes from two internal pilots at one very large company. Measure your own handoff before and after.

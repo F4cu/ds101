@@ -487,6 +487,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Guy Jenkins, "Building Protobox: Our Home-Grown AI Prototyping Tool"](https://www.linkedin.com/pulse/building-protobox-our-home-grown-ai-prototyping-tool-guy-jenkins-gsw7c/), Atlassian, 2026: Protobox, the failure list, Pre-flight and Spec-gen, and code in the convergence phase
 - [Atlassian, "The AI PDLC Playbook"](https://atlassianblog.wpengine.com/wp-content/uploads/2026/11/ai-pdlc-playbook.pdf), 2026: what the prototype spec contains, the estimated design-to-build figure, and Ship to Prod
 - [Atlassian Design System, llms-full.txt](https://atlassian.design/llms-full.txt), living doc: the instruction to use only listed tokens
+- [Ben Callahan, "Where AI is failing design systems, and where we are failing AI"](https://bencallahan.com/where-ai-is-failing-design-systems), 2025: survey of 95 practitioners on where AI earns and loses trust
 
 ## Tooling
 
