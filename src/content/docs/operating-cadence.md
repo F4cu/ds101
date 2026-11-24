@@ -38,7 +38,7 @@ For anything bigger than a routine release, like a redesign, a tool migration (S
 
 ### Hold recurring office hours
 
-Three teams run the same idea at different rhythms:
+Three teams run recurring [office hours](https://www.designsystemtactics.com/tactics/office-hours) at different rhythms:
 
 - **Twilio's** Paste runs [weekly office hours every Thursday](https://github.com/twilio-labs/paste/discussions/categories/office-hours) for planning UI needs, getting feedback, or debugging. A public `#help-design-system` Slack channel and an "Office Hours" category on GitHub Discussions cover other timezones.
 - **GOV.UK's** Design System runs a [monthly community chat](https://team-playbook.design-system.service.gov.uk/community/a-guide-to-the-design-system-monthly-chat), mixing show-and-tell with open discussion, on Zoom for up to 500 people. It's on a different weekday each month, so the same working pattern isn't always excluded.
@@ -52,7 +52,7 @@ Brad Frost's *Atomic Design* (Chapter 5) pairs office hours with a second ritual
 
 ### Build advocates deliberately
 
-[Figma's Design Executive Council research](https://www.figma.com/blog/the-future-of-design-systems-is-marketing/) lists tactics teams use to build internal advocates:
+[Figma's Design Executive Council research](https://www.figma.com/blog/the-future-of-design-systems-is-marketing/) lists tactics teams use to build internal [advocates](https://www.designsystemtactics.com/tactics/system-champions-and-advocates):
 
 - hands-on workshops and FigJam working sessions
 - concise documentation over exhaustive documentation

@@ -122,6 +122,11 @@ table of contents lists every practice as a short label. See `release-management
      name (`[GOV.UK](url)`). A quote taken from someone else's work links the
      secondary source (`— Nathan C., via [Brad F.](url)`). The full title lives in
      `citations.md`.
+   - **How-to links for general-practice terms.** A method nobody owns (office hours,
+     migration guides) may link the term itself, once per page on first body use, to a
+     how-to page in the pool, usually [Design System Tactics](https://www.designsystemtactics.com/tactics).
+     It explains the term and doesn't replace a claim's citation. Never link headings.
+     List it in `citations.md` with "how-to link for the term".
    - **Block quotes only in the lead or `## The problem`**, for a standalone author quote
      that anchors the page's argument (at most one per section). Quotes anywhere else stay
      inline in the sentence, so block quotes don't pile up and flatten the hierarchy.

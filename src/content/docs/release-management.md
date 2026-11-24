@@ -4,7 +4,7 @@ reviewed: 2026-09-17
 reviewIn: 12
 ---
 
-A version number, a changelog entry, and a migration guide are three views of the same event: they tell consuming teams what upgrading will cost them. When all three tell the truth, teams keep upgrading. When they don't, teams stop.
+A version number, a changelog entry, and a [migration guide](https://www.designsystemtactics.com/tactics/migration-guides) are three views of the same event: they tell consuming teams what upgrading will cost them. When all three tell the truth, teams keep upgrading. When they don't, teams stop.
 
 :::tip[Key takeaways]
 - **Use SemVer to signal impact.** Without it, teams can't tell a safe upgrade from a breaking one until they read the diff.

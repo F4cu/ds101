@@ -302,6 +302,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Nathan Curtis, "Design System Release Cadence"](https://medium.com/eightshapes-llc/design-system-release-cadence-2e3e6694ba21), 2018: the three mixes of code, docs, and toolkit releases, toolkit drift under continuous release, and the Adobe Spectrum quote
 - [Changesets, "Technical Decisions"](https://github.com/changesets/changesets/blob/main/docs/guide/technical-decisions.md), living doc: a new peer dependency released as a major
 - [GitLab Pajamas, "Breaking changes"](https://design.gitlab.com/get-started/uik-breaking-changes), updated 2026: a breaking change as anything a designer must act on after updating
+- [Design System Tactics, "Migration Guides"](https://www.designsystemtactics.com/tactics/migration-guides), n.d.: how-to link for the term
 
 ## Code library releases
 
@@ -375,6 +376,8 @@ and describes tools or examples that have since changed. Older sources used only
 - [Catriona Shedd, "Design Systems Ambassador at Salesforce"](http://www.catrionashedd.com/portfolio/design-systems-ambassador-at-salesforce/), n.d.
 - [Omlet, "Scaling adoption and advocacy for an enterprise-wide design system with Guy Segal"](https://omlet.dev/blog/scaling-design-system-adoption-and-advocacy-with-guy-segal/), 2024 — Thomson Reuters ambassador pods
 - zeroheight, *Design Systems Report 2026* — staffing data
+- [Design System Tactics, "Office Hours"](https://www.designsystemtactics.com/tactics/office-hours), n.d.: how-to link for the term
+- [Design System Tactics, "System Champions and Advocates"](https://www.designsystemtactics.com/tactics/system-champions-and-advocates), n.d.: how-to link for the term
 
 ## Adoption Metrics
 
