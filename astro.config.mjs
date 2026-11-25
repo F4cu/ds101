@@ -58,11 +58,11 @@ export default defineConfig({
 			sidebar: [
 				{ label: 'Start Here', link: '/' },
 				{
-					label: '01. Strategy',
-					items: ['ui-audit', 'pilot-strategy', 'system-takeover', 'system-maturity'],
+					label: 'Strategy',
+					items: ['ui-audit', 'pilot-strategy', 'system-takeover', 'system-maturity', 'long-term-scale'],
 				},
 				{
-					label: '02. Foundations',
+					label: 'Foundations',
 					items: [
 						'core-concepts',
 						'token-architecture',
@@ -73,7 +73,7 @@ export default defineConfig({
 					],
 				},
 				{
-					label: '03. Components',
+					label: 'Components',
 					items: [
 						'specifications',
 						'figma-composition',
@@ -87,26 +87,29 @@ export default defineConfig({
 					],
 				},
 				{
-					label: '04. Governance',
+					label: 'Operating Model',
 					items: [
 						'team-models',
 						'product-ownership',
 						'decision-governance',
 						'contribution-models',
 						'fostering-contribution',
+						'operating-cadence',
+						'onboarding-adopters',
+					],
+				},
+				{
+					label: 'Lifecycle & Releases',
+					items: [
 						'component-lifecycle',
 						'system-inventory',
 						'release-management',
 						'code-library-releases',
 						'figma-library-releases',
-						'operating-cadence',
-						'onboarding-adopters',
-						'long-term-scale',
-						'case-studies',
 					],
 				},
 				{
-					label: '05. Health',
+					label: 'Health',
 					items: [
 						'adoption-metrics',
 						'system-performance',
@@ -115,36 +118,42 @@ export default defineConfig({
 					],
 				},
 				{
-					label: '06. Business',
+					label: 'Business',
 					items: [
 						'communicating-value',
 						'estimating-roi',
-						'brand-alignment',
+						'business-alignment',
 						'stakeholder-alignment',
+						'brand-alignment',
 					],
 				},
 				{
-					label: '07. AI Integration',
+					label: 'AI-Ready System',
 					items: [
 						'ai-readiness',
 						'context-engineering',
 						'documentation-for-agents',
 						'ai-governance',
-						'risk-management',
 						'figma-agent-access',
 						'authoring-harness',
-						'ai-prototyping',
+					],
+				},
+				{
+					label: 'Working with Agents',
+					items: [
 						'agentic-workflows',
 						'generative-loops',
 						'agent-evals',
 						'agent-ci-pipelines',
 						'ai-output-discipline',
+						'risk-management',
+						'ai-prototyping',
 						'agentic-ui-patterns',
 					],
 				},
 				{
 					label: 'Reference',
-					items: ['glossary', 'citations'],
+					items: ['glossary', 'citations', 'tooling', 'case-studies'],
 				},
 			],
 		}),

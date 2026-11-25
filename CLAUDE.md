@@ -30,9 +30,11 @@ npm run freshness  # list pages overdue for a freshness review
 - **`astro.config.mjs`** — Starlight config: site metadata, the `sidebar` array (the only
   page ordering/navigation source — add new pages here or they won't appear in the nav),
   and the `astro-mermaid` integration for rendering Mermaid diagrams client-side
-  (including re-rendering on Starlight's view-transition page swaps). Organized into eight
-  sidebar groups: numbered Strategy, Foundations, Components, Governance, Health,
-  Business, AI Integration, and Reference. A sidebar item is a bare filename slug
+  (including re-rendering on Starlight's view-transition page swaps). Organized into ten
+  unnumbered sidebar groups: Strategy, Foundations, Components, Operating Model,
+  Lifecycle & Releases, Health, Business, AI-Ready System, Working with Agents, and
+  Reference. Keep each group to roughly 4–9 pages; split a group rather than let it
+  grow past that. A sidebar item is a bare filename slug
   (`'token-architecture'`) unless its nav label needs to differ from the page's `title`
   frontmatter, in which case use `{ slug: '...', label: '...' }`.
 - **`src/styles/custom.css`** — the only custom CSS on top of Starlight's stock theme:
@@ -166,7 +168,7 @@ Other conventions:
     in any area.
   - *Concrete examples* (tool screenshots, Figma features, APIs, token formats, agent
     setups) must be current for their area:
-    - **High risk**, the AI Integration section: prefer the last ~18 months. Anything
+    - **High risk**, the AI-Ready System and Working with Agents sections: prefer the last ~18 months. Anything
       before 2024 gets a Dated tag and needs reconfirming before new use.
     - **Medium risk**, tokens, component architecture/API, multi-platform specs,
       release tooling, anything Figma-specific: flag sources before 2022 that describe
@@ -181,7 +183,7 @@ Other conventions:
     post predates Figma variables…").
   - **Review dates**: every content page (except `index.md`, `glossary.md`,
     `citations.md`) has `reviewed: YYYY-MM-DD` and `reviewIn: <months>` frontmatter.
-    `reviewIn` follows the risk tier above: 6 for the Agentic AI section, 12 for
+    `reviewIn` follows the risk tier above: 6 for the two AI sections, 12 for
     medium-risk pages (Foundations, Components, `release-management`), 24 for the rest.
     New pages get today's date and their tier. `npm run freshness` (also run before
     every build) lists overdue pages; the `freshness-check` skill checks them and
