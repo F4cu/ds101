@@ -4,7 +4,7 @@ reviewed: 2026-09-27
 reviewIn: 12
 ---
 
-A token's name is how people and agents find the decision behind it. Design systems don't share a naming grammar, so the job isn't to find the right one. Pick a structure, use only the levels each token needs, and back every semantic name with a description that says what it's for.
+A token's name is how people and agents find the decision behind it. Design systems don't share a naming grammar, so the job isn't to find the right one. Pick a [naming structure](https://www.designsystemtactics.com/tactics/token-naming-standards), use only the levels each token needs, and back every semantic name with a description that says what it's for.
 
 :::tip[Key takeaways]
 - **Use one naming structure everywhere.** With mixed conventions, nobody can tell when two tokens mean the same thing.

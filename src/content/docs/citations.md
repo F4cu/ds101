@@ -36,6 +36,7 @@ and describes tools or examples that have since changed. Older sources used only
 - Murphy Trueman, `design-system-ops` — [`skills/token-audit/SKILL.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/token-audit/SKILL.md), living doc: convention consistency, ambiguity flags, platform suffixes, and orphan tokens
 - [Romina Kavcic, "50 design token files, one problem: your agents can't read the meaning"](https://learn.thedesignsystem.guide/p/50-design-token-files-one-problem), 2026: eight names for one role, agents blending conventions, the brand-crimson test, and semantic token counts
 - [Romina Kavcic, "Name and get your tokens in 5 seconds"](https://learn.thedesignsystem.guide/p/name-and-get-your-tokens-in-5-seconds), 2025: the generator's default segment order
+- [Design System Tactics, "Token Naming Standards"](https://www.designsystemtactics.com/tactics/token-naming-standards), n.d.: how-to link for the term
 
 ## Accessible Colors
 
@@ -151,6 +152,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Dan Mall, via NTT Data, "Design that scales: Unlocking design system success with Dan Mall"](https://launch.nttdata.com/insights/design-that-scales-unlocking-design-system-success-with-dan-mall), 2025
 - [Dan Mall, "Dan Mall: creating a sustainable design system practice,"](https://ellessmedia.com/csi/dan-mall/) Content Strategy Interviews, 2023
 - [Ben Callahan, "Inside Out, or Outside In?"](https://bencallahan.com/inside-out-or-outside-in), 2023: poll of 53 practitioners on building foundations or patterns first
+- [Design System Tactics, "System Champions and Advocates"](https://www.designsystemtactics.com/tactics/system-champions-and-advocates), n.d.: how-to link for the term
 
 ## Team models, decision governance, component lifecycle & contribution models
 
@@ -165,6 +167,8 @@ and describes tools or examples that have since changed. Older sources used only
 - [Jina Anne, "Design Systems and Hybrids"](https://24ways.org/2017/design-systems-and-hybrids/), 24ways, 2017
 - [Jina Anne, "There Is No Design System"](https://24ways.org/2019/there-is-no-design-system/), 24ways, 2019
 - zeroheight, *Design Systems Report 2026* (147 practitioners) — [report.zeroheight.com](https://report.zeroheight.com)
+- [Design System Tactics, "Choosing a Governance Model"](https://www.designsystemtactics.com/tactics/choosing-a-governance-model), n.d.: how-to link for the term
+- [Design System Tactics, "Retire and Replace"](https://www.designsystemtactics.com/tactics/retire-and-replace), n.d.: how-to link for the term
 - IBM Carbon — deprecation and migration-guide practice, cited as the standard reference for sunsetting. Living doc.
 - Martin Fowler, *Refactoring: Improving the Design of Existing Code* (1999) — the rule of three, credited there to Don Roberts
 - Chris Ballantine-Thomas, GOV.UK Design System, ["Iterating the GOV.UK Design System contribution model"](https://designnotes.blog.gov.uk/2023/05/31/iterating-the-gov-uk-design-system-contribution-model/), 2023
@@ -406,6 +410,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [Supernova, "Getting Executive Buy-In and Proving ROI of Design Systems"](https://www.supernova.io/blog/getting-executive-buy-in-proving-roi-design-systems), 2024 — interviews with Lauren LoPrete (Cash App) and PJ Onori (Instacart)
 - [Supernova, "How to Build a Business Case for Your Design System"](https://www.supernova.io/blog/how-to-build-a-business-case-for-your-design-system), 2024
 - [Mike Fortuna, "How I Calculated the Business Case for a Design System"](https://medium.com/@m4tuna/how-i-calculated-the-business-case-for-a-design-system-549def283eb5), 2024: the per-component cost formula and button example
+- [Design System Tactics, "Business Case"](https://www.designsystemtactics.com/tactics/business-case), n.d.: how-to link for the term
 - [Adobe XD, "20 levers for communicating the value/ROI of design"](https://xd.adobe.com/ideas/perspectives/leadership-insights/20-levers-communicating-value-roi-design), 2020
 - Murphy Trueman, `design-system-ops` — [`knowledge-notes/executive-communication.md`](https://github.com/murphytrueman/design-system-ops/blob/main/knowledge-notes/executive-communication.md), living doc: labelled figures, one loaded rate, and payback from running totals; growth, risk, and cost framing, phased asks, and following a proposal to a decision
 - Nathan Curtis, quoted in Brad Frost, *Atomic Design* (2016), Chapter 5 — "a living, funded product with a roadmap & backlog"

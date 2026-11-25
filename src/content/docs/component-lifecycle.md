@@ -102,7 +102,7 @@ Deprecate a component when any of these is true:
 - maintenance cost outweighs its value
 - it no longer fits the system's direction
 
-Every deprecation needs a timeline and a migration path, not just a warning. **IBM's** Carbon is the standard reference for bundling deprecations with detailed migration guides. [Release management](/ds101/release-management/) covers the deprecate → migrate → remove sequence.
+Every [deprecation](https://www.designsystemtactics.com/tactics/retire-and-replace) needs a timeline and a migration path, not just a warning. **IBM's** Carbon is the standard reference for bundling deprecations with detailed migration guides. [Release management](/ds101/release-management/) covers the deprecate → migrate → remove sequence.
 
 ## Common mistakes
 

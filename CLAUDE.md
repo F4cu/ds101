@@ -126,7 +126,10 @@ table of contents lists every practice as a short label. See `release-management
      migration guides) may link the term itself, once per page on first body use, to a
      how-to page in the pool, usually [Design System Tactics](https://www.designsystemtactics.com/tactics).
      It explains the term and doesn't replace a claim's citation. Never link headings.
-     List it in `citations.md` with "how-to link for the term".
+     List it in `citations.md` with "how-to link for the term", and give the term a
+     `glossary.md` entry (or extend its existing one) ending in "See [page]. How-to:
+     [Design System Tactics](url)." Link tactic pages only, not its strategy pages: those
+     sequence tactics into plans, which this wiki's own pages already do.
    - **Block quotes only in the lead or `## The problem`**, for a standalone author quote
      that anchors the page's argument (at most one per section). Quotes anywhere else stay
      inline in the sentence, so block quotes don't pile up and flatten the hierarchy.

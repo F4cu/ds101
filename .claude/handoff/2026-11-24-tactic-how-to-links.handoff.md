@@ -1,5 +1,5 @@
 ---
-status: open
+status: done
 created: 2026-11-24
 ---
 
@@ -28,9 +28,22 @@ created: 2026-11-24
 2. Find the first body use of the term. If the sentence doesn't name the term, a light rewording is OK ("Three teams run the same idea" → "Three teams run recurring [office hours]"). Don't rewrite the claim.
 3. At most 2–3 tactic links per page, so the site doesn't read like a link farm.
 4. Add the `citations.md` entry. Don't bump `reviewed` (this is not a claim re-check).
-5. `npm run build` must pass.
+5. Add or extend the term's `glossary.md` entry, ending "See [page]. How-to: [Design System Tactics](url)." (Added 2026-11-25; the glossary is the index of methods instead of a separate hub page.)
+6. `npm run build` must pass.
 
-## Candidates (unverified: tactic pages not yet read)
+## Outcome (2026-11-25)
+
+All candidate tactic pages were read. Linked: business case (`estimating-roi`), champion (`pilot-strategy`), team model (`team-models`), naming structure (`token-naming`), deprecation (`component-lifecycle`). Glossary entries added or extended for office hours, champions and advocates, migration guide, business case, team model, deprecation.
+
+Skipped, with reasons:
+- `ui-audit`: already links 18F's "Interface audit" how-to.
+- `product-ownership`: already links Curtis's roadmap post.
+- `contribution-models`: "champions network" there is about contributors; the tactic is about spreading adoption.
+- `onboarding-adopters`: the page covers designers and engineers together; the site splits them, and Grixti's Wise case is already cited.
+- `adoption-metrics`: never uses "success metrics".
+- AI pages: none use the terms in body text (only in takeaways or Common mistakes leads).
+
+## Candidates as listed on 2026-11-24
 
 Line numbers are from 2026-11-24 and may have moved.
 
@@ -53,5 +66,5 @@ All URLs are under `https://www.designsystemtactics.com`. Full index: `/tactics`
 
 ## Open questions for the user
 
-- Should the strategy pages (`/strategies/...`, e.g. "Working with AI") be linked anywhere, or tactics only? Not discussed yet.
+- Strategy pages: decided 2026-11-25, tactics only. Strategies sequence tactics into plans, which the wiki's own pages already do.
 - Frameworks with no reference that aren't on this site (now/next/later, JTBD, Atomic Design) were raised but not decided. Linking them needs a source from the existing pool.

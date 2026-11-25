@@ -134,7 +134,8 @@ versus who's just weighing in. See [Decision governance](/ds101/decision-governa
 
 **Team model** — the structural answer to *who* builds and owns a design system: one
 dedicated team, several product teams together, or both informing each other. See
-[Team models](/ds101/team-models/).
+[Team models](/ds101/team-models/). How-to:
+[Design System Tactics](https://www.designsystemtactics.com/tactics/choosing-a-governance-model).
 
 **System team** (core team) — the team that builds, maintains, and runs the design
 system, as opposed to the product teams that use it and the contributors who add to it
@@ -146,7 +147,8 @@ clear. See [Contribution models](/ds101/contribution-models/).
 
 **Deprecation** — the formal process of retiring a component or token, on a timeline,
 with a documented migration path to its successor. See
-[Component lifecycle](/ds101/component-lifecycle/).
+[Component lifecycle](/ds101/component-lifecycle/). How-to:
+[Design System Tactics](https://www.designsystemtactics.com/tactics/retire-and-replace).
 
 **Solitary model** — one team builds a system mostly for its own needs and makes the
 result available to others, without formal support for outside consumers. See
@@ -303,7 +305,8 @@ code change, framed as a risk flag to confirm, not proof the doc is wrong. See
 **Business case** — a translated argument for a design system's value, stated in terms
 a non-design stakeholder (finance, engineering leadership, product) can evaluate, rather
 than in the system's own internal metrics. See
-[Communicating value](/ds101/communicating-value/).
+[Communicating value](/ds101/communicating-value/). How-to:
+[Design System Tactics](https://www.designsystemtactics.com/tactics/business-case).
 
 **ROI** (return on investment) — a measure of value returned relative to cost; in design
 systems, notoriously under-measured — only a small fraction of teams calculate it at all,
@@ -664,3 +667,17 @@ committing to build. See [AI Prototyping](/ds101/ai-prototyping/).
 where a person must decide, defined by what the agent can do, what evidence it provides,
 when a person steps in, and what happens when evidence is missing. Atlassian's term. See
 [Agentic Workflows](/ds101/agentic-workflows/#set-autonomy-per-action-not-per-agent).
+
+**Office hours** — regular drop-in sessions where adopters bring questions, issues, or
+work in progress to the system team. See [Operating Cadence](/ds101/operating-cadence/).
+How-to: [Design System Tactics](https://www.designsystemtactics.com/tactics/office-hours).
+
+**Champions and advocates** — people who spread adoption by supporting peers: champions
+are nominated inside product teams, advocates sit in the system team. See
+[Operating Cadence](/ds101/operating-cadence/). How-to:
+[Design System Tactics](https://www.designsystemtactics.com/tactics/system-champions-and-advocates).
+
+**Migration guide** — one page per release listing each breaking change with its
+before-and-after and the steps to upgrade. See
+[Release Management](/ds101/release-management/). How-to:
+[Design System Tactics](https://www.designsystemtactics.com/tactics/migration-guides).

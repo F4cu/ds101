@@ -22,7 +22,7 @@ Not everyone thinks the numbers are worth chasing. Lauren LoPrete of Cash App, [
 
 ### Price one component, then multiply
 
-Mike Fortuna's business case for a design system starts small: the cost of one button, built separately by every project. At $100 an hour, he puts it at $2,000 to design and build, $1,000 to test and revise, and $500 in upkeep over its life. Fifty projects each building their own comes to $175,000. With the button in the system, the build and testing happen once and each project pays only to integrate it (he assumes $200), so the total is $13,000. His formula:
+Mike Fortuna's [business case](https://www.designsystemtactics.com/tactics/business-case) for a design system starts small: the cost of one button, built separately by every project. At $100 an hour, he puts it at $2,000 to design and build, $1,000 to test and revise, and $500 in upkeep over its life. Fifty projects each building their own comes to $175,000. With the button in the system, the build and testing happen once and each project pays only to integrate it (he assumes $200), so the total is $13,000. His formula:
 
 ```text title="Fortuna's formula"
 Total cost = initial investment

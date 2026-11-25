@@ -34,7 +34,7 @@ Mall's scorecard rates each candidate project from 0 (unlikely) to 10 (likely) o
 - reusable-pattern potential
 - high-value elements central to the flow
 - technical feasibility
-- a champion who will see the pilot through and promote it afterward
+- a [champion](https://www.designsystemtactics.com/tactics/system-champions-and-advocates) who will see the pilot through and promote it afterward
 - scope achievable in about three to four weeks
 - independence from legacy code that would force a large refactor
 - excitement value: will this pilot make other teams want in?

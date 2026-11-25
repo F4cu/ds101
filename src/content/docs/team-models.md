@@ -4,7 +4,7 @@ reviewed: 2026-09-24
 reviewIn: 24
 ---
 
-A team model decides who builds and owns the design system: one dedicated team, a federation of product teams, or a core and a federation feeding each other. Nathan Curtis's taxonomy is still the reference point, and his own article on it is called ["Team Models for Scaling a Design System."](https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0) No model fits every org. The right one changes with size and maturity.
+A [team model](https://www.designsystemtactics.com/tactics/choosing-a-governance-model) decides who builds and owns the design system: one dedicated team, a federation of product teams, or a core and a federation feeding each other. Nathan Curtis's taxonomy is still the reference point, and his own article on it is called ["Team Models for Scaling a Design System."](https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0) No model fits every org. The right one changes with size and maturity.
 
 :::tip[Key takeaways]
 - **Start centralized, then add federation on purpose.** The wrong model gives you a bottleneck everyone routes around, or components nobody maintains.
