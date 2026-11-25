@@ -42,7 +42,8 @@ config:
     chartHeight: 320
     quadrantLabelFontSize: 13
     pointLabelFontSize: 12
-    axisLabelFontSize: 13
+    xAxisLabelFontSize: 13
+    yAxisLabelFontSize: 13
 ---
 quadrantChart
   x-axis Low danger --> High danger

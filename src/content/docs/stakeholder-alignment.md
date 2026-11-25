@@ -38,6 +38,29 @@ Use it to tailor any pitch, update, or doc to its audience. The quadrant crosses
 - **Product stakeholders** (low frequency, high influence) are "accountable": they own outcomes but rarely touch the system. Their question: "how do we ensure the system meets our standards, and how do we integrate it better?"
 - **Business stakeholders** (low frequency, low influence) are "informed": they need to know it exists and what it does for the business. Their questions center on creative strategy, technical advantage, and business goals.
 
+<div class="mermaid-wrap">
+
+```mermaid
+---
+config:
+  quadrantChart:
+    chartWidth: 320
+    chartHeight: 320
+    quadrantLabelFontSize: 13
+    xAxisLabelFontSize: 13
+    yAxisLabelFontSize: 13
+---
+quadrantChart
+  x-axis Rare use --> Frequent use
+  y-axis Low influence --> High influence
+  quadrant-1 Primary users
+  quadrant-2 Product stakeholders
+  quadrant-3 Business stakeholders
+  quadrant-4 Secondary users
+```
+
+</div>
+
 A message aimed at the wrong group's question lands as noise, even when the information is correct.
 
 ### Golden Circle
