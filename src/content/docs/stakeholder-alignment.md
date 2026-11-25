@@ -38,6 +38,8 @@ Use it to tailor any pitch, update, or doc to its audience. The quadrant crosses
 - **Product stakeholders** (low frequency, high influence) are "accountable": they own outcomes but rarely touch the system. Their question: "how do we ensure the system meets our standards, and how do we integrate it better?"
 - **Business stakeholders** (low frequency, low influence) are "informed": they need to know it exists and what it does for the business. Their questions center on creative strategy, technical advantage, and business goals.
 
+The dots below are example roles for a central team of one design owner and one engineer, not placements from the talk. Where a role lands depends on how your organization works, so map your own.
+
 <div class="mermaid-wrap">
 
 ```mermaid
@@ -49,6 +51,7 @@ config:
     quadrantLabelFontSize: 13
     xAxisLabelFontSize: 13
     yAxisLabelFontSize: 13
+    pointLabelFontSize: 12
 ---
 quadrantChart
   x-axis Rare use --> Frequent use
@@ -57,6 +60,13 @@ quadrantChart
   quadrant-2 Product stakeholders
   quadrant-3 Business stakeholders
   quadrant-4 Secondary users
+  DS design owner: [0.84, 0.84]
+  DS engineer: [0.76, 0.64]
+  Head of product: [0.24, 0.82]
+  Product team owner: [0.32, 0.62]
+  Product engineer: [0.78, 0.34]
+  Product designer: [0.66, 0.16]
+  Marketing lead: [0.24, 0.24]
 ```
 
 </div>
@@ -74,6 +84,17 @@ Use it to balance firefighting against long-term trust:
 - **Tactical ("Now")** moves fast and removes friction: short-term priorities, daily support, quick unblocking. It answers "how do we support teams and keep delivery moving?"
 - **Strategic ("Next")** sets direction: clear priorities, cross-team alignment, longer-term thinking. It answers "how do we scale in the right direction?"
 - **Normative ("Future")** builds belief and shared purpose: shared principles, real relationships, and continuous alignment. It answers "how do we create trust and long-term adoption?"
+
+<div class="mermaid-wrap">
+
+```mermaid
+flowchart TD
+  Team["System team"] --> Now["Now: tactical<br/>keep delivery moving"]
+  Team --> Next["Next: strategic<br/>scale in the<br/>right direction"]
+  Team --> Future["Future: normative<br/>build trust and<br/>long-term adoption"]
+```
+
+</div>
 
 ### LeanDS
 
@@ -110,17 +131,6 @@ Use it to set measurement cadence. Awareness and perception (how the org *feels*
 ### Run all three horizons at once
 
 Running only the tactical horizon produces a system that's always fighting fires. Running only the normative one produces a beautiful mission statement with no delivery behind it. [Pilot strategy](/ds101/pilot-strategy/) shows the same risk from the other side: a pilot that ships is only "Now."
-
-<div class="mermaid-wrap">
-
-```mermaid
-flowchart TD
-  Team["System team"] --> Now["Now: tactical<br/>unblock teams"]
-  Team --> Next["Next: strategic<br/>set direction"]
-  Team --> Future["Future: normative<br/>build trust"]
-```
-
-</div>
 
 ### Revisit the mapping every planning cycle
 

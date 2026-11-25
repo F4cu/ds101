@@ -26,6 +26,7 @@ and describes tools or examples that have since changed. Older sources used only
 - [figma/plugin-typings issue #381, "opacity on a translucent color source is … silently ignored"](https://github.com/figma/plugin-typings/issues/381), 2026
 - Alla Kholmatova, *Design Systems: A Practical Guide to Creating Design Languages for Digital Products* (O'Reilly, 2017)
 - [Jina Anne, "Design Systems are for People"](https://www.aiga.org/inspiration/talks/jina-anne-design-systems-are-for-people), AIGA, n.d.
+- [Marianne Ashton-Booth, "From Silos to Systems"](https://marianneashtonbooth.com), UXDX Berlin talk: communication and stakeholder influence as functions of a viable design system (Core Concepts), 2026
 
 ## Token naming
 

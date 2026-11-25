@@ -20,17 +20,34 @@ Each of those is a different failure at a different layer. Stale tokens mean the
 
 ## The model
 
-### Tokens
+A design system has three parts, and [Trueman's](https://github.com/murphytrueman/design-system-ops#readme) design-system-ops toolkit tracks how each one drifts:
 
-The raw vocabulary: colors, spacing, type sizes. [Token architecture](/ds101/token-architecture/) covers how to structure them.
+- **Tokens**: the raw vocabulary, such as colors, spacing, and type sizes. See [Token architecture](/ds101/token-architecture/).
+- **Components**: the units built from that vocabulary. See [Code Composition](/ds101/code-composition/) and [Figma Composition](/ds101/figma-composition/).
+- **Governance**: the decisions about what belongs, how it changes, and how it leaves. See [Decision governance](/ds101/decision-governance/) and [Component lifecycle](/ds101/component-lifecycle/).
 
-### Components
+Two more layers build on these, both functions [Ashton-Booth](https://marianneashtonbooth.com) says a design system needs to stay viable (see [Viable System Model](/ds101/stakeholder-alignment/#viable-system-model)). [Communication](/ds101/operating-cadence/) makes sure people outside the system team know what governance decided. [Business alignment](/ds101/business-alignment/) ties the system to what the company cares about right now. The stacking is this guide's own framing, not a model from its sources.
 
-The assembled units built from that vocabulary. [Code Composition](/ds101/code-composition/) names their layers and how they're built in code, and [Figma Composition](/ds101/figma-composition/) covers the same structure in the design file.
-
-### Governance
-
-The decisions about what belongs, how it changes, and how it leaves. [Decision governance](/ds101/decision-governance/) and [Component lifecycle](/ds101/component-lifecycle/) cover how to run it.
+<figure class="ds-diagram">
+<svg viewBox="0 0 360 280" role="img" aria-labelledby="cc-title">
+<title id="cc-title">A pyramid of five layers, from the base up: tokens, components, governance, communication, business alignment.</title>
+<g fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-opacity="0.4">
+<polygon points="120,2 240,2 260.7,54 99.3,54"/>
+<polygon points="97.7,58 262.3,58 283,110 77,110"/>
+<polygon points="75.4,114 284.6,114 305.4,166 54.6,166" fill-opacity="0.2"/>
+<polygon points="53.1,170 306.9,170 327.7,222 32.3,222" fill-opacity="0.2"/>
+<polygon points="30.7,226 329.3,226 350,278 10,278" fill-opacity="0.2"/>
+</g>
+<g fill="currentColor" text-anchor="middle" font-size="13">
+<text x="180" y="25">Business</text>
+<text x="180" y="41">alignment</text>
+<text x="180" y="88.5">Communication</text>
+<text x="180" y="144.5">Governance</text>
+<text x="180" y="200.5">Components</text>
+<text x="180" y="256.5">Tokens</text>
+</g>
+</svg>
+</figure>
 
 ## Practices
 

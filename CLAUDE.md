@@ -41,7 +41,8 @@ npm run freshness  # list pages overdue for a freshness review
   WCAG line-length caps, one accent hue (`--ds-accent-hue`) driving Starlight's accent
   ramp in both themes, the tip aside ("Key takeaways") rebound from purple to that
   accent, text-accent borders on blockquotes and tips, body links in the text color
-  (sidebar and nav keep the accent), and the `.mermaid-wrap` scroll-box style.
+  (sidebar and nav keep the accent), the `.mermaid-wrap` scroll-box style, and the
+  `.ds-diagram` sizing for inline SVG diagrams.
   Otherwise leaves Starlight's fonts, layout and sidebar chrome alone.
 - **Content pages** (`src/content/docs/*.md`) — each is a standalone topic page. The
   `title` frontmatter field is what Starlight renders as the page's H1 and browser-tab
@@ -97,8 +98,10 @@ table of contents lists every practice as a short label. See `release-management
    - **Decision** (the page's value is picking between alternatives): `## Choosing <the
      decision>` (e.g. `## Choosing a model`), then `## Practices`.
    - **Model** (the page explains a structure, like token layers): `## The model`, with one
-     `###` per layer or dimension, then `## Practices`. A Model page must still end in
-     practices. It never just lists the parts of a design system.
+     `###` per layer or dimension, then `## Practices`. When each layer needs only a line
+     or two, use a bulleted list (`- **Layer**: …`) instead of `###` headings (see
+     `core-concepts.md`). A Model page must still end in practices. It never just lists
+     the parts of a design system.
    - **Case studies**: `## The cases` (`### Org: what they did`), then
      `## Patterns across cases`. Multi-paragraph named-org narratives live only here. Topic
      pages keep short (2–4 sentence) org examples inline and link here for the full story.
@@ -138,7 +141,10 @@ table of contents lists every practice as a short label. See `release-management
    - **Diagrams inline**, directly under the practice or model they illustrate, never as a
      standalone `## Diagram` section. Only when a relationship is genuinely spatial or
      sequential. Wrap each Mermaid block in `<div class="mermaid-wrap">...</div>`, and keep
-     it few-node and legible at ~800px max width.
+     it few-node and legible at ~800px max width. Use inline SVG only for a shape Mermaid
+     can't draw (e.g. the pyramid in `core-concepts.md`): wrap it in
+     `<figure class="ds-diagram">`, use `currentColor` for fills, strokes and text so it
+     follows the theme, give it a `<title>`, and keep it ≤ 360px wide.
    - **Code snippets inline**, like diagrams: directly under the model or practice they
      illustrate, only when the structure is clearer as code than as prose. Keep each under
      ~12 lines and ~40 characters wide (lines wrap on phones, but wrapped code reads
@@ -214,7 +220,8 @@ Other conventions:
   not a textbook.
 - **Mobile-first**: the primary read surface is a phone (iOS Safari). Don't add wide
   tables or unwrapped long inline code/URLs — they force horizontal scroll on a
-  375–430px viewport. Any new diagram must go inside `.mermaid-wrap`.
+  375–430px viewport. Any new Mermaid diagram must go inside `.mermaid-wrap`, and
+  any inline SVG diagram inside `.ds-diagram`.
 - **Cross-linking**: link to other pages in-line with absolute, extension-less site paths
   that include the `/ds101` base (`[Token architecture](/ds101/token-architecture/)`)
   rather than duplicating an explanation that another page already owns. Astro doesn't

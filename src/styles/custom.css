@@ -67,3 +67,15 @@
 	height: auto;
 	display: block;
 }
+
+/* Hand-drawn inline SVG diagrams, for shapes Mermaid can't draw (e.g. a pyramid).
+   Shapes and text use currentColor, so they follow the text color in both themes. */
+.ds-diagram {
+	margin: 1em 0;
+}
+.ds-diagram svg {
+	display: block;
+	width: 100%;
+	max-width: 360px;
+	height: auto;
+}
