@@ -29,8 +29,8 @@ flowchart TD
   T --> iOS1["iOS build:<br/>SF Pro"]
   T --> And1["Android build:<br/>Roboto"]
   Q -->|Structure| C["Component contract<br/>confirmation intent"]
-  C --> iOS2["iOS:<br/>Dialog"]
-  C --> And2["Android:<br/>BottomSheet"]
+  C --> Desk["Desktop:<br/>Modal"]
+  C --> Mob["Mobile:<br/>Bottom sheet"]
 ```
 
 </div>
@@ -75,9 +75,48 @@ tokens/semantic.json
 
 ### Structural differences: resolved in component contracts
 
-A confirmation pattern might be a centered Dialog on iOS but a bottom-anchored sheet on Android for heavier content. There's no shared value to alias, so a token can't resolve it. It's handled one level up, in the component's definition.
+The common case is a confirmation that appears as a centered modal on desktop but as a bottom sheet on mobile. [Wealthfront](https://eng.wealthfront.com/2022/05/10/building-wealthfronts-multi-platform-design-system/) describes exactly this split. There's no shared value to alias, so a token can't resolve it. It's handled one level up, in the component's definition.
 
-[Curtis's distinction](https://nathanacurtis.substack.com/p/component-contracts-and-schemas): "a description informs. A contract arbitrates." A description is documentation a team can interpret loosely. A contract states what a component *must* do, precisely enough that React, iOS, Android, Web Components, and Figma can each build against it on their own and still behave the same. For a confirmation pattern, the contract might say "block interaction until the user acknowledges or dismisses, present the heaviest content without truncation." Each platform decides *how*. It's the same reasoning behind the Dialog/BottomSheet example in [API Design](/ds101/api-design/).
+[React Spectrum](https://react-spectrum.adobe.com/react-spectrum/DialogTrigger.html) shows what that looks like in a public API. One `DialogTrigger` takes a `type` for the default presentation and a `mobileType` for small screens. This snippet follows the shape of the docs' own example:
+
+```tsx
+<DialogTrigger
+  type="modal"
+  mobileType="tray"
+  isDismissable>
+  <ActionButton>Delete</ActionButton>
+  <Dialog>…</Dialog>
+</DialogTrigger>
+```
+
+Notice what stays fixed: the trigger, the content, and the dismiss rule. Only the structure (modal or tray) changes with the screen. Product teams never pick a mobile component, because the contract already decided it.
+
+[Curtis's distinction](https://nathanacurtis.substack.com/p/component-contracts-and-schemas): "a description informs. A contract arbitrates." A description is documentation a team can interpret loosely. A contract states what a component *must* do, precisely enough that React, iOS, Android, Web Components, and Figma can each build against it on their own and still behave the same. In [a follow-up post](https://nathanacurtis.substack.com/p/spec-driven-ui-component-development), Curtis splits a component's truth into three homes: a generated spec, authored requirements, and usage guidance. The modal and bottom sheet split touches all three.
+
+The **generated spec** holds the API, variants, and examples, extracted from Figma. His smallest example is a single typed prop with an `enum` and a `default`. Applied to Spectrum's props, it might look like this:
+
+```yaml title="Generated spec"
+dialog:
+  props:
+    type:
+      enum: [modal, popover]
+      default: modal
+    mobileType:
+      enum: [modal, tray, fullscreen]
+      default: modal
+```
+
+Notice that every platform must expose the same values, so none can add a fourth presentation, and the default decides the split when a team picks nothing. The defaults are illustrative.
+
+**Authored requirements** hold what Figma can't express. "Designers I work with don't use Figma to express `behaviors` or `accessibility`," Curtis writes. They live as markdown in the same specifications repo, written as MUST and SHOULD statements and reviewed as pull requests. They can be platform-specific, like his `card.accessibility.android.md`. For the dialog, that's where blocking and dismissal go:
+
+```md title="Authored requirement"
+- Dialog MUST block interaction
+  with the page behind it.
+- Dialog MUST close on Esc.
+```
+
+**Usage guidance**, such as when to use a dialog at all and when content is heavy enough for a sheet, lives outside the specs. Curtis calls "how to use" components "a separate enterprise driven by a partner team." [Specifications](/ds101/specifications/) covers where each part is recorded. It's the same reasoning behind the Dialog/BottomSheet example in [API Design](/ds101/api-design/).
 
 ## Practices
 

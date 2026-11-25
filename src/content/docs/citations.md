@@ -128,8 +128,11 @@ and describes tools or examples that have since changed. Older sources used only
 ## Platform divergence
 
 - [Nathan Curtis, "Finding Platform Balance in a Design System"](https://medium.com/eightshapes-llc/finding-platform-balance-in-a-design-system-47eaae48de98), 2015
-- [Nathan Curtis, "Component Contracts and Schemas"](https://nathanacurtis.substack.com/p/component-contracts-and-schemas), 2026
+- [Nathan Curtis, "Component Contracts and Schemas"](https://nathanacurtis.substack.com/p/component-contracts-and-schemas), 2026: contract versus description
+- [Nathan Curtis, "Spec-Driven UI Component Development"](https://nathanacurtis.substack.com/p/spec-driven-ui-component-development), 2026: generated specs, authored requirements, and usage guidance as separate homes
 - [Nathan Curtis, "Reimagining a Token Taxonomy"](https://medium.com/eightshapes-llc/reimagining-a-token-taxonomy-462d35b2b033), 2022
+- [Wealthfront Engineering, "Building Wealthfront's multi-platform design system"](https://eng.wealthfront.com/2022/05/10/building-wealthfronts-multi-platform-design-system/), 2022: the desktop modal versus mobile bottom sheet split
+- [React Spectrum, "DialogTrigger"](https://react-spectrum.adobe.com/react-spectrum/DialogTrigger.html), living doc: `type` and `mobileType` on one trigger
 
 ## UI audit
 
