@@ -52,6 +52,20 @@ flowchart TD
 
 </div>
 
+### Ship the rebrand behind an opt-in switch
+
+Even a rebrand that only changes token values reaches every product at once, and each team still has to check it in its own screens. GOV.UK's guidance puts that check on the team: "You're responsible for making sure your service continues to work as expected after upgrading" ([GOV.UK Frontend](https://frontend.design-system.service.gov.uk/staying-up-to-date/)). Its 2025 brand refresh gave teams room to do that in three steps.
+
+First, [v5.10.0](https://github.com/alphagov/govuk-frontend/releases/tag/v5.10.0) shipped the new logo, header, footer and assets behind a switch each team turned on itself: a template setting, a class on the `<html>` element, or a `rebrand` option on the header and footer. Each setup got its own instructions, including services that write their own HTML. Second, the release set one go-live date, asking teams to deploy "on 25 June 2025 or as soon after this date as possible," so people moving from the GOV.UK website into a service saw one brand. Third, [v6.0.0](https://github.com/alphagov/govuk-frontend/releases/tag/v6.0.0) made the new brand the default and removed the old one along with the switch.
+
+That's the deprecate, migrate, remove sequence from [Release management](/ds101/release-management/), applied to a brand. The shared date matters most when many teams deploy on their own schedules, as GOV.UK's services do. A single product can usually just ship the new brand.
+
+### List what the tokens don't reach
+
+Tokens carry color, type and spacing. A rebrand also touches files that sit outside the package's styles. GOV.UK's v5.10.0 notes split the work in two. The package changed the CSS by itself, plus the logo and crown for teams using its templates. Each team had to do the rest by hand: serve the new assets folder, point the favicon, manifest and Open Graph image links at it, update the `theme-color` value, and paste in the new SVGs if they didn't use the templates.
+
+Write that hand-done list into the [migration guide](https://www.designsystemtactics.com/tactics/migration-guides), split by setup, because no package upgrade will do it for a team. Before the release, check [token compliance](/ds101/adoption-metrics/). Teams that hardcode raw colors won't pick up the new palette, so they have more on their list than the guide assumes.
+
 ### Align brand and product on a recurring cadence
 
 The fix isn't picking one team to own both. It's cross-functional alignment on a regular schedule, so brand identity and product implementation stay two things aimed at the same target, instead of one team's tool quietly standing in for the other's.

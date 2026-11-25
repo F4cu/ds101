@@ -414,6 +414,10 @@ and describes tools or examples that have since changed. Older sources used only
 
 - [userQ, "Design Systems vs. Brand Guidelines"](https://userq.com/design-systems-vs-brand-guidelines-understanding-the-key-differences/), 2025
 - [Ness Grixti, "Wise Multi-Brand Design System — Case Study"](https://nessgrixti.com/portfolio/wise-multi-brand/), n.d. — also cited in [Case Studies](/ds101/case-studies/)
+- [GOV.UK Frontend, "Release v5.10.0"](https://github.com/alphagov/govuk-frontend/releases/tag/v5.10.0), 2025: the opt-in brand refresh, setup-specific instructions, the 25 June 2025 go-live date, and the assets teams updated by hand
+- [GOV.UK Frontend, "Release v6.0.0"](https://github.com/alphagov/govuk-frontend/releases/tag/v6.0.0), 2026: the refreshed brand as default, and the old brand and `rebrand` flags removed
+- [GOV.UK Frontend, "Staying up to date with changes"](https://frontend.design-system.service.gov.uk/staying-up-to-date/), living doc: teams responsible for checking their service after upgrading
+- [Design System Tactics, "Migration Guides"](https://www.designsystemtactics.com/tactics/migration-guides), n.d.: how-to link for the term
 - [DHL Brand Hub](https://www.dpdhl-brands.com/en/group/), living doc; [MetaDesign — DHL](https://metadesign.com/en/work/dhl), 2019 — brand-management platform, cited as a boundary example rather than a design-system case study
 
 ## Stakeholder alignment & planning horizons
