@@ -58,6 +58,7 @@ draws on them:
   backlog prioritisation, capacity, and saying no
 - **npm** docs and **Changesets**: publishing tags, provenance, and monorepo releases
 - **Ben Callahan**, Sparkbox: maturity, adoption, team makeup, and design systems and AI
+- **Vishal Kapoor** and **Kishan Koriya**, Lloyds: bringing a rebrand into a native app
 
 The [Citations](/ds101/citations/) page collects every citation in one place.
 

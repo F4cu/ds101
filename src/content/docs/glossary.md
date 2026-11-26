@@ -535,7 +535,10 @@ order, every time — is a schema; the specific dish is the data filled into it.
 **Design language** — the shared visual and interaction vocabulary a design system
 expresses; used at industrial scale to describe the single, unifying layer that holds
 together products built on different tech stacks, by different teams, sometimes
-decades apart. See [Long-term Scale](/ds101/long-term-scale/).
+decades apart. See [Long-term Scale](/ds101/long-term-scale/). At Lloyds, also a team
+between brand and the design system that defines how the brand looks in the product,
+which the system team turns into rules and components. See
+[Brand Alignment](/ds101/brand-alignment/).
 
 **RFC** (Request for Comments) — a written proposal for a significant change, circulated
 so people can weigh in before it's decided rather than after; part of a system's
