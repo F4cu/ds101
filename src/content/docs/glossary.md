@@ -124,6 +124,19 @@ one passionate contributor without a budget and one started by an executive with
 funded team. Each origin brings different hurdles. See
 [System Maturity](/ds101/system-maturity/).
 
+**System principles** — three to five shared statements that settle design and system
+decisions, each taking a side and paired with a real example from the interface. See
+[System Principles](/ds101/system-principles/).
+
+**Hypothesis statement** — Ness Grixti's one-sentence starting bet for a system: who it's
+for, what problems it solves, and which business goals it serves. See
+[System Principles](/ds101/system-principles/).
+
+**Rigidity vs. flexibility mapping** — Ness Grixti's workshop for plotting how strict
+the system should be, separately for foundations, components, contribution, and
+guidance, then turning the positions into principles. See
+[Rigidity and Flexibility](/ds101/rigidity-and-flexibility/).
+
 **Influence mapping** — placing stakeholders on rings of high to low influence around
 the system team, to spot champions, blockers, and groups that need more engagement before
 assigning roles. See [Decision governance](/ds101/decision-governance/).

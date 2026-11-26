@@ -59,7 +59,7 @@ export default defineConfig({
 				{ label: 'Start Here', link: '/' },
 				{
 					label: 'Strategy',
-					items: ['ui-audit', 'pilot-strategy', 'system-takeover', 'system-maturity', 'long-term-scale'],
+					items: ['ui-audit', 'pilot-strategy', 'system-takeover', 'system-maturity', 'system-principles', 'rigidity-and-flexibility', 'long-term-scale'],
 				},
 				{
 					label: 'Foundations',

@@ -221,6 +221,19 @@ and describes tools or examples that have since changed. Older sources used only
 - [Ben Callahan, "A Maturity Model for Design Systems"](https://sparkbox.com/foundry/design_system_maturity_model), Sparkbox Foundry, 2021: grassroots vs. top-down origins and the mandate warning
 - [Design System Tactics, "Maturity Assessment"](https://www.designsystemtactics.com/tactics/maturity-assessment), n.d.: Ness Grixti's tactic, credited to Callahan's book *Maturing Design Systems*
 
+## System Principles
+
+- [Alla Kholmatova, *Design Systems*, Chapter 2 "Design Principles" (free sample)](https://smashingmagazine.com/provide/design-systems-chapter-2.pdf), Smashing, 2017: the four qualities of effective principles, TED, FutureLearn, Salesforce, Medium, Atlassian, Airbnb and Spotify examples, and Dan Mall's Material Design quote
+- [Design System Tactics, "Hypothesis statement"](https://www.designsystemtactics.com/tactics/hypothesis-statement), n.d.: Ness Grixti's fill-in hypothesis sentence
+- [Design System Tactics, "System Vision"](https://www.designsystemtactics.com/tactics/system-vision), n.d.: statements from the future, three or five years out
+- [Design System Tactics, "Crafting System Principles"](https://www.designsystemtactics.com/tactics/crafting-system-principles), n.d.: clustering for tensions, voting down to three to five, and testing principles on edge cases with AI
+
+## Rigidity and Flexibility
+
+- [Design System Tactics, "Rigidity vs Flexibility Mapping"](https://www.designsystemtactics.com/tactics/rigidity-vs-flexibility-mapping), n.d.: Ness Grixti's tactic, credited to Callahan's book *Maturing Design Systems*; four system areas, re-plotting, and turning positions into principles
+- [Murphy Trueman, "Slots and the control paradox"](https://murphytrueman.substack.com/p/slots-and-the-control-paradox), 2025: the rigid and loose failure modes, what stays locked, and Brad Frost's and Nathan Curtis's quotes
+- [Ben Callahan, "Design System Deviation is a Signal"](https://bencallahan.com/design-system-deviation-is-a-signal), 2025: deviation as evidence of a problem
+
 ## Fostering contribution
 
 - [Amy Hupe, "5 Lessons on Enabling Design System Contribution"](https://amyhupe.co.uk/articles/5-lessons-on-enabling-design-system-contribution/), 2019
