@@ -695,5 +695,8 @@ are nominated inside product teams, advocates sit in the system team. See
 
 **Migration guide** — one page per release listing each breaking change with its
 before-and-after and the steps to upgrade. See
-[Release Management](/ds101/release-management/). How-to:
+[Migration Guides](/ds101/migration-guides/). How-to:
 [Design System Tactics](https://www.designsystemtactics.com/tactics/migration-guides).
+
+**Codemod** — a script that rewrites old usage in a team's code automatically, such as
+a renamed token or prop. See [Migration Guides](/ds101/migration-guides/).

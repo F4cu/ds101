@@ -104,6 +104,7 @@ export default defineConfig({
 						'component-lifecycle',
 						'system-inventory',
 						'release-management',
+						'migration-guides',
 						'code-library-releases',
 						'figma-library-releases',
 					],

@@ -52,7 +52,7 @@ How long the old version stays depends on how fast adopters can move. Curtis's [
 
 ### Put breaking changes on one migration page
 
-**Carbon Design System's** [migration guide](https://v10.carbondesignsystem.com/help/migration-guide/design/) is the reference example. Instead of scattering breaking changes across changelog entries, every breaking change in a release goes on one page, next to what to do instead. A guide that says what changed, but not what a team should now do, has done half the job.
+**Carbon Design System's** [migration guide](https://v10.carbondesignsystem.com/help/migration-guide/design/) is the reference example. Instead of scattering breaking changes across changelog entries, every breaking change in a release goes on one page, next to what to do instead. [Migration guides](/ds101/migration-guides/) covers what goes on that page.
 
 ### Sort and publish the changelog
 

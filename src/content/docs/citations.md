@@ -325,6 +325,16 @@ and describes tools or examples that have since changed. Older sources used only
 - [GitLab Pajamas, "Breaking changes"](https://design.gitlab.com/get-started/uik-breaking-changes), updated 2026: a breaking change as anything a designer must act on after updating
 - [Design System Tactics, "Migration Guides"](https://www.designsystemtactics.com/tactics/migration-guides), n.d.: how-to link for the term
 
+## Migration guides
+
+- [Design System Tactics, "Migration Guides"](https://www.designsystemtactics.com/tactics/migration-guides), n.d.: the old-to-new map, effort labels and per-team scans, and the edge cases a codemod leaves; also the how-to link for the term
+- [GOV.UK Frontend, "Release v6.0.0"](https://github.com/alphagov/govuk-frontend/releases/tag/v6.0.0), 2026: colour tables with suggested replacements, "Previously" and "Now" code for renamed tag classes, and the type-scale testing line
+- [GOV.UK Frontend, "Release v5.10.0"](https://github.com/alphagov/govuk-frontend/releases/tag/v5.10.0), 2025: brand refresh steps split by setup, and checking hand-written HTML against the website's examples
+- Murphy Trueman, `design-system-ops` — [`skills/change-communication/SKILL.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/change-communication/SKILL.md), living doc: what a guide includes, the direct notice, the follow-up schedule, leading with the change, and telling designers
+- Murphy Trueman, `design-system-ops` — [`skills/token-migration-agent.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/token-migration-agent.md), living doc: the old token as a deprecated alias in a minor release, removal in the next major, and the deprecate-after-migration mistake
+- Murphy Trueman, `design-system-ops` — [`skills/codemod-generator/SKILL.md`](https://github.com/murphytrueman/design-system-ops/blob/main/skills/codemod-generator/SKILL.md), living doc: codemods for mechanical changes, and token renames in CSS-in-JS as the usual leftover
+- [Atlassian Design System, llms.txt](https://atlassian.design/llms.txt), living doc: listed codemods, including the Avatar `xsmall` to `xxsmall` migration
+
 ## Code library releases
 
 - [Nathan Curtis, "Dealing with Dependencies Inside Design Systems"](https://nathanacurtis.substack.com/p/dealing-with-dependencies-inside-design-systems-aa6ce2cf7bc3), 2018 `Dated` — the Atlaskit release wizard and Sketch plugins describe 2018 tooling; cited for dependents, per-dependent bumps, and release order
